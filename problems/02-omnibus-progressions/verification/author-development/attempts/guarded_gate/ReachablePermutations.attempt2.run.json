@@ -1,0 +1,15 @@
+{
+  "module": "ReachablePermutations",
+  "started_utc": "2026-10-13T19:27:28.212277+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 1.426,
+  "cpu_seconds": 1.415,
+  "max_rss_kib": 765184,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "4ccbe2f8b8c76b774ca5e0c55220fe90e55fe275f143c622a3a50f12373a8b8d",
+  "olean_sha256": "06243e2f4f3d5d972c179594a0b59b6963dd36b4dd789313674fa5e13c02b5ab"
+}

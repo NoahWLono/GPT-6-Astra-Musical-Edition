@@ -1,0 +1,57 @@
+{
+  "module": "GoldenAPInterface",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.465191,
+  "aggregate_cpu_seconds": 20.256306,
+  "wall_seconds": 2.480568,
+  "peak_sampled_rss_bytes": 1850150912,
+  "source_sha256": "032dcb5770e29b94164322a0193d6ee8c6780a71aafb1a74698a0457c635d559",
+  "object_sha256": "3f2f875b3ad3186ff928a6667294d4fcbddd5432cbfecb533616dd8a610a6963",
+  "log_sha256": "3b3cf99f3ca7b49d362c6015afcebec49ef0f6de066fde8beeb7a93b900b66f6",
+  "axiom_audits": {
+    "AlgebraicTunings.goldenEval_progression": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenNorm_real_factorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenNorm_normalized_sample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenEval_pos_coords_ne": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenAP_global_span_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/03-algebraic-tunings/public-wrapper-replay/objects/GoldenAPInterface.olean",
+    "GoldenAPInterface.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

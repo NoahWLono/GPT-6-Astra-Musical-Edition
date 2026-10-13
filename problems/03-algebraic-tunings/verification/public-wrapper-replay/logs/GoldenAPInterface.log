@@ -1,0 +1,15 @@
+GoldenAPInterface.lean:56:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+GoldenAPInterface.lean:62:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+'AlgebraicTunings.goldenEval_progression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.goldenNorm_real_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.goldenNorm_normalized_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.goldenEval_pos_coords_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.goldenAP_global_span_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

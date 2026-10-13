@@ -1,0 +1,200 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,microtype}
+\usepackage[hyperfootnotes=false]{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=black,
+  pdftitle={Longest arithmetic progressions in golden norm scales},
+  pdfauthor={GPT-6 Astra},
+  pdfsubject={Project AI-author label; no runtime-model identity or OpenAI affiliation is asserted.}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathrm N}
+\title{Longest arithmetic progressions in golden norm scales}
+\author{GPT-6 Astra}
+\date{13 October 2026}
+\begin{document}
+\maketitle
+\begingroup\renewcommand{\thefootnote}{}\footnotetext{Project AI-author label; no runtime-model identity or OpenAI affiliation is asserted.}\endgroup
+\begin{abstract}
+For the positive elements of $\Z[\phi]$ with absolute algebraic norm at most $B$, we derive an exact eventual formula for the longest arithmetic progression and show that every longest progression has unit common difference. The leading term is $(1+\sqrt2)\sqrt B$. At $B=20$, the exact maximum is eleven notes. These statements concern a specified family of scales, not optimization over all tunings of fixed pitch density. The exact formula, attainment, and unit-step rigidity for integer $B\ge64$ have been checked in Lean 4.32.2. An independent fresh-object replay of the full project closure and two statement fixtures passed. Originality remains unconfirmed after a bounded prior-art review.
+\end{abstract}
+
+\section{Definitions and scope}
+Let $\phi=(1+\sqrt5)/2$, $\mathcal O=\Z[\phi]$, and let a prime denote the nonidentity real embedding. Thus
+\[
+ \N(a\phi+b)=(a\phi+b)(a\phi'+b)=b^2+ab-a^2.
+\]
+For an integer $B\ge1$, set
+\[
+ S_B=\{x\in\mathcal O:x>0,\ |\N(x)|\le B\}.
+\]
+This is the norm-bounded golden scale of Dettmann and Taylor-West~\cite{DTW}. Multiplication by $\phi$ preserves the scale since $\N(\phi)=-1$. A progression of length $\ell$ means distinct frequencies
+\[
+ a,a+d,\ldots,a+(\ell-1)d\in S_B,\qquad a,d>0.
+\]
+Let $L(B)$ denote the largest possible length. Lemma~\ref{lem:universal} below shows that this maximum exists.
+
+The original tuning problem asks how to choose pitch classes with favorable additive properties; it does not prescribe a unique objective or comparison class. Longest progression, number of three-term progressions, and number of in-scale sum tones are different objectives. The present theorem answers only the longest-progression problem inside $S_B$.
+
+\begin{theorem}\label{thm:main}
+For an integer $B\ge64$, define
+\[
+ M=\max\{m\in\Z_{\ge0}:\lfloor5m^2/4\rfloor\le B\}.
+\]
+Then
+\begin{equation}\label{eq:formula}
+ L(B)=\left\lfloor\frac{-M+\sqrt{5M^2+4B}}2\right\rfloor+\lceil M\phi\rceil.
+\end{equation}
+Every progression of maximum length has $|\N(d)|=1$. In particular,
+\[
+ L(B)=(1+\sqrt2)\sqrt B+O(1)\qquad(B\longrightarrow\infty).
+\]
+\end{theorem}
+
+\section{A uniform bound using positivity}
+Write $C_0=1+\sqrt2$.
+\begin{lemma}\label{lem:geometry}
+For $C>0$ and $D\in\R$, every connected interval contained in
+\[
+ E_{C,D}=\{x>0:|x(x-D)|\le C\}
+\]
+has length at most $C_0\sqrt C$. If such an interval lies entirely on one side of $D/2$, its length is at most $\sqrt{2C}$ whenever $D>0$.
+\end{lemma}
+\begin{proof}
+If $D\le0$, then $x(x-D)\ge x^2$, so the first claim follows with the stronger bound $\sqrt C$. Suppose $D>0$. If $D\le2\sqrt C$, the positive component has length
+\[
+ \frac{D+\sqrt{D^2+4C}}2\le C_0\sqrt C.
+\]
+If $D>2\sqrt C$, the two components have lengths bounded respectively by
+\[
+ \frac{D-\sqrt{D^2-4C}}2\le\sqrt C,
+ \qquad
+ \frac{\sqrt{D^2+4C}-\sqrt{D^2-4C}}2\le\sqrt{2C}.
+\]
+The last inequality follows by squaring, or by rationalizing the difference; its left side decreases with $D$.
+For the one-sided assertion put $h=D^2/4$. If $h\le C$, the distance from the vertex to either outer endpoint is $\sqrt{h+C}\le\sqrt{2C}$. If $h>C$, each component has length at most $\sqrt{h+C}-\sqrt{h-C}\le\sqrt{2C}$.
+\end{proof}
+
+\begin{lemma}\label{lem:universal}
+Any progression of length $\ell\ge2$ in $S_B$, with common difference $d>0$, satisfies
+\begin{equation}\label{eq:bound}
+ \ell\le1+C_0\sqrt{\frac B{|\N(d)|}+\frac14}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Set $n=\ell-1$, $q=|\N(d)|\ge1$, $\alpha=a/d>0$, and $\beta=a'/d'$. The monic polynomial
+\[
+ p(t)=(t+\alpha)(t+\beta)=\frac{(a+td)(a'+td')}{\N(d)}
+\]
+satisfies $|p(j)|\le B/q$ for every integer $0\le j\le n$. For $0\le s\le1$, its exact interpolation identity is
+\[
+ p(j+s)=(1-s)p(j)+sp(j+1)-s(1-s).
+\]
+Since $0\le s(1-s)\le1/4$, we have $|p(t)|\le C=B/q+1/4$ throughout $[0,n]$. On making the substitution $x=t+\alpha>0$, we have $p(t)=x(x-D)$ with $D=\alpha-\beta$. The image of $[0,n]$ is a connected interval of length $n$ in $E_{C,D}$. Apply Lemma~\ref{lem:geometry}.
+\end{proof}
+
+\section{Attainment with unit common difference}
+For a fixed integer $m>0$, write
+\[
+ x=m\phi+b,\qquad
+ \N(x)=\left(b+\frac m2\right)^2-\frac{5m^2}4.
+\]
+The minimum norm over integer $b$ is $-\lfloor5m^2/4\rfloor$. Consequently, for $1\le m\le M$ all allowed positive terms form one consecutive run, of length
+\begin{equation}\label{eq:F}
+ F_B(m)=\left\lfloor\frac{-m+\sqrt{5m^2+4B}}2\right\rfloor+\lceil m\phi\rceil.
+\end{equation}
+Indeed, the lower bound on the integer $b$ is $b>-m\phi$, and the upper bound is the positive root of $b^2+mb-m^2=B$. The least integer strictly greater than $-m\phi$ is $\lfloor-m\phi\rfloor+1=1-\lceil m\phi\rceil$; this identity requires no irrationality assumption.
+
+\begin{lemma}\label{lem:lower}
+For $B\ge64$, there is a unit-step progression of length greater than $C_0\sqrt B-3$.
+\end{lemma}
+\begin{proof}
+Put $v=2\sqrt{B/5}$ and $m=\lfloor v\rfloor\ge1$. Then $m\le M$. Define
+\[
+ R(u)=\frac{\sqrt5\,u+\sqrt{5u^2+4B}}2.
+\]
+Equation~\eqref{eq:F} gives $F_B(m)>R(m)-1$, while $R(v)=C_0\sqrt B$.
+For $0\le u\le v$, put $r(u)=\sqrt{5u^2+4B}$. Since $4B=5v^2\ge5u^2$, we have $r(u)\ge3u$. Thus
+\[
+ (r(v)-r(m))(r(v)+r(m))=5(v-m)(v+m),
+ \qquad r(v)+r(m)\ge3(v+m)>0.
+\]
+It follows that $r(v)-r(m)\le\frac53(v-m)$, and therefore
+\[
+ R(v)-R(m)\le\frac{\sqrt5+5/3}{2}(v-m)<2,
+\]
+because $v-m<1$ and $\sqrt5<7/3$. Combining these inequalities proves the claim.
+\end{proof}
+
+\section{Rigidity and exclusion of competing runs}
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+First consider a progression with $q=|\N(d)|\ge2$. By Lemma~\ref{lem:universal}, its length is at most
+\[
+ 1+C_0\sqrt{B/2+1/4}\le1+\frac34C_0\sqrt B,
+\]
+where the second inequality holds for $B\ge4$. Since $B\ge64$ and $C_0>2$, one has $C_0\sqrt B>16$. Thus this upper bound is strictly below $C_0\sqrt B-3$, the strict lower bound supplied by Lemma~\ref{lem:lower}. A longest progression must therefore have $q=1$.
+
+Now $d^{-1}=d'/\N(d)\in\mathcal O$ and $d^{-1}>0$. Multiplication by $d^{-1}$ preserves $S_B$, so we may assume the common difference equals one. Every such progression is part of a consecutive run $m\phi+b$ as $b$ varies through integers.
+
+If $m\le0$, then $\N(x)=x(x-m\sqrt5)\ge x^2$ for $x>0$. Hence the run has at most $\sqrt B+1$ terms, below the preceding lower bound.
+
+If $1\le m\le M$, its maximum length is $F_B(m)$. This function is nondecreasing on the positive integers up to $M$: the quantity $(-m+\sqrt{5m^2+4B})/2$ decreases by at most $1/2$ when $m$ is increased by one, so its floor decreases by at most one; meanwhile $\lceil(m+1)\phi\rceil-\lceil m\phi\rceil\ge1$. Therefore the largest such run has length $F_B(M)$.
+
+Finally suppose $m>M$. The integer $k=-\lfloor m/2\rfloor$ has norm $-\lfloor5m^2/4\rfloor<-B$ and is forbidden. An allowed run $b,b+1,\ldots,b+n$ must satisfy either $k<b$ or $b+n<k$. In the first case $2b+m\ge0$; in the second $2(b+n)+m\le0$, including both parities of $m$. Writing $Q(b)=b^2+mb-m^2$, respectively,
+\[
+ Q(b+n)-Q(b)=n^2+n(2b+m)\ge n^2,
+\]
+\[
+ Q(b)-Q(b+n)=n^2-n(2(b+n)+m)\ge n^2.
+\]
+The endpoint norm bounds imply $n^2\le2B$. Hence every such run has length at most
+\[
+ 1+\sqrt{2B}\le1+\frac32\sqrt B.
+\]
+This is below $C_0\sqrt B-3$, because $(C_0-3/2)\sqrt B>4$ for $B\ge64$. Thus $m>M$ cannot maximize the length. This proves~\eqref{eq:formula} and unit-step rigidity.
+
+Lemma~\ref{lem:lower} and Lemma~\ref{lem:universal} with $q\ge1$ sandwich $L(B)$ between $C_0\sqrt B-3$ and $1+C_0\sqrt{B+1/4}$. The asymptotic statement follows.
+\end{proof}
+
+\section{An exact eleven-note example}
+\begin{corollary}
+The norm scale $S_{20}$ has $L(20)=11$. An extremal progression is
+\[
+ 4\phi-6,\ 4\phi-5,\ldots,\ 4\phi+4.
+\]
+Its common difference, one, also belongs to $S_{20}$.
+\end{corollary}
+\begin{proof}
+The first term is positive since $\phi>3/2$. The eleven norms are
+\[
+ -4,-11,-16,-19,-20,-19,-16,-11,-4,5,16.
+\]
+Thus the progression belongs to $S_{20}$. Lemma~\ref{lem:universal} gives
+$L(20)\le1+(1+\sqrt2)(9/2)<12$. The last strict inequality follows, for example, from $\sqrt2<13/9$. Since the length is integral, it is at most eleven. Finally $\N(1)=1$.
+\end{proof}
+At a reference unit of $55$ Hz, these frequencies run from approximately $25.97$ Hz to $575.97$ Hz in steps of $55$ Hz. They share an in-scale adjacent difference tone. Multiplication by a power of $\phi$ transposes the whole progression without changing its admissibility. This extends the nine-term illustrative progression discussed in~\cite{DTW}; that article does not claim its example is longest.
+
+\section{Prior art and remaining work}
+Boundedness of arithmetic progression length in bounded-norm sets is already known. Dombek, Hajdu, and Peth\H{o}~\cite{DHP}, Theorem 2.2, prove an effective bound for progressions in fixed-fold sums of bounded-norm algebraic integers. Their proof invokes the general Hajdu--Luca bound, whose 2014 corrigendum changes its numerical value but preserves effective boundedness~\cite{HL}. B\'erczes, Hajdu, and Peth\H{o}~\cite{BHP} treat norm equations and coordinate progressions. Elsholtz and Frei~\cite{EF} study progressions of rational integers represented as norm-form values, which is a different extremal problem.
+
+The potential contribution here is the explicit eventual formula, its sharp leading constant under positivity, and the necessity of unit common differences for longest progressions. A bounded review of the cited sources, coordinate progressions on Pell equations and conics, and indefinite-form and lattice-strip terminology found no matching exact formula. This is not a certification of novelty: a comprehensive citation-index and older geometry-of-numbers review remains outstanding. The companion prior-art comparison records inspected sources and access gaps. Formal verification does not establish originality.
+
+The companion integer-only regression script verifies the displayed construction and its endpoints for $1\le B\le10000$. An independent integer-only check tested unit-step competitors for $64\le B\le2048$. These computations are regression checks, not the proof of optimality.
+
+The complete exact theorem for $B\ge64$ has compiled under Lean 4.32.2 with mathlib commit \texttt{905b95818eb32af7874a58b427f50c1711a5e96c}. Its final statement takes $B$ to be a natural number and assumes only $B\ge64$. It proves existence of an attaining progression, the universal bound for every progression in the defined class, and unit-step rigidity of every maximizer. The threshold index is computed as $\lfloor\sqrt{\lfloor(4B+3)/5\rfloor}\rfloor$. Its equivalence to the defining maximum, the canonical construction's actual integer norm bounds, and the floor-plus-ceiling count are checked dependencies.
+
+The final theorem and both independent fixtures have axiom audits containing only \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}; no admitted proof or custom axiom is used. An independent replay rebuilt all 18 project modules and two fixtures from frozen source into an initially empty object directory, with zero project-object reuse. All 20 compilations passed, using 78.945011 aggregate CPU seconds. One fixture restates the complete floor-plus-ceiling extremum; the other proves that an attaining witness has at least two notes. Source checksums, the exact toolchain and dependency lock, individual logs, axiom audits, and replay receipts accompany the source. The trust boundary includes the existing pinned Lean compiler and mathlib/package objects: mathlib itself was not rebuilt. The packaged public rebuild wrapper also passed all 20 sources in a second fresh-object replay, using 85.271496 aggregate CPU seconds and no project-object reuse. Historical comments in frozen proof files are superseded by these verification records. The $B=20$ witness and the general upper-bound theorem are also checked, but the displayed $B=20$ optimality corollary and asymptotic notation have not been separately packaged as Lean theorems. No theorem for an arbitrary real budget or for optimality among all tunings is asserted.
+
+A separate faithful optimization problem is to fix $n$, $\phi$, and a register ratio $H$, then maximize three-term progression orbits in $A\phi^{\Z}$ over $n$ representatives $A\subset[1,\phi)$. Normalize each progression's smallest tone to $[1,\phi)$ and require largest/smallest at most $H$. One may additionally require its common difference to belong to the scale. A minimum pitch separation must be specified if clustering is to be excluded. No solution of that global problem is claimed here.
+
+\begin{thebibliography}{9}
+\bibitem{DTW} C. P. Dettmann and L. Taylor-West, \emph{Algebraic tunings}, Journal of Mathematics and Music, online 2023, journal 2024. \href{https://doi.org/10.1080/17459737.2023.2234126}{doi:10.1080/17459737.2023.2234126}.
+\bibitem{DHP} D. Dombek, L. Hajdu, and A. Peth\H{o}, \emph{Representing algebraic integers as linear combinations of units}, author manuscript, Theorem 2.2. \url{https://arato.inf.unideb.hu/petho.attila/cikkek/dhpnew6rev.pdf}.
+\bibitem{HL} L. Hajdu and F. Luca, \emph{On the length of arithmetic progressions in linear combinations of S-units}, Arch. Math. \textbf{94} (2010), 357--363; corrigendum, \textbf{103} (2014), 399--400. \href{https://doi.org/10.1007/s00013-014-0681-x}{doi:10.1007/s00013-014-0681-x}.
+\bibitem{BHP} A. B\'erczes, L. Hajdu, and A. Peth\H{o}, \emph{Arithmetic progressions in the solution sets of norm form equations}, Rocky Mountain J. Math. \textbf{40} (2010), 383--395. \href{https://doi.org/10.1216/RMJ-2010-40-2-383}{doi:10.1216/RMJ-2010-40-2-383}.
+\bibitem{EF} C. Elsholtz and C. Frei, \emph{Arithmetic progressions in binary quadratic forms and norm forms}, Bull. London Math. Soc. \textbf{51} (2019), 595--602. \href{https://doi.org/10.1112/blms.12256}{doi:10.1112/blms.12256}.
+\end{thebibliography}
+\end{document}

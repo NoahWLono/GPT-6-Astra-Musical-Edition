@@ -1,0 +1,11 @@
+/workspace/shared/music-research/02-omnibus-progressions/SharpBounds.lean:20:70: error: failed to synthesize
+  Decidable (∀ (i : Fin 7), OmnibusStep (finiteWitness ↑i) (finiteWitness (↑i + 1)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/workspace/shared/music-research/02-omnibus-progressions/SharpBounds.lean:42:12: error: failed to synthesize
+  Decidable (OmnibusStep (infiniteWitness 0) (infiniteWitness (0 + 1)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'Omnibus.eight_type_bound_is_attained' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Omnibus.infinite_witness_is_admissible' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.seven_prefix_bound_is_attained' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

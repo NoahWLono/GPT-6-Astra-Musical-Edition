@@ -1,0 +1,21 @@
+GoldenExact.lean:17:16: warning: Variable name `P` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+GoldenExact.lean:19:16: warning: Variable name `P` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+golden_exact_maximum : ∀ (B : ℕ),
+  64 ≤ B →
+    (∃ n P, ↑n + 1 = goldenMaximumLength B) ∧
+      (∀ (n : ℕ) (P : GoldenAP goldenPhi (↑B) n), ↑n + 1 ≤ goldenMaximumLength B) ∧
+        ∀ (n : ℕ) (P : GoldenAP goldenPhi (↑B) n), ↑n + 1 = goldenMaximumLength B → |goldenNorm P.c P.d| = 1
+goldenMaximumLength_formula : ∀ (B : ℕ),
+  goldenMaximumLength B =
+    ⌊(-↑(goldenThresholdIndex B) + √(5 * ↑(goldenThresholdIndex B) ^ 2 + 4 * ↑B)) / 2⌋ +
+      ⌈↑(goldenThresholdIndex B) * goldenPhi⌉
+'AlgebraicTunings.golden_exact_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.goldenMaximumLength_formula' depends on axioms: [propext, Classical.choice, Quot.sound]

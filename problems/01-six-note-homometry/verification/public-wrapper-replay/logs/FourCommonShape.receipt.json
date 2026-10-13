@@ -1,0 +1,32 @@
+{
+  "module": "FourCommonShape",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 3.191811,
+  "aggregate_cpu_seconds": 22.936549,
+  "wall_seconds": 3.208111,
+  "peak_sampled_rss_bytes": 1891295232,
+  "source_sha256": "2d849af4317c7f004c11a7f6c1eb4e08094b5ec27b0c095dc1649f3bdb06b24d",
+  "object_sha256": "90c021287aa493dd6a80a4b1466ef45ad47cfdaedb8edac6ee4ff66f7455c293",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FourCommonShape.olean",
+    "FourCommonShape.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

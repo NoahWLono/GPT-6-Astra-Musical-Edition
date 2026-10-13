@@ -1,0 +1,54 @@
+{
+  "module": "ClosureSlice6",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.919287,
+  "aggregate_cpu_seconds": 69.9082,
+  "wall_seconds": 1.929071,
+  "peak_sampled_rss_bytes": 770461696,
+  "cumulative_child_maxrss_bytes": 1011671040,
+  "source_sha256": "de9fc40d8170659dbb718c01f5d57e03c127d4932b25c536c7d89636ae7737f1",
+  "object_sha256": "d54e0c0cc323748a9ad7600252185080c0b739753c2faef73610270dca568336",
+  "log_sha256": "3212c498a81c19d8daa733e9a65681d27f2b353d9820cfbce41a555aac9305f2",
+  "axiom_audits": {
+    "Omnibus.closure_certificate_48": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_49": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_50": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_51": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_52": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_53": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_54": [
+      "propext"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay/objects/ClosureSlice6.olean",
+    "ClosureSlice6.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

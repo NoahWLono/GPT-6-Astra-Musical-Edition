@@ -1,0 +1,32 @@
+{
+  "module": "FullSixNoteExistence",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.383921,
+  "aggregate_cpu_seconds": 81.435064,
+  "wall_seconds": 1.408663,
+  "peak_sampled_rss_bytes": 1892671488,
+  "source_sha256": "fe4da08a9e86550f233b2df20670271071e0f51e972cb2f7e50643752e8cd213",
+  "object_sha256": "7258680f955c974e86c9d79d36485bcb615ea4209ed3ca73197ecd25c2a23f27",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FullSixNoteExistence.olean",
+    "FullSixNoteExistence.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

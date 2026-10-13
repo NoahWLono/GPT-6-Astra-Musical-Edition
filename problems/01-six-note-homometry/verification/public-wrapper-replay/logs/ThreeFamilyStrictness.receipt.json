@@ -1,0 +1,32 @@
+{
+  "module": "ThreeFamilyStrictness",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.986559,
+  "aggregate_cpu_seconds": 69.025032,
+  "wall_seconds": 3.008401,
+  "peak_sampled_rss_bytes": 1896443904,
+  "source_sha256": "a053aa88fff007b424c6b7b5898857d70cb39d30c3bcc5379cf42c1ac540cc6c",
+  "object_sha256": "9a80d35b760d2be520588785d9f8628dd97fab28e3f11ed7504d1fd1f43f0ffb",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ThreeFamilyStrictness.olean",
+    "ThreeFamilyStrictness.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

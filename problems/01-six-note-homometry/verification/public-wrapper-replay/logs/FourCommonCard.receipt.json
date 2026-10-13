@@ -1,0 +1,32 @@
+{
+  "module": "FourCommonCard",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.814337,
+  "aggregate_cpu_seconds": 16.89746,
+  "wall_seconds": 1.825968,
+  "peak_sampled_rss_bytes": 1890459648,
+  "source_sha256": "20ec64f0848284378413982d0084216449deb9dbcc0d458cb488ce755ee817b1",
+  "object_sha256": "ad3511c5cc8016bb7ff6e27853c4004965a4c416bd60c7e9db69243be04d1383",
+  "log_sha256": "6f263a963d5a3adac111270727705d65af8611a97d079e803c4c5f9746d70f3e",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FourCommonCard.olean",
+    "FourCommonCard.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

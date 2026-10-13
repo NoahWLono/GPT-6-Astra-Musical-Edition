@@ -1,0 +1,10 @@
+'IndependentHomometryAudit.positive_modulus_exact_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+IndependentHomometryAudit.positive_modulus_exact_statement : ∀ (n : ℕ),
+  0 < n →
+    ((∃ A B,
+        A.card = 6 ∧
+          B.card = 6 ∧
+            (A ∩ B).card = 5 ∧
+              (∀ (t : ZMod n), (∑ x ∈ A, if x - t ∈ A then 1 else 0) = ∑ x ∈ B, if x - t ∈ B then 1 else 0) ∧
+                ¬((∃ t, B = Finset.image (fun x => x + t) A) ∨ ∃ t, B = Finset.image (fun x => t - x) A)) ↔
+      12 ≤ n ∧ (3 ∣ n ∨ 4 ∣ n))

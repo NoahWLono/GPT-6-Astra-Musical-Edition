@@ -1,0 +1,1589 @@
+Pilot: exit=0, CPU=3.347009s
+SliceDefinitions: exit=0, CPU=0.468863s
+NodeSlice0: exit=0, CPU=3.902295s
+NodeSlice1: exit=0, CPU=4.135995s
+NodeSlice2: exit=0, CPU=4.481585s
+NodeSlice3: exit=0, CPU=2.635752s
+NodeSlice4: exit=0, CPU=2.145947s
+NodeSlice5: exit=0, CPU=1.881284s
+NodeSlice6: exit=0, CPU=1.525382s
+NodeSlice7: exit=0, CPU=1.454015s
+NodeSlice8: exit=0, CPU=1.007969s
+NodeSlice9: exit=0, CPU=0.816421s
+NodeSlice10: exit=0, CPU=0.624012s
+NodeSlice11: exit=0, CPU=0.644348s
+SemanticDraft: exit=0, CPU=1.254551s
+TranslationBridge: exit=0, CPU=1.267250s
+CanonicalBridge: exit=0, CPU=2.737556s
+NodeJoin: exit=0, CPU=6.178769s
+QuotientSymmetry: exit=0, CPU=3.508983s
+ReachableTranslation: exit=0, CPU=0.525312s
+ReachablePermutations: exit=0, CPU=0.649994s
+ReachableCanonical: exit=0, CPU=0.555473s
+LocalQuotientLift: exit=0, CPU=0.583790s
+ClosureDefinitions: exit=0, CPU=0.445091s
+EdgeSlice0: exit=0, CPU=1.604289s
+EdgeSlice1: exit=0, CPU=1.367320s
+EdgeSlice2: exit=0, CPU=1.528218s
+EdgeSlice3: exit=0, CPU=1.306056s
+EdgeSlice4: exit=0, CPU=1.484305s
+EdgeSlice5: exit=0, CPU=1.560019s
+EdgeSlice6: exit=0, CPU=1.429644s
+ClosureSlice0: exit=0, CPU=0.943644s
+ClosureSlice1: exit=0, CPU=1.133204s
+ClosureSlice2: exit=0, CPU=1.118875s
+ClosureSlice3: exit=0, CPU=0.961687s
+ClosureSlice4: exit=0, CPU=0.763604s
+ClosureSlice5: exit=0, CPU=0.818927s
+ClosureSlice6: exit=0, CPU=0.861756s
+ClosureCertificates: exit=0, CPU=0.520283s
+ClosedWalkBounds: exit=0, CPU=2.465621s
+UniversalBounds: exit=0, CPU=2.992831s
+PeriodicWitness: exit=0, CPU=2.188096s
+SharpBounds: exit=0, CPU=2.968446s
+InfiniteRangeBound: exit=0, CPU=1.524446s
+CountTranslation: exit=0, CPU=2.082794s
+ImageCountDefinitions: exit=0, CPU=1.420627s
+ImageEnumerationSemantics: exit=0, CPU=1.727701s
+BassPackedEquiv: exit=0, CPU=1.987107s
+DisjointSliceCardinality: exit=0, CPU=2.024832s
+ImageSliceSemantics: exit=0, CPU=1.572530s
+BassPredicateEquiv: exit=0, CPU=1.626771s
+BassNatCardinality: exit=0, CPU=1.867538s
+ActualChordCardinality: exit=0, CPU=1.586165s
+ImageCountSlice0: exit=0, CPU=3.696743s
+ImageCountSlice1: exit=0, CPU=7.958551s
+ImageCountSlice2: exit=0, CPU=5.740174s
+ImageCountSlice3: exit=0, CPU=5.267250s
+ImageCellDefinitions: exit=0, CPU=1.373068s
+ImageCellPartition: exit=0, CPU=1.984283s
+ImageCellBlock4_0: exit=0, CPU=7.687882s
+ImageRawCertificate: exit=0, CPU=4.064973s
+ImageCellBlock4_1: exit=0, CPU=2.786646s
+ImageCellBlock4_2: exit=0, CPU=3.643950s
+ImageCellBlock4_3: exit=0, CPU=5.595084s
+ImageCountSlice4: exit=0, CPU=3.190778s
+ImageCellBlock5_0: exit=0, CPU=3.316772s
+ImageCellBlock5_1: exit=0, CPU=2.964785s
+ImageCellBlock5_2: exit=0, CPU=3.704874s
+ImageCellBlock5_3: exit=0, CPU=4.687506s
+ImageCountSlice5: exit=0, CPU=2.031913s
+ImageCellBlock6_0: exit=0, CPU=2.999705s
+ImageCellBlock6_1: exit=0, CPU=3.794659s
+ImageCellBlock6_2: exit=0, CPU=3.595948s
+ImageCellBlock6_3: exit=0, CPU=6.369148s
+ImageCountSlice6: exit=0, CPU=2.162180s
+ImageCellBlock7_0: exit=0, CPU=2.932991s
+ImageCellBlock7_1: exit=0, CPU=3.676444s
+ImageCellBlock7_2: exit=0, CPU=2.973996s
+ImageCellBlock7_3: exit=0, CPU=4.203516s
+ImageCountSlice7: exit=0, CPU=2.049314s
+ImageCellBlock8_0: exit=0, CPU=2.855530s
+ImageCellBlock8_1: exit=0, CPU=3.404309s
+ImageCellBlock8_2: exit=0, CPU=3.281561s
+ImageCellBlock8_3: exit=0, CPU=3.389912s
+ImageCountSlice8: exit=0, CPU=2.317425s
+ImageCellBlock9_0: exit=0, CPU=2.788019s
+ImageCellBlock9_1: exit=0, CPU=3.959114s
+ImageCellBlock9_2: exit=0, CPU=3.773647s
+ImageCellBlock9_3: exit=0, CPU=3.110550s
+ImageCountSlice9: exit=0, CPU=2.019545s
+ImageCellBlock10_0: exit=0, CPU=2.994849s
+ImageCellBlock10_1: exit=0, CPU=4.477944s
+ImageCellBlock10_2: exit=0, CPU=4.575216s
+ImageCellBlock10_3: exit=0, CPU=3.538954s
+ImageCountSlice10: exit=0, CPU=2.385479s
+ImageCellBlock11_0: exit=0, CPU=2.888157s
+ImageCellBlock11_1: exit=0, CPU=3.744103s
+ImageCellBlock11_2: exit=0, CPU=3.573035s
+ImageCellBlock11_3: exit=0, CPU=2.739839s
+ImageCountSlice11: exit=0, CPU=2.069499s
+ExactImageCounts: exit=0, CPU=1.946437s
+IndependentAudit: exit=0, CPU=1.739209s
+{
+  "status": "passed",
+  "project_modules": 101,
+  "independent_fixtures": 1,
+  "project_objects_reused": 0,
+  "actual_aggregate_cpu_seconds": 264.240448,
+  "named_axiom_audit_count": 434,
+  "final_axioms": {
+    "ClosedWalkBounds.finite_distinct_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ClosedWalkBounds.infinite_distinct_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ClosedWalkBounds.infinite_repeat_by_seven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.actualChordPredicateEquiv": [
+      "propext"
+    ],
+    "Omnibus.actual_approachable_cardinality_eq_packed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.actual_image_cardinality_eq_packed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_0": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_1": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_10": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_11": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_2": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_3": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_4": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_5": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_6": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_7": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_8": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_10_9": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_0": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_1": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_10": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_11": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_2": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_3": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_4": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_5": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_6": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_7": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_8": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_11_9": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_4_0": [
+      "propext"
+    ],
+    "Omnibus.approachable_cell_count_4_1": [
+      "propext"
+    ],
+    "Omnibus.approachable_cell_count_4_10": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_4_11": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_4_2": [
+      "propext"
+    ],
+    "Omnibus.approachable_cell_count_4_3": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_4_4": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_4_5": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_4_6": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_4_7": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_4_8": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_4_9": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_0": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_1": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_10": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_11": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_2": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_3": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_4": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_5": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_6": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_7": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_8": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_5_9": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_0": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_1": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_10": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_11": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_2": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_3": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_4": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_5": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_6": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_7": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_8": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_6_9": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_0": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_1": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_10": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_11": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_2": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_3": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_4": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_5": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_6": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_7": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_8": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_7_9": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_0": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_1": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_10": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_11": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_2": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_3": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_4": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_5": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_6": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_7": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_8": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_8_9": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_0": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_1": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_10": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_11": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_2": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_3": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_4": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_5": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_6": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_7": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_8": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_count_9_9": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_finset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_count_slice_0": [
+      "propext"
+    ],
+    "Omnibus.approachable_count_slice_1": [
+      "propext"
+    ],
+    "Omnibus.approachable_count_slice_10": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_count_slice_11": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_count_slice_2": [
+      "propext"
+    ],
+    "Omnibus.approachable_count_slice_3": [
+      "propext"
+    ],
+    "Omnibus.approachable_count_slice_4": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_count_slice_5": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_count_slice_6": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_count_slice_7": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_count_slice_8": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_count_slice_9": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_slice_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_slice_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.back_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.bassNormalization": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.canonical_chord": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_cycle": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_cycle_upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_is_bounded": [
+      "propext"
+    ],
+    "Omnibus.chord_sorted_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_swap_tenor_alto": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_translation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_type_in_nodes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.closure_certificate_0": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_1": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_10": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_11": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_12": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_13": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_14": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_15": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_16": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_17": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_18": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_19": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_2": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_20": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_21": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_22": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_23": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_24": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_25": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_26": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_27": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_28": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_29": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_3": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_30": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_31": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_32": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_33": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_34": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_35": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_36": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_37": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_38": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_39": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_4": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_40": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_41": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_42": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_43": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_44": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_45": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_46": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_47": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_48": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_49": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_5": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_50": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_51": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_52": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_53": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_54": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_6": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_7": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_8": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_9": [
+      "propext"
+    ],
+    "Omnibus.concrete_period_is_admissible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.coordinate_permutations_complete": [],
+    "Omnibus.disjoint_slice_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.eight_type_bound_is_attained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.every_node_has_small_nonterminal_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.first_repeat_is_second_type": [],
+    "Omnibus.first_seven_types_are_distinct": [],
+    "Omnibus.global_approachable_count_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.global_image_count_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.imageRaw_eq_literal": [
+      "propext"
+    ],
+    "Omnibus.imageRaw_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_cell_count_10_0": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_10_1": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_10_10": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_10_11": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_10_2": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_10_3": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_10_4": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_10_5": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_10_6": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_10_7": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_10_8": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_10_9": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_0": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_1": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_10": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_11": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_2": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_3": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_4": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_5": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_6": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_7": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_8": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_11_9": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_0": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_1": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_10": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_11": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_2": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_3": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_4": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_5": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_6": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_7": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_8": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_4_9": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_0": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_1": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_10": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_11": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_2": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_3": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_4": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_5": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_6": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_7": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_8": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_5_9": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_0": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_1": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_10": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_11": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_2": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_3": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_4": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_5": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_6": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_7": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_8": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_6_9": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_0": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_1": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_10": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_11": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_2": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_3": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_4": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_5": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_6": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_7": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_8": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_7_9": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_0": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_1": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_10": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_11": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_2": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_3": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_4": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_5": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_6": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_7": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_8": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_8_9": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_0": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_1": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_10": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_11": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_2": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_3": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_4": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_5": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_6": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_7": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_8": [
+      "propext"
+    ],
+    "Omnibus.image_cell_count_9_9": [
+      "propext"
+    ],
+    "Omnibus.image_cell_finset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_count_slice_0": [
+      "propext"
+    ],
+    "Omnibus.image_count_slice_1": [
+      "propext"
+    ],
+    "Omnibus.image_count_slice_10": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_count_slice_11": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_count_slice_2": [
+      "propext"
+    ],
+    "Omnibus.image_count_slice_3": [
+      "propext"
+    ],
+    "Omnibus.image_count_slice_4": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_count_slice_5": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_count_slice_6": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_count_slice_7": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_count_slice_8": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_count_slice_9": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_slice_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_slice_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_translation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.independent_fifty_five_types": [
+      "propext"
+    ],
+    "Omnibus.independent_finite_start_unapproachable": [
+      "propext"
+    ],
+    "Omnibus.independent_infinite_start_unapproachable": [
+      "propext"
+    ],
+    "Omnibus.infinite_seven_type_bound_is_sharp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.infinite_witness_is_admissible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.interval_translation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.local_quotient_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.modular_step_inverse": [],
+    "Omnibus.modular_translation_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.node_slice_0": [],
+    "Omnibus.node_slice_1": [],
+    "Omnibus.node_slice_10": [],
+    "Omnibus.node_slice_11": [],
+    "Omnibus.node_slice_2": [],
+    "Omnibus.node_slice_3": [],
+    "Omnibus.node_slice_4": [],
+    "Omnibus.node_slice_5": [],
+    "Omnibus.node_slice_6": [],
+    "Omnibus.node_slice_7": [],
+    "Omnibus.node_slice_8": [],
+    "Omnibus.node_slice_9": [],
+    "Omnibus.nodes_exact": [
+      "propext"
+    ],
+    "Omnibus.normalizeBass_eq_translate": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.normalized_approachable_cardinality_eq_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.normalized_approachable_count_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.normalized_back_recovers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.normalized_image_cardinality_eq_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.normalized_image_count_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.packedTripleSliceEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.predicateBassEquiv": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.project_omnibus_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_canonical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_cases": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_cycle": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_sorted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_translation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.semantic_approachable_factor_twelve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.semantic_cardinality_factor_twelve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.semantic_image_factor_twelve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.seven_prefix_bound_is_attained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.sonority_cycle": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sonority_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sonority_translation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sort3_cases": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.sort3_cycle": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sort3_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sourceRaw_eq_literal": [],
+    "Omnibus.sourceRaw_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.source_count_slice_0": [],
+    "Omnibus.source_count_slice_1": [],
+    "Omnibus.source_count_slice_2": [],
+    "Omnibus.source_count_slice_3": [],
+    "Omnibus.step_back": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.step_translation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.successor_0": [
+      "propext"
+    ],
+    "Omnibus.successor_1": [
+      "propext"
+    ],
+    "Omnibus.successor_10": [
+      "propext"
+    ],
+    "Omnibus.successor_11": [
+      "propext"
+    ],
+    "Omnibus.successor_12": [
+      "propext"
+    ],
+    "Omnibus.successor_13": [
+      "propext"
+    ],
+    "Omnibus.successor_14": [
+      "propext"
+    ],
+    "Omnibus.successor_15": [
+      "propext"
+    ],
+    "Omnibus.successor_16": [
+      "propext"
+    ],
+    "Omnibus.successor_17": [
+      "propext"
+    ],
+    "Omnibus.successor_18": [
+      "propext"
+    ],
+    "Omnibus.successor_19": [
+      "propext"
+    ],
+    "Omnibus.successor_2": [
+      "propext"
+    ],
+    "Omnibus.successor_20": [
+      "propext"
+    ],
+    "Omnibus.successor_21": [
+      "propext"
+    ],
+    "Omnibus.successor_22": [
+      "propext"
+    ],
+    "Omnibus.successor_23": [
+      "propext"
+    ],
+    "Omnibus.successor_24": [
+      "propext"
+    ],
+    "Omnibus.successor_25": [
+      "propext"
+    ],
+    "Omnibus.successor_26": [
+      "propext"
+    ],
+    "Omnibus.successor_27": [
+      "propext"
+    ],
+    "Omnibus.successor_28": [
+      "propext"
+    ],
+    "Omnibus.successor_29": [
+      "propext"
+    ],
+    "Omnibus.successor_3": [
+      "propext"
+    ],
+    "Omnibus.successor_30": [
+      "propext"
+    ],
+    "Omnibus.successor_31": [
+      "propext"
+    ],
+    "Omnibus.successor_32": [
+      "propext"
+    ],
+    "Omnibus.successor_33": [
+      "propext"
+    ],
+    "Omnibus.successor_34": [
+      "propext"
+    ],
+    "Omnibus.successor_35": [
+      "propext"
+    ],
+    "Omnibus.successor_36": [
+      "propext"
+    ],
+    "Omnibus.successor_37": [
+      "propext"
+    ],
+    "Omnibus.successor_38": [
+      "propext"
+    ],
+    "Omnibus.successor_39": [
+      "propext"
+    ],
+    "Omnibus.successor_4": [
+      "propext"
+    ],
+    "Omnibus.successor_40": [
+      "propext"
+    ],
+    "Omnibus.successor_41": [
+      "propext"
+    ],
+    "Omnibus.successor_42": [
+      "propext"
+    ],
+    "Omnibus.successor_43": [
+      "propext"
+    ],
+    "Omnibus.successor_44": [
+      "propext"
+    ],
+    "Omnibus.successor_45": [
+      "propext"
+    ],
+    "Omnibus.successor_46": [
+      "propext"
+    ],
+    "Omnibus.successor_47": [
+      "propext"
+    ],
+    "Omnibus.successor_48": [
+      "propext"
+    ],
+    "Omnibus.successor_49": [
+      "propext"
+    ],
+    "Omnibus.successor_5": [
+      "propext"
+    ],
+    "Omnibus.successor_50": [
+      "propext"
+    ],
+    "Omnibus.successor_51": [
+      "propext"
+    ],
+    "Omnibus.successor_52": [
+      "propext"
+    ],
+    "Omnibus.successor_53": [
+      "propext"
+    ],
+    "Omnibus.successor_54": [
+      "propext"
+    ],
+    "Omnibus.successor_6": [
+      "propext"
+    ],
+    "Omnibus.successor_7": [
+      "propext"
+    ],
+    "Omnibus.successor_8": [
+      "propext"
+    ],
+    "Omnibus.successor_9": [
+      "propext"
+    ],
+    "Omnibus.successor_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.universal_eight_type_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.universal_infinite_seven_type_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.universal_seven_prefix_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.unpack_denormalized": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.unpack_normalized": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.witness_all_chords": [],
+    "Omnibus.witness_distinct_types": [],
+    "Omnibus.witness_moves": [
+      "propext"
+    ]
+  },
+  "replay_ledger_sha256": "4e56c6cdab5e275c40d7ddc6edb0aaba949b390b7396b99cb828a891c0a917cb",
+  "environment_lock_sha256": "e131a72eb99ea1be74a86c94c4063ed051de5c78d7ff5f905a1b384a245eddf6",
+  "trust_boundary": "Fresh project objects; existing pinned Lean, Mathlib, and package objects are trusted. Mathlib is not rebuilt by this wrapper."
+}

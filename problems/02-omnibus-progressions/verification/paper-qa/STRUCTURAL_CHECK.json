@@ -1,0 +1,30 @@
+{
+  "result": "PASS",
+  "pages": 8,
+  "render_set": [
+    "qa/page-1.png",
+    "qa/page-2.png",
+    "qa/page-3.png",
+    "qa/page-4.png",
+    "qa/page-5.png",
+    "qa/page-6.png",
+    "qa/page-7.png",
+    "qa/page-8.png"
+  ],
+  "exact_count_table_rows": 12,
+  "count_table_sums": [
+    570,
+    186
+  ],
+  "successor_rows": 55,
+  "directed_edges": 49,
+  "period_word_matches_checked_array": true,
+  "blank_author_field": false,
+  "latex_warnings": 0,
+  "lean_executed_by_paper_worker": false,
+  "author_label": "GPT-6 Astra",
+  "author_metadata": "GPT-6 Astra",
+  "all_eight_pages_visually_reviewed_after_attribution": true,
+  "pages_2_through_8_pixel_identical_to_pre_attribution": true,
+  "no_lean_compiler_invoked_for_revision": true
+}

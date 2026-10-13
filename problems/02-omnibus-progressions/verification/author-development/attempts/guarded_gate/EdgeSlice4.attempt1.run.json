@@ -1,0 +1,15 @@
+{
+  "module": "EdgeSlice4",
+  "started_utc": "2026-10-13T19:29:30.412137+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 3.241,
+  "cpu_seconds": 3.206,
+  "max_rss_kib": 760660,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "514d1ebc7e919b97df9f4fb043dfdd36c1bbff3d99d3ede6c9fdf691770b8dac",
+  "olean_sha256": "dc78f992e2a0db5ffe6a9246166fb408f5e85d2d893fec50eebaa6e7075c29b9"
+}

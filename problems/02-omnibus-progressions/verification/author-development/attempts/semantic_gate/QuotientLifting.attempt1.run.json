@@ -1,0 +1,15 @@
+{
+  "module": "QuotientLifting",
+  "started_utc": "2026-10-13T19:13:27.534458+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 1,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 13.11,
+  "cpu_seconds": 13.112,
+  "max_rss_kib": 855872,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "a244642e6826b3458fb7f1d323250696e5b9ae440e0d8fad7216f329b37a595d",
+  "olean_sha256": null
+}

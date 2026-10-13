@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "author_label": "GPT-6 Astra",
+  "pdf_author_metadata": "GPT-6 Astra",
+  "attribution_note": "Project AI-author label, not runtime model identity or OpenAI affiliation",
+  "pages": 8,
+  "all_pages_visually_reviewed": true,
+  "unchanged_render_pages": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "latex_warnings": 0,
+  "proof_wrapper_lock_replay_files_preserved": 590,
+  "no_lean_compiler_invoked": true,
+  "new_pdf_sha256": "ac6fdcf4e587b28061e582f25af62096fa64980c5cf71348495dd0150a5d843f",
+  "new_tex_sha256": "40dd960d095151017a5fb1228dd23306857076303e2cfbc5202baa33ed4c8595",
+  "readme_novelty_scope": "New exact numerical answers 6840/2232, supported by documented search finding no earlier answer, with explicit limited priority coverage; no novelty claim for 8/7 or resolution of Conjecture 1."
+}

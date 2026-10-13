@@ -1,0 +1,3 @@
+'Omnibus.actualChordPredicateEquiv' depends on axioms: [propext]
+'Omnibus.actual_image_cardinality_eq_packed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.actual_approachable_cardinality_eq_packed' depends on axioms: [propext, Classical.choice, Quot.sound]

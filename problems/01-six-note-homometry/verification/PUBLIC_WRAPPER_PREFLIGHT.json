@@ -1,0 +1,88 @@
+{
+  "status": "preflight_passed",
+  "compiler_invoked": false,
+  "environment_lock_sha256": "ed8b0923a91f05e3399c3853932cd788221efeb6de4937260d6524f1d7be8df9",
+  "module_count": 34,
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "dependencies": [
+    {
+      "name": "plausible",
+      "commit": "e12c1910fe855cbfc38803cd4e55543906d5fa62"
+    },
+    {
+      "name": "LeanSearchClient",
+      "commit": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+    },
+    {
+      "name": "importGraph",
+      "commit": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12"
+    },
+    {
+      "name": "proofwidgets",
+      "commit": "6e311e2a844da9b2cc3971187df2fe0066947b93"
+    },
+    {
+      "name": "aesop",
+      "commit": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3"
+    },
+    {
+      "name": "Qq",
+      "commit": "38d591e778f100aec9762bb582f9c7f55f50e9dc"
+    },
+    {
+      "name": "batteries",
+      "commit": "023ce7d62a0531e22a5331e20b587817a80d49ff"
+    },
+    {
+      "name": "Cli",
+      "commit": "88679d088c9720c27ebdf2ba4dafe17341747f94"
+    }
+  ],
+  "direct_external_objects": [
+    {
+      "module": "Lean.Elab.Tactic.Omega",
+      "object_sha256": "df271e45f9e161ada1ea33301e1063d24feaa1d0a880062e7c867525c8ffa319"
+    },
+    {
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "object_sha256": "9dda55a2f72d6b3c05149688ab9a89f1d33087dfcc4d6bec8ad344208269112c"
+    },
+    {
+      "module": "Mathlib.Algebra.Ring.Parity",
+      "object_sha256": "84f82d7e10a21ec8b9bcd19acf43322f8295c94bf853122750dcb6b1e709a350"
+    },
+    {
+      "module": "Mathlib.Data.Finset.Basic",
+      "object_sha256": "cb8447cdcefe6888b87cb1c3b0afbcbfe867215c3af398ccbe0f39317d5c24e8"
+    },
+    {
+      "module": "Mathlib.Data.Finset.Card",
+      "object_sha256": "a7d1b699931a0ca89363804c0f33be0da5a9df344b6955853f12bf4c8f0efb41"
+    },
+    {
+      "module": "Mathlib.Data.Fintype.Card",
+      "object_sha256": "f1fd9683e093aaee18c603375eb1c048b6ed47529b454c2f80da2b254842c290"
+    },
+    {
+      "module": "Mathlib.Data.Fintype.Powerset",
+      "object_sha256": "2f90a8e11dd1794010cf10a789b081537f5f292d857c97f63cb32058e2f7951d"
+    },
+    {
+      "module": "Mathlib.Data.ZMod.Basic",
+      "object_sha256": "4e7d18a9c39fcdd28a7d3b359755263ac7d40e61baa31763e12fd7819229a440"
+    },
+    {
+      "module": "Mathlib.GroupTheory.OrderOfElement",
+      "object_sha256": "e73d2917565dee313aeaffdf0d006cadd0b88a836c1ab497c5809865917c8128"
+    },
+    {
+      "module": "Mathlib.Tactic.Abel",
+      "object_sha256": "1bdf8a520cf4c10ff159176ea888b69699399541512d3709f5d0602345ae745a"
+    },
+    {
+      "module": "Mathlib.Tactic.Tauto",
+      "object_sha256": "a117d2e5a2cd6eeaa93422fb908ee5e9f905579c6cf3ae833ae15551588fd721"
+    }
+  ],
+  "trust_boundary": "Fresh project objects; existing pinned Lean, Mathlib, and package objects are trusted. Mathlib is not rebuilt by this wrapper."
+}

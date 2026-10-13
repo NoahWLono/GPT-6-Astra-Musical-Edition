@@ -1,0 +1,52 @@
+{
+  "module": "CanonicalBridge",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.733329,
+  "aggregate_cpu_seconds": 37.042395,
+  "wall_seconds": 2.739884,
+  "peak_sampled_rss_bytes": 828497920,
+  "cumulative_child_maxrss_bytes": 927166464,
+  "source_sha256": "af70cc3769299a150c02307d0f60ee4892988863135ff60ea0fa40340d0552df",
+  "object_sha256": "cf8be6efed073c47d277e5aa4819816f70114898d21b9c2249cac2a61671f680",
+  "log_sha256": "454a19b19dc532136ad2e50cab04faa994f2b9e3e96e01b9d9248b0ea1a58da6",
+  "axiom_audits": {
+    "Omnibus.sort3_cases": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_sorted_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.normalizeBass_eq_translate": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.canonical_chord": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay/objects/CanonicalBridge.olean",
+    "CanonicalBridge.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

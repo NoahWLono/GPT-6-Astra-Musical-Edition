@@ -1,0 +1,20 @@
+'OnePitchShift.strict_exchange_ambient_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OnePitchShift.twelve_le_modulus_of_six_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OnePitchShift.six_exchange_sets_iff_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OnePitchShift.six_note_one_exchange_existence_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+OnePitchShift.six_exchange_sets_iff_normalized : ∀ (n : ℕ),
+  OnePitchShift.SixExchangeSets n ↔ OnePitchShift.SixExchange n
+OnePitchShift.six_note_one_exchange_existence_iff : ∀ (n : ℕ) [NeZero n],
+  (∃ A B,
+      A.card = 6 ∧
+        B.card = 6 ∧ (A ∩ B).card = 5 ∧ OnePitchShift.Homometric A B ∧ ¬OnePitchShift.DihedralEquivalent A B) ↔
+    12 ≤ n ∧ (3 ∣ n ∨ 4 ∣ n)
+def OnePitchShift.Homometric.{u_1} : {G : Type u_1} → [AddCommGroup G] → [DecidableEq G] → Finset G → Finset G → Prop :=
+fun {G} [AddCommGroup G] [DecidableEq G] A B =>
+  ∀ (t : G), OnePitchShift.autocorrelation A t = OnePitchShift.autocorrelation B t
+def OnePitchShift.autocorrelation.{u_1} : {G : Type u_1} → [AddCommGroup G] → [DecidableEq G] → Finset G → G → ℤ :=
+fun {G} [AddCommGroup G] [DecidableEq G] C t => ∑ x ∈ C, OnePitchShift.indicator C (x - t)
+def OnePitchShift.DihedralEquivalent.{u_1} : {G : Type u_1} →
+  [AddCommGroup G] → [DecidableEq G] → Finset G → Finset G → Prop :=
+fun {G} [AddCommGroup G] [DecidableEq G] A B =>
+  (∃ t, B = Finset.image (fun x => x + t) A) ∨ ∃ t, B = Finset.image (fun x => t - x) A

@@ -1,0 +1,4 @@
+'Omnibus.image_cell_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.approachable_cell_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.image_slice_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.approachable_slice_partition' depends on axioms: [propext, Classical.choice, Quot.sound]

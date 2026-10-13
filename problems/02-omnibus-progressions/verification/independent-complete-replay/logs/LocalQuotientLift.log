@@ -1,0 +1,12 @@
+/workspace/shared/music-research/02-omnibus-progressions/independent-complete-replay/sources/LocalQuotientLift.lean:8:38: warning: This simp argument is unused:
+  and_or_left
+
+Hint: Omit it from the simp argument list.
+  simp [successors, voices, ReachableType, Fin.exists_fin_succ,
+  ̵  ̵ ̵ ̵List.mem_eraseDups, or_and_right,
+  ̲ a̵n̵d̵_̵o̵r̵_̵l̵e̵f̵t̵,̵  ̲ ̲exists_or, and_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Omnibus.successor_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.chord_is_bounded' depends on axioms: [propext]
+'Omnibus.local_quotient_lift' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,15 @@
+{
+  "module": "InfiniteRangeBound",
+  "started_utc": "2026-10-13T19:47:39.763666+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 1.587,
+  "cpu_seconds": 1.562,
+  "max_rss_kib": 1645308,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "3c715ac3f3b253532bbb3100f5e3519ebc4b9cb14b32b710e3c87f47103137e6",
+  "olean_sha256": "234a5603a2123df2770c015c2335ac4018f95d6e445440f73feac6a9999e446e"
+}

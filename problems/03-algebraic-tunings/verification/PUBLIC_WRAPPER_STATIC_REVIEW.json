@@ -1,0 +1,75 @@
+{
+  "status": "static_review_passed",
+  "review_date_utc": "2026-10-13",
+  "reviewed_files": [
+    "rebuild.py",
+    "reproducibility/environment-lock.json"
+  ],
+  "wrapper_sha256": "f6102ae30bc4ca46091cb49131663659d9dbc571394829d3fee6f046dc573e5c",
+  "environment_lock_sha256": "c6e005cf5f47804f0111fffa634fc5ebaa21843a899419bc42e1a9454114ff6b",
+  "compiler_invocations": 0,
+  "new_wrapper_replayed": false,
+  "findings_remaining": [],
+  "resolved_findings": [
+    "Post-exit resource violations now set a failing stop reason.",
+    "ProcessLookupError during watchdog kill no longer discards the receipt.",
+    "Truncated UTF-8 logs decode with replacement while retaining the original byte hash."
+  ],
+  "tests": [
+    {
+      "test": "real_preflight",
+      "outcome": "passed",
+      "detail": "20 source hashes and replay order, pinned Lean executable/toolchains, Mathlib and package revisions, dependency manifest, project-object exclusion, and 14 direct Mathlib objects passed."
+    },
+    {
+      "test": "final_aggregate_cpu",
+      "outcome": "passed",
+      "detail": "Mocked process returned a receipt with stop_reason=aggregate_cpu_limit. No child process was launched."
+    },
+    {
+      "test": "final_hard_cpu",
+      "outcome": "passed",
+      "detail": "Mocked process returned a receipt with stop_reason=cpu_hard_limit. No child process was launched."
+    },
+    {
+      "test": "final_wall",
+      "outcome": "passed",
+      "detail": "Mocked process returned a receipt with stop_reason=wall_limit. No child process was launched."
+    },
+    {
+      "test": "final_combined_output",
+      "outcome": "passed",
+      "detail": "Mocked process returned a receipt with stop_reason=output_limit. No child process was launched."
+    },
+    {
+      "test": "final_disk_floor",
+      "outcome": "passed",
+      "detail": "Mocked process returned a receipt with stop_reason=disk_floor. No child process was launched."
+    },
+    {
+      "test": "normal_terminal_success",
+      "outcome": "passed",
+      "detail": "Mocked process returned a receipt with stop_reason=None. No child process was launched."
+    },
+    {
+      "test": "exit_during_watchdog_kill",
+      "outcome": "passed",
+      "detail": "Mocked process returned a receipt with stop_reason=wall_limit. No child process was launched."
+    },
+    {
+      "test": "truncated_utf8_log",
+      "outcome": "passed",
+      "detail": "An incomplete UTF-8 final character no longer loses the receipt; raw-byte SHA-256 remains exact. Mocked Popen only."
+    },
+    {
+      "test": "existing_audit_log_parser",
+      "outcome": "passed",
+      "detail": "All four expected locked final axiom audits parse and match existing independent replay logs. Those logs are prior evidence, not a replay of this wrapper."
+    }
+  ],
+  "scope_notes": [
+    "Approval is for static readiness and the listed preflight/mocked regression checks, not end-to-end execution.",
+    "Import isolation was reviewed for the exact frozen 20-source closure within the stated trusted Lean/Mathlib/package-object boundary.",
+    "RSS is sampled; this wrapper is a resource watchdog for the trusted frozen Lean job, not an adversarial process-tree sandbox."
+  ]
+}

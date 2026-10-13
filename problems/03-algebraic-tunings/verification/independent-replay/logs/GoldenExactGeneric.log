@@ -1,0 +1,26 @@
+GoldenExactGeneric.lean:28:16: warning: Variable name `P` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+GoldenExactGeneric.lean:29:16: warning: Variable name `P` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+golden_exact_maximum_generic : ∀ (phi : ℝ),
+  phi ^ 2 = phi + 1 →
+    3 / 2 < phi →
+      ∀ (root : ℝ → ℝ),
+        (∀ (x : ℝ), 0 ≤ root x) →
+          (∀ (x : ℝ), 0 ≤ x → root x ^ 2 = x) →
+            ∀ (B M : ℤ),
+              64 ≤ B →
+                0 ≤ M →
+                  5 * M * M / 4 ≤ B →
+                    B < 5 * (M + 1) * (M + 1) / 4 →
+                      have F := goldenLineCount phi M (root (5 * ↑M ^ 2 + 4 * ↑B));
+                      (∃ n P, ↑n + 1 = F) ∧
+                        (∀ (n : ℕ) (P : GoldenAP phi B n), ↑n + 1 ≤ F) ∧
+                          ∀ (n : ℕ) (P : GoldenAP phi B n), ↑n + 1 = F → |goldenNorm P.c P.d| = 1
+'AlgebraicTunings.golden_exact_maximum_generic' depends on axioms: [propext, Classical.choice, Quot.sound]

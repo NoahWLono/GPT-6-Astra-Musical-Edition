@@ -1,0 +1,3 @@
+'Omnibus.semantic_cardinality_factor_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.semantic_image_factor_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.semantic_approachable_factor_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]

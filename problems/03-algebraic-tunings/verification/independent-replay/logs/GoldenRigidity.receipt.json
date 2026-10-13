@@ -1,0 +1,49 @@
+{
+  "module": "GoldenRigidity",
+  "exit_code": 0,
+  "stop_reason": null,
+  "wall_seconds": 3.702648,
+  "cpu_seconds": 3.673775,
+  "aggregate_cpu_seconds": 46.948253,
+  "observed_cpu_seconds": 3.67,
+  "peak_rss_bytes": 1842884608,
+  "source_sha256": "66a7f29c110d5f3b28c452bad99a630665771349683215e816de69e1adf7a998",
+  "object_sha256": "0dd66b4360b2bcea42f4ddbe6fdeb2cff80206807ec21a467690c64c5eed7a37",
+  "log_sha256": "106df2d8e84c4d58190ff398d733c3b4f4b7eccb1ca341c143b6a13c42e7a16f",
+  "axiom_audits": {
+    "AlgebraicTunings.goldenAP_long_step_unit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenRigidity.olean",
+    "GoldenRigidity.lean"
+  ],
+  "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+  "lean_path": [
+    "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "limits": {
+    "cpu_watchdog": 19.5,
+    "cpu_hard": 20,
+    "aggregate_cpu": 180,
+    "wall": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

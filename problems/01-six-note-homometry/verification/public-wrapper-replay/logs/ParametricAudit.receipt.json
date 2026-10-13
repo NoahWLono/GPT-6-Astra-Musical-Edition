@@ -1,0 +1,73 @@
+{
+  "module": "ParametricAudit",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.578531,
+  "aggregate_cpu_seconds": 84.502298,
+  "wall_seconds": 1.57908,
+  "peak_sampled_rss_bytes": 1889705984,
+  "source_sha256": "a281c5c69aa80ca7b7edf18a8ace6d5eb0e26f724bc8a8d7a3ba0112b4949ca1",
+  "object_sha256": "c72f146f0b177fb52605723c823b4190cd2e5c18dc12456d9c199260b960a12c",
+  "log_sha256": "5903f5d12a0552b09d92b5071c5898d5475b531bad6f6ee8ede3fa1f1c4db289",
+  "axiom_audits": {
+    "OnePitchShift.homometric_of_periodic_reflected_components": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.not_dihedral_of_nat_witnesses": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.four_family_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.three_family_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.four_family_homometric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.three_family_homometric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.four_family_six_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.three_family_six_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ParametricAudit.olean",
+    "ParametricAudit.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

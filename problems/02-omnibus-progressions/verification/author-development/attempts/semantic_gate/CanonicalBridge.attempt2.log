@@ -1,0 +1,293 @@
+/workspace/shared/music-research/02-omnibus-progressions/CanonicalBridge.lean:11:5: error: unknown tactic
+/workspace/shared/music-research/02-omnibus-progressions/CanonicalBridge.lean:8:53: error: unsolved goals
+case pos
+x y z : Nat
+hxy : x ≤ y
+hyz : y ≤ z
+hxz : x ≤ z
+⊢ (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+      ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+            if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+          y ∧
+        (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+    (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+        ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+              if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+            z ∧
+          (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+      (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+          ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+              x ∧
+            (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+        (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+            ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                  if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                z ∧
+              (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x ∨
+          (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  x ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+            (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  y ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x
+
+case neg
+x y z : Nat
+hxy : x ≤ y
+hyz : y ≤ z
+hxz : ¬x ≤ z
+⊢ (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+      ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+            if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+          y ∧
+        (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+    (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+        ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+              if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+            z ∧
+          (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+      (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+          ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+              x ∧
+            (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+        (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+            ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                  if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                z ∧
+              (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x ∨
+          (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  x ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+            (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  y ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x
+
+case pos
+x y z : Nat
+hxy : x ≤ y
+hyz : ¬y ≤ z
+hxz : x ≤ z
+⊢ (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+      ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+            if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+          y ∧
+        (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+    (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+        ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+              if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+            z ∧
+          (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+      (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+          ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+              x ∧
+            (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+        (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+            ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                  if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                z ∧
+              (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x ∨
+          (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  x ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+            (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  y ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x
+
+case neg
+x y z : Nat
+hxy : x ≤ y
+hyz : ¬y ≤ z
+hxz : ¬x ≤ z
+⊢ (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+      ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+            if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+          y ∧
+        (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+    (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+        ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+              if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+            z ∧
+          (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+      (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+          ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+              x ∧
+            (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+        (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+            ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                  if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                z ∧
+              (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x ∨
+          (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  x ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+            (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  y ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x
+
+case pos
+x y z : Nat
+hxy : ¬x ≤ y
+hyz : y ≤ z
+hxz : x ≤ z
+⊢ (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+      ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+            if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+          y ∧
+        (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+    (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+        ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+              if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+            z ∧
+          (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+      (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+          ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+              x ∧
+            (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+        (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+            ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                  if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                z ∧
+              (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x ∨
+          (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  x ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+            (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  y ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x
+
+case neg
+x y z : Nat
+hxy : ¬x ≤ y
+hyz : y ≤ z
+hxz : ¬x ≤ z
+⊢ (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+      ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+            if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+          y ∧
+        (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+    (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+        ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+              if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+            z ∧
+          (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+      (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+          ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+              x ∧
+            (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+        (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+            ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                  if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                z ∧
+              (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x ∨
+          (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  x ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+            (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  y ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x
+
+case pos
+x y z : Nat
+hxy : ¬x ≤ y
+hyz : ¬y ≤ z
+hxz : x ≤ z
+⊢ (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+      ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+            if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+          y ∧
+        (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+    (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+        ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+              if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+            z ∧
+          (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+      (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+          ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+              x ∧
+            (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+        (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+            ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                  if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                z ∧
+              (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x ∨
+          (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  x ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+            (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  y ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x
+
+case neg
+x y z : Nat
+hxy : ¬x ≤ y
+hyz : ¬y ≤ z
+hxz : ¬x ≤ z
+⊢ (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+      ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+            if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+          y ∧
+        (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+    (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = x ∧
+        ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+              if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+            z ∧
+          (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+      (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+          ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+              x ∧
+            (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = z ∨
+        (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = y ∧
+            ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                  if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                z ∧
+              (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x ∨
+          (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  x ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = y ∨
+            (if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) = z ∧
+              ((x + y + z - if x ≤ if y ≤ z then y else z then x else if y ≤ z then y else z) -
+                    if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) =
+                  y ∧
+                (if x ≤ if y ≤ z then z else y then if y ≤ z then z else y else x) = x
+'Omnibus.sort3_cases' depends on axioms: [propext, sorryAx]
+'Omnibus.chord_sorted_upper' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.normalizeBass_eq_translate' depends on axioms: [propext, Quot.sound]
+'Omnibus.canonical_chord' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

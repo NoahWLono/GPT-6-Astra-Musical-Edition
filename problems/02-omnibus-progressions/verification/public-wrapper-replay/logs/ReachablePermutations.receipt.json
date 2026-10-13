@@ -1,0 +1,45 @@
+{
+  "module": "ReachablePermutations",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 0.649994,
+  "aggregate_cpu_seconds": 45.193292,
+  "wall_seconds": 0.651815,
+  "peak_sampled_rss_bytes": 773533696,
+  "cumulative_child_maxrss_bytes": 1010515968,
+  "source_sha256": "3867d9b44c47b215ee5ccdddfca6cdb944d93735ff497e49b5c16c59de2a37ac",
+  "object_sha256": "c87ee4ef21ef28296cd3ea901cc4b6964f06f567c31db9e09731d1dc4cfcae50",
+  "log_sha256": "7a369f17f4d78c2519a372bf9c3a8d7b7f0d1beb8d73c18bdeafd367753479f2",
+  "axiom_audits": {
+    "Omnibus.reachable_cases": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_cycle": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay-retry/objects/ReachablePermutations.olean",
+    "ReachablePermutations.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

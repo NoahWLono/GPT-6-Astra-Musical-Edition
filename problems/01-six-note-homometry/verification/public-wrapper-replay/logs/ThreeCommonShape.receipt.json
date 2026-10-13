@@ -1,0 +1,32 @@
+{
+  "module": "ThreeCommonShape",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.831082,
+  "aggregate_cpu_seconds": 52.561445,
+  "wall_seconds": 1.845579,
+  "peak_sampled_rss_bytes": 1898647552,
+  "source_sha256": "3f589a3e3b7f98f4c352392766b59bf1d3c2292482992a69f09a7ae453b7b7a0",
+  "object_sha256": "1821c10aeebef7480f078c353f0845e0d40f5ff50e5ee476c5e1efcdb9608dbd",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ThreeCommonShape.olean",
+    "ThreeCommonShape.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

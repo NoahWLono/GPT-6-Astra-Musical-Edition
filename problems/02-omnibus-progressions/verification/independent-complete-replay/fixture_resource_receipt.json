@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/shared/music-research/02-omnibus-progressions/independent-complete-replay/independent_fixture_audit.py"
+  ],
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 0.154832,
+  "wall_seconds": 0.16352104500401765,
+  "peak_rss_bytes": 13246464,
+  "aggregate_cpu_seconds_including_replay": 295.3433230000001,
+  "source_sha256": "43d519ba3f347844635a5e43510a4ec0d417e7440adbdbc5eb663096c3d831c1",
+  "log_sha256": "5b23d1f1bf3712252ab44bef674e861746ba6f72ec6e763cf8b136c3e3fd8ae1",
+  "inherited_limits": {
+    "aggregate_cpu_limit_seconds": 400,
+    "per_process_cpu_watchdog_seconds": 19.5,
+    "per_process_hard_cpu_seconds": 20,
+    "per_process_wall_seconds": 35,
+    "rss_limit_bytes": 2147483648,
+    "output_limit_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

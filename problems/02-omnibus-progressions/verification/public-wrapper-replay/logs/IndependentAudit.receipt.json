@@ -1,0 +1,80 @@
+{
+  "module": "IndependentAudit",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.739209,
+  "aggregate_cpu_seconds": 264.240448,
+  "wall_seconds": 1.720617,
+  "peak_sampled_rss_bytes": 1887301632,
+  "cumulative_child_maxrss_bytes": 1901203456,
+  "source_sha256": "b73d7ad5497d8af07399a51d3c49a753b6cea81c07e7d4d7182f0b872b87d0a7",
+  "object_sha256": "481a8d7b97d49e31b88fd7aa24956616cce986e8ad1d060f5b16077a2880af4b",
+  "log_sha256": "066dfea732684bfa1c0822518f8ee337f2fe93eac0133783d90a85696af32d92",
+  "axiom_audits": {
+    "Omnibus.nodes_exact": [
+      "propext"
+    ],
+    "Omnibus.local_quotient_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.universal_eight_type_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.universal_infinite_seven_type_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.eight_type_bound_is_attained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.infinite_seven_type_bound_is_sharp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.global_image_count_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.global_approachable_count_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.independent_fifty_five_types": [
+      "propext"
+    ],
+    "Omnibus.independent_finite_start_unapproachable": [
+      "propext"
+    ],
+    "Omnibus.independent_infinite_start_unapproachable": [
+      "propext"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay-retry/objects/IndependentAudit.olean",
+    "IndependentAudit.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

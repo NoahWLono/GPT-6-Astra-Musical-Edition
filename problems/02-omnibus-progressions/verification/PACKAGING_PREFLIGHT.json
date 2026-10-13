@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "author_source_bytes_preserved": 101,
+  "reviewer_source_bytes_preserved": 1,
+  "expected_named_axiom_audits": 426,
+  "bundled_project_objects": 0,
+  "active_forbidden_proof_tokens": 0,
+  "portable_scripts_syntax": "passed",
+  "paper_pdf_sha256": "ac6fdcf4e587b28061e582f25af62096fa64980c5cf71348495dd0150a5d843f",
+  "paper_tex_sha256": "40dd960d095151017a5fb1228dd23306857076303e2cfbc5202baa33ed4c8595",
+  "prior_art_sha256": "1e1f2d89888cc751a282d66778ae9631870ff547a2378d1453766f5d9b4f0a5a",
+  "wrapper_sha256": "ff6f8a8065215ac67c3934ff1b89d3c05b13e7540e0edff7ad2ef72e0ff10a7e",
+  "remote_writes": 0,
+  "attribution_revision": "ATTRIBUTION_REVISION.json"
+}

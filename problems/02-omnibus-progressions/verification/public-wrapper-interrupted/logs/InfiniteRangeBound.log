@@ -1,0 +1,2 @@
+'Omnibus.universal_infinite_seven_type_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.infinite_seven_type_bound_is_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]

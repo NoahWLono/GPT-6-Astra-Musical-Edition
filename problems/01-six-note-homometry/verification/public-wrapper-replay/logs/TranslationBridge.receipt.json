@@ -1,0 +1,32 @@
+{
+  "module": "TranslationBridge",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.751059,
+  "aggregate_cpu_seconds": 78.395927,
+  "wall_seconds": 1.763729,
+  "peak_sampled_rss_bytes": 1889976320,
+  "source_sha256": "94fb247d0b62c842e9fa7feef5b23b3a41ad0de869b6116e0d5ef7556f57de36",
+  "object_sha256": "69c13de4bc959e2c5249fb3be4057ddd085eced5dbc82155113607e28ec26346",
+  "log_sha256": "263cb31b6ca36c45de785fedd8f6ff2efc665ee92a6eec1d5f554f165dbdfa23",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/TranslationBridge.olean",
+    "TranslationBridge.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

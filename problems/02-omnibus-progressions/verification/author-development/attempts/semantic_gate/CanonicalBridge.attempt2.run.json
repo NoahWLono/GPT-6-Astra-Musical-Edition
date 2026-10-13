@@ -1,0 +1,15 @@
+{
+  "module": "CanonicalBridge",
+  "started_utc": "2026-10-13T19:13:07.787952+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 1,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 1.621,
+  "cpu_seconds": 1.73,
+  "max_rss_kib": 766968,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "c1914972d1aa3a2dcd1cf47dad72c8ddebf0025bac94f8ee9c539cc9b8bf5ce7",
+  "olean_sha256": null
+}

@@ -1,0 +1,32 @@
+{
+  "module": "StrictnessCore",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 3.261459,
+  "aggregate_cpu_seconds": 7.200974,
+  "wall_seconds": 3.264587,
+  "peak_sampled_rss_bytes": 1895284736,
+  "source_sha256": "9e66be3720f151d71bf7fcc922e8148b4cb1f76d0d3bbbe352cd7233d55d16cf",
+  "object_sha256": "3d6a3e7702a233a239a1e6880d1b9eb39bd73adcea0bae3eaeb14f8120027c6c",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/StrictnessCore.olean",
+    "StrictnessCore.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

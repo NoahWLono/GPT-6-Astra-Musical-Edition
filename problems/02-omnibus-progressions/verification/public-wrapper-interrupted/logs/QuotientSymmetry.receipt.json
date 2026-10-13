@@ -1,0 +1,57 @@
+{
+  "module": "QuotientSymmetry",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 3.730374,
+  "aggregate_cpu_seconds": 46.432818,
+  "wall_seconds": 3.739452,
+  "peak_sampled_rss_bytes": 915652608,
+  "cumulative_child_maxrss_bytes": 1011671040,
+  "source_sha256": "891cf1445808e125ee6cf59d10c108163f5551c3e7e3c9479a66789dc12ae3cc",
+  "object_sha256": "7e9cca3f7021f9904abb39300a2572b4d9923aa1832136950266b023204504e2",
+  "log_sha256": "d0ce5f800f97e7a0c5b1d4c9b2af783a1afcba1de4dfe60abf8c15c339775868",
+  "axiom_audits": {
+    "Omnibus.sort3_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sort3_cycle": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sonority_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sonority_cycle": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_cycle": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay/objects/QuotientSymmetry.olean",
+    "QuotientSymmetry.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

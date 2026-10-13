@@ -1,0 +1,423 @@
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:23:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ b + f - 12*g ≤ 11
+  0 ≤ b + f - 12*g + h - 12*i ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨0, hv✝⟩
+ f := ↑(if (0 == 0) = true then 11 else 0)
+ g := ↑(tenor✝ + if (0 == 0) = true then 11 else 0) / 12
+ h := ↑(if (0 == 0) = true then 1 else 0)
+ i := ↑((tenor✝ + if (0 == 0) = true then 11 else 0) % 12 + if (0 == 0) = true then 1 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:23:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ c + f - 12*g ≤ 11
+  0 ≤ c + f - 12*g + h - 12*i ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨0, hv✝⟩
+ f := ↑(if (0 == 1) = true then 11 else 0)
+ g := ↑(alto✝ + if (0 == 1) = true then 11 else 0) / 12
+ h := ↑(if (0 == 1) = true then 1 else 0)
+ i := ↑((alto✝ + if (0 == 1) = true then 11 else 0) % 12 + if (0 == 1) = true then 1 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:23:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ d + f - 12*g ≤ 11
+  0 ≤ d + f - 12*g + h - 12*i ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨0, hv✝⟩
+ f := ↑(if (0 == 2) = true then 11 else 0)
+ g := ↑(soprano✝ + if (0 == 2) = true then 11 else 0) / 12
+ h := ↑(if (0 == 2) = true then 1 else 0)
+ i := ↑((soprano✝ + if (0 == 2) = true then 11 else 0) % 12 + if (0 == 2) = true then 1 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:23:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ b + f - 12*g ≤ 11
+  0 ≤ b + f - 12*g + h - 12*i ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨1, hv✝⟩
+ f := ↑(if (1 == 0) = true then 11 else 0)
+ g := ↑(tenor✝ + if (1 == 0) = true then 11 else 0) / 12
+ h := ↑(if (1 == 0) = true then 1 else 0)
+ i := ↑((tenor✝ + if (1 == 0) = true then 11 else 0) % 12 + if (1 == 0) = true then 1 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:23:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ c + f - 12*g ≤ 11
+  0 ≤ c + f - 12*g + h - 12*i ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨1, hv✝⟩
+ f := ↑(if (1 == 1) = true then 11 else 0)
+ g := ↑(alto✝ + if (1 == 1) = true then 11 else 0) / 12
+ h := ↑(if (1 == 1) = true then 1 else 0)
+ i := ↑((alto✝ + if (1 == 1) = true then 11 else 0) % 12 + if (1 == 1) = true then 1 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:23:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ d + f - 12*g ≤ 11
+  0 ≤ d + f - 12*g + h - 12*i ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨1, hv✝⟩
+ f := ↑(if (1 == 2) = true then 11 else 0)
+ g := ↑(soprano✝ + if (1 == 2) = true then 11 else 0) / 12
+ h := ↑(if (1 == 2) = true then 1 else 0)
+ i := ↑((soprano✝ + if (1 == 2) = true then 11 else 0) % 12 + if (1 == 2) = true then 1 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:23:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ b + f - 12*g ≤ 11
+  0 ≤ b + f - 12*g + h - 12*i ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨2, hv✝⟩
+ f := ↑(if (2 == 0) = true then 11 else 0)
+ g := ↑(tenor✝ + if (2 == 0) = true then 11 else 0) / 12
+ h := ↑(if (2 == 0) = true then 1 else 0)
+ i := ↑((tenor✝ + if (2 == 0) = true then 11 else 0) % 12 + if (2 == 0) = true then 1 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:23:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ c + f - 12*g ≤ 11
+  0 ≤ c + f - 12*g + h - 12*i ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨2, hv✝⟩
+ f := ↑(if (2 == 1) = true then 11 else 0)
+ g := ↑(alto✝ + if (2 == 1) = true then 11 else 0) / 12
+ h := ↑(if (2 == 1) = true then 1 else 0)
+ i := ↑((alto✝ + if (2 == 1) = true then 11 else 0) % 12 + if (2 == 1) = true then 1 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:23:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ d + f - 12*g ≤ 11
+  0 ≤ d + f - 12*g + h - 12*i ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨2, hv✝⟩
+ f := ↑(if (2 == 2) = true then 11 else 0)
+ g := ↑(soprano✝ + if (2 == 2) = true then 11 else 0) / 12
+ h := ↑(if (2 == 2) = true then 1 else 0)
+ i := ↑((soprano✝ + if (2 == 2) = true then 11 else 0) % 12 + if (2 == 2) = true then 1 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:34:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ b + f - 12*g ≤ 11
+  0 ≤ b + f - 12*g + h - 12*i ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨0, hv✝⟩
+ f := ↑(if (0 == 0) = true then 1 else 0)
+ g := ↑(tenor✝ + if (0 == 0) = true then 1 else 0) / 12
+ h := ↑(if (0 == 0) = true then 11 else 0)
+ i := ↑((tenor✝ + if (0 == 0) = true then 1 else 0) % 12 + if (0 == 0) = true then 11 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:34:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ c + f - 12*g ≤ 11
+  0 ≤ c + f - 12*g + h - 12*i ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨0, hv✝⟩
+ f := ↑(if (0 == 1) = true then 1 else 0)
+ g := ↑(alto✝ + if (0 == 1) = true then 1 else 0) / 12
+ h := ↑(if (0 == 1) = true then 11 else 0)
+ i := ↑((alto✝ + if (0 == 1) = true then 1 else 0) % 12 + if (0 == 1) = true then 11 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:34:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ d + f - 12*g ≤ 11
+  0 ≤ d + f - 12*g + h - 12*i ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨0, hv✝⟩
+ f := ↑(if (0 == 2) = true then 1 else 0)
+ g := ↑(soprano✝ + if (0 == 2) = true then 1 else 0) / 12
+ h := ↑(if (0 == 2) = true then 11 else 0)
+ i := ↑((soprano✝ + if (0 == 2) = true then 1 else 0) % 12 + if (0 == 2) = true then 11 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:34:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ b + f - 12*g ≤ 11
+  0 ≤ b + f - 12*g + h - 12*i ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨1, hv✝⟩
+ f := ↑(if (1 == 0) = true then 1 else 0)
+ g := ↑(tenor✝ + if (1 == 0) = true then 1 else 0) / 12
+ h := ↑(if (1 == 0) = true then 11 else 0)
+ i := ↑((tenor✝ + if (1 == 0) = true then 1 else 0) % 12 + if (1 == 0) = true then 11 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:34:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ c + f - 12*g ≤ 11
+  0 ≤ c + f - 12*g + h - 12*i ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨1, hv✝⟩
+ f := ↑(if (1 == 1) = true then 1 else 0)
+ g := ↑(alto✝ + if (1 == 1) = true then 1 else 0) / 12
+ h := ↑(if (1 == 1) = true then 11 else 0)
+ i := ↑((alto✝ + if (1 == 1) = true then 1 else 0) % 12 + if (1 == 1) = true then 11 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:34:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ d + f - 12*g ≤ 11
+  0 ≤ d + f - 12*g + h - 12*i ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨1, hv✝⟩
+ f := ↑(if (1 == 2) = true then 1 else 0)
+ g := ↑(soprano✝ + if (1 == 2) = true then 1 else 0) / 12
+ h := ↑(if (1 == 2) = true then 11 else 0)
+ i := ↑((soprano✝ + if (1 == 2) = true then 1 else 0) % 12 + if (1 == 2) = true then 11 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:34:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ b + f - 12*g ≤ 11
+  0 ≤ b + f - 12*g + h - 12*i ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨2, hv✝⟩
+ f := ↑(if (2 == 0) = true then 1 else 0)
+ g := ↑(tenor✝ + if (2 == 0) = true then 1 else 0) / 12
+ h := ↑(if (2 == 0) = true then 11 else 0)
+ i := ↑((tenor✝ + if (2 == 0) = true then 1 else 0) % 12 + if (2 == 0) = true then 11 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:34:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ c + f - 12*g ≤ 11
+  0 ≤ c + f - 12*g + h - 12*i ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨2, hv✝⟩
+ f := ↑(if (2 == 1) = true then 1 else 0)
+ g := ↑(alto✝ + if (2 == 1) = true then 1 else 0) / 12
+ h := ↑(if (2 == 1) = true then 11 else 0)
+ i := ↑((alto✝ + if (2 == 1) = true then 1 else 0) % 12 + if (2 == 1) = true then 11 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:34:42: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  f ≥ 0
+  f - 12*g + h - 12*i ≤ -1
+  0 ≤ e ≤ 2
+  0 ≤ d ≤ 11
+  0 ≤ d + f - 12*g ≤ 11
+  0 ≤ d + f - 12*g + h - 12*i ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑bass✝
+ b := ↑tenor✝
+ c := ↑alto✝
+ d := ↑soprano✝
+ e := ↑↑⟨2, hv✝⟩
+ f := ↑(if (2 == 2) = true then 1 else 0)
+ g := ↑(soprano✝ + if (2 == 2) = true then 1 else 0) / 12
+ h := ↑(if (2 == 2) = true then 11 else 0)
+ i := ↑((soprano✝ + if (2 == 2) = true then 1 else 0) % 12 + if (2 == 2) = true then 11 else 0) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:58:29: error: Application type mismatch: The argument
+  Fin.ext ?m.134
+has type
+  ?m.132 = ?m.133
+but is expected to have type
+  v = 2 ∨ v ∈ []
+in the application
+  Or.inr (Fin.ext ?m.134)
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:58:38: error: Application type mismatch: The argument
+  h
+has type
+  ↑v = 2
+but is expected to have type
+  ↑?m.132 = ↑?m.133
+in the application
+  Fin.ext h
+/workspace/shared/music-research/02-omnibus-progressions/CountTranslation.lean:54:40: warning: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  simp only [voices, List.mem_cons,̵ ̵L̵i̵s̵t̵.̵m̵e̵m̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Omnibus.step_back' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.back_step' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.image_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.image_membership' depends on axioms: [propext, sorryAx, Quot.sound]

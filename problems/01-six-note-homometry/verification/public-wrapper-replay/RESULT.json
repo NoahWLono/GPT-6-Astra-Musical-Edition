@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "project_modules": 33,
+  "independent_fixtures": 1,
+  "project_objects_reused": 0,
+  "actual_aggregate_cpu_seconds": 86.060723,
+  "named_axiom_audit_count": 13,
+  "final_axioms": {
+    "OnePitchShift.strict_exchange_ambient_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.twelve_le_modulus_of_six_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.six_exchange_sets_iff_normalized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.six_note_one_exchange_existence_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.homometric_of_periodic_reflected_components": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.not_dihedral_of_nat_witnesses": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.four_family_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.three_family_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.four_family_homometric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.three_family_homometric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.four_family_six_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.three_family_six_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IndependentHomometryAudit.positive_modulus_exact_statement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "replay_ledger_sha256": "0004ad75b41be81dfe074bf49c507ce13ec4f3c6df35b19c09428beaa05063fa",
+  "environment_lock_sha256": "ed8b0923a91f05e3399c3853932cd788221efeb6de4937260d6524f1d7be8df9",
+  "trust_boundary": "Fresh project objects; existing pinned Lean, Mathlib, and package objects are trusted. Mathlib is not rebuilt by this wrapper."
+}

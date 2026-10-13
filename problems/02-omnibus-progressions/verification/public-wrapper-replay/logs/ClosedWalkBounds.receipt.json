@@ -1,0 +1,48 @@
+{
+  "module": "ClosedWalkBounds",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.465621,
+  "aggregate_cpu_seconds": 66.645098,
+  "wall_seconds": 2.489519,
+  "peak_sampled_rss_bytes": 1573797888,
+  "cumulative_child_maxrss_bytes": 1583988736,
+  "source_sha256": "ad494124a0335d154b5ff02fce6695f0e35f600c22d944bb0b732812d6a0ba0a",
+  "object_sha256": "06214c995436e4b99afc01eade9c47490c0154d61be2d618dc86f7e2fe4d7243",
+  "log_sha256": "536109c4804453bdccc6a5ad8e8c3fb6679990e67417801b4f220f84760ce89c",
+  "axiom_audits": {
+    "ClosedWalkBounds.finite_distinct_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ClosedWalkBounds.infinite_distinct_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ClosedWalkBounds.infinite_repeat_by_seven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay-retry/objects/ClosedWalkBounds.olean",
+    "ClosedWalkBounds.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

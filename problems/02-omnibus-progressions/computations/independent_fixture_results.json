@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "ordered_chords": 3240,
+  "all_actual_move_endpoints": 6840,
+  "valid_approachable_endpoints": 2232,
+  "invalid_endpoints": 4608,
+  "valid_unapproachable_chords": 1008,
+  "types": 55,
+  "directed_edges": 49,
+  "frozen_successor_equations_compared": 55,
+  "individual_voice_images": [
+    3240,
+    3240,
+    3240
+  ],
+  "pair_intersections": [
+    1104,
+    1104,
+    1104
+  ],
+  "triple_intersection": 432,
+  "image_predecessor_voice_multiplicity": {
+    "1": 4392,
+    "2": 2016,
+    "3": 432
+  },
+  "image_tenor_counts": [
+    16,
+    34,
+    24,
+    16,
+    65,
+    68,
+    61,
+    52,
+    52,
+    67,
+    71,
+    44
+  ],
+  "approachable_tenor_counts": [
+    12,
+    6,
+    6,
+    12,
+    31,
+    22,
+    13,
+    16,
+    21,
+    35,
+    6,
+    6
+  ],
+  "max_nonterminal_reachable_types": 7,
+  "max_distinct_types_finite_walk": 8,
+  "max_distinct_types_infinite_walk": 7,
+  "finite_walk_visited_states": 344,
+  "infinite_walk_visited_states": 243,
+  "witness_start": [
+    0,
+    0,
+    3,
+    6
+  ],
+  "witness_start_approachable": false,
+  "period_ordered_chords": 36,
+  "all_representatives_local_quotient_checked": 3240,
+  "source_model": "independent literal predicate plus separate template generation",
+  "lean_objects_loaded": 0
+}

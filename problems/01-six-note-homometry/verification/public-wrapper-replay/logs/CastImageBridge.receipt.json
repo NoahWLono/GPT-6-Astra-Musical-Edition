@@ -1,0 +1,32 @@
+{
+  "module": "CastImageBridge",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.455555,
+  "aggregate_cpu_seconds": 8.656529,
+  "wall_seconds": 1.476425,
+  "peak_sampled_rss_bytes": 1887174656,
+  "source_sha256": "81c1ebd6b8f045bf17f854cbd236fb2409e9077ecd7551b0c419362fe2ea71ff",
+  "object_sha256": "c76be7c67d7e02aaedf631d956e427e6e5bbc4e7e4bd5fd391c45b312283f2f4",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/CastImageBridge.olean",
+    "CastImageBridge.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

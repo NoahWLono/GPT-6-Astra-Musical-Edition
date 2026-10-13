@@ -1,0 +1,52 @@
+IndependentGoldenFixture.lean:12:16: warning: Variable name `P` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+IndependentGoldenFixture.lean:13:16: warning: Variable name `P` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+structure AlgebraicTunings.GoldenAP (phi : ℝ) (B : ℤ) (n : ℕ) : Type
+number of parameters: 3
+fields:
+  AlgebraicTunings.GoldenAP.a : ℤ
+  AlgebraicTunings.GoldenAP.b : ℤ
+  AlgebraicTunings.GoldenAP.c : ℤ
+  AlgebraicTunings.GoldenAP.d : ℤ
+  AlgebraicTunings.GoldenAP.start_pos : 0 < goldenEval phi self.a self.b
+  AlgebraicTunings.GoldenAP.step_pos : 0 < goldenEval phi self.c self.d
+  AlgebraicTunings.GoldenAP.norm_bound : ∀ j ≤ n, |goldenNorm (self.a + ↑j * self.c) (self.b + ↑j * self.d)| ≤ B
+constructor:
+  AlgebraicTunings.GoldenAP.mk {phi : ℝ} {B : ℤ} {n : ℕ} (a b c d : ℤ) (start_pos : 0 < goldenEval phi a b)
+    (step_pos : 0 < goldenEval phi c d) (norm_bound : ∀ j ≤ n, |goldenNorm (a + ↑j * c) (b + ↑j * d)| ≤ B) :
+    GoldenAP phi B n
+def AlgebraicTunings.goldenNorm : ℤ → ℤ → ℤ :=
+fun a b => b * b + a * b - a * a
+def AlgebraicTunings.goldenPhi : ℝ :=
+(1 + √5) / 2
+def AlgebraicTunings.goldenThresholdIndex : ℕ → ℤ :=
+fun B => ↑((4 * B + 3) / 5).sqrt
+def AlgebraicTunings.goldenMaximumLength : ℕ → ℤ :=
+fun B => goldenLineCount goldenPhi (goldenThresholdIndex B) √(5 * ↑(goldenThresholdIndex B) ^ 2 + 4 * ↑B)
+golden_exact_maximum : ∀ (B : ℕ),
+  64 ≤ B →
+    (∃ n P, ↑n + 1 = goldenMaximumLength B) ∧
+      (∀ (n : ℕ) (P : GoldenAP goldenPhi (↑B) n), ↑n + 1 ≤ goldenMaximumLength B) ∧
+        ∀ (n : ℕ) (P : GoldenAP goldenPhi (↑B) n), ↑n + 1 = goldenMaximumLength B → |goldenNorm P.c P.d| = 1
+goldenMaximumLength_formula : ∀ (B : ℕ),
+  goldenMaximumLength B =
+    ⌊(-↑(goldenThresholdIndex B) + √(5 * ↑(goldenThresholdIndex B) ^ 2 + 4 * ↑B)) / 2⌋ +
+      ⌈↑(goldenThresholdIndex B) * goldenPhi⌉
+exact_statement : ∀ (B : ℕ),
+  64 ≤ B →
+    have phi := (1 + √5) / 2;
+    have M := ↑((4 * B + 3) / 5).sqrt;
+    have F := ⌊(-↑M + √(5 * ↑M ^ 2 + 4 * ↑B)) / 2⌋ + ⌈↑M * phi⌉;
+    (∃ n P, ↑n + 1 = F) ∧
+      (∀ (n : ℕ) (P : GoldenAP phi (↑B) n), ↑n + 1 ≤ F) ∧
+        ∀ (n : ℕ) (P : GoldenAP phi (↑B) n), ↑n + 1 = F → |goldenNorm P.c P.d| = 1
+'AlgebraicTunings.golden_exact_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.goldenMaximumLength_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentGoldenAudit.exact_statement' depends on axioms: [propext, Classical.choice, Quot.sound]

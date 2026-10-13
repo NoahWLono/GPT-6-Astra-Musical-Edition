@@ -1,0 +1,57 @@
+{
+  "module": "ClosureSlice1",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 0.812989,
+  "aggregate_cpu_seconds": 61.237786,
+  "wall_seconds": 0.827614,
+  "peak_sampled_rss_bytes": 773095424,
+  "cumulative_child_maxrss_bytes": 1011671040,
+  "source_sha256": "3beb202a40cfa03b3063fb01bdbc415dfc122a3d6fc096b1d499f50e2ed5fd6f",
+  "object_sha256": "142c91eb95d17476a92b02159aac5fe13a88d4dc82fb2ea2f12a9e7031128642",
+  "log_sha256": "9b421f6d06b1bd88b9e15a900d17a2d5fc1baf335d6db33f0567c63eff4290a3",
+  "axiom_audits": {
+    "Omnibus.closure_certificate_8": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_9": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_10": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_11": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_12": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_13": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_14": [
+      "propext"
+    ],
+    "Omnibus.closure_certificate_15": [
+      "propext"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay/objects/ClosureSlice1.olean",
+    "ClosureSlice1.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

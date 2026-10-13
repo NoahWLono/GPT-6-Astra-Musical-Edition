@@ -1,0 +1,15 @@
+{
+  "module": "BassNatCardinality",
+  "started_utc": "2026-10-13T20:01:42.624316+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 2.093,
+  "cpu_seconds": 2.069,
+  "max_rss_kib": 1834388,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "79c3c8847255b9f12e7ec18868d21a2cf2d72aee31164fae2fb237d729089c13",
+  "olean_sha256": "d3176e98f1a0c299707a7ea3e0fd9965e353411095e5b79b158e042a4e7bea1b"
+}

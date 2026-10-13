@@ -1,0 +1,83 @@
+{
+  "module": "GoldenUnitNormalization",
+  "exit_code": 0,
+  "stop_reason": null,
+  "wall_seconds": 2.445932,
+  "cpu_seconds": 2.420783,
+  "aggregate_cpu_seconds": 25.882429,
+  "observed_cpu_seconds": 2.4,
+  "peak_rss_bytes": 1851637760,
+  "source_sha256": "9f21031e26cd78b51605f042b4ef38319700c6d4338cacaf3011c7a6c6797b32",
+  "object_sha256": "62f311c5dded61cc3d86d8e318a94d725a4d6b31d6cb44b5db99fb31c49ec6da",
+  "log_sha256": "ce0996b077835734482b5c47a4273ac5a0f00a4e5bca06d4550febf97ac1706b",
+  "axiom_audits": {
+    "AlgebraicTunings.goldenUnit_mul_coords": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenUnit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenUnit_abs_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenUnit_progression_abs_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenUnit_progression_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenUnit_pos_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.GoldenAP.unitNormalize": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.GoldenAP.unitNormalize_note_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenUnitNormalization.olean",
+    "GoldenUnitNormalization.lean"
+  ],
+  "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+  "lean_path": [
+    "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "limits": {
+    "cpu_watchdog": 19.5,
+    "cpu_hard": 20,
+    "aggregate_cpu": 180,
+    "wall": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

@@ -1,0 +1,5 @@
+goldenAP_explicit_global_bound : ∀ (B : ℤ) (n : ℕ) (P : GoldenAP goldenPhi B n),
+  0 ≤ B → ↑n ≤ (1 + √2) * √(↑B / |↑(goldenNorm P.c P.d)| + 1 / 4)
+'AlgebraicTunings.goldenPhi_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.goldenPhi_gt_three_halves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.goldenAP_explicit_global_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

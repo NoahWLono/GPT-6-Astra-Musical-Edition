@@ -1,0 +1,41 @@
+'OnePitchShift.homometric_of_periodic_reflected_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OnePitchShift.not_dihedral_of_nat_witnesses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OnePitchShift.four_family_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OnePitchShift.three_family_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OnePitchShift.four_family_homometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OnePitchShift.three_family_homometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OnePitchShift.four_family_six_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OnePitchShift.three_family_six_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+@OnePitchShift.homometric_of_periodic_reflected_components : ∀ {G : Type u_1} [inst : AddCommGroup G]
+  [inst_1 : DecidableEq G] (P Q : Finset G) (d : G),
+  Disjoint P Q →
+    (∀ (x : G), x + d ∈ P ↔ x ∈ P) →
+      (∀ (x : G), d - x ∈ Q ↔ x ∈ Q) →
+        0 ∉ P ∪ Q → d ∉ P ∪ Q → OnePitchShift.Homometric (insert 0 (P ∪ Q)) (insert d (P ∪ Q))
+OnePitchShift.four_family_strict : ∀ (q : ℕ),
+  3 ≤ q →
+    ¬OnePitchShift.DihedralEquivalent (Finset.image (fun a => ↑a) (OnePitchShift.fourA q))
+        (Finset.image (fun b => ↑b) (OnePitchShift.fourB q))
+OnePitchShift.three_family_strict : ∀ (q : ℕ),
+  5 ≤ q →
+    ¬OnePitchShift.DihedralEquivalent (Finset.image (fun a => ↑a) (OnePitchShift.threeA q))
+        (Finset.image (fun b => ↑b) (OnePitchShift.threeB q))
+OnePitchShift.four_family_homometric : ∀ (q : ℕ),
+  3 ≤ q →
+    OnePitchShift.Homometric (Finset.image (fun a => ↑a) (OnePitchShift.fourA q))
+      (Finset.image (fun a => ↑a) (OnePitchShift.fourB q))
+OnePitchShift.three_family_homometric : ∀ (q : ℕ),
+  5 ≤ q →
+    OnePitchShift.Homometric (Finset.image (fun a => ↑a) (OnePitchShift.threeA q))
+      (Finset.image (fun a => ↑a) (OnePitchShift.threeB q))
+OnePitchShift.four_family_six_exchange : ∀ (q : ℕ), 3 ≤ q → OnePitchShift.SixExchange (4 * q)
+OnePitchShift.three_family_six_exchange : ∀ (q : ℕ), 5 ≤ q → OnePitchShift.SixExchange (3 * q)
+def OnePitchShift.SixExchange : ℕ → Prop :=
+fun n =>
+  ∃ C d,
+    C.card = 5 ∧
+      0 ∉ C ∧
+        d ∉ C ∧
+          d ≠ 0 ∧
+            OnePitchShift.Homometric (insert 0 C) (insert d C) ∧
+              ¬OnePitchShift.DihedralEquivalent (insert 0 C) (insert d C)

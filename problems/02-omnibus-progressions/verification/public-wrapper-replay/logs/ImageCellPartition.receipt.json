@@ -1,0 +1,53 @@
+{
+  "module": "ImageCellPartition",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.984283,
+  "aggregate_cpu_seconds": 118.235051,
+  "wall_seconds": 2.016947,
+  "peak_sampled_rss_bytes": 1880997888,
+  "cumulative_child_maxrss_bytes": 1887236096,
+  "source_sha256": "60fa3a3ef95e372e50e7ec7b5edc6d8969459fdaa693f398cd6a53fdf1059c0a",
+  "object_sha256": "bf0d133367a277a006020178d43e3afebac2e5d5f313f4d18aa0487a826f2f38",
+  "log_sha256": "f6a184f832dd473a091c1224e1bae2186b484f0023f670b838ab7f816d086d68",
+  "axiom_audits": {
+    "Omnibus.image_cell_finset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_cell_finset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.image_slice_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_slice_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay-retry/objects/ImageCellPartition.olean",
+    "ImageCellPartition.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

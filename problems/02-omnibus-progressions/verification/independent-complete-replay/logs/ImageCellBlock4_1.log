@@ -1,0 +1,48 @@
+/workspace/shared/music-research/02-omnibus-progressions/independent-complete-replay/sources/ImageCellBlock4_1.lean:7:13: warning: This simp argument is unused:
+  approachableCell
+
+Hint: Omit it from the simp argument list.
+  simp only [̵a̵p̵p̵r̵o̵a̵c̵h̵a̵b̵l̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵,̵s̵o̵u̵r̵c̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵]̵[̲i̲m̲a̲g̲e̲C̲e̲l̲l̲,̲ ̲i̲m̲a̲g̲e̲R̲a̲w̲_̲e̲q̲_̲l̲i̲t̲e̲r̲a̲l̲,̲ ̲s̲o̲u̲r̲c̲e̲R̲a̲w̲_̲e̲q̲_̲l̲i̲t̲e̲r̲a̲l̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/shared/music-research/02-omnibus-progressions/independent-complete-replay/sources/ImageCellBlock4_1.lean:7:60: warning: This simp argument is unused:
+  sourceRaw_eq_literal
+
+Hint: Omit it from the simp argument list.
+  simp only [̵a̵p̵p̵r̵o̵a̵c̵h̵a̵b̵l̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵,̵s̵o̵u̵r̵c̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵]̵[̲a̲p̲p̲r̲o̲a̲c̲h̲a̲b̲l̲e̲C̲e̲l̲l̲,̲ ̲i̲m̲a̲g̲e̲C̲e̲l̲l̲,̲ ̲i̲m̲a̲g̲e̲R̲a̲w̲_̲e̲q̲_̲l̲i̲t̲e̲r̲a̲l̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Omnibus.image_cell_count_4_3' depends on axioms: [propext]
+'Omnibus.approachable_cell_count_4_3' depends on axioms: [propext, Quot.sound]
+/workspace/shared/music-research/02-omnibus-progressions/independent-complete-replay/sources/ImageCellBlock4_1.lean:15:13: warning: This simp argument is unused:
+  approachableCell
+
+Hint: Omit it from the simp argument list.
+  simp only [̵a̵p̵p̵r̵o̵a̵c̵h̵a̵b̵l̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵,̵s̵o̵u̵r̵c̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵]̵[̲i̲m̲a̲g̲e̲C̲e̲l̲l̲,̲ ̲i̲m̲a̲g̲e̲R̲a̲w̲_̲e̲q̲_̲l̲i̲t̲e̲r̲a̲l̲,̲ ̲s̲o̲u̲r̲c̲e̲R̲a̲w̲_̲e̲q̲_̲l̲i̲t̲e̲r̲a̲l̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/shared/music-research/02-omnibus-progressions/independent-complete-replay/sources/ImageCellBlock4_1.lean:15:60: warning: This simp argument is unused:
+  sourceRaw_eq_literal
+
+Hint: Omit it from the simp argument list.
+  simp only [̵a̵p̵p̵r̵o̵a̵c̵h̵a̵b̵l̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵,̵s̵o̵u̵r̵c̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵]̵[̲a̲p̲p̲r̲o̲a̲c̲h̲a̲b̲l̲e̲C̲e̲l̲l̲,̲ ̲i̲m̲a̲g̲e̲C̲e̲l̲l̲,̲ ̲i̲m̲a̲g̲e̲R̲a̲w̲_̲e̲q̲_̲l̲i̲t̲e̲r̲a̲l̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Omnibus.image_cell_count_4_4' depends on axioms: [propext]
+'Omnibus.approachable_cell_count_4_4' depends on axioms: [propext, Quot.sound]
+/workspace/shared/music-research/02-omnibus-progressions/independent-complete-replay/sources/ImageCellBlock4_1.lean:23:13: warning: This simp argument is unused:
+  approachableCell
+
+Hint: Omit it from the simp argument list.
+  simp only [̵a̵p̵p̵r̵o̵a̵c̵h̵a̵b̵l̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵,̵s̵o̵u̵r̵c̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵]̵[̲i̲m̲a̲g̲e̲C̲e̲l̲l̲,̲ ̲i̲m̲a̲g̲e̲R̲a̲w̲_̲e̲q̲_̲l̲i̲t̲e̲r̲a̲l̲,̲ ̲s̲o̲u̲r̲c̲e̲R̲a̲w̲_̲e̲q̲_̲l̲i̲t̲e̲r̲a̲l̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/shared/music-research/02-omnibus-progressions/independent-complete-replay/sources/ImageCellBlock4_1.lean:23:60: warning: This simp argument is unused:
+  sourceRaw_eq_literal
+
+Hint: Omit it from the simp argument list.
+  simp only [̵a̵p̵p̵r̵o̵a̵c̵h̵a̵b̵l̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵C̵e̵l̵l̵,̵i̵m̵a̵g̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵,̵s̵o̵u̵r̵c̵e̵R̵a̵w̵_̵e̵q̵_̵l̵i̵t̵e̵r̵a̵l̵]̵[̲a̲p̲p̲r̲o̲a̲c̲h̲a̲b̲l̲e̲C̲e̲l̲l̲,̲ ̲i̲m̲a̲g̲e̲C̲e̲l̲l̲,̲ ̲i̲m̲a̲g̲e̲R̲a̲w̲_̲e̲q̲_̲l̲i̲t̲e̲r̲a̲l̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Omnibus.image_cell_count_4_5' depends on axioms: [propext]
+'Omnibus.approachable_cell_count_4_5' depends on axioms: [propext, Quot.sound]

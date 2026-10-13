@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "main_declaration": "OnePitchShift.six_note_one_exchange_existence_iff",
+  "independent_fixture": "IndependentHomometryAudit.positive_modulus_exact_statement",
+  "main_source_sha256": "fe4da08a9e86550f233b2df20670271071e0f51e972cb2f7e50643752e8cd213",
+  "author_manifest_sha256": "30b6718a5a092793611c48c936b15d6812442b7dd0d85873a6c890b16b6d4636",
+  "fixture_source_sha256": "88caf5fe57131d077230774489c2da7b4382f52746acf5c41af759ca666bfa7c",
+  "fresh_project_modules_compiled": 33,
+  "fresh_independent_fixtures_compiled": 1,
+  "transitive_source_import_modules": 2593,
+  "unresolved_source_imports": [],
+  "original_objects_used": false,
+  "external_libraries_freshly_compiled": false,
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "mathlib_tracked_worktree_clean": true,
+  "lean_version": "Lean (version 4.32.2, x86_64-unknown-linux-gnu, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)",
+  "actual_compiler_cpu_seconds_including_version": 100.32688900000002,
+  "transitive_source_scan_cpu_seconds": 15.252878,
+  "combined_recorded_compiler_and_source_scan_cpu_seconds": 115.57976700000002,
+  "max_compiler_process_cpu_seconds": 14.974841,
+  "max_compiler_process_wall_seconds": 14.980499281999073,
+  "max_compiler_process_rss_bytes": 1915617280,
+  "total_compiler_log_bytes": 10323,
+  "remaining_disk_free_bytes": 10755772416,
+  "failures": 0,
+  "resource_caps_hit": 0,
+  "axiom_audits": {
+    "OnePitchShift.strict_exchange_ambient_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.twelve_le_modulus_of_six_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.six_exchange_sets_iff_normalized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.six_note_one_exchange_existence_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.homometric_of_periodic_reflected_components": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.not_dihedral_of_nat_witnesses": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.four_family_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.three_family_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.four_family_homometric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.three_family_homometric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.four_family_six_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.three_family_six_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IndependentHomometryAudit.positive_modulus_exact_statement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "frozen_original_sources_unchanged": {
+    "ExchangeCriterion.lean": true,
+    "FamilyRepresentatives.lean": true,
+    "StrictnessCore.lean": true,
+    "CastImageBridge.lean": true,
+    "FourFamilyCards.lean": true,
+    "ThreeFamilyCards.lean": true,
+    "CommonRepresentatives.lean": true,
+    "FourCommonCard.lean": true,
+    "FourCommonEndpoints.lean": true,
+    "FourCommonShape.lean": true,
+    "ComponentConstruction.lean": true,
+    "FourFamilyHomometry.lean": true,
+    "FourMapExclusions.lean": true,
+    "FourFamilyStrictness.lean": true,
+    "EvenOrderRefinement.lean": true,
+    "SixExchangeDefinition.lean": true,
+    "FourFamilyExistence.lean": true,
+    "ThreeCommonCard.lean": true,
+    "ThreeCommonEndpoints.lean": true,
+    "ThreeCommonShape.lean": true,
+    "ThreeFamilyHomometry.lean": true,
+    "ThreeMapExclusions.lean": true,
+    "ThreeFamilyStrictness.lean": true,
+    "ThreeFamilyExistence.lean": true,
+    "ParametricFamilies.lean": true,
+    "AmbientBound.lean": true,
+    "SmallModuli.lean": true,
+    "SixNoteExistence.lean": true,
+    "TranslationBridge.lean": true,
+    "Normalization.lean": true,
+    "FullSixNoteExistence.lean": true,
+    "FullAudit.lean": true,
+    "ParametricAudit.lean": true
+  },
+  "novelty_established": false,
+  "scope_caveat": "Exact existence of six-element one-exchange homometric dihedrally inequivalent pairs only; no claim of complete six-note homometry classification or formally checked order-four enumeration."
+}

@@ -1,0 +1,43 @@
+{
+  "module": "ImageCountSlice9",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.019545,
+  "aggregate_cpu_seconds": 227.567727,
+  "wall_seconds": 2.021047,
+  "peak_sampled_rss_bytes": 1887805440,
+  "cumulative_child_maxrss_bytes": 1898078208,
+  "source_sha256": "2f04fbd553ef53cb1d333a87efbebaf30f1db7da6d5cb7074ca3c9c085100e73",
+  "object_sha256": "972c63bf4d787f53da870523d4e2d1023ad08af4b86a5f1b4830a2240c1f6f3f",
+  "log_sha256": "0aa9387394e3c099496040c0e8bb4eb03339938b40f1b8d293b73da752d997d2",
+  "axiom_audits": {
+    "Omnibus.image_count_slice_9": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_count_slice_9": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay-retry/objects/ImageCountSlice9.olean",
+    "ImageCountSlice9.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

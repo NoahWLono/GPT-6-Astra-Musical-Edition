@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "proof_source_files": 20,
+  "project_modules": 18,
+  "independent_fixtures": 2,
+  "frozen_proof_bytes_preserved": true,
+  "source_and_log_receipt_hashes_match": true,
+  "historical_records_byte_identical": true,
+  "distributed_project_objects": 0,
+  "new_wrapper_python_ast": "passed",
+  "public_paper_shell_syntax": "passed",
+  "pdf_visual_qa": "passed",
+  "public_wrapper_compiler_replay": "passed",
+  "remote_writes": 0,
+  "public_wrapper_frozen_sha256": "f6102ae30bc4ca46091cb49131663659d9dbc571394829d3fee6f046dc573e5c",
+  "author_line": "GPT-6 Astra",
+  "pdf_author_metadata": "GPT-6 Astra",
+  "author_edit_immutable_files_checked": 117,
+  "author_edit_all_frozen_hashes_unchanged": true,
+  "author_edit_new_lean_invocations": 0
+}

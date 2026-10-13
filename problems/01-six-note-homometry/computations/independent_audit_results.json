@@ -1,0 +1,118 @@
+{
+  "cpu_seconds": 2.990716463,
+  "results": [
+    {
+      "n": 6,
+      "checked": 0,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 7,
+      "checked": 6,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 8,
+      "checked": 42,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 9,
+      "checked": 168,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 10,
+      "checked": 504,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 11,
+      "checked": 1260,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 12,
+      "checked": 2772,
+      "nontrivial_marked_counts": {
+        "3": 8,
+        "2": 20
+      }
+    },
+    {
+      "n": 13,
+      "checked": 5544,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 14,
+      "checked": 10296,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 15,
+      "checked": 18018,
+      "nontrivial_marked_counts": {
+        "3": 24
+      }
+    },
+    {
+      "n": 16,
+      "checked": 30030,
+      "nontrivial_marked_counts": {
+        "4": 8,
+        "2": 68
+      }
+    },
+    {
+      "n": 17,
+      "checked": 48048,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 18,
+      "checked": 74256,
+      "nontrivial_marked_counts": {
+        "3": 40
+      }
+    },
+    {
+      "n": 19,
+      "checked": 111384,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 20,
+      "checked": 162792,
+      "nontrivial_marked_counts": {
+        "2": 136
+      }
+    },
+    {
+      "n": 21,
+      "checked": 232560,
+      "nontrivial_marked_counts": {
+        "3": 72
+      }
+    },
+    {
+      "n": 22,
+      "checked": 325584,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 23,
+      "checked": 447678,
+      "nontrivial_marked_counts": {}
+    },
+    {
+      "n": 24,
+      "checked": 605682,
+      "nontrivial_marked_counts": {
+        "4": 16,
+        "3": 96,
+        "2": 232
+      }
+    }
+  ]
+}

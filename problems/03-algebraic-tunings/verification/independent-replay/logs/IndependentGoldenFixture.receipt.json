@@ -1,0 +1,59 @@
+{
+  "module": "IndependentGoldenFixture",
+  "exit_code": 0,
+  "stop_reason": null,
+  "wall_seconds": 3.36558,
+  "cpu_seconds": 3.37542,
+  "aggregate_cpu_seconds": 77.146236,
+  "observed_cpu_seconds": 3.35,
+  "peak_rss_bytes": 2114863104,
+  "source_sha256": "e6707c00a2a88e5e39c10e1f773ad6f91db17bceae54e62973ba25df83f55c29",
+  "object_sha256": "c53804887e17b5c12d8f2eeb3c18234e5e51e6f8bc7c9c6e372701b10c77d5fc",
+  "log_sha256": "832456c561f8af4df6e5abe2541c30634c9d55484312cefd876da73d2f3f6fdb",
+  "axiom_audits": {
+    "AlgebraicTunings.golden_exact_maximum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenMaximumLength_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IndependentGoldenAudit.exact_statement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/IndependentGoldenFixture.olean",
+    "IndependentGoldenFixture.lean"
+  ],
+  "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+  "lean_path": [
+    "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "limits": {
+    "cpu_watchdog": 19.5,
+    "cpu_hard": 20,
+    "aggregate_cpu": 180,
+    "wall": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "module": "ImageCellPartition",
+  "started_utc": "2026-10-13T20:07:36.127158+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 4.446,
+  "cpu_seconds": 4.427,
+  "max_rss_kib": 1840464,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "aee3ad78b7e7e94675971889c48a419c90e9d07abb030a27430550887ab62fb5",
+  "olean_sha256": "b966959925baf159693ff9b3bfc7fce696e11b5c87b81dcf45aacad4e28335af"
+}

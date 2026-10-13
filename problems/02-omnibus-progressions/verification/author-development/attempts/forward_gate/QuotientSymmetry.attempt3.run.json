@@ -1,0 +1,15 @@
+{
+  "module": "QuotientSymmetry",
+  "started_utc": "2026-10-13T19:21:02.844397+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 3.483,
+  "cpu_seconds": 3.443,
+  "max_rss_kib": 890208,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "12024e0d2185d2fc8694d316c667a27814ea58fbb89ad5bb8579d0464ad0c1e8",
+  "olean_sha256": "f1de95242aea2600752322c655a2a3c3af1814bbdda203afff5a396f55739976"
+}

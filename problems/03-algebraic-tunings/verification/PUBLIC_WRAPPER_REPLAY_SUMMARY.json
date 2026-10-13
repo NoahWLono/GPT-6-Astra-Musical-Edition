@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "wrapper_sha256": "f6102ae30bc4ca46091cb49131663659d9dbc571394829d3fee6f046dc573e5c",
+  "environment_lock_sha256": "c6e005cf5f47804f0111fffa634fc5ebaa21843a899419bc42e1a9454114ff6b",
+  "project_modules": 18,
+  "independent_fixtures": 2,
+  "project_objects_reused": 0,
+  "actual_aggregate_cpu_seconds": 85.271496,
+  "sum_per_process_wall_seconds": 85.495456,
+  "peak_sampled_rss_bytes": 2129530880,
+  "resource_cap_hits": 0,
+  "source_files_unchanged": true,
+  "records": "public-wrapper-replay/RESULT.json and public-wrapper-replay/replay-ledger.json",
+  "note": "This is a second fresh-object replay using the packaged public wrapper, separate from the earlier independent audit replay. The static-review report retains its correct historical compiler_invocations=0 status."
+}

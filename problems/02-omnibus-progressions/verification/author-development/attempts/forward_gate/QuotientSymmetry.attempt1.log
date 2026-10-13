@@ -1,0 +1,121 @@
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:12:78: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 0
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+  b - c - d ≤ 0
+  b ≥ 0
+  2*b - c - d ≥ 1
+  a ≥ 0
+  a - b ≥ 0
+  a + b - c - d ≥ 0
+where
+ a := ↑z
+ b := ↑(x + y + z - (y + z))
+ c := ↑(y + x + z - ((if y ≤ x then y else x) + z))
+ d := ↑(if y ≤ x then y else x)
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:12:78: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 0
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+  b - c - d ≤ 0
+  2*b - c - d ≤ -1
+  a ≥ 0
+  a - b ≤ 0
+  a + b - c - d ≤ -1
+where
+ a := ↑y
+ b := ↑(x + y + z - (y + x))
+ c := ↑(y + x + z - (y + if y ≤ x then x else y))
+ d := ↑(if y ≤ x then x else y)
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:12:78: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 0
+  c ≥ 0
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≥ 1
+  a - c - d ≤ 0
+  a + b - c - d ≤ -1
+  2*a - c - d ≤ -1
+where
+ a := ↑y
+ b := ↑z
+ c := ↑(y + x - if y ≤ x then x else y)
+ d := ↑(if y ≤ x then x else y)
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:16:78: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 0
+  c - d ≥ 1
+  b ≥ 0
+  b - c ≥ 1
+  a ≥ 0
+  a - b ≥ 0
+  a - c ≥ 1
+where
+ a := ↑y
+ b := ↑x
+ c := ↑z
+ d := ↑(if y ≤ if z ≤ x then z else x then y else if z ≤ x then z else x)
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:16:78: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 0
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+  b - c - d ≤ 0
+  b ≥ 0
+  2*b - c - d ≥ 1
+  a ≥ 0
+  a - b ≥ 0
+  a + b - c - d ≥ 0
+where
+ a := ↑z
+ b := ↑(x + y + z - (y + z))
+ c := ↑(y + z + x - ((if y ≤ x then y else x) + z))
+ d := ↑(if y ≤ x then y else x)
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:16:78: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ 0
+  b - d ≥ 1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≥ 1
+where
+ a := ↑x
+ b := ↑y
+ c := ↑z
+ d := ↑(if z ≤ x then z else x)
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:16:78: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 0
+  c - d ≥ 1
+  b ≥ 0
+  b - c ≥ 1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≥ 1
+where
+ a := ↑x
+ b := ↑y
+ c := ↑z
+ d := ↑(if y ≤ if z ≤ x then z else x then y else if z ≤ x then z else x)
+'Omnibus.sort3_swap' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.sort3_cycle' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.sonority_swap' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.sonority_cycle' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.chord_swap' depends on axioms: [propext, Quot.sound]
+'Omnibus.chord_cycle' depends on axioms: [propext, Quot.sound]

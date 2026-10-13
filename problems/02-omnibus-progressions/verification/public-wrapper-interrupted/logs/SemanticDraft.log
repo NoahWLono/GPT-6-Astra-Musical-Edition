@@ -1,0 +1,4 @@
+'Omnibus.interval_translation' depends on axioms: [propext, Quot.sound]
+'Omnibus.modular_translation_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.chord_swap_tenor_alto' depends on axioms: [propext, Quot.sound]
+'Omnibus.chord_cycle_upper' depends on axioms: [propext, Quot.sound]

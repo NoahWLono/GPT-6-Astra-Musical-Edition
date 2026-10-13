@@ -1,0 +1,7 @@
+IndependentGoldenNonconstantFixture.lean:7:23: warning: Variable name `P` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+nonconstant_attainment : ∀ (B : ℕ), 64 ≤ B → ∃ n, 1 ≤ n ∧ ∃ P, ↑n + 1 = goldenMaximumLength B
+'IndependentGoldenAudit.nonconstant_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]

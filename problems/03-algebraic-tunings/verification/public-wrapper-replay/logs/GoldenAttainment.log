@@ -1,0 +1,13 @@
+goldenCanonicalRun : (phi : ℝ) →
+  phi ^ 2 = phi + 1 →
+    3 / 2 < phi →
+      (m B : ℤ) →
+        (n : ℕ) →
+          (r : ℝ) →
+            0 ≤ m →
+              0 ≤ B →
+                0 ≤ r →
+                  r ^ 2 = 5 * ↑m ^ 2 + 4 * ↑B → 5 * m * m / 4 ≤ B → ↑n + 1 ≤ goldenLineCount phi m r → GoldenAP phi B n
+'AlgebraicTunings.golden_point_norm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.goldenFirstIndex_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.goldenCanonicalRun' depends on axioms: [propext, Classical.choice, Quot.sound]

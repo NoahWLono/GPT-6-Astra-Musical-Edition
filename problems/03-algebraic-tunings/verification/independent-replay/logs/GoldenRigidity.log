@@ -1,0 +1,12 @@
+goldenAP_long_step_unit : ∀ (phi : ℝ),
+  phi ^ 2 = phi + 1 →
+    ∀ (B : ℤ) (n : ℕ) (P : GoldenAP phi B n),
+      64 ≤ B →
+        ∀ (z s r : ℝ),
+          0 ≤ z →
+            z ^ 2 = ↑B →
+              0 ≤ s →
+                s ^ 2 = 2 →
+                  0 ≤ r →
+                    r ^ 2 = ↑B / |↑(goldenNorm P.c P.d)| + 1 / 4 → (1 + s) * z - 3 < ↑n + 1 → |goldenNorm P.c P.d| = 1
+'AlgebraicTunings.goldenAP_long_step_unit' depends on axioms: [propext, Classical.choice, Quot.sound]

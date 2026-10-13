@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "project_modules": 18,
+  "independent_fixture": true,
+  "actual_aggregate_cpu_seconds": 78.945011,
+  "total_wall_seconds": 79.155032,
+  "peak_sampled_rss_bytes": 2125451264,
+  "named_axiom_audit_count": 67,
+  "final_axioms": {
+    "AlgebraicTunings.golden_exact_maximum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenMaximumLength_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IndependentGoldenAudit.exact_statement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IndependentGoldenAudit.nonconstant_attainment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "manifest_sha256": "1070d311cb04ff5c2641f3a0fd2a5bd3ef42bd7e6b369f92538f80e500747797",
+  "preflight_sha256": "d608e9ec8c7cc9146af138ced3384e72db7a87dab1c480ade623ff5a59554e6f",
+  "fixture_sha256": "e6707c00a2a88e5e39c10e1f773ad6f91db17bceae54e62973ba25df83f55c29",
+  "nonconstant_fixture_sha256": "3571dc9ae1c4153b40d2897324ea465a665a6d95c9f025e124cf766f85a42c4f",
+  "replay_ledger_sha256": "c87c25e6d0b901ced5784a4fd7f137cf64ef38cfcbb2821332bae2f217bb2cb2",
+  "trust_boundary": "Fresh rebuild of entire reachable project closure, using pinned existing Lean and Mathlib/package objects; Mathlib itself is not rebuilt."
+}

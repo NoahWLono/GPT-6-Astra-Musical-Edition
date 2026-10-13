@@ -1,0 +1,1202 @@
+[
+  {
+    "module": "GoldenNormCore",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 7.188792,
+    "cpu_seconds": 7.180478,
+    "aggregate_cpu_seconds": 7.180478,
+    "observed_cpu_seconds": 7.16,
+    "peak_rss_bytes": 1821540352,
+    "source_sha256": "ccb63ed3ea50f8016c949f4935368f983fe58dca400030afcca394060dbdaf08",
+    "object_sha256": "0b1d5ec96dc26a3633d01e82bd375fab9e05d0fa596d2582c04e1c83c101ec97",
+    "log_sha256": "9bdf9afe18109ca9c348841e1ee1c606ccc8752fce21886f4cfa5fdcc0e50980",
+    "axiom_audits": {
+      "AlgebraicTunings.goldenNorm_along_progression": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenNorm_mul": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenNorm_conj": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.mul_conj_first": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.mul_conj_second": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.monic_quadratic_interpolation": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.interpolation_error_le_quarter": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.interpolation_error_nonneg": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenNorm_complete_square": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.eleven_term_norm_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.eleven_term_positive": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.witness_common_difference": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.common_difference_norm": [
+        "propext"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenNormCore.olean",
+      "GoldenNormCore.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenIntervals",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 10.854527,
+    "cpu_seconds": 10.826677,
+    "aggregate_cpu_seconds": 18.007155,
+    "observed_cpu_seconds": 10.81,
+    "peak_rss_bytes": 1844682752,
+    "source_sha256": "b79fac397c95b026bae499f416773bf09117a8605ed6bd16d22ab3153eb26edf",
+    "object_sha256": "356645684e7aaef3fe447e711aa6f2e9d37f57c4b91155a0b871ec1251a23733",
+    "log_sha256": "68d392e234cab7b41f069881e1424f2ccc6e2b65f47d370e6872dc98278065f2",
+    "axiom_audits": {
+      "AlgebraicTunings.quadratic_one_sided_span_sq": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.positive_quadratic_interval_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.monic_quadratic_cell_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.monic_quadratic_discrete_to_continuous": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.monic_discrete_positive_span_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenIntervals.olean",
+      "GoldenIntervals.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenNonzero",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 3.038886,
+    "cpu_seconds": 3.027788,
+    "aggregate_cpu_seconds": 21.034943,
+    "observed_cpu_seconds": 3.01,
+    "peak_rss_bytes": 1804333056,
+    "source_sha256": "d249b5595c61809158f285fef1b2417e325bb88e3078e0c09dfac25d65cb0a90",
+    "object_sha256": "7da13fd688e50e071ce42e7fb4e22a42e6efed60fe5b05bf826bef239ef170d4",
+    "log_sha256": "38ee1bd115db4bb8d19ff9fc4fe97e5d7317bf451b869797aabcad2c20491720",
+    "axiom_audits": {
+      "AlgebraicTunings.goldenNorm_eq_zero_iff": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenNorm_abs_pos": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenNonzero.olean",
+      "GoldenNonzero.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenAPInterface",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 2.442376,
+    "cpu_seconds": 2.426703,
+    "aggregate_cpu_seconds": 23.461646,
+    "observed_cpu_seconds": 2.41,
+    "peak_rss_bytes": 1851813888,
+    "source_sha256": "032dcb5770e29b94164322a0193d6ee8c6780a71aafb1a74698a0457c635d559",
+    "object_sha256": "3f2f875b3ad3186ff928a6667294d4fcbddd5432cbfecb533616dd8a610a6963",
+    "log_sha256": "3b3cf99f3ca7b49d362c6015afcebec49ef0f6de066fde8beeb7a93b900b66f6",
+    "axiom_audits": {
+      "AlgebraicTunings.goldenEval_progression": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenNorm_real_factorization": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenNorm_normalized_sample": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenEval_pos_coords_ne": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenAP_global_span_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenAPInterface.olean",
+      "GoldenAPInterface.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenUnitNormalization",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 2.445932,
+    "cpu_seconds": 2.420783,
+    "aggregate_cpu_seconds": 25.882429,
+    "observed_cpu_seconds": 2.4,
+    "peak_rss_bytes": 1851637760,
+    "source_sha256": "9f21031e26cd78b51605f042b4ef38319700c6d4338cacaf3011c7a6c6797b32",
+    "object_sha256": "62f311c5dded61cc3d86d8e318a94d725a4d6b31d6cb44b5db99fb31c49ec6da",
+    "log_sha256": "ce0996b077835734482b5c47a4273ac5a0f00a4e5bca06d4550febf97ac1706b",
+    "axiom_audits": {
+      "AlgebraicTunings.goldenUnit_mul_coords": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenUnit_eval": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenUnit_abs_norm": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenUnit_progression_abs_norm": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenUnit_progression_eval": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenUnit_pos_iff": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.GoldenAP.unitNormalize": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.GoldenAP.unitNormalize_note_pos": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenUnitNormalization.olean",
+      "GoldenUnitNormalization.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenStepMinimum",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 2.342784,
+    "cpu_seconds": 2.319925,
+    "aggregate_cpu_seconds": 28.202354,
+    "observed_cpu_seconds": 2.31,
+    "peak_rss_bytes": 1820045312,
+    "source_sha256": "2fc668e3c699d32b79f4d5c039aaaa45ec63a8ca6b68fc46c64496e3ac02d619",
+    "object_sha256": "f27b54e4a6d7de836df363119eaf1d09a8c68f8fd90911a04f99a1c556cddeb2",
+    "log_sha256": "41283b545a798feca466b6452a8365363fbedb41d5f82681ef4b96b1575c2c81",
+    "axiom_audits": {
+      "AlgebraicTunings.goldenNorm_lower_bound_of_discrete_depth": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenNorm_at_integer_vertex": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenNorm_forbidden_vertex": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenStepMinimum.olean",
+      "GoldenStepMinimum.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenCounting",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 2.444899,
+    "cpu_seconds": 2.435253,
+    "aggregate_cpu_seconds": 30.637607,
+    "observed_cpu_seconds": 2.42,
+    "peak_rss_bytes": 1838243840,
+    "source_sha256": "18df1a23ff4c79a69f633bf6f7927a49596c13b61a9d3c3bbbd031e49a85db92",
+    "object_sha256": "bfb707702f8fa107ef199ae6f206ae28e82e30f5fb546f311eec067289211b5b",
+    "log_sha256": "a8d643f1b16255de731bd848319489a78d4c3a049d62cb00a3f14e688082fa2d",
+    "axiom_audits": {
+      "AlgebraicTunings.goldenLineCount_eq_floor_add_ceil": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.golden_positive_lower_index": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.golden_norm_upper_index": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.golden_unit_run_count_upper": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenLineCount_gt_root_sub_one": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenCounting.olean",
+      "GoldenCounting.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenAttainment",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 5.757939,
+    "cpu_seconds": 5.745752,
+    "aggregate_cpu_seconds": 36.383359,
+    "observed_cpu_seconds": 5.72,
+    "peak_rss_bytes": 1856790528,
+    "source_sha256": "c4d79c3ab2efc120b5ddf60b21db0fb2b4a3db85aedae8bcae29284f2aa6274b",
+    "object_sha256": "d08858d302785d2660d1fbc6933ade5da2ef9ee7578e0364f8cc1b8437bb1bfe",
+    "log_sha256": "f5612026553c8608c0900964223abd55a8c1288175da5358238a72ea75150f9b",
+    "axiom_audits": {
+      "AlgebraicTunings.golden_point_norm_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenFirstIndex_positive": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenCanonicalRun": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenAttainment.olean",
+      "GoldenAttainment.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenLowerEstimate",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 4.695472,
+    "cpu_seconds": 4.696908,
+    "aggregate_cpu_seconds": 41.080267,
+    "observed_cpu_seconds": 4.67,
+    "peak_rss_bytes": 1872318464,
+    "source_sha256": "8af4021423d611de8f77f45e737fbf14e730bd03a87a46cf5827ec93be957e0c",
+    "object_sha256": "8daebbb646562cf74e0ad9bbc6bf7b779b489b9282d5b27e0c8def2c8946b66e",
+    "log_sha256": "d383a2397e3a91d0a13d26ea0a107cdb7f44335623acdeee89096410c5d3ffe4",
+    "axiom_audits": {
+      "AlgebraicTunings.golden_root_gap_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.golden_floor_construction_count_lower": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenLowerEstimate.olean",
+      "GoldenLowerEstimate.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenCountMonotonic",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 2.192628,
+    "cpu_seconds": 2.194211,
+    "aggregate_cpu_seconds": 43.274478,
+    "observed_cpu_seconds": 2.16,
+    "peak_rss_bytes": 1837314048,
+    "source_sha256": "27ea57e7e36052edd8e48f7d0e1958f909c6ec2352efef9d011611538256949f",
+    "object_sha256": "48d31e7972937ab8df3e9557ee335d613f217f65f17b56a4c324e27ae4cd720e",
+    "log_sha256": "75ef9229dee84ac6856835a804157971f961010a758e86674fbb189490a0c821",
+    "axiom_audits": {
+      "AlgebraicTunings.goldenLineCount_mono": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenCountMonotonic.olean",
+      "GoldenCountMonotonic.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenRigidity",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 3.702648,
+    "cpu_seconds": 3.673775,
+    "aggregate_cpu_seconds": 46.948253,
+    "observed_cpu_seconds": 3.67,
+    "peak_rss_bytes": 1842884608,
+    "source_sha256": "66a7f29c110d5f3b28c452bad99a630665771349683215e816de69e1adf7a998",
+    "object_sha256": "0dd66b4360b2bcea42f4ddbe6fdeb2cff80206807ec21a467690c64c5eed7a37",
+    "log_sha256": "106df2d8e84c4d58190ff398d733c3b4f4b7eccb1ca341c143b6a13c42e7a16f",
+    "axiom_audits": {
+      "AlgebraicTunings.goldenAP_long_step_unit": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenRigidity.olean",
+      "GoldenRigidity.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenSplitBound",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 1.942318,
+    "cpu_seconds": 1.934485,
+    "aggregate_cpu_seconds": 48.882738,
+    "observed_cpu_seconds": 1.92,
+    "peak_rss_bytes": 1827586048,
+    "source_sha256": "0a7cf44daea2b79eb02f11da8fee0fe5c325450610963e152c4278821031e56f",
+    "object_sha256": "3b7caa9bc88e88a03ec6016cf5936f1d23e194444c16e7bc59bd6c41fba35237",
+    "log_sha256": "0b255b1a590ab89fc96394536c1f69b118d7ced3dbc3d62c9d412f16d628ab79",
+    "axiom_audits": {
+      "AlgebraicTunings.golden_split_run_span_sq": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenSplitBound.olean",
+      "GoldenSplitBound.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenNonpositiveLine",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 2.030378,
+    "cpu_seconds": 2.013119,
+    "aggregate_cpu_seconds": 50.895857,
+    "observed_cpu_seconds": 2.0,
+    "peak_rss_bytes": 1834729472,
+    "source_sha256": "1e180ec3d390bd6555cf9521e568dc12c7e143d770a94daf1102948675e7fe9d",
+    "object_sha256": "27f38375c9f4f6b048e1c91c7c94e1a3009fb692d90287482024969e9567322a",
+    "log_sha256": "b77075c5c811cbab91e9818ca3e4b4f4224d736e66e96715425b19a72d7f5b22",
+    "axiom_audits": {
+      "AlgebraicTunings.golden_nonpositive_line_span": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenNonpositiveLine.olean",
+      "GoldenNonpositiveLine.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenThreshold",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 1.996783,
+    "cpu_seconds": 1.995558,
+    "aggregate_cpu_seconds": 52.891415,
+    "observed_cpu_seconds": 1.97,
+    "peak_rss_bytes": 1836249088,
+    "source_sha256": "4aefea532ff93eb298172735d76bda1a6478dd90afa33480c36cba4ea8248729",
+    "object_sha256": "fa30918e937e086f5b22484b85b3a13a516cf29dd5f57e7277a8f6802350eb1f",
+    "log_sha256": "f104cb6da1a4babb405e94af38fb65b79f3d250169c16b1a6ce430d2eefdd189",
+    "axiom_audits": {
+      "AlgebraicTunings.golden_depth_mono": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.golden_threshold_max": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.golden_beyond_threshold": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.golden_floor_depth": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenThreshold.olean",
+      "GoldenThreshold.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenExactGeneric",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 11.600747,
+    "cpu_seconds": 11.594691,
+    "aggregate_cpu_seconds": 64.486106,
+    "observed_cpu_seconds": 11.56,
+    "peak_rss_bytes": 1876975616,
+    "source_sha256": "8a9997a3baedf2f511857f8a160b5c3e7571eecf0ceec4bc92f39320b9ef871e",
+    "object_sha256": "a561c317be308c935ef69bd8680ee7e388c10b8dfba28d955b4d93d078fed33e",
+    "log_sha256": "ed0e2043324a776925f14942ec0ba980022e1e777edb5da6a49b76d8d6c10673",
+    "axiom_audits": {
+      "AlgebraicTunings.golden_exact_maximum_generic": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenExactGeneric.olean",
+      "GoldenExactGeneric.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenThresholdIndex",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 4.064214,
+    "cpu_seconds": 4.047663,
+    "aggregate_cpu_seconds": 68.533769,
+    "observed_cpu_seconds": 4.03,
+    "peak_rss_bytes": 1825492992,
+    "source_sha256": "9eb719e12a083c597051c444e80730092fb0686d7a12de3d12cf4d44c9e30fbd",
+    "object_sha256": "8b722506cc7fd601478ad9f359e3c5107c3d0067ab04b9e3181d4d6f65eb4677",
+    "log_sha256": "034ea12638ec7255f6e715eae209af91b4fc1da4db47ee778f3f0137cd530771",
+    "axiom_audits": {
+      "AlgebraicTunings.goldenThresholdIndex_depth": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenThresholdIndex_next": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenThresholdIndex_nonneg": []
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenThresholdIndex.olean",
+      "GoldenThresholdIndex.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenRealBound",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 3.254149,
+    "cpu_seconds": 3.259983,
+    "aggregate_cpu_seconds": 71.793752,
+    "observed_cpu_seconds": 3.23,
+    "peak_rss_bytes": 2125451264,
+    "source_sha256": "781bfd67601be5f014329fae1b50d0b2e4f001fc54df708dcd3ff0c21953cd8c",
+    "object_sha256": "667c673854eb644ad2c4ffe4d020d94d5041d3e9e15fbfc864ada5fea76889be",
+    "log_sha256": "a3c9bf4a39a1bfc523da28ff97fa825c543d356ccee1a94614cf252bf0dca349",
+    "axiom_audits": {
+      "AlgebraicTunings.goldenPhi_equation": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenPhi_gt_three_halves": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenAP_explicit_global_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenRealBound.olean",
+      "GoldenRealBound.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "GoldenExact",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 1.986618,
+    "cpu_seconds": 1.977064,
+    "aggregate_cpu_seconds": 73.770816,
+    "observed_cpu_seconds": 1.96,
+    "peak_rss_bytes": 2123644928,
+    "source_sha256": "88faed893e46478058d85804842ba9f0cf26bfc701e4ace0abf97c1b92aef6cd",
+    "object_sha256": "562a273a9fa462790a8563f6c9337dbb47edbd6e27f013bd5056c0aefd883b16",
+    "log_sha256": "b2b3ebb8816b31ebef880920c1e86b057fa55ce362354452e25593fe1d64abf8",
+    "axiom_audits": {
+      "AlgebraicTunings.golden_exact_maximum": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenMaximumLength_formula": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/GoldenExact.olean",
+      "GoldenExact.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "IndependentGoldenFixture",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 3.36558,
+    "cpu_seconds": 3.37542,
+    "aggregate_cpu_seconds": 77.146236,
+    "observed_cpu_seconds": 3.35,
+    "peak_rss_bytes": 2114863104,
+    "source_sha256": "e6707c00a2a88e5e39c10e1f773ad6f91db17bceae54e62973ba25df83f55c29",
+    "object_sha256": "c53804887e17b5c12d8f2eeb3c18234e5e51e6f8bc7c9c6e372701b10c77d5fc",
+    "log_sha256": "832456c561f8af4df6e5abe2541c30634c9d55484312cefd876da73d2f3f6fdb",
+    "axiom_audits": {
+      "AlgebraicTunings.golden_exact_maximum": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AlgebraicTunings.goldenMaximumLength_formula": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IndependentGoldenAudit.exact_statement": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/IndependentGoldenFixture.olean",
+      "IndependentGoldenFixture.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "IndependentGoldenNonconstantFixture",
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 1.807362,
+    "cpu_seconds": 1.798775,
+    "aggregate_cpu_seconds": 78.945011,
+    "observed_cpu_seconds": 1.78,
+    "peak_rss_bytes": 2124451840,
+    "source_sha256": "3571dc9ae1c4153b40d2897324ea465a665a6d95c9f025e124cf766f85a42c4f",
+    "object_sha256": "c69f31129a407c6b3c98b7c2d8a14a78046f52f5f6bbe19f4146f22d6a45f637",
+    "log_sha256": "79138f30c0ae55097777024edda8905549165a985991aea426fb7b402a516e3a",
+    "axiom_audits": {
+      "IndependentGoldenAudit.nonconstant_attainment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-o",
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects/IndependentGoldenNonconstantFixture.olean",
+      "IndependentGoldenNonconstantFixture.lean"
+    ],
+    "cwd": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+    "lean_path": [
+      "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    ],
+    "limits": {
+      "cpu_watchdog": 19.5,
+      "cpu_hard": 20,
+      "aggregate_cpu": 180,
+      "wall": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  }
+]

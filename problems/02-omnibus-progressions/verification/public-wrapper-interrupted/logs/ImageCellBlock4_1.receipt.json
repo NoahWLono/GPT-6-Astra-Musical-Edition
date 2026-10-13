@@ -1,0 +1,54 @@
+{
+  "module": "ImageCellBlock4_1",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.76578,
+  "aggregate_cpu_seconds": 145.360426,
+  "wall_seconds": 2.764524,
+  "peak_sampled_rss_bytes": 1645096960,
+  "cumulative_child_maxrss_bytes": 1886613504,
+  "source_sha256": "623f3abe39a3e63b9f522c248f19fac894ffa517d008fd9b8e9ea314776be4ef",
+  "object_sha256": "c2a02b4727fa9531f3f4628b5819849956d64ae2662465ac48095ec62d6494d1",
+  "log_sha256": "5c8ed0bc48a440b4f3cd339eb78dd254f5bea9392cfe2e078f7eff6f71183065",
+  "axiom_audits": {
+    "Omnibus.image_cell_count_4_3": [
+      "propext"
+    ],
+    "Omnibus.approachable_cell_count_4_3": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.image_cell_count_4_4": [
+      "propext"
+    ],
+    "Omnibus.approachable_cell_count_4_4": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.image_cell_count_4_5": [
+      "propext"
+    ],
+    "Omnibus.approachable_cell_count_4_5": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay/objects/ImageCellBlock4_1.olean",
+    "ImageCellBlock4_1.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "module": "GoldenLowerEstimate",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 4.763016,
+  "aggregate_cpu_seconds": 43.303314,
+  "wall_seconds": 4.769379,
+  "peak_sampled_rss_bytes": 1869189120,
+  "source_sha256": "8af4021423d611de8f77f45e737fbf14e730bd03a87a46cf5827ec93be957e0c",
+  "object_sha256": "8daebbb646562cf74e0ad9bbc6bf7b779b489b9282d5b27e0c8def2c8946b66e",
+  "log_sha256": "d383a2397e3a91d0a13d26ea0a107cdb7f44335623acdeee89096410c5d3ffe4",
+  "axiom_audits": {
+    "AlgebraicTunings.golden_root_gap_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.golden_floor_construction_count_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/03-algebraic-tunings/public-wrapper-replay/objects/GoldenLowerEstimate.olean",
+    "GoldenLowerEstimate.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

@@ -1,0 +1,22 @@
+Title:           Sharp bounds and exact image counts for descending omnibus walks
+Subject:         A scoped Lean formalization of semitonal contrary motion
+Keywords:        
+Author:          GPT-6 Astra
+Creator:         LaTeX with hyperref
+Producer:        pdfTeX-1.40.26
+CreationDate:    Tue Oct 13 22:47:47 2026 CEST
+ModDate:         Tue Oct 13 22:47:47 2026 CEST
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           8
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       342900 bytes
+Optimized:       no
+PDF version:     1.7

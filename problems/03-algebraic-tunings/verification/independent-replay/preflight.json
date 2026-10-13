@@ -1,0 +1,250 @@
+{
+  "target": "AlgebraicTunings.golden_exact_maximum",
+  "manifest_sha256": "1070d311cb04ff5c2641f3a0fd2a5bd3ef42bd7e6b369f92538f80e500747797",
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "lean_version": "Lean (version 4.32.2, x86_64-unknown-linux-gnu, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)",
+  "source_root": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/sources",
+  "objects_root": "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+  "lean_path": [
+    "/workspace/shared/music-research/03-algebraic-tunings/independent-replay/objects",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "modules": [
+    {
+      "module": "GoldenNormCore",
+      "source_sha256": "ccb63ed3ea50f8016c949f4935368f983fe58dca400030afcca394060dbdaf08",
+      "imports": [
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Data.Fintype.Fin",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Tactic.Push"
+      ]
+    },
+    {
+      "module": "GoldenIntervals",
+      "source_sha256": "b79fac397c95b026bae499f416773bf09117a8605ed6bd16d22ab3153eb26edf",
+      "imports": [
+        "GoldenNormCore",
+        "Mathlib.Algebra.Order.Floor.Ring",
+        "Mathlib.Algebra.Order.Archimedean.Real.Basic"
+      ]
+    },
+    {
+      "module": "GoldenNonzero",
+      "source_sha256": "d249b5595c61809158f285fef1b2417e325bb88e3078e0c09dfac25d65cb0a90",
+      "imports": [
+        "GoldenNormCore",
+        "Mathlib.Data.Nat.GCD.Basic"
+      ]
+    },
+    {
+      "module": "GoldenAPInterface",
+      "source_sha256": "032dcb5770e29b94164322a0193d6ee8c6780a71aafb1a74698a0457c635d559",
+      "imports": [
+        "GoldenIntervals",
+        "GoldenNonzero",
+        "Mathlib.Tactic.LinearCombination",
+        "Mathlib.Tactic.FieldSimp"
+      ]
+    },
+    {
+      "module": "GoldenUnitNormalization",
+      "source_sha256": "9f21031e26cd78b51605f042b4ef38319700c6d4338cacaf3011c7a6c6797b32",
+      "imports": [
+        "GoldenAPInterface"
+      ]
+    },
+    {
+      "module": "GoldenStepMinimum",
+      "source_sha256": "2fc668e3c699d32b79f4d5c039aaaa45ec63a8ca6b68fc46c64496e3ac02d619",
+      "imports": [
+        "GoldenNormCore",
+        "Mathlib.Algebra.Order.Floor.Ring"
+      ]
+    },
+    {
+      "module": "GoldenCounting",
+      "source_sha256": "18df1a23ff4c79a69f633bf6f7927a49596c13b61a9d3c3bbbd031e49a85db92",
+      "imports": [
+        "GoldenAPInterface",
+        "GoldenStepMinimum"
+      ]
+    },
+    {
+      "module": "GoldenAttainment",
+      "source_sha256": "c4d79c3ab2efc120b5ddf60b21db0fb2b4a3db85aedae8bcae29284f2aa6274b",
+      "imports": [
+        "GoldenCounting"
+      ]
+    },
+    {
+      "module": "GoldenLowerEstimate",
+      "source_sha256": "8af4021423d611de8f77f45e737fbf14e730bd03a87a46cf5827ec93be957e0c",
+      "imports": [
+        "GoldenCounting"
+      ]
+    },
+    {
+      "module": "GoldenCountMonotonic",
+      "source_sha256": "27ea57e7e36052edd8e48f7d0e1958f909c6ec2352efef9d011611538256949f",
+      "imports": [
+        "GoldenCounting"
+      ]
+    },
+    {
+      "module": "GoldenRigidity",
+      "source_sha256": "66a7f29c110d5f3b28c452bad99a630665771349683215e816de69e1adf7a998",
+      "imports": [
+        "GoldenAPInterface"
+      ]
+    },
+    {
+      "module": "GoldenSplitBound",
+      "source_sha256": "0a7cf44daea2b79eb02f11da8fee0fe5c325450610963e152c4278821031e56f",
+      "imports": [
+        "GoldenStepMinimum"
+      ]
+    },
+    {
+      "module": "GoldenNonpositiveLine",
+      "source_sha256": "1e180ec3d390bd6555cf9521e568dc12c7e143d770a94daf1102948675e7fe9d",
+      "imports": [
+        "GoldenAPInterface"
+      ]
+    },
+    {
+      "module": "GoldenThreshold",
+      "source_sha256": "4aefea532ff93eb298172735d76bda1a6478dd90afa33480c36cba4ea8248729",
+      "imports": [
+        "GoldenStepMinimum",
+        "Mathlib.Algebra.Order.Archimedean.Real.Basic"
+      ]
+    },
+    {
+      "module": "GoldenExactGeneric",
+      "source_sha256": "8a9997a3baedf2f511857f8a160b5c3e7571eecf0ceec4bc92f39320b9ef871e",
+      "imports": [
+        "GoldenUnitNormalization",
+        "GoldenAttainment",
+        "GoldenLowerEstimate",
+        "GoldenCountMonotonic",
+        "GoldenRigidity",
+        "GoldenSplitBound",
+        "GoldenNonpositiveLine",
+        "GoldenThreshold"
+      ]
+    },
+    {
+      "module": "GoldenThresholdIndex",
+      "source_sha256": "9eb719e12a083c597051c444e80730092fb0686d7a12de3d12cf4d44c9e30fbd",
+      "imports": [
+        "GoldenThreshold",
+        "Mathlib.Data.Nat.Sqrt"
+      ]
+    },
+    {
+      "module": "GoldenRealBound",
+      "source_sha256": "781bfd67601be5f014329fae1b50d0b2e4f001fc54df708dcd3ff0c21953cd8c",
+      "imports": [
+        "GoldenAPInterface",
+        "Mathlib.Analysis.Real.Sqrt"
+      ]
+    },
+    {
+      "module": "GoldenExact",
+      "source_sha256": "88faed893e46478058d85804842ba9f0cf26bfc701e4ace0abf97c1b92aef6cd",
+      "imports": [
+        "GoldenExactGeneric",
+        "GoldenThresholdIndex",
+        "GoldenRealBound"
+      ]
+    }
+  ],
+  "direct_external_imports": [
+    {
+      "module": "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Algebra/Order/Archimedean/Real/Basic.olean",
+      "object_sha256": "336238031fecc526ed26d4d009bf9b61fb56ed565b12665f285ac216a6c99bcb"
+    },
+    {
+      "module": "Mathlib.Algebra.Order.Floor.Ring",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Algebra/Order/Floor/Ring.olean",
+      "object_sha256": "2be645e80921cbcaf04b1cdce7d6b5f44f5bd7addc20503774d377cfbe0eb057"
+    },
+    {
+      "module": "Mathlib.Analysis.Real.Sqrt",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Analysis/Real/Sqrt.olean",
+      "object_sha256": "922b8f667cfd43065c85f83f9de99374927267a10f65e49eea87679da765dadb"
+    },
+    {
+      "module": "Mathlib.Data.Fintype.Fin",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Data/Fintype/Fin.olean",
+      "object_sha256": "3e886eae04ced5c6907143b5c72e1e1a8d3a5c6ce7986c12a527bf577cce0179"
+    },
+    {
+      "module": "Mathlib.Data.Nat.GCD.Basic",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Data/Nat/GCD/Basic.olean",
+      "object_sha256": "6ba5ff343d37b822063eac951050b6c80a48756d82b4533876d0b440e594c7df"
+    },
+    {
+      "module": "Mathlib.Data.Nat.Sqrt",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Data/Nat/Sqrt.olean",
+      "object_sha256": "40e07063592cdcf3d2734cafb1503a26419db35aa289fad0641e58bb66b004b7"
+    },
+    {
+      "module": "Mathlib.Data.Real.Basic",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Data/Real/Basic.olean",
+      "object_sha256": "cc227eaf901787af6dc06689f5a746b94547b352d30793e053faa5376cf1527e"
+    },
+    {
+      "module": "Mathlib.Tactic.FieldSimp",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Tactic/FieldSimp.olean",
+      "object_sha256": "13dc0da3bd53793a4b47fa3f8b3b3b92f1d2c00905c9d827e5ad610131ed87a1"
+    },
+    {
+      "module": "Mathlib.Tactic.FinCases",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Tactic/FinCases.olean",
+      "object_sha256": "244dddd28a4ccb623bafcf14eb3a0712066dcb9ea2568aee0892e084cc50fa5e"
+    },
+    {
+      "module": "Mathlib.Tactic.Linarith",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Tactic/Linarith.olean",
+      "object_sha256": "924fc5d1a0152eacbefcff5fab53671d85479bf7a071340b1c95f554324636a2"
+    },
+    {
+      "module": "Mathlib.Tactic.LinearCombination",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Tactic/LinearCombination.olean",
+      "object_sha256": "5968501d502e83f9d2c9460b6cd74402393bbd1ff120ff64082ac98209e7200d"
+    },
+    {
+      "module": "Mathlib.Tactic.NormNum",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Tactic/NormNum.olean",
+      "object_sha256": "c41d52516b98059481904ee6e0fb74ebf331de451211a99be5559c51e644199f"
+    },
+    {
+      "module": "Mathlib.Tactic.Push",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Tactic/Push.olean",
+      "object_sha256": "c1b8196f49de2a534a8c8e5e114a222d40380e424b5a6710cbdcceb60d7fd775"
+    },
+    {
+      "module": "Mathlib.Tactic.Ring",
+      "object": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean",
+      "object_sha256": "619ee42b87d56cc7b52a93d2e043b8f8ded001555a23cc37040d4a0dceda26d9"
+    }
+  ],
+  "source_scan": "No sorry, admit, axiom, or native_decide tokens outside comments in reachable project sources",
+  "comment_cleanup": "All noncomment bytes match original verified source snapshots",
+  "trust_boundary": "Fresh rebuild of entire reachable project closure, using pinned existing Lean and Mathlib/package objects; Mathlib itself is not rebuilt."
+}

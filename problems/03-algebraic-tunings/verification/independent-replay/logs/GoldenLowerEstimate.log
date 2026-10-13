@@ -1,0 +1,12 @@
+golden_floor_construction_count_lower : ∀ (phi : ℝ),
+  phi ^ 2 = phi + 1 →
+    3 / 2 < phi →
+      ∀ (B : ℤ) (z s v r : ℝ),
+        0 < z →
+          z ^ 2 = ↑B →
+            0 ≤ s →
+              s ^ 2 = 2 →
+                (2 * phi - 1) * v = 2 * z →
+                  0 ≤ r → r ^ 2 = 5 * ↑⌊v⌋ ^ 2 + 4 * ↑B → (1 + s) * z - 3 < ↑(goldenLineCount phi ⌊v⌋ r)
+'AlgebraicTunings.golden_root_gap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.golden_floor_construction_count_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

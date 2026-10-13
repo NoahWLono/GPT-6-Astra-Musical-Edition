@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "project_modules": 18,
+  "independent_fixtures": 2,
+  "project_objects_reused": 0,
+  "actual_aggregate_cpu_seconds": 85.271496,
+  "named_axiom_audit_count": 67,
+  "final_axioms": {
+    "AlgebraicTunings.golden_exact_maximum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenMaximumLength_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IndependentGoldenAudit.exact_statement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IndependentGoldenAudit.nonconstant_attainment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "replay_ledger_sha256": "510e0c8e535e639cd9d174b4070e6c8e713d399ceed454dee6d331010893cfd1",
+  "environment_lock_sha256": "c6e005cf5f47804f0111fffa634fc5ebaa21843a899419bc42e1a9454114ff6b",
+  "trust_boundary": "Fresh project objects; existing pinned Lean, Mathlib, and package objects are trusted. Mathlib is not rebuilt by this wrapper."
+}

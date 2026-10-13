@@ -1,0 +1,2 @@
+'Omnibus.image_count_slice_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.approachable_count_slice_10' depends on axioms: [propext, Classical.choice, Quot.sound]

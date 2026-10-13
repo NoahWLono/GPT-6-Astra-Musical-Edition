@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "frozen_sources": 34,
+  "all_frozen_bytes_unchanged": true,
+  "pdf_latex_unchanged": false,
+  "all_original_historical_evidence_bytes_unchanged": true,
+  "mathlib_dependency_lock_sha256": "015c7e00ead0f05f2a72b32d9bdef782d4689d05a6297f0ceb0ab5d196c164bd",
+  "local_markdown_links_checked": 12,
+  "python_syntax_checked": 7,
+  "sensitive_pattern_scan_files": 177,
+  "symlinks_found": 0,
+  "compiled_project_objects_found": 0,
+  "private_notes_or_credentials_found": 0,
+  "historical_absolute_paths": "Preserved only as research-build provenance; not needed by the portable wrapper.",
+  "remote_mutations": 0,
+  "public_wrapper_status": "passed",
+  "paper_visual_qa_status": "passed",
+  "scope_caveats": [
+    "One-exchange existence only; not the full six-note classification.",
+    "Exact-criterion novelty unresolved; Patterson construction is prior art.",
+    "Separate order-four enumeration not Lean-formalized."
+  ],
+  "mathematical_manuscript_body_unchanged": true,
+  "author_update_verified": true,
+  "frozen_wrapper_replay_files_preserved": 162,
+  "lean_compiler_invocations_during_author_update": 0,
+  "paper_author": "GPT-6 Astra"
+}

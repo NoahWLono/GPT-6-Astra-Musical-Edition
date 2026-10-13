@@ -1,0 +1,104 @@
+/workspace/shared/music-research/02-omnibus-progressions/CanonicalBridge.lean:22:6: error: Type mismatch
+  h_yzx
+has type
+  chord { bass := b, tenor := y, alto := z, soprano := x } = chord { bass := b, tenor := x, alto := y, soprano := z }
+but is expected to have type
+  chord
+      { bass := b, tenor := { x := z, y := x, z := y }.x, alto := { x := z, y := x, z := y }.y,
+        soprano := { x := z, y := x, z := y }.z } =
+    chord { bass := b, tenor := x, alto := y, soprano := z }
+/workspace/shared/music-research/02-omnibus-progressions/CanonicalBridge.lean:22:6: error: Type mismatch
+  h_yzx
+has type
+  chord { bass := b, tenor := y, alto := z, soprano := x } = chord { bass := b, tenor := x, alto := y, soprano := z }
+but is expected to have type
+  chord
+      { bass := b, tenor := { x := z, y := y, z := x }.x, alto := { x := z, y := y, z := x }.y,
+        soprano := { x := z, y := y, z := x }.z } =
+    chord { bass := b, tenor := x, alto := y, soprano := z }
+/workspace/shared/music-research/02-omnibus-progressions/CanonicalBridge.lean:22:18: error: unexpected token '|'; expected command
+/workspace/shared/music-research/02-omnibus-progressions/CanonicalBridge.lean:33:14: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  e ≥ 13
+  1 ≤ e - 12*f ≤ 11
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.bass
+ b := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.tenor
+ c := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.alto
+ d := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.soprano
+ e := ↑bass✝
+ f := ↑(bass✝ + (12 - bass✝)) / 12
+/workspace/shared/music-research/02-omnibus-progressions/CanonicalBridge.lean:33:14: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 13
+  f ≥ 0
+  0 ≤ f - 12*g ≤ 11
+  f ≥ 0
+  f + h ≥ 12
+  -23 ≤ 12*e - f - h ≤ -12
+  12*e - 12*g - h ≤ -13
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.bass
+ b := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.tenor
+ c := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.alto
+ d := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.soprano
+ e := ↑(tenor✝ + (12 - bass✝)) / 12
+ f := ↑(tenor✝ + 12 - bass✝)
+ g := ↑(tenor✝ + 12 - bass✝) / 12
+ h := ↑bass✝
+/workspace/shared/music-research/02-omnibus-progressions/CanonicalBridge.lean:33:14: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 13
+  f ≥ 0
+  0 ≤ f - 12*g ≤ 11
+  f ≥ 0
+  f + h ≥ 12
+  -23 ≤ 12*e - f - h ≤ -12
+  12*e - 12*g - h ≤ -13
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.bass
+ b := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.tenor
+ c := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.alto
+ d := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.soprano
+ e := ↑(alto✝ + (12 - bass✝)) / 12
+ f := ↑(alto✝ + 12 - bass✝)
+ g := ↑(alto✝ + 12 - bass✝) / 12
+ h := ↑bass✝
+/workspace/shared/music-research/02-omnibus-progressions/CanonicalBridge.lean:33:14: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 13
+  f ≥ 0
+  0 ≤ f - 12*g ≤ 11
+  f ≥ 0
+  f + h ≥ 12
+  -23 ≤ 12*e - f - h ≤ -12
+  12*e - 12*g - h ≤ -13
+  0 ≤ d ≤ 11
+  0 ≤ c ≤ 11
+  0 ≤ b ≤ 11
+  0 ≤ a ≤ 11
+where
+ a := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.bass
+ b := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.tenor
+ c := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.alto
+ d := ↑{ bass := bass✝, tenor := tenor✝, alto := alto✝, soprano := soprano✝ }.soprano
+ e := ↑(soprano✝ + (12 - bass✝)) / 12
+ f := ↑(soprano✝ + 12 - bass✝)
+ g := ↑(soprano✝ + 12 - bass✝) / 12
+ h := ↑bass✝
+'Omnibus.sort3_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.chord_sorted_upper' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Omnibus.normalizeBass_eq_translate' depends on axioms: [propext, sorryAx]
+'Omnibus.canonical_chord' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

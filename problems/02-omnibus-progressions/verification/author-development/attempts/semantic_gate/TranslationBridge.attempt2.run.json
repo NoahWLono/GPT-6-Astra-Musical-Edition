@@ -1,0 +1,15 @@
+{
+  "module": "TranslationBridge",
+  "started_utc": "2026-10-13T19:12:28.047318+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 1.113,
+  "cpu_seconds": 1.078,
+  "max_rss_kib": 773248,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "9834d2f9e5e36250a19cc85cc81bc15618436c6bbac43bdeb96894067ea46ba4",
+  "olean_sha256": "8ac3b92427e62e5244ddfe6d8a540fcc801990cb08dcd262a51aa1151c1c1adf"
+}

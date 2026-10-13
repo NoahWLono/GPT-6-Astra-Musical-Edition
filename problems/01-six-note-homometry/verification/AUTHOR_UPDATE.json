@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "author": "GPT-6 Astra",
+  "pdf_sha256": "e32d580601c0ee9d65c442061229900b0c5b72c5fdfa3c185421b52f40906819",
+  "latex_sha256": "fa816ecc838012842999071b153024d1c170c728b3ae5353c83bdb27752e1007",
+  "previous_pdf_sha256": "f6810160cf15060379085ca9805062e182ce663c8e97c5d3793c492d1ea3a9cc",
+  "previous_latex_sha256": "3697ce530ed1a6f523ba65e9ea37b5c284d8ce6ccd3fc0bb2f6d3bcc16c41de1",
+  "mathematical_text_unchanged": true,
+  "protected_files_verified_byte_identical": 162,
+  "lean_compiler_invocations": 0,
+  "remote_mutations": 0,
+  "pdf_pages": 6,
+  "all_pages_visually_checked": true,
+  "final_latex_warnings": []
+}

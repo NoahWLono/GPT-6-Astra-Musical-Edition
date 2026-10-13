@@ -1,0 +1,15 @@
+{
+  "module": "DisjointSliceCardinality",
+  "started_utc": "2026-10-13T20:02:40.215744+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 1.728,
+  "cpu_seconds": 1.704,
+  "max_rss_kib": 1842060,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "16c2715ff1642bad99e64617db7315762fd946e822b6e25e59462bc7a734cd69",
+  "olean_sha256": "24a79130bf75a34c6685a01a338870d263d2a9fd230fbc70cf3ff7269719540e"
+}

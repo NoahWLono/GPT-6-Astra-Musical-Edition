@@ -1,0 +1,4 @@
+'Omnibus.step_back' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.back_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.image_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.image_membership' depends on axioms: [propext, Classical.choice, Quot.sound]

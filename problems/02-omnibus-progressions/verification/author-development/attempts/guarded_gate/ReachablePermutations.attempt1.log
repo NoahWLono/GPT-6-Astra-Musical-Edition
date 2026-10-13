@@ -1,0 +1,4 @@
+/workspace/shared/music-research/02-omnibus-progressions/ReachablePermutations.lean:16:6: error: `simp` made no progress
+'Omnibus.reachable_cases' depends on axioms: [propext, sorryAx]
+'Omnibus.reachable_swap' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.reachable_cycle' depends on axioms: [propext, sorryAx, Quot.sound]

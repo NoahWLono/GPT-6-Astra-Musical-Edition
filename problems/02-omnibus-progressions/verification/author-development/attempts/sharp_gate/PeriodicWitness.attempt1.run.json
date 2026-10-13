@@ -1,0 +1,15 @@
+{
+  "module": "PeriodicWitness",
+  "started_utc": "2026-10-13T19:36:45.720967+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 3.449,
+  "cpu_seconds": 3.404,
+  "max_rss_kib": 828332,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "df1ac7402e32f143d6531c3d2bfb4a2644dd71d2f707084c138ec1ec4ef83110",
+  "olean_sha256": "39b9d6d066beec6eec19ab400e394bf59662e50cc367609217cc278cad4c54d8"
+}

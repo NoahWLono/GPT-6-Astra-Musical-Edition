@@ -1,0 +1,7 @@
+FourCommonCard.lean:18:50: warning: This simp argument is unused:
+  Finset.mem_insert
+
+Hint: Omit it from the simp argument list.
+  simp only [̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵i̵n̵s̵e̵r̵t̵,̵ ̵F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵]̵[̲F̲i̲n̲s̲e̲t̲.̲m̲e̲m̲_̲s̲i̲n̲g̲l̲e̲t̲o̲n̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

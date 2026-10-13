@@ -1,0 +1,46 @@
+{
+  "module": "ActualChordCardinality",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.057721,
+  "aggregate_cpu_seconds": 106.253746,
+  "wall_seconds": 2.05516,
+  "peak_sampled_rss_bytes": 1874108416,
+  "cumulative_child_maxrss_bytes": 1886613504,
+  "source_sha256": "b714b5c590aa7ff8b9de0286c616093e3393e281e1ea28d4df50af426ffefde0",
+  "object_sha256": "0626f81b651750d9e8595a5ffd219dd3b985226732b86334d1b4584ec76b2c9f",
+  "log_sha256": "70e08149e99b910b084f9668325a3dc2afff5278e09f3188c330c68e6aa48e98",
+  "axiom_audits": {
+    "Omnibus.actualChordPredicateEquiv": [
+      "propext"
+    ],
+    "Omnibus.actual_image_cardinality_eq_packed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.actual_approachable_cardinality_eq_packed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay/objects/ActualChordCardinality.olean",
+    "ActualChordCardinality.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

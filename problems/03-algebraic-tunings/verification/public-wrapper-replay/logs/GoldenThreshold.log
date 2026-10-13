@@ -1,0 +1,10 @@
+GoldenThreshold.lean:16:5: warning: Variable name `hm` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+golden_threshold_max : ∀ (B M m : ℤ), 0 ≤ M → B < 5 * (M + 1) * (M + 1) / 4 → 0 ≤ m → 5 * m * m / 4 ≤ B → m ≤ M
+'AlgebraicTunings.golden_depth_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.golden_threshold_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.golden_beyond_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.golden_floor_depth' depends on axioms: [propext, Classical.choice, Quot.sound]

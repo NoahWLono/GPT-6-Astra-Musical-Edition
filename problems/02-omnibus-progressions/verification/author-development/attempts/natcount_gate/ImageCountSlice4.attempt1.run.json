@@ -1,0 +1,15 @@
+{
+  "module": "ImageCountSlice4",
+  "started_utc": "2026-10-13T20:03:45.963708+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": -9,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": true,
+  "wall_seconds": 19.72,
+  "cpu_seconds": 19.684,
+  "max_rss_kib": 1931912,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "5e4fee1419ae530585e4d5b287d76777abd4f6f83cc0de4406a3c5831b0f49ff",
+  "olean_sha256": null
+}

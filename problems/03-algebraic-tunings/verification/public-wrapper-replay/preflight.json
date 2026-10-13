@@ -1,0 +1,112 @@
+{
+  "status": "preflight_passed",
+  "compiler_invoked": false,
+  "environment_lock_sha256": "c6e005cf5f47804f0111fffa634fc5ebaa21843a899419bc42e1a9454114ff6b",
+  "module_count": 20,
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "dependencies": [
+    {
+      "name": "plausible",
+      "commit": "e12c1910fe855cbfc38803cd4e55543906d5fa62"
+    },
+    {
+      "name": "LeanSearchClient",
+      "commit": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+    },
+    {
+      "name": "importGraph",
+      "commit": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12"
+    },
+    {
+      "name": "proofwidgets",
+      "commit": "6e311e2a844da9b2cc3971187df2fe0066947b93"
+    },
+    {
+      "name": "aesop",
+      "commit": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3"
+    },
+    {
+      "name": "Qq",
+      "commit": "38d591e778f100aec9762bb582f9c7f55f50e9dc"
+    },
+    {
+      "name": "batteries",
+      "commit": "023ce7d62a0531e22a5331e20b587817a80d49ff"
+    },
+    {
+      "name": "Cli",
+      "commit": "88679d088c9720c27ebdf2ba4dafe17341747f94"
+    }
+  ],
+  "direct_external_objects": [
+    {
+      "module": "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+      "object_sha256": "336238031fecc526ed26d4d009bf9b61fb56ed565b12665f285ac216a6c99bcb"
+    },
+    {
+      "module": "Mathlib.Algebra.Order.Floor.Ring",
+      "object_sha256": "2be645e80921cbcaf04b1cdce7d6b5f44f5bd7addc20503774d377cfbe0eb057"
+    },
+    {
+      "module": "Mathlib.Analysis.Real.Sqrt",
+      "object_sha256": "922b8f667cfd43065c85f83f9de99374927267a10f65e49eea87679da765dadb"
+    },
+    {
+      "module": "Mathlib.Data.Fintype.Fin",
+      "object_sha256": "3e886eae04ced5c6907143b5c72e1e1a8d3a5c6ce7986c12a527bf577cce0179"
+    },
+    {
+      "module": "Mathlib.Data.Nat.GCD.Basic",
+      "object_sha256": "6ba5ff343d37b822063eac951050b6c80a48756d82b4533876d0b440e594c7df"
+    },
+    {
+      "module": "Mathlib.Data.Nat.Sqrt",
+      "object_sha256": "40e07063592cdcf3d2734cafb1503a26419db35aa289fad0641e58bb66b004b7"
+    },
+    {
+      "module": "Mathlib.Data.Real.Basic",
+      "object_sha256": "cc227eaf901787af6dc06689f5a746b94547b352d30793e053faa5376cf1527e"
+    },
+    {
+      "module": "Mathlib.Tactic.FieldSimp",
+      "object_sha256": "13dc0da3bd53793a4b47fa3f8b3b3b92f1d2c00905c9d827e5ad610131ed87a1"
+    },
+    {
+      "module": "Mathlib.Tactic.FinCases",
+      "object_sha256": "244dddd28a4ccb623bafcf14eb3a0712066dcb9ea2568aee0892e084cc50fa5e"
+    },
+    {
+      "module": "Mathlib.Tactic.Linarith",
+      "object_sha256": "924fc5d1a0152eacbefcff5fab53671d85479bf7a071340b1c95f554324636a2"
+    },
+    {
+      "module": "Mathlib.Tactic.LinearCombination",
+      "object_sha256": "5968501d502e83f9d2c9460b6cd74402393bbd1ff120ff64082ac98209e7200d"
+    },
+    {
+      "module": "Mathlib.Tactic.NormNum",
+      "object_sha256": "c41d52516b98059481904ee6e0fb74ebf331de451211a99be5559c51e644199f"
+    },
+    {
+      "module": "Mathlib.Tactic.Push",
+      "object_sha256": "c1b8196f49de2a534a8c8e5e114a222d40380e424b5a6710cbdcceb60d7fd775"
+    },
+    {
+      "module": "Mathlib.Tactic.Ring",
+      "object_sha256": "619ee42b87d56cc7b52a93d2e043b8f8ded001555a23cc37040d4a0dceda26d9"
+    }
+  ],
+  "trust_boundary": "Fresh project objects; existing pinned Lean, Mathlib, and package objects are trusted. Mathlib is not rebuilt by this wrapper.",
+  "lean_path": [
+    "/workspace/shared/music-research/03-algebraic-tunings/public-wrapper-replay/objects",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean"
+  ],
+  "fresh_project_object_directory": "/workspace/shared/music-research/03-algebraic-tunings/public-wrapper-replay/objects"
+}

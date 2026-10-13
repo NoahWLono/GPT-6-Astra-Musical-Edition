@@ -1,0 +1,47 @@
+{
+  "module": "IndependentGoldenFixture",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.244103,
+  "aggregate_cpu_seconds": 82.662781,
+  "wall_seconds": 2.254937,
+  "peak_sampled_rss_bytes": 2112131072,
+  "source_sha256": "e6707c00a2a88e5e39c10e1f773ad6f91db17bceae54e62973ba25df83f55c29",
+  "object_sha256": "c53804887e17b5c12d8f2eeb3c18234e5e51e6f8bc7c9c6e372701b10c77d5fc",
+  "log_sha256": "832456c561f8af4df6e5abe2541c30634c9d55484312cefd876da73d2f3f6fdb",
+  "axiom_audits": {
+    "AlgebraicTunings.golden_exact_maximum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenMaximumLength_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IndependentGoldenAudit.exact_statement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/03-algebraic-tunings/public-wrapper-replay/objects/IndependentGoldenFixture.olean",
+    "IndependentGoldenFixture.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

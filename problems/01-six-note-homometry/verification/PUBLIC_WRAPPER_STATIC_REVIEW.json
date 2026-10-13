@@ -1,0 +1,66 @@
+{
+  "status": "static_review_passed",
+  "wrapper_sha256": "1099aa6675a9150fa3fc05ecbcd619a5596e3f6e3ba45ced4daa788741234cec",
+  "environment_lock_sha256": "ed8b0923a91f05e3399c3853932cd788221efeb6de4937260d6524f1d7be8df9",
+  "compiler_invocations": 0,
+  "tests": [
+    {
+      "test": "normal_terminal_success",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": null
+    },
+    {
+      "test": "post_exit_aggregate_cpu",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": "aggregate_cpu_limit"
+    },
+    {
+      "test": "post_exit_hard_cpu",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": "cpu_hard_limit"
+    },
+    {
+      "test": "post_exit_wall",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": "wall_limit"
+    },
+    {
+      "test": "post_exit_output",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": "output_limit"
+    },
+    {
+      "test": "post_exit_disk_floor",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": "disk_floor"
+    },
+    {
+      "test": "exit_during_watchdog_kill_and_truncated_utf8",
+      "status": "passed",
+      "compiler_invoked": false
+    },
+    {
+      "test": "historical_named_axiom_parser",
+      "status": "passed",
+      "expected_audits": 13,
+      "compiler_invoked": false
+    }
+  ],
+  "findings_remaining": [],
+  "adaptations": [
+    "34 frozen sources and 13 named axiom audits.",
+    "Added exact standard-library Omega import and standard-library object root.",
+    "Retained original -M1900 memory setting.",
+    "Preserved post-exit CPU, wall, output and disk checks, exit-race handling and raw log hashing."
+  ],
+  "scope_notes": [
+    "This static report does not assert a compiler replay.",
+    "RSS is sampled; this wrapper is not an adversarial process-tree sandbox."
+  ]
+}

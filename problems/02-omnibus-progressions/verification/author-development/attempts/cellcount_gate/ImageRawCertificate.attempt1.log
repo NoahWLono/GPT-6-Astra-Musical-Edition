@@ -1,0 +1,2 @@
+'Omnibus.sourceRaw_eq_literal' does not depend on any axioms
+'Omnibus.imageRaw_eq_literal' depends on axioms: [propext]

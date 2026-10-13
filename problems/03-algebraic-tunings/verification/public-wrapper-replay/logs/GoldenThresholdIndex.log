@@ -1,0 +1,5 @@
+goldenThresholdIndex_depth : ∀ (B : ℕ), 5 * goldenThresholdIndex B * goldenThresholdIndex B / 4 ≤ ↑B
+goldenThresholdIndex_next : ∀ (B : ℕ), ↑B < 5 * (goldenThresholdIndex B + 1) * (goldenThresholdIndex B + 1) / 4
+'AlgebraicTunings.goldenThresholdIndex_nonneg' does not depend on any axioms
+'AlgebraicTunings.goldenThresholdIndex_depth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.goldenThresholdIndex_next' depends on axioms: [propext, Classical.choice, Quot.sound]

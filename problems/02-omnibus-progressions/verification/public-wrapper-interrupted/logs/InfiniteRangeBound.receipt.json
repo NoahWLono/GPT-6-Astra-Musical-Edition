@@ -1,0 +1,43 @@
+{
+  "module": "InfiniteRangeBound",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.523742,
+  "aggregate_cpu_seconds": 90.111162,
+  "wall_seconds": 1.530893,
+  "peak_sampled_rss_bytes": 1676824576,
+  "cumulative_child_maxrss_bytes": 1696976896,
+  "source_sha256": "bd457a7a10f33305d74752b8a2c79d069e5d7506e9b210d8b1cc57021993dc58",
+  "object_sha256": "3dcfcc51f5788cc38e95c6ed34cc8c7ebaf8ed8e8fe19987c3d463e9e6d37495",
+  "log_sha256": "53ae84dde2576ab18af0a3296f45107241ac213a46e5586e4b6ffa9c3b69cc96",
+  "axiom_audits": {
+    "Omnibus.universal_infinite_seven_type_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.infinite_seven_type_bound_is_sharp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay/objects/InfiniteRangeBound.olean",
+    "InfiniteRangeBound.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

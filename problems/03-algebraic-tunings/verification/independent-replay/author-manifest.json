@@ -1,0 +1,123 @@
+{
+  "target": "AlgebraicTunings.golden_exact_maximum",
+  "source_root": "/workspace/shared/music-research/03-algebraic-tunings",
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "lean_version": "4.32.2",
+  "mathlib_root": "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2",
+  "topological_modules": [
+    {
+      "module": "GoldenNormCore",
+      "source": "GoldenNormCore.lean",
+      "source_sha256": "ccb63ed3ea50f8016c949f4935368f983fe58dca400030afcca394060dbdaf08",
+      "reference_olean_sha256": "0b1d5ec96dc26a3633d01e82bd375fab9e05d0fa596d2582c04e1c83c101ec97"
+    },
+    {
+      "module": "GoldenIntervals",
+      "source": "GoldenIntervals.lean",
+      "source_sha256": "b79fac397c95b026bae499f416773bf09117a8605ed6bd16d22ab3153eb26edf",
+      "reference_olean_sha256": "8b869d30423998f7bff16f3ea1cc3998ac741f660858c5a5d6b795089802f934"
+    },
+    {
+      "module": "GoldenNonzero",
+      "source": "GoldenNonzero.lean",
+      "source_sha256": "d249b5595c61809158f285fef1b2417e325bb88e3078e0c09dfac25d65cb0a90",
+      "reference_olean_sha256": "7da13fd688e50e071ce42e7fb4e22a42e6efed60fe5b05bf826bef239ef170d4"
+    },
+    {
+      "module": "GoldenAPInterface",
+      "source": "GoldenAPInterface.lean",
+      "source_sha256": "032dcb5770e29b94164322a0193d6ee8c6780a71aafb1a74698a0457c635d559",
+      "reference_olean_sha256": "a9a523875aa5172c68bf4c1f3d2d03fdee6830b5a30096f19c59974a1241eecc"
+    },
+    {
+      "module": "GoldenUnitNormalization",
+      "source": "GoldenUnitNormalization.lean",
+      "source_sha256": "9f21031e26cd78b51605f042b4ef38319700c6d4338cacaf3011c7a6c6797b32",
+      "reference_olean_sha256": "62f311c5dded61cc3d86d8e318a94d725a4d6b31d6cb44b5db99fb31c49ec6da"
+    },
+    {
+      "module": "GoldenStepMinimum",
+      "source": "GoldenStepMinimum.lean",
+      "source_sha256": "2fc668e3c699d32b79f4d5c039aaaa45ec63a8ca6b68fc46c64496e3ac02d619",
+      "reference_olean_sha256": "f27b54e4a6d7de836df363119eaf1d09a8c68f8fd90911a04f99a1c556cddeb2"
+    },
+    {
+      "module": "GoldenCounting",
+      "source": "GoldenCounting.lean",
+      "source_sha256": "18df1a23ff4c79a69f633bf6f7927a49596c13b61a9d3c3bbbd031e49a85db92",
+      "reference_olean_sha256": "bfb707702f8fa107ef199ae6f206ae28e82e30f5fb546f311eec067289211b5b"
+    },
+    {
+      "module": "GoldenAttainment",
+      "source": "GoldenAttainment.lean",
+      "source_sha256": "c4d79c3ab2efc120b5ddf60b21db0fb2b4a3db85aedae8bcae29284f2aa6274b",
+      "reference_olean_sha256": "d08858d302785d2660d1fbc6933ade5da2ef9ee7578e0364f8cc1b8437bb1bfe"
+    },
+    {
+      "module": "GoldenLowerEstimate",
+      "source": "GoldenLowerEstimate.lean",
+      "source_sha256": "8af4021423d611de8f77f45e737fbf14e730bd03a87a46cf5827ec93be957e0c",
+      "reference_olean_sha256": "8daebbb646562cf74e0ad9bbc6bf7b779b489b9282d5b27e0c8def2c8946b66e"
+    },
+    {
+      "module": "GoldenCountMonotonic",
+      "source": "GoldenCountMonotonic.lean",
+      "source_sha256": "27ea57e7e36052edd8e48f7d0e1958f909c6ec2352efef9d011611538256949f",
+      "reference_olean_sha256": "48d31e7972937ab8df3e9557ee335d613f217f65f17b56a4c324e27ae4cd720e"
+    },
+    {
+      "module": "GoldenRigidity",
+      "source": "GoldenRigidity.lean",
+      "source_sha256": "66a7f29c110d5f3b28c452bad99a630665771349683215e816de69e1adf7a998",
+      "reference_olean_sha256": "0dd66b4360b2bcea42f4ddbe6fdeb2cff80206807ec21a467690c64c5eed7a37"
+    },
+    {
+      "module": "GoldenSplitBound",
+      "source": "GoldenSplitBound.lean",
+      "source_sha256": "0a7cf44daea2b79eb02f11da8fee0fe5c325450610963e152c4278821031e56f",
+      "reference_olean_sha256": "72cf0098d15c564d553bc36f33b823485fbfe66cf381bb4563d58e194ecec7f5"
+    },
+    {
+      "module": "GoldenNonpositiveLine",
+      "source": "GoldenNonpositiveLine.lean",
+      "source_sha256": "1e180ec3d390bd6555cf9521e568dc12c7e143d770a94daf1102948675e7fe9d",
+      "reference_olean_sha256": "ebcae2377c8329f99f7136e413c02a736ccef91ab4f6d6767be6e5e1aab65805"
+    },
+    {
+      "module": "GoldenThreshold",
+      "source": "GoldenThreshold.lean",
+      "source_sha256": "4aefea532ff93eb298172735d76bda1a6478dd90afa33480c36cba4ea8248729",
+      "reference_olean_sha256": "c45ed37d0b9f8b985dbad087a4d1a1e5b0ec10ffd9a6f4bf04d4278e61b4fd9b"
+    },
+    {
+      "module": "GoldenExactGeneric",
+      "source": "GoldenExactGeneric.lean",
+      "source_sha256": "8a9997a3baedf2f511857f8a160b5c3e7571eecf0ceec4bc92f39320b9ef871e",
+      "reference_olean_sha256": "a33c8a4615282f0ac6b5ee8b463bba4955ba66aadd39f9e008cb88480a337891"
+    },
+    {
+      "module": "GoldenThresholdIndex",
+      "source": "GoldenThresholdIndex.lean",
+      "source_sha256": "9eb719e12a083c597051c444e80730092fb0686d7a12de3d12cf4d44c9e30fbd",
+      "reference_olean_sha256": "dfff44c198b3ac909563b251e1a19e76dec26a1fac04222080fcc6bd7ec8d06e"
+    },
+    {
+      "module": "GoldenRealBound",
+      "source": "GoldenRealBound.lean",
+      "source_sha256": "781bfd67601be5f014329fae1b50d0b2e4f001fc54df708dcd3ff0c21953cd8c",
+      "reference_olean_sha256": "667c673854eb644ad2c4ffe4d020d94d5041d3e9e15fbfc864ada5fea76889be"
+    },
+    {
+      "module": "GoldenExact",
+      "source": "GoldenExact.lean",
+      "source_sha256": "88faed893e46478058d85804842ba9f0cf26bfc701e4ace0abf97c1b92aef6cd",
+      "reference_olean_sha256": "b7ca3a7e8fe609199a22f382f20dedb61f71a8c8be4e4c4858aa13f8c8314391"
+    }
+  ],
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "lean-toolchain_sha256": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+  "lake-manifest.json_sha256": "015c7e00ead0f05f2a72b32d9bdef782d4689d05a6297f0ceb0ab5d196c164bd",
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "comment_cleanup": "comment-cleanup.json",
+  "reference_objects_note": "Reference objects were checked before comment-only cleanup; independent fresh-object replay must use current source hashes."
+}

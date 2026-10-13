@@ -1,0 +1,4 @@
+'Omnibus.image_slice_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.approachable_slice_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.normalized_image_cardinality_eq_slices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.normalized_approachable_cardinality_eq_slices' depends on axioms: [propext, Classical.choice, Quot.sound]

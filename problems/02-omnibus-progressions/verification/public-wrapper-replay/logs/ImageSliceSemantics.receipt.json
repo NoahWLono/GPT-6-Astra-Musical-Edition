@@ -1,0 +1,53 @@
+{
+  "module": "ImageSliceSemantics",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.57253,
+  "aggregate_cpu_seconds": 87.134508,
+  "wall_seconds": 1.583216,
+  "peak_sampled_rss_bytes": 1874251776,
+  "cumulative_child_maxrss_bytes": 1887236096,
+  "source_sha256": "8247978a8665c20a96cd505bffa81ae4397aacd516384db7764bb01726e1fc38",
+  "object_sha256": "f0b34cf9af7d8337b9ee61c1b3b0d76d6c82d90624f94cbe20a6f3a93ffa9a0d",
+  "log_sha256": "0e655090b18bdc8cc21741fd2064717841c3916e6e575f92c6d5198638a04bdf",
+  "axiom_audits": {
+    "Omnibus.image_slice_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.approachable_slice_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.normalized_image_cardinality_eq_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.normalized_approachable_cardinality_eq_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay-retry/objects/ImageSliceSemantics.olean",
+    "ImageSliceSemantics.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

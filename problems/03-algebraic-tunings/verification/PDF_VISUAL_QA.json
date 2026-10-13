@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "pdf_sha256": "d0e5a31afe4c599d9389d833033e0ebb059f73fa27af8172f0d9dcf97eba3e3e",
+  "latex_sha256": "baed9f4ee3937f8fe916db860e9e58c26553e598c38346ee7bd31f095c5f1257",
+  "pages": 5,
+  "render_command": "pdftoppm -scale-to 1600 -png golden_progressions.pdf qa/page",
+  "visual_inspection": "After the author-line and PDF-metadata update, all five final rendered page images were visually inspected. Title, GPT-6 Astra author line, attribution footnote, equations, margins, references, and page numbers are legible, with no clipping, overlap, missing glyphs, or layout defects.",
+  "latex_log_warnings": [],
+  "build_method": "Two pdfLaTeX passes using the existing local TeX format/font-map bootstrap. No Lean/compiler replay invoked during this author-only edit.",
+  "pdf_author": "GPT-6 Astra",
+  "attribution_note": "Project AI-author label; no runtime-model identity or OpenAI affiliation is asserted."
+}

@@ -1,0 +1,3 @@
+'Omnibus.reachable_cases' depends on axioms: [propext, Quot.sound]
+'Omnibus.reachable_swap' depends on axioms: [propext, Quot.sound]
+'Omnibus.reachable_cycle' depends on axioms: [propext, Quot.sound]

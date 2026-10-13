@@ -1,0 +1,5 @@
+'Omnibus.coordinate_permutations_complete' does not depend on any axioms
+'Omnibus.modular_step_inverse' does not depend on any axioms
+'Omnibus.witness_all_chords' does not depend on any axioms
+'Omnibus.witness_distinct_types' does not depend on any axioms
+'Omnibus.witness_moves' depends on axioms: [propext]

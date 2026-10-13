@@ -1,0 +1,15 @@
+{
+  "module": "NodeJoin",
+  "started_utc": "2026-10-13T19:28:57.478636+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 5.866,
+  "cpu_seconds": 5.816,
+  "max_rss_kib": 986624,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "66425aa08caac7528b48a906f55adba90689006c84658ff7a574d55dee8f4b62",
+  "olean_sha256": "0b79f57be128650f404c8651fb40d520452376c7b3174bc058fbec32ac4ca691"
+}

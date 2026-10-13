@@ -1,0 +1,2 @@
+'Omnibus.nodes_exact' depends on axioms: [propext]
+'Omnibus.chord_type_in_nodes' depends on axioms: [propext, Classical.choice, Quot.sound]

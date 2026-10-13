@@ -1,0 +1,31 @@
+import ImageCellDefinitions
+import ImageRawCertificate
+namespace Omnibus
+set_option linter.unusedSimpArgs false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 1000000
+theorem image_cell_count_4_6 : (imageCell 4 6).length = 3 := by
+  simp only [approachableCell,imageCell,imageRaw_eq_literal,sourceRaw_eq_literal]
+  decide
+#print axioms image_cell_count_4_6
+theorem approachable_cell_count_4_6 : (approachableCell 4 6).length = 1 := by
+  simp only [approachableCell,imageCell,imageRaw_eq_literal,sourceRaw_eq_literal]
+  decide
+#print axioms approachable_cell_count_4_6
+theorem image_cell_count_4_7 : (imageCell 4 7).length = 7 := by
+  simp only [approachableCell,imageCell,imageRaw_eq_literal,sourceRaw_eq_literal]
+  decide
+#print axioms image_cell_count_4_7
+theorem approachable_cell_count_4_7 : (approachableCell 4 7).length = 5 := by
+  simp only [approachableCell,imageCell,imageRaw_eq_literal,sourceRaw_eq_literal]
+  decide
+#print axioms approachable_cell_count_4_7
+theorem image_cell_count_4_8 : (imageCell 4 8).length = 9 := by
+  simp only [approachableCell,imageCell,imageRaw_eq_literal,sourceRaw_eq_literal]
+  decide
+#print axioms image_cell_count_4_8
+theorem approachable_cell_count_4_8 : (approachableCell 4 8).length = 7 := by
+  simp only [approachableCell,imageCell,imageRaw_eq_literal,sourceRaw_eq_literal]
+  decide
+#print axioms approachable_cell_count_4_8
+end Omnibus

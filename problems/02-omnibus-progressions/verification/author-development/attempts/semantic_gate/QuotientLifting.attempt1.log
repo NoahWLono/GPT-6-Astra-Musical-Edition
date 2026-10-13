@@ -1,0 +1,67 @@
+/workspace/shared/music-research/02-omnibus-progressions/QuotientLifting.lean:8:18: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  ReflBEq Shape
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/workspace/shared/music-research/02-omnibus-progressions/QuotientLifting.lean:48:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  step 1 (swapUpper c)
+in the target expression
+  chord (swapUpper (step 1 c)) = true ∧ sonority (swapUpper (step 1 c)) = q ∨
+      chord (step (Fin.succ 0) (swapUpper c)) = true ∧ sonority (step (Fin.succ 0) (swapUpper c)) = q ∨
+        chord (step (Fin.succ 0).succ (swapUpper c)) = true ∧ sonority (step (Fin.succ 0).succ (swapUpper c)) = q ↔
+    chord (step 0 c) = true ∧ sonority (step 0 c) = q ∨
+      chord (step (Fin.succ 0) c) = true ∧ sonority (step (Fin.succ 0) c) = q ∨
+        chord (step (Fin.succ 0).succ c) = true ∧ sonority (step (Fin.succ 0).succ c) = q
+
+c : Chord
+q : Shape
+h0 : step 0 (swapUpper c) = swapUpper (step 1 c)
+h1 : step 1 (swapUpper c) = swapUpper (step 0 c)
+h2 : step 2 (swapUpper c) = swapUpper (step 2 c)
+⊢ chord (swapUpper (step 1 c)) = true ∧ sonority (swapUpper (step 1 c)) = q ∨
+      chord (step (Fin.succ 0) (swapUpper c)) = true ∧ sonority (step (Fin.succ 0) (swapUpper c)) = q ∨
+        chord (step (Fin.succ 0).succ (swapUpper c)) = true ∧ sonority (step (Fin.succ 0).succ (swapUpper c)) = q ↔
+    chord (step 0 c) = true ∧ sonority (step 0 c) = q ∨
+      chord (step (Fin.succ 0) c) = true ∧ sonority (step (Fin.succ 0) c) = q ∨
+        chord (step (Fin.succ 0).succ c) = true ∧ sonority (step (Fin.succ 0).succ c) = q
+/workspace/shared/music-research/02-omnibus-progressions/QuotientLifting.lean:59:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  step 1 (cycleUpper c)
+in the target expression
+  chord (cycleUpper (step 1 c)) = true ∧ sonority (cycleUpper (step 1 c)) = q ∨
+      chord (step (Fin.succ 0) (cycleUpper c)) = true ∧ sonority (step (Fin.succ 0) (cycleUpper c)) = q ∨
+        chord (step (Fin.succ 0).succ (cycleUpper c)) = true ∧ sonority (step (Fin.succ 0).succ (cycleUpper c)) = q ↔
+    chord (step 0 c) = true ∧ sonority (step 0 c) = q ∨
+      chord (step (Fin.succ 0) c) = true ∧ sonority (step (Fin.succ 0) c) = q ∨
+        chord (step (Fin.succ 0).succ c) = true ∧ sonority (step (Fin.succ 0).succ c) = q
+
+c : Chord
+q : Shape
+h0 : step 0 (cycleUpper c) = cycleUpper (step 1 c)
+h1 : step 1 (cycleUpper c) = cycleUpper (step 2 c)
+h2 : step 2 (cycleUpper c) = cycleUpper (step 0 c)
+⊢ chord (cycleUpper (step 1 c)) = true ∧ sonority (cycleUpper (step 1 c)) = q ∨
+      chord (step (Fin.succ 0) (cycleUpper c)) = true ∧ sonority (step (Fin.succ 0) (cycleUpper c)) = q ∨
+        chord (step (Fin.succ 0).succ (cycleUpper c)) = true ∧ sonority (step (Fin.succ 0).succ (cycleUpper c)) = q ↔
+    chord (step 0 c) = true ∧ sonority (step 0 c) = q ∨
+      chord (step (Fin.succ 0) c) = true ∧ sonority (step (Fin.succ 0) c) = q ∨
+        chord (step (Fin.succ 0).succ c) = true ∧ sonority (step (Fin.succ 0).succ c) = q
+/workspace/shared/music-research/02-omnibus-progressions/QuotientLifting.lean:83:54: error: unsolved goals
+p q : Shape
+⊢ (∃ a,
+      (a = step 0 (realize p) ∧ chord a = true) ∧ sonority a = q ∨
+        (a = step 1 (realize p) ∧ chord a = true) ∧ sonority a = q ∨
+          (a = step 2 (realize p) ∧ chord a = true) ∧ sonority a = q) ↔
+    chord (step 0 (realize p)) = true ∧ sonority (step 0 (realize p)) = q ∨
+      chord (step 1 (realize p)) = true ∧ sonority (step 1 (realize p)) = q ∨
+        chord (step 2 (realize p)) = true ∧ sonority (step 2 (realize p)) = q
+/workspace/shared/music-research/02-omnibus-progressions/QuotientLifting.lean:85:38: warning: This simp argument is unused:
+  and_or_left
+
+Hint: Omit it from the simp argument list.
+  simp [successors, voices, ReachableType, Fin.exists_fin_succ,
+  ̵  ̵ ̵ ̵List.mem_eraseDups, or_and_right,̵ ̵a̵n̵d̵_̵o̵r̵_̵l̵e̵f̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/shared/music-research/02-omnibus-progressions/QuotientLifting.lean:88:9: error(lean.unknownIdentifier): Unknown constant `Bool.and_eq_true.mp`
+'Omnibus.reachable_canonical' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Omnibus.local_quotient_lift' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Omnibus.infinite_quotient_lift' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

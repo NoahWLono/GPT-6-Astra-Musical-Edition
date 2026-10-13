@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.c
+*.o
+*.a
+paper/*.aux
+paper/*.dvi
+paper/*.log
+paper/*.out
+replay-output/

@@ -1,0 +1,15 @@
+{
+  "module": "ClosedWalkBounds",
+  "started_utc": "2026-10-13T19:29:46.507644+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 1.821,
+  "cpu_seconds": 1.807,
+  "max_rss_kib": 1547480,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "49d25b403fd3e9b9ba548765406d2a33abe7801a98edb30bf2d1161c5a830c25",
+  "olean_sha256": "de7d84461c9e233ac39d3dfee3e89681c5c13b958d63e8a28b75546e7ce7ca08"
+}

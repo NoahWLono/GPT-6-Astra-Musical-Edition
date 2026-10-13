@@ -1,0 +1,6 @@
+'Omnibus.sort3_swap' depends on axioms: [propext, Quot.sound]
+'Omnibus.sort3_cycle' depends on axioms: [propext, Quot.sound]
+'Omnibus.sonority_swap' depends on axioms: [propext, Quot.sound]
+'Omnibus.sonority_cycle' depends on axioms: [propext, Quot.sound]
+'Omnibus.chord_swap' depends on axioms: [propext, Quot.sound]
+'Omnibus.chord_cycle' depends on axioms: [propext, Quot.sound]

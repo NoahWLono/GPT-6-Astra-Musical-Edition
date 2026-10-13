@@ -1,0 +1,53 @@
+{
+  "module": "FullAudit",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.488703,
+  "aggregate_cpu_seconds": 82.923767,
+  "wall_seconds": 1.491833,
+  "peak_sampled_rss_bytes": 1885720576,
+  "source_sha256": "8b9066fef916786dab8e327bb6689e484e7af5f8998402a3bf8dd3dd9221a2e7",
+  "object_sha256": "f7fdf9b21b67bf792980ebd920aa62141eb14cb7a1373d6801d59db0218d9d15",
+  "log_sha256": "7ad81b6fd2c75f1e6e7be2c0f0aebf6d4fbe235e0cd550782f3f27ccf9a18164",
+  "axiom_audits": {
+    "OnePitchShift.strict_exchange_ambient_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.twelve_le_modulus_of_six_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.six_exchange_sets_iff_normalized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OnePitchShift.six_note_one_exchange_existence_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FullAudit.olean",
+    "FullAudit.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

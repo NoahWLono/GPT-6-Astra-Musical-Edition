@@ -1,0 +1,32 @@
+{
+  "module": "ClosureCertificates",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.072602,
+  "aggregate_cpu_seconds": 70.980802,
+  "wall_seconds": 1.090803,
+  "peak_sampled_rss_bytes": 756482048,
+  "cumulative_child_maxrss_bytes": 1011671040,
+  "source_sha256": "f257935b87c9f119f085a5ba5836ddfc60173b20d88d1ec599e01105383ce49b",
+  "object_sha256": "d600681a268171fe617f9e2a0b16412c35309449d136bae3340c8a18a39c2bf1",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay/objects/ClosureCertificates.olean",
+    "ClosureCertificates.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

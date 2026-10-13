@@ -1,0 +1,3 @@
+'Omnibus.eight_type_bound_is_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.infinite_witness_is_admissible' depends on axioms: [propext, Quot.sound]
+'Omnibus.seven_prefix_bound_is_attained' depends on axioms: [propext, Classical.choice, Quot.sound]

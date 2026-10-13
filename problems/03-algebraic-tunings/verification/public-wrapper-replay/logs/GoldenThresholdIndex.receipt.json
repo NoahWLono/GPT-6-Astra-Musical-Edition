@@ -1,0 +1,43 @@
+{
+  "module": "GoldenThresholdIndex",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.113401,
+  "aggregate_cpu_seconds": 75.310459,
+  "wall_seconds": 2.109929,
+  "peak_sampled_rss_bytes": 1824894976,
+  "source_sha256": "9eb719e12a083c597051c444e80730092fb0686d7a12de3d12cf4d44c9e30fbd",
+  "object_sha256": "8b722506cc7fd601478ad9f359e3c5107c3d0067ab04b9e3181d4d6f65eb4677",
+  "log_sha256": "034ea12638ec7255f6e715eae209af91b4fc1da4db47ee778f3f0137cd530771",
+  "axiom_audits": {
+    "AlgebraicTunings.goldenThresholdIndex_depth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenThresholdIndex_next": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenThresholdIndex_nonneg": []
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/03-algebraic-tunings/public-wrapper-replay/objects/GoldenThresholdIndex.olean",
+    "GoldenThresholdIndex.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

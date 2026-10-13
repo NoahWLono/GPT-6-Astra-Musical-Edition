@@ -1,0 +1,47 @@
+{
+  "module": "SharpBounds",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.850969,
+  "aggregate_cpu_seconds": 88.58742,
+  "wall_seconds": 2.869526,
+  "peak_sampled_rss_bytes": 1697091584,
+  "cumulative_child_maxrss_bytes": 1696976896,
+  "source_sha256": "c23b61024fce0cf47577017cf9e07df7fb3ec0588dfd988416e0831ecff7ea57",
+  "object_sha256": "c3c033e5accc891a0f8975ec2483a7e98d6284f4642ef4a422de24bd837e4628",
+  "log_sha256": "9f906ad7c638b60dc124312e5c461838f75465eff97885578e0c209f63f09fda",
+  "axiom_audits": {
+    "Omnibus.eight_type_bound_is_attained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.infinite_witness_is_admissible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.seven_prefix_bound_is_attained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay/objects/SharpBounds.olean",
+    "SharpBounds.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

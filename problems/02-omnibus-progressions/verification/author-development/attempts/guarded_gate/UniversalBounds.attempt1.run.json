@@ -1,0 +1,15 @@
+{
+  "module": "UniversalBounds",
+  "started_utc": "2026-10-13T19:30:08.670112+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 2.685,
+  "cpu_seconds": 2.646,
+  "max_rss_kib": 1653708,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "60b35edbc2cd17b6f7651e917db808a119b2a964041e4fa2bfca65c72334acdb",
+  "olean_sha256": "69ac20f9301269d7d9e6dbbb2daea982dcb0cae6e385e107092cf10d17a12918"
+}

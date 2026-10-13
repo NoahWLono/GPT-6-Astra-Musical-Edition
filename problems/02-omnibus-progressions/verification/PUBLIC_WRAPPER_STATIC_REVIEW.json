@@ -1,0 +1,71 @@
+{
+  "status": "static_review_passed",
+  "wrapper_sha256": "ff6f8a8065215ac67c3934ff1b89d3c05b13e7540e0edff7ad2ef72e0ff10a7e",
+  "environment_lock_sha256": "e131a72eb99ea1be74a86c94c4063ed051de5c78d7ff5f905a1b384a245eddf6",
+  "compiler_invocations": 0,
+  "tests": [
+    {
+      "test": "normal_terminal_success",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": null
+    },
+    {
+      "test": "post_exit_aggregate_cpu",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": "aggregate_cpu_limit"
+    },
+    {
+      "test": "post_exit_hard_cpu",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": "cpu_hard_limit"
+    },
+    {
+      "test": "post_exit_wall",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": "wall_limit"
+    },
+    {
+      "test": "post_exit_output",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": "output_limit"
+    },
+    {
+      "test": "post_exit_disk_floor",
+      "status": "passed",
+      "compiler_invoked": false,
+      "stop_reason": "disk_floor"
+    },
+    {
+      "test": "exit_during_watchdog_kill_and_truncated_utf8",
+      "status": "passed",
+      "compiler_invoked": false
+    },
+    {
+      "test": "historical_named_axiom_parser",
+      "status": "passed",
+      "expected_audits": 426,
+      "compiler_invoked": false
+    },
+    {
+      "test": "post_exit_kernel_high_water_rss",
+      "status": "passed",
+      "compiler_invoked": false
+    }
+  ],
+  "findings_remaining": [],
+  "adaptations": [
+    "102 frozen sources and 426 named axiom audits.",
+    "Added exact standard-library Std import and standard-library object root.",
+    "Added terminal kernel child high-water RSS check and aggregate log/object output check.",
+    "Preserved post-exit CPU, wall, output and disk checks, exit-race handling and raw log hashing."
+  ],
+  "scope_notes": [
+    "This static report does not assert a compiler replay.",
+    "RSS is sampled; this wrapper is not an adversarial process-tree sandbox."
+  ]
+}

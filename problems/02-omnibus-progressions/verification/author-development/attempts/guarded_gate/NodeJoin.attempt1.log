@@ -1,0 +1,27 @@
+/workspace/shared/music-research/02-omnibus-progressions/NodeJoin.lean:19:70: error: unsolved goals
+⊢ List.flatMap
+      (fun a =>
+        List.flatMap
+          (fun a_1 =>
+            List.filter (fun q => chord (realize q))
+              (List.map (fun z => { x := a, y := a_1, z := z })
+                (List.filter (fun z => decide (a ≤ a_1) && decide (a_1 ≤ z)) (List.range 12))))
+          (List.range 12))
+      (List.range 12) =
+    List.flatMap nodeSlice (List.range 12)
+/workspace/shared/music-research/02-omnibus-progressions/NodeJoin.lean:20:27: warning: This simp argument is unused:
+  nodeSlice
+
+Hint: Omit it from the simp argument list.
+  simp [nodes, candidates, n̵o̵d̵e̵S̵l̵i̵ce̵,̵ ̵c̵andidateSlice, List.filter_flatMap]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/shared/music-research/02-omnibus-progressions/NodeJoin.lean:20:38: warning: This simp argument is unused:
+  candidateSlice
+
+Hint: Omit it from the simp argument list.
+  simp [nodes, candidates, nodeSlice, c̵a̵n̵d̵i̵d̵a̵t̵e̵S̵l̵i̵c̵e̵,̵ ̵List.filter_flatMap]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Omnibus.nodes_exact' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.chord_type_in_nodes' depends on axioms: [propext, Classical.choice, Quot.sound]

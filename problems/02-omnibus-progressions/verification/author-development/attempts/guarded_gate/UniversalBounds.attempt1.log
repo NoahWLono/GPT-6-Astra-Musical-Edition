@@ -1,0 +1,4 @@
+'Omnibus.every_node_has_small_nonterminal_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.project_omnibus_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.universal_eight_type_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.universal_seven_prefix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

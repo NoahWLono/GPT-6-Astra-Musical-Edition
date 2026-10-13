@@ -1,0 +1,32 @@
+{
+  "module": "FourFamilyCards",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.652778,
+  "aggregate_cpu_seconds": 11.309307,
+  "wall_seconds": 2.666761,
+  "peak_sampled_rss_bytes": 1904676864,
+  "source_sha256": "1ff6034ffed23a0ede5bc84698b39c497071feb856d1b9f57dd757fab701772e",
+  "object_sha256": "9ec8ccaf2c2c6b16838cdc2a2351937253118f65b60091cac82cfa31c6107293",
+  "log_sha256": "652f9213fff07fe79f36de5b6961f00d4dcc047bba721218990f109caae10e32",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FourFamilyCards.olean",
+    "FourFamilyCards.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

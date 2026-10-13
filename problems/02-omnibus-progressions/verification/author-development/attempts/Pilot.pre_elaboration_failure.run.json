@@ -1,0 +1,10 @@
+{
+  "module": "Pilot",
+  "exit_code": -6,
+  "wall_timeout": false,
+  "wall_seconds": 0.018,
+  "cpu_seconds": 0.007,
+  "max_rss_kib": 13376,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "a4de72b6399596a7cb0bddb06925665a50902369291dc7a8a9e99f6c4274a06a"
+}

@@ -1,0 +1,3 @@
+'Omnibus.chord_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.step_translation' depends on axioms: [propext, Quot.sound]
+'Omnibus.sonority_translation' depends on axioms: [propext, Quot.sound]

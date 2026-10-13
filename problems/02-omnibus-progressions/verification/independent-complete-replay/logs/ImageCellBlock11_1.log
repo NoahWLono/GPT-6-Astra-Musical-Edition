@@ -1,0 +1,6 @@
+'Omnibus.image_cell_count_11_3' depends on axioms: [propext]
+'Omnibus.approachable_cell_count_11_3' depends on axioms: [propext, Quot.sound]
+'Omnibus.image_cell_count_11_4' depends on axioms: [propext]
+'Omnibus.approachable_cell_count_11_4' depends on axioms: [propext, Quot.sound]
+'Omnibus.image_cell_count_11_5' depends on axioms: [propext]
+'Omnibus.approachable_cell_count_11_5' depends on axioms: [propext, Quot.sound]

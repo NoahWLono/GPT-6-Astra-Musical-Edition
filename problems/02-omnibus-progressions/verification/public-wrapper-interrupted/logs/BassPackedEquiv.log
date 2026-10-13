@@ -1,0 +1,3 @@
+'Omnibus.bassNormalization' depends on axioms: [propext, Quot.sound]
+'Omnibus.unpack_normalized' depends on axioms: [propext, Quot.sound]
+'Omnibus.unpack_denormalized' depends on axioms: [propext, Quot.sound]

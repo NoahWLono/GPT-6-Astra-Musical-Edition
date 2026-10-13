@@ -1,0 +1,15 @@
+{
+  "module": "ActualChordCardinality",
+  "started_utc": "2026-10-13T20:02:43.836588+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 1.785,
+  "cpu_seconds": 1.781,
+  "max_rss_kib": 1840344,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "6e7abdf81d030fc695069fa34d9d996da518c89555a517ec98733d26f7ebfe8a",
+  "olean_sha256": "762a035b66ad8b3d61a65c6b3c912af84065c4861d4b97ceac3f82f9bab36553"
+}

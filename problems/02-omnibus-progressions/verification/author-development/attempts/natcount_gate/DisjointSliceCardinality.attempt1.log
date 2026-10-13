@@ -1,0 +1,6 @@
+/workspace/shared/music-research/02-omnibus-progressions/DisjointSliceCardinality.lean:55:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Finite (SliceMember L x)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+'Omnibus.packedTripleSliceEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.disjoint_slice_cardinality' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

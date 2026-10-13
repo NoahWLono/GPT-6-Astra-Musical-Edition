@@ -1,0 +1,32 @@
+{
+  "module": "ParametricFamilies",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.27621,
+  "aggregate_cpu_seconds": 71.770498,
+  "wall_seconds": 1.298214,
+  "peak_sampled_rss_bytes": 1883758592,
+  "source_sha256": "7acc5e5b53eafed050b06d8a86590b14d2722bbbaaea18b747145d8ecd2dc8d7",
+  "object_sha256": "b7344ec03921340e526558490688610f02767154ae24600471cfac85c6089874",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ParametricFamilies.olean",
+    "ParametricFamilies.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

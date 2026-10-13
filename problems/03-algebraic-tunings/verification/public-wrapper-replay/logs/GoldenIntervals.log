@@ -1,0 +1,42 @@
+GoldenIntervals.lean:100:5: warning: Variable name `hK` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+GoldenIntervals.lean:120:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+GoldenIntervals.lean:120:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+GoldenIntervals.lean:135:35: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+GoldenIntervals.lean:135:47: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+GoldenIntervals.lean:142:23: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+GoldenIntervals.lean:142:35: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+quadratic_one_sided_span_sq : ∀ (C a b D : ℝ),
+  a ≤ b → |a * (a - D)| ≤ C → |b * (b - D)| ≤ C → b ≤ D / 2 ∨ D / 2 ≤ a → (b - a) ^ 2 ≤ 2 * C
+positive_quadratic_interval_bound : ∀ (C a b D r s : ℝ),
+  0 < a →
+    a ≤ b → 0 ≤ r → r ^ 2 = C → 0 ≤ s → s ^ 2 = 2 → (∀ (x : ℝ), a ≤ x → x ≤ b → |x * (x - D)| ≤ C) → b - a ≤ (1 + s) * r
+monic_quadratic_cell_bound : ∀ (p q u s K : ℝ),
+  0 ≤ s →
+    s ≤ 1 → |u ^ 2 + p * u + q| ≤ K → |(u + 1) ^ 2 + p * (u + 1) + q| ≤ K → |(u + s) ^ 2 + p * (u + s) + q| ≤ K + 1 / 4
+monic_quadratic_discrete_to_continuous : ∀ (p q K : ℝ) (n : ℕ),
+  0 ≤ K → (∀ j ≤ n, |↑j ^ 2 + p * ↑j + q| ≤ K) → ∀ (t : ℝ), 0 ≤ t → t ≤ ↑n → |t ^ 2 + p * t + q| ≤ K + 1 / 4
+monic_discrete_positive_span_bound : ∀ (alpha beta K r s : ℝ) (n : ℕ),
+  0 < alpha →
+    0 ≤ K →
+      0 ≤ r → r ^ 2 = K + 1 / 4 → 0 ≤ s → s ^ 2 = 2 → (∀ j ≤ n, |(↑j + alpha) * (↑j + beta)| ≤ K) → ↑n ≤ (1 + s) * r
+'AlgebraicTunings.quadratic_one_sided_span_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.positive_quadratic_interval_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.monic_quadratic_cell_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.monic_quadratic_discrete_to_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicTunings.monic_discrete_positive_span_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

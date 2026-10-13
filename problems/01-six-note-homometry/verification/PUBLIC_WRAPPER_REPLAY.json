@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "wrapper_sha256": "1099aa6675a9150fa3fc05ecbcd619a5596e3f6e3ba45ced4daa788741234cec",
+  "environment_lock_sha256": "ed8b0923a91f05e3399c3853932cd788221efeb6de4937260d6524f1d7be8df9",
+  "fresh_compilations": 34,
+  "project_modules": 33,
+  "independent_fixtures": 1,
+  "project_objects_reused": 0,
+  "actual_aggregate_cpu_seconds": 86.060723,
+  "named_axiom_audits": 13,
+  "max_process_cpu_seconds": 11.051958,
+  "max_process_wall_seconds": 11.073431,
+  "max_sampled_rss_bytes": 1915973632,
+  "resource_caps_hit": 0,
+  "failures": 0,
+  "sources_unchanged": true,
+  "trust_boundary": "Fresh project objects; existing pinned Lean, Mathlib, and package objects are trusted. Mathlib is not rebuilt by this wrapper."
+}

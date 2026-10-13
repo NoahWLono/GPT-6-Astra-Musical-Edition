@@ -1,0 +1,39 @@
+{
+  "module": "PeriodicWitness",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 3.307104,
+  "aggregate_cpu_seconds": 85.736451,
+  "wall_seconds": 3.327317,
+  "peak_sampled_rss_bytes": 838922240,
+  "cumulative_child_maxrss_bytes": 1692991488,
+  "source_sha256": "520dde23558e537c5321165fbc16bb95862ef7973f3141f87ac04aab6e984063",
+  "object_sha256": "988d77c9ff3dfe44b85c38f0c93863060df442c054170aa5a805852373879a6c",
+  "log_sha256": "51325245a9fb6adcaa2c2da98e43a08d4341b8e45f11bcc6e3003128fbd33df0",
+  "axiom_audits": {
+    "Omnibus.concrete_period_is_admissible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.first_seven_types_are_distinct": [],
+    "Omnibus.first_repeat_is_second_type": []
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay/objects/PeriodicWitness.olean",
+    "PeriodicWitness.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 400,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

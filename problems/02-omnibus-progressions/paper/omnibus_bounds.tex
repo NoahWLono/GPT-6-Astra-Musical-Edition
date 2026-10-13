@@ -1,0 +1,347 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage[margin=0.82in,headheight=14pt]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array,enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Descending omnibus walks}
+\fancyhead[R]{\small Scoped formalization}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{3pt}
+\setlist{nosep,leftmargin=*}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Q}{\mathcal Q}
+\newcommand{\I}{\mathcal I}
+\newcommand{\Aset}{\mathcal A}
+\newcommand{\typ}[1]{\mathtt{#1}}
+\newcommand{\sort}{\operatorname{sort}}
+\newcommand{\Succ}{\operatorname{Succ}}
+\newcommand{\NT}{\operatorname{NT}}
+\newcommand{\card}[1]{\lvert #1\rvert}
+\newcommand{\code}[1]{\texttt{\small\detokenize{#1}}}
+\title{\vspace{-1.8em}Sharp bounds and exact image counts\\for descending omnibus walks}
+\author{GPT-6 Astra\thanks{Project AI-author label; it does not identify the underlying model or imply affiliation with OpenAI.}}
+\date{13 October 2026}
+\hypersetup{pdftitle={Sharp bounds and exact image counts for descending omnibus walks},pdfsubject={A scoped Lean formalization of semitonal contrary motion},pdfauthor={GPT-6 Astra}}
+\begin{document}
+\maketitle\vspace{-2.1em}
+\begin{abstract}
+Four-voice tertian pitch-class segments, with one bass voice moving down a semitone and one upper voice moving up a semitone, determine a finite directed graph. We study this graph after identifying chords by their bass-relative upper-voice multiset. Every finite admissible walk visits at most eight distinct types. Every finite prefix of an infinite admissible walk visits at most seven. Both bounds are attained by explicit ordered-chord walks. The union of the images of the three descending moves has exactly $6840$ ordered pitch-class endpoints, of which $2232$ are themselves permitted tertian chords. These four results have Lean proofs linked to intrinsic chord and move definitions, rather than to an assumed graph. The upper bounds use finite successor-closed certificates with at most seven nonterminal vertices. The sharp witnesses begin at an unapproachable entrance chord. This qualification, and the explicitly chosen equivalence relation, prevent interpreting the results as a resolution of Pyle's conjecture about extensions. No claim of priority is made.
+\end{abstract}
+
+\section{Problem and precise scope}
+Pyle's model of generalized omnibus progressions specifies four-voice tertian pitch-class segments and three descending-bass omnibus functions \cite{pyle}. It also raises an extension conjecture and asks which chords lie in the images of those functions. A graph-theoretic investigation requires choices about what constitutes the same sonority and what is being bounded. This note makes those choices explicit and establishes bounds for walks and counts for ordered endpoints.
+
+The two kinds of count must be distinguished. A \emph{type} forgets absolute transposition and the order of the upper voices, but retains the distinguished bass and all pitch multiplicities. An \emph{ordered endpoint} retains the four voice coordinates and its absolute pitch classes. The bounds $8$ and $7$ concern types; the counts $6840$ and $2232$ concern ordered endpoints.
+
+Let $c_0,\ldots,c_n$ be an admissible finite walk, and put
+\[
+ D(c_0,\ldots,c_n)=\card{\{q(c_0),\ldots,q(c_n)\}}.
+\]
+For an infinite walk $c:\N\to\Q$, write
+$D_N(c)=\card{\{q(c_k):0\leq k<N\}}$.
+The central results, proved below, are
+\[
+ D(c_0,\ldots,c_n)\leq8,\qquad D_N(c)\leq7\quad\text{for every }N,
+ \qquad \card{\I}=6840,\quad\card{\Q\cap\I}=2232.
+\]
+The first inequality allows repetitions and arbitrary walk length. The second controls every prefix, not merely the first repeated type. Both bounds are sharp.
+
+Only descending-bass moves are used. An initial chord need only belong to $\Q$; it need not have an incoming admissible move. No condition on register, enharmonic spelling, harmonic root labels, or Pyle's notion of extension is added. These exclusions and the initial-chord convention are part of the mathematical statements, not incidental implementation choices.
+
+\clearpage
+\section{Intrinsic chords and the quotient graph}
+All pitch arithmetic takes place in $\Z_{12}=\Z/12\Z$, represented by $0,\ldots,11$. A chord is an ordered quadruple $c=(b,t,a,s)\in\Z_{12}^4$, with coordinates named bass, tenor, alto, and soprano. The names identify voices; they impose no pitch-register inequalities.
+
+\begin{definition}[Permitted chord]
+A chord belongs to $\Q$ if some permutation $(p_0,p_1,p_2,p_3)$ of its four coordinates satisfies one of the following:
+\begin{enumerate}[label=(\roman*)]
+\item among the three consecutive differences $p_{i+1}-p_i$ there is exactly one $0$, and each other difference belongs to $\{3,4\}$;
+\item the four coordinates are distinct and all three consecutive differences belong to $\{3,4\}$.
+\end{enumerate}
+\end{definition}
+This is the literal permutation-and-interval interpretation of Pyle's Definitions 4 and 5. Case (i) consists of a tertian triad with one doubled pitch class; case (ii) consists of a four-note stack of thirds with no repeated pitch class. Testing all $24$ coordinate permutations suffices, even when some permutations coincide.
+
+For $v\in\{T,A,S\}$ define
+\begin{align*}
+f_T(b,t,a,s)&=(b-1,t+1,a,s),\\
+f_A(b,t,a,s)&=(b-1,t,a+1,s),\\
+f_S(b,t,a,s)&=(b-1,t,a,s+1).
+\end{align*}
+An \emph{admissible step} $c\to d$ means $c,d\in\Q$ and $d=f_v(c)$ for some $v$. Each $f_v$ is defined on all ordered pitch-class quadruples, but an admissible walk requires both endpoints of every step to be in $\Q$.
+
+\begin{definition}[Bass-relative upper-multiset type]
+Define
+\[
+ q(b,t,a,s)=\sort\bigl((t-b)\bmod12,(a-b)\bmod12,(s-b)\bmod12\bigr).
+\]
+Here sorting uses the integer representatives $0,\ldots,11$. Two chords have the same type precisely when they differ by a common transposition and a permutation of the three upper coordinates.
+\end{definition}
+The equivalence preserves multiplicities and the identity of the bass voice. It does not identify all inversions, and it does not attach roots to symmetric sonorities. Write $V=q(\Q)$. For a sorted triple $p=(x,y,z)$, let $r(p)=(0,x,y,z)$ and define
+\[
+ \Succ(p)=\{q(f_v(r(p))):v\in\{T,A,S\},\ f_v(r(p))\in\Q\}.
+\]
+The graph has vertex set $V$ and edge relation $p\to u$ if $u\in\Succ(p)$. Repeated targets are merged. Equivalently, add $2$ to one coordinate of $p$ and $1$ to the others, reduce modulo $12$, sort, and retain the target exactly when its realization belongs to $\Q$.
+
+\begin{lemma}[Exact local lifting]\label{lem:lift}
+For every $c\in\Q$ and every type $u$,
+\[
+ u\in\Succ(q(c))\quad\Longleftrightarrow\quad
+ \exists d\in\Q\;(c\to d\ \text{and }q(d)=u).
+\]
+\end{lemma}
+\begin{proof}
+Common transposition preserves the interval tests and commutes with every move. A permutation of the upper voices preserves chord membership and permutes the three available moves. Translate $c$ to bass $0$ and sort its upper coordinates. The possible target types are therefore exactly those obtained from $r(q(c))$. Reversing the normalization gives the required target from the original representative.
+\end{proof}
+Thus graph walks lift from every chosen ordered realization of their first vertex. In particular, the quotient introduces no spurious paths; finite induction, or recursive choice of one of three available moves, lifts finite or infinite walks.
+
+\clearpage
+\section{Closed certificates and universal bounds}
+The finite calculation yields $55$ vertices. Appendix~\ref{app:graph} lists their complete successor sets, with $49$ directed edges in total. These sets are calculated from the intrinsic predicate and actual moves; they do not define admissibility by fiat.
+
+For a directed graph with successor sets $\Succ$, a set $C$ is \emph{successor-closed} when $p\in C$ implies $\Succ(p)\subseteq C$. Put
+\[
+ \NT(C)=\{p\in C:\Succ(p)\ne\varnothing\}.
+\]
+The finite certificates establish the following statement for every one of the $55$ intrinsically enumerated vertices:
+\begin{equation}\label{eq:certificate}
+ \forall p\in V\quad\exists C_p\subseteq V:\quad
+ p\in C_p,\quad C_p\text{ is successor-closed},\quad\card{\NT(C_p)}\leq7.
+\end{equation}
+For example, the certificate for $\typ{036}$ uses
+\[
+ C_{\typ{036}}=\{\typ{036},\typ{049},\typ{058},\typ{148},
+ \typ{269},\typ{359},\typ{37B},\typ{47A}\}.
+\]
+Only $\typ{049}$ is terminal in this set. In this notation $\typ{A}=10$ and $\typ{B}=11$; the three digits record a sorted triple.
+
+\begin{lemma}[Closed-set walk bound]\label{lem:closed}
+If $C$ is successor-closed and $\card{\NT(C)}\leq m$, a finite walk starting in $C$ visits at most $m+1$ distinct vertices. Every finite prefix of an infinite walk starting in $C$ visits at most $m$ distinct vertices.
+\end{lemma}
+\begin{proof}
+Induction along the walk keeps every vertex in $C$. Each vertex except possibly the last has an outgoing edge, so the set of vertices of a finite walk is contained in $\NT(C)\cup\{\text{last vertex}\}$. For an infinite walk, every vertex has a next vertex and hence belongs to $\NT(C)$.
+\end{proof}
+
+\begin{theorem}[Universal bounds]\label{thm:bounds}
+Every finite admissible ordered-chord walk has at most eight distinct types. For every infinite admissible ordered-chord walk $c$ and every $N\in\N$, $D_N(c)\leq7$. Consequently there exist $0\leq i<j\leq7$ with $q(c_i)=q(c_j)$.
+\end{theorem}
+\begin{proof}
+Project the ordered walk by Lemma~\ref{lem:lift}, choose the certificate for its initial type in \eqref{eq:certificate}, and apply Lemma~\ref{lem:closed} with $m=7$. The last conclusion is the pigeonhole principle applied to positions $0,\ldots,7$.
+\end{proof}
+The all-prefix statement also implies that the entire infinite range of types has at most seven elements: eight distinct elements of the range would all occur in some finite prefix.
+
+The table has four nontrivial strongly connected components:
+\[
+\begin{array}{c|l}
+\mathcal C_1&\typ{047},\typ{159},\typ{258},\typ{36A},\typ{379},\typ{48B}\\
+\mathcal C_2&\typ{048},\typ{259},\typ{37A}\\
+\mathcal C_3&\typ{058},\typ{148},\typ{269},\typ{359},\typ{37B},\typ{47A}\\
+\mathcal C_4&\typ{158},\typ{369},\typ{47B}
+\end{array}
+\]
+The only external entrances to these components are
+$\typ{036}\to\typ{148}$, $\typ{037}\to\typ{158}$,
+$\typ{038}\to\typ{159}$, and $\typ{368}\to\typ{47A}$.
+The exits are $\typ{37B}\to\typ{049}$, $\typ{47B}\to\typ{059}$,
+$\typ{48B}\to\typ{069}$, and $\typ{258}\to\typ{469}$.
+Each entrance has indegree zero; each exit target is terminal. This describes the bounds intuitively, but the Lean proof uses \eqref{eq:certificate} and does not assume a strongly connected component classification.
+
+\clearpage
+\section{Explicit sharpness witnesses}
+\begin{theorem}[Attainment]\label{thm:sharp}
+There is a finite admissible ordered-chord walk with eight distinct types. There is an infinite admissible ordered-chord walk whose first seven types are distinct and whose type at position $7$ equals its type at position $1$.
+\end{theorem}
+\begin{proof}
+For the finite statement, use Table~\ref{tab:witness}. Each row belongs to $\Q$, and each indicated move sends the preceding ordered chord to that row. The eight displayed types are pairwise distinct. These assertions can be checked directly by the interval tests of Section~2.
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.14}
+\begin{tabular}{rccc}\toprule
+Position & Ordered chord $(b,t,a,s)$ & Incoming move & Type\\\midrule
+0 & $(0,0,3,6)$ & --- & $\typ{036}$\\
+1 & $(11,0,3,7)$ & $S$ & $\typ{148}$\\
+2 & $(10,1,3,7)$ & $T$ & $\typ{359}$\\
+3 & $(9,1,4,7)$ & $A$ & $\typ{47A}$\\
+4 & $(8,1,4,8)$ & $S$ & $\typ{058}$\\
+5 & $(7,1,4,9)$ & $S$ & $\typ{269}$\\
+6 & $(6,1,5,9)$ & $A$ & $\typ{37B}$\\
+7 & $(5,2,5,9)$ & $T$ & $\typ{049}$\\\bottomrule
+\end{tabular}
+\caption{An eight-type finite witness. All entries are pitch classes modulo $12$.}\label{tab:witness}
+\end{table}
+
+For the infinite statement, keep positions $0$ through $6$, but take move $A$ at position $6$. The next chord is $(5,1,6,9)$, of type $\typ{148}$. The six-type cycle is
+\begin{equation}\label{eq:sixcycle}
+ \typ{148}\to\typ{359}\to\typ{47A}\to\typ{058}
+ \to\typ{269}\to\typ{37B}\to\typ{148}.
+\end{equation}
+Local lifting already gives an infinite ordered walk. A fully explicit periodic lift is useful to remove any dependence on an unspecified choice of voices.
+
+Let $p_0=(11,0,3,7)$. Read the following $36$-letter move word from left to right, with spaces only separating blocks of six letters:
+\begin{equation}\label{eq:word}
+ W=\mathtt{TASSAA}\quad\mathtt{ASTTSS}\quad
+ \mathtt{STAATT}\quad\mathtt{TASSAA}\quad
+ \mathtt{ASTTSS}\quad\mathtt{STAATT}.
+\end{equation}
+For $0\leq j<36$, define $p_{j+1}=f_{W_j}(p_j)$. Direct interval and move checks give $p_j\in\Q$ for every $j$, and $p_{36}=p_0$. There are $12$ occurrences of each of $T,A,S$, so the return of the four pitch classes is also immediate: the bass falls by $36$ and each upper voice rises by $12$ semitones. The intermediate chord tests, not just this return calculation, establish admissibility.
+
+Define
+\[
+ c_0=(0,0,3,6),\qquad c_n=p_{(n-1)\bmod36}\quad(n\geq1).
+\]
+The entrance step is $S$; the periodic step assertions prove $c_n\to c_{n+1}$ for every $n$. Its type sequence consists of the entrance $\typ{036}$ followed by repetitions of \eqref{eq:sixcycle}. Thus its first seven types are distinct and $q(c_7)=q(c_1)$.
+\end{proof}
+
+The finite witness ends at a terminal type and therefore cannot be continued admissibly. It has a concrete noncrossing pitch realization starting at MIDI pitches $(48,60,63,78)$ and ending at $(41,62,65,81)$: lower the bass by one semitone and raise the indicated upper voice by one at each step. The infinite result is a pitch-class statement; indefinite literal motion does not stay in a bounded register.
+
+\clearpage
+\section{Exact ordered endpoint counts}
+Define the endpoint union and its approachable part by
+\[
+ \I=f_T(\Q)\cup f_A(\Q)\cup f_S(\Q),\qquad
+ \Aset=\Q\cap\I.
+\]
+An endpoint in $\I$ need not be tertian; $\Aset$ imposes that condition. \emph{A permitted chord is approachable exactly when at least one inverse displacement, raising the bass and lowering one upper voice by a semitone, is permitted.} This effective membership criterion and the counts answer Pyle's Section V image questions under the literal functions, without requiring a sonority quotient or interpretation of extension.
+
+\begin{theorem}[Exact image counts]\label{thm:counts}
+The ordered endpoint sets satisfy $\card{\I}=6840$ and $\card{\Aset}=2232$.
+\end{theorem}
+\begin{proof}
+The inverse of $f_v$ raises the bass by $1$, lowers the selected upper voice by $1$, and fixes the other two voices. Call it $g_v$. Thus
+\begin{equation}\label{eq:back}
+ c\in\I\quad\Longleftrightarrow\quad
+ \bigvee_{v\in\{T,A,S\}}g_v(c)\in\Q.
+\end{equation}
+Both $\I$ and $\Aset$ are invariant under common transposition. For either set $P$, the map
+\[
+ c=(b,t,a,s)\longmapsto
+ \bigl(b,(0,t-b,a-b,s-b)\bigr)
+\]
+is a bijection from $P$ to $\Z_{12}\times P_0$, where $P_0$ consists of its bass-zero members. Its inverse adds $b$ to all coordinates of the second component. Therefore $\card{P}=12\card{P_0}$. This normalization retains the order of all three upper voices; it is not the sorted quotient used for the walk bounds.
+
+Partition $P_0$ by its tenor coordinate $x$. Exhaustive disjoint-slice counts using \eqref{eq:back} give Table~\ref{tab:counts}. Summing the columns gives $\card{\I_0}=570$ and $\card{\Aset_0}=186$. Multiplication by $12$ proves the theorem.
+\end{proof}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{0.97}
+\begin{tabular}{r rr}\toprule
+Bass-zero tenor $x$ & Image endpoints & Approachable tertian endpoints\\\midrule
+0&16&12\\1&34&6\\2&24&6\\3&16&12\\4&65&31\\5&68&22\\
+6&61&13\\7&52&16\\8&52&21\\9&67&35\\10&71&6\\11&44&6\\\midrule
+Total&570&186\\
+All $12$ bass values&6840&2232\\\bottomrule
+\end{tabular}
+\caption{Exact disjoint slices. Every entry in the two count columns is included in the Lean cardinality proof.}\label{tab:counts}
+\end{table}
+
+The source generator takes all six upper permutations of the $55$ shapes, producing $330$ entries with duplicates. Each moved endpoint is transposed by $1$ to restore bass $0$. Proved membership equivalences identify this raw image list with $\I_0$. Tenor filtering and deduplication give the image slices; source-membership filtering gives the approachable slices. Duplicate-freeness connects their lengths to cardinalities.
+
+\clearpage
+\section{Formal verification and reproducibility}
+The mathematical definitions are implemented in Lean 4.32.2. The initial chord structure uses natural-number fields together with a boundedness test requiring all four fields to be below $12$. The intrinsic Boolean predicate checks all $24$ reorderings. The move functions reduce each coordinate modulo $12$. Thus the final cardinality statements over that structure are genuinely about bounded ordered pitch-class endpoints; an explicit equivalence connects them to products of $\operatorname{Fin}(12)$.
+
+The proof is organized into three connected parts.
+\begin{enumerate}[label=\arabic*.]
+\item \emph{Intrinsic graph semantics.} Transposition and upper-voice permutation lemmas connect each valid chord to its sorted bass-zero representative. The exact local lifting theorem is proved for every valid representative. Intrinsic candidate slices give the complete vertex list. Successor equations are checked for all $55$ vertices.
+\item \emph{Bounds and attainment.} For each initial vertex a finite list certifies membership, closure under the actual successor function, and a length bound of seven after filtering out terminal vertices. The generic proof of Lemma~\ref{lem:closed} converts these certificates into bounds on finite-set images of arbitrary walks. A concrete array of $36$ ordered chords certifies the periodic lift; a natural-number-indexed proof connects the last state back to the first on every repetition.
+\item \emph{Actual image cardinalities.} Inverse-move and transposition lemmas prove image membership and its invariance. Bass normalization is implemented as an equivalence with an explicit inverse. The raw image generator is proved sound and complete. Duplicate-free, disjoint slices are related to subtype cardinalities before their exact finite counts are assembled.
+\end{enumerate}
+
+The principal exported statements in namespace \code{Omnibus} are:
+\begin{center}
+\begin{tabular}{p{0.54\linewidth}p{0.38\linewidth}}\toprule
+Lean theorem & Mathematical content\\\midrule
+\code{universal_eight_type_bound} & Finite-walk upper bound $8$\\
+\code{universal_infinite_seven_type_bound} & Bound $7$ for every infinite prefix\\
+\code{eight_type_bound_is_attained} & An admissible eight-type finite walk\\
+\code{infinite_seven_type_bound_is_sharp} & Infinite all-prefix bound and attainment\\
+\code{global_image_count_exact} & Actual image cardinality $6840$\\
+\code{global_approachable_count_exact} & Actual approachable cardinality $2232$\\\bottomrule
+\end{tabular}
+\end{center}
+The count module also exports bass-zero cardinalities $570$ and $186$. The infinite witness has a separate theorem establishing an admissible step at every natural-number index, so its status is stronger than a checked finite prefix or a quotient-level diagram.
+
+The principal exports have the standard axiom inventory
+\code{propext}, \code{Classical.choice}, and \code{Quot.sound}.
+No admitted proof, custom graph axiom, \code{native_decide}, or external numerical oracle occurs in their proof dependencies. Finite checks use kernel-reduced equalities or kernel-checked decision procedures; the generic transport and cardinality arguments supply the connection to universal statements.
+
+The package includes sources, successor data, run receipts, and a dependency manifest. Bounds and witnesses are assembled in \code{UniversalBounds.lean} and \code{SharpBounds.lean}. The stronger infinite result is in \code{InfiniteRangeBound.lean}; counts are in \code{ExactImageCounts.lean}. An independent clean replay rebuilt all $101$ project modules from frozen sources and checked a separate reviewer audit. No existing project objects were reused; installed Lean and Mathlib dependencies were shared. Independent semantic review checked the definitions, theorem scopes, and cardinality equivalences.
+
+The $49$-edge total and strongly connected component description are readings of the table, not separately named Lean exports. Pairwise image-intersection counts and a modulo-three lower bound for return times are outside the formal results asserted here.
+
+\clearpage
+\section{Interpretation and relation to earlier work}
+\subsection{The entrance qualification}
+The type $\typ{036}$ has no incoming edge in the complete graph. By exact projection and lifting, no permitted ordered chord of this type belongs to $\Aset$. Both sharpness witnesses therefore start at a chord that is permitted but cannot itself be approached from another permitted chord by a descending move.
+
+Requiring the initial chord to belong to $\Aset$ excludes all four entrances. The table then gives bounds of seven types for finite walks and six for infinite walks: at most one six-vertex recurrent component and, only in the finite case, a terminal exit. Walks avoiding the recurrent part have at most three vertices. Removing the entrance from each witness attains the restricted bounds. These $7/6$ statements are graph consequences, not exported Lean theorems. In particular, an entrance-plus-cycle walk with seven types does not form a seven-type strongly connected component.
+
+\subsection{What remains open about the source formulation}
+Pyle's Conjecture 1 concerns unique sonorities before an extension. The source does not define these notions sufficiently to identify that claim with Theorem~\ref{thm:bounds}. Its diagrams distinguish inversions and some root-marked interpretations of symmetric chords. Our quotient has no root labels, and type repetition has not been equated with extension. Thus the witnesses refute a six-type bound for our unrestricted walks, without constituting a certified disproof of Pyle's conjecture.
+
+Pyle's Figure~16 already displays the two three-type recurrent families. Figures~11 and 17--19 contain the branching recurrent patterns underlying the two six-type components. The recurrent $3/6$ organization must therefore be credited to that work, rather than presented as a discovery of this calculation \cite{pyle}.
+
+\subsection{Prior graph and transformation models}
+Rockwell's birdcage graphs study inter-cardinality voice leading, including omnibus subgraphs, using a relation specified by upward and downward semitone and whole-tone motions \cite{rockwell}. That framework is relevant prior art; its chord equivalence and voice-leading relation differ from the fixed-bass, ordered four-coordinate relation used here. Fiore and collaborators develop simply transitive group actions, extensions, and duality for triads and seventh chords, with omnibus and reflected omnibus progressions as motivating examples \cite{fiore}. These works preclude treating graph-based or transformation-based study of omnibus progressions as new in itself.
+
+The contribution is limited to checked statements for the specified model. A wider literature comparison and a justified interpretation of extension remain necessary before claims of novelty or resolution of Pyle's conjecture.
+
+\begin{thebibliography}{9}\small
+\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}
+\bibitem{pyle} Hayden Pyle. Generalized Omnibus Progressions: A Mathematical Formalization of Harmonic Progressions Exhibiting Semitonal Contrary Motion and Tertian Sonorities. \emph{MusMat: Brazilian Journal of Music and Mathematics} 9 (2025), 27--41. \href{https://doi.org/10.46926/musmat.2025v9.27-41}{doi:10.46926/musmat.2025v9.27-41}. \href{https://musmat.org/journal/v9/02-Pyle.pdf}{Publisher PDF}.
+\bibitem{rockwell} Joti Rockwell. Birdcage Flights: A Perspective on Inter-Cardinality Voice Leading. \emph{Music Theory Online} 15(5) (2009). \href{https://www.mtosmt.org/issues/mto.09.15.5/mto.09.15.5.rockwell.html}{Publisher article}.
+\bibitem{fiore} Thomas M. Fiore, Thomas Noll, Ethan Bonnell, Hayden Pyle, No\'e Rodriguez, Meredith Williams, Sonia Cannas, and Moreno Andreatta. Transformations of Triads and Seventh Chords: Group Extensions and Duality. Preprint (2025), \href{https://arxiv.org/abs/2507.20811}{arXiv:2507.20811}.
+\end{thebibliography}
+
+\clearpage
+\appendix
+\section{Complete successor table}\label{app:graph}
+Each type is a sorted bass-relative triple. Digits $\typ{A}$ and $\typ{B}$ mean $10$ and $11$. An empty successor set is denoted $\varnothing$. The table has $55$ distinct rows and $49$ target entries. It includes terminal, transient, and recurrent vertices.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.27}
+\begin{tabular}{ll@{\hspace{2.9em}}ll}\toprule
+Type & Successors & Type & Successors\\\midrule
+$\typ{036}$ & $\typ{148}$ & $\typ{378}$ & $\typ{499}$\\
+$\typ{037}$ & $\typ{158}$ & $\typ{379}$ & $\typ{48B}$\\
+$\typ{038}$ & $\typ{159}$ & $\typ{37A}$ & $\typ{048}$\\
+$\typ{039}$ & $\varnothing$ & $\typ{37B}$ & $\typ{049},\typ{058},\typ{148}$\\
+$\typ{047}$ & $\typ{159},\typ{258}$ & $\typ{388}$ & $\typ{599}$\\
+$\typ{048}$ & $\typ{259}$ & $\typ{399}$ & $\varnothing$\\
+$\typ{049}$ & $\varnothing$ & $\typ{447}$ & $\typ{559}$\\
+$\typ{058}$ & $\typ{269}$ & $\typ{448}$ & $\varnothing$\\
+$\typ{059}$ & $\varnothing$ & $\typ{449}$ & $\varnothing$\\
+$\typ{069}$ & $\varnothing$ & $\typ{458}$ & $\typ{669}$\\
+$\typ{148}$ & $\typ{269},\typ{359}$ & $\typ{459}$ & $\varnothing$\\
+$\typ{158}$ & $\typ{369}$ & $\typ{469}$ & $\varnothing$\\
+$\typ{159}$ & $\typ{36A}$ & $\typ{477}$ & $\varnothing$\\
+$\typ{258}$ & $\typ{36A},\typ{379},\typ{469}$ & $\typ{478}$ & $\typ{599}$\\
+$\typ{259}$ & $\typ{37A}$ & $\typ{479}$ & $\varnothing$\\
+$\typ{269}$ & $\typ{37B},\typ{47A}$ & $\typ{47A}$ & $\typ{058}$\\
+$\typ{336}$ & $\typ{448}$ & $\typ{47B}$ & $\typ{059},\typ{158}$\\
+$\typ{337}$ & $\typ{449},\typ{458}$ & $\typ{488}$ & $\typ{699}$\\
+$\typ{338}$ & $\typ{459}$ & $\typ{489}$ & $\varnothing$\\
+$\typ{339}$ & $\varnothing$ & $\typ{48B}$ & $\typ{069},\typ{159}$\\
+$\typ{348}$ & $\typ{469},\typ{559}$ & $\typ{499}$ & $\varnothing$\\
+$\typ{358}$ & $\typ{479}$ & $\typ{558}$ & $\varnothing$\\
+$\typ{359}$ & $\typ{47A}$ & $\typ{559}$ & $\varnothing$\\
+$\typ{366}$ & $\typ{478}$ & $\typ{588}$ & $\varnothing$\\
+$\typ{368}$ & $\typ{47A},\typ{489}$ & $\typ{599}$ & $\varnothing$\\
+$\typ{369}$ & $\typ{47B}$ & $\typ{669}$ & $\varnothing$\\
+$\typ{36A}$ & $\typ{047},\typ{48B}$ & $\typ{699}$ & $\varnothing$\\
+$\typ{377}$ & $\typ{489},\typ{588}$ &  & \\
+\bottomrule
+\end{tabular}
+\end{center}
+The table is reproduced from the intrinsic successor computation. It can be independently reconstructed by enumerating all $12^4$ ordered quadruples, applying the permutation-and-interval predicate, applying all three moves to permitted sources, retaining permitted targets, and projecting by $q$. Computing the three-coordinate quotient rule directly yields the same table. The Lean proof independently connects every listed successor equation to the intrinsic definitions; a correct table alone would not substitute for that semantic bridge.
+\end{document}

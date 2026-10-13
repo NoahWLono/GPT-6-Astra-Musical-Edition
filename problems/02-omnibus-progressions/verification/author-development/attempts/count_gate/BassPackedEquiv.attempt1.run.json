@@ -1,0 +1,15 @@
+{
+  "module": "BassPackedEquiv",
+  "started_utc": "2026-10-13T19:47:41.463663+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 2.02,
+  "cpu_seconds": 2.013,
+  "max_rss_kib": 1210832,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "c56dd46cecd054687bc0e2fca7e9990a27736b9046002af120ffa9c7161628e6",
+  "olean_sha256": "33bead910f2d6f87d5da306adfaec6535f8562e8f3d7e3556e8c10b4f47cf1c7"
+}

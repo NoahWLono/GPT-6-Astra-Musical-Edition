@@ -1,0 +1,32 @@
+{
+  "module": "FamilyRepresentatives",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 1.147604,
+  "aggregate_cpu_seconds": 3.939515,
+  "wall_seconds": 1.171594,
+  "peak_sampled_rss_bytes": 1564508160,
+  "source_sha256": "26125cb56fdc322ef9b622177a3f3667865f60789f37470fb9e222eae362661f",
+  "object_sha256": "c95930c07c75341aa971428cb75846b3ab5c4c442bff44711628abe445b95eaf",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FamilyRepresentatives.olean",
+    "FamilyRepresentatives.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

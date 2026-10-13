@@ -1,0 +1,15 @@
+{
+  "module": "NodeSlice5",
+  "started_utc": "2026-10-13T19:28:17.759132+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 1.922,
+  "cpu_seconds": 1.881,
+  "max_rss_kib": 813712,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "592d62968c485ce1d5dec3924439c18476ca66d27f5b1865e83448e966af9270",
+  "olean_sha256": "1db66ae769a43cf8b0d1a212c5a7e0955732cef84311e3c64c007b1ea0f9e9ec"
+}

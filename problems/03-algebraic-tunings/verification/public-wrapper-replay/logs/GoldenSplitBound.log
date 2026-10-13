@@ -1,0 +1,3 @@
+golden_split_run_span_sq : ∀ (m b B : ℤ) (n : ℕ),
+  B < 5 * m * m / 4 → (∀ j ≤ n, |goldenNorm m (b + ↑j)| ≤ B) → ↑n ^ 2 ≤ 2 * B
+'AlgebraicTunings.golden_split_run_span_sq' depends on axioms: [propext, Classical.choice, Quot.sound]

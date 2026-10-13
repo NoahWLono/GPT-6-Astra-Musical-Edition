@@ -1,0 +1,15 @@
+{
+  "module": "CountTranslation",
+  "started_utc": "2026-10-13T19:37:42.625900+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 1.617,
+  "cpu_seconds": 1.574,
+  "max_rss_kib": 779356,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "4935b47ad03a59e020545efcd1a487c372b7aa48351741973d1f176ccca498ff",
+  "olean_sha256": "dd252e9f6a601b355285374416c35286c29a1ffd9bcaef15d46cd41c2fd73f9b"
+}

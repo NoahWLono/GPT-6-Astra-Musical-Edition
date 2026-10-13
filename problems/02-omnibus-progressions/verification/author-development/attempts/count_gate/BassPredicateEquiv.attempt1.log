@@ -1,0 +1,1 @@
+'Omnibus.predicateBassEquiv' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,2 @@
+'Omnibus.reachable_sorted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.reachable_canonical' depends on axioms: [propext, Classical.choice, Quot.sound]

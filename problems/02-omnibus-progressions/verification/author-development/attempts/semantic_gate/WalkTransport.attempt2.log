@@ -1,0 +1,1 @@
+'WalkTransport.infinite_walk_lift' depends on axioms: [Classical.choice]

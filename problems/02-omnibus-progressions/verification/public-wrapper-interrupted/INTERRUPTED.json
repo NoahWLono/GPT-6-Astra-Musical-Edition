@@ -1,0 +1,13 @@
+{
+  "status": "infrastructure_interrupted",
+  "reason": "exec-server transport disconnected (pong_timeout); session lost; no wrapper or compiler process survived",
+  "completed_modules": 71,
+  "completed_actual_cpu_seconds": 175.692851,
+  "last_completed_module": "ImageCellBlock6_0",
+  "incomplete_module": "ImageCellBlock6_1",
+  "incomplete_invocation_actual_cpu_seconds": null,
+  "incomplete_invocation_hard_cpu_limit_seconds": 20,
+  "no_completed_failure_or_cap": true,
+  "complete_replay_claim": false,
+  "retry_authorization": "One separate fresh 400-second actual compiler CPU budget authorized by parent; stop if transport fails again."
+}

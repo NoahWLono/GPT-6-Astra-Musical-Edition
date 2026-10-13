@@ -1,0 +1,6 @@
+golden_nonpositive_line_span : ∀ (phi : ℝ),
+  phi ^ 2 = phi + 1 →
+    3 / 2 < phi →
+      ∀ (m b B : ℤ) (n : ℕ) (z : ℝ),
+        m ≤ 0 → 0 ≤ z → z ^ 2 = ↑B → 0 < goldenEval phi m b → goldenNorm m (b + ↑n) ≤ B → ↑n ≤ z
+'AlgebraicTunings.golden_nonpositive_line_span' depends on axioms: [propext, Classical.choice, Quot.sound]

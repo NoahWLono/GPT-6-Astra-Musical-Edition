@@ -1,0 +1,31 @@
+{
+  "result": "PASS",
+  "frozen_author_modules": 101,
+  "fresh_lean_compilations_including_reviewer_audit": 102,
+  "compiler_version_processes": 1,
+  "independent_fixture_processes": 1,
+  "compiler_cpu_seconds": 295.1884910000001,
+  "fixture_cpu_seconds": 0.154832,
+  "aggregate_actual_child_cpu_seconds": 295.3433230000001,
+  "aggregate_authorized_cpu_seconds": 400,
+  "peak_rss_bytes": 1901170688,
+  "maximum_process_cpu_seconds": 8.981411,
+  "failures": 0,
+  "resource_caps_hit": 0,
+  "original_project_objects_reused": 0,
+  "frozen_original_and_snapshot_sources_still_match": true,
+  "axiom_audit_lines": 434,
+  "unique_axiom_audited_declarations": 426,
+  "additional_reviewer_lean_results": [
+    "nodes.length = 55",
+    "inImage (finiteWitness 0) = false",
+    "inImage (infiniteWitness 0) = false"
+  ],
+  "limitations": [
+    "Conjecture 1 is not settled",
+    "Novelty is not established",
+    "Mathlib and standard library dependency objects were reused",
+    "No approachability-at-start sharpness claim"
+  ],
+  "manifest_sha256": "bab322d0d555a744ed13c924f075e48686ebffc6692ffaf55d90d84ea8ab2e23"
+}

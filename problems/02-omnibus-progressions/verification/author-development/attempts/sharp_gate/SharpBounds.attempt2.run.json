@@ -1,0 +1,15 @@
+{
+  "module": "SharpBounds",
+  "started_utc": "2026-10-13T19:37:06.592843+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 2.184,
+  "cpu_seconds": 2.132,
+  "max_rss_kib": 1656260,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "557179c6a90ac995240933e37e6edc6b280e20345883d04ff81bbc7f1a3c0a32",
+  "olean_sha256": "41b642db32c2e56f508b1f5215a1dccc10d8a832ef7b109c4ac4b6fb2a325eb2"
+}

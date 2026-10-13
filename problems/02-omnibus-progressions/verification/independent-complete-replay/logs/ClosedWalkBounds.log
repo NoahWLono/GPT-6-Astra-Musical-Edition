@@ -1,0 +1,15 @@
+/workspace/shared/music-research/02-omnibus-progressions/independent-complete-replay/sources/ClosedWalkBounds.lean:13:0: warning: automatically included section variable(s) unused in theorem `ClosedWalkBounds.stays_in_closed`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/shared/music-research/02-omnibus-progressions/independent-complete-replay/sources/ClosedWalkBounds.lean:21:0: warning: automatically included section variable(s) unused in theorem `ClosedWalkBounds.mem_nonterminal`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'ClosedWalkBounds.finite_distinct_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClosedWalkBounds.infinite_distinct_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClosedWalkBounds.infinite_repeat_by_seven' depends on axioms: [propext, Classical.choice, Quot.sound]

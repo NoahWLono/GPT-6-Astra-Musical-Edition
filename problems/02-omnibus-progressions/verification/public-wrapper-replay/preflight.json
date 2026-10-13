@@ -1,0 +1,85 @@
+{
+  "status": "preflight_passed",
+  "compiler_invoked": false,
+  "environment_lock_sha256": "e131a72eb99ea1be74a86c94c4063ed051de5c78d7ff5f905a1b384a245eddf6",
+  "module_count": 102,
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "dependencies": [
+    {
+      "name": "plausible",
+      "commit": "e12c1910fe855cbfc38803cd4e55543906d5fa62"
+    },
+    {
+      "name": "LeanSearchClient",
+      "commit": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+    },
+    {
+      "name": "importGraph",
+      "commit": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12"
+    },
+    {
+      "name": "proofwidgets",
+      "commit": "6e311e2a844da9b2cc3971187df2fe0066947b93"
+    },
+    {
+      "name": "aesop",
+      "commit": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3"
+    },
+    {
+      "name": "Qq",
+      "commit": "38d591e778f100aec9762bb582f9c7f55f50e9dc"
+    },
+    {
+      "name": "batteries",
+      "commit": "023ce7d62a0531e22a5331e20b587817a80d49ff"
+    },
+    {
+      "name": "Cli",
+      "commit": "88679d088c9720c27ebdf2ba4dafe17341747f94"
+    }
+  ],
+  "direct_external_objects": [
+    {
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "object_sha256": "9dda55a2f72d6b3c05149688ab9a89f1d33087dfcc4d6bec8ad344208269112c"
+    },
+    {
+      "module": "Mathlib.Data.Finset.Card",
+      "object_sha256": "a7d1b699931a0ca89363804c0f33be0da5a9df344b6955853f12bf4c8f0efb41"
+    },
+    {
+      "module": "Mathlib.Data.Finset.Range",
+      "object_sha256": "1f34eec216adddd244dc9f04abd14374f9b739864dc614fdc5f4c4f3ccf47ce3"
+    },
+    {
+      "module": "Mathlib.Data.List.Dedup",
+      "object_sha256": "57040ee51d2abca93d164d2e4f146bc79e030c09909bc77b127da98148078fc5"
+    },
+    {
+      "module": "Mathlib.Logic.Equiv.Defs",
+      "object_sha256": "d72e09e1247e0f4ceba77158be67801027a1f266737ed748a0a5167b78df5d5e"
+    },
+    {
+      "module": "Mathlib.SetTheory.Cardinal.Finite",
+      "object_sha256": "1d1f937e5b4389d73b2126ee078d5453cdf6940e508e81570fafc6209b9182b6"
+    },
+    {
+      "module": "Std",
+      "object_sha256": "9e3065eb95ad27940d26992cbb794e39b39346de09b79bce355421b3dea26c12"
+    }
+  ],
+  "trust_boundary": "Fresh project objects; existing pinned Lean, Mathlib, and package objects are trusted. Mathlib is not rebuilt by this wrapper.",
+  "lean_path": [
+    "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay-retry/objects",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/caabcb85bd83/dependencies/mathlib4-v4.32.2/.lake/packages/batteries/.lake/build/lib/lean"
+  ],
+  "fresh_project_object_directory": "/workspace/shared/music-research/02-omnibus-progressions/public-wrapper-replay-retry/objects"
+}

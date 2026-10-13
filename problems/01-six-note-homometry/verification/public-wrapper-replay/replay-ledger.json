@@ -1,0 +1,1158 @@
+[
+  {
+    "module": "ExchangeCriterion",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 2.791911,
+    "aggregate_cpu_seconds": 2.791911,
+    "wall_seconds": 2.806311,
+    "peak_sampled_rss_bytes": 1908011008,
+    "source_sha256": "f6e39b2c707fd0cb8cd7e649885bcc84386f78b2079f61dbc4ac35612ef264f3",
+    "object_sha256": "b859e694c7ca527a39831bd1756f5bf6ddfe22cae3ecd49a618d6d9dfe0881da",
+    "log_sha256": "2504229099320ce668b1ccb4f2945a24f4a148c5733bae5c8ffa2dc178396a88",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ExchangeCriterion.olean",
+      "ExchangeCriterion.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "FamilyRepresentatives",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.147604,
+    "aggregate_cpu_seconds": 3.939515,
+    "wall_seconds": 1.171594,
+    "peak_sampled_rss_bytes": 1564508160,
+    "source_sha256": "26125cb56fdc322ef9b622177a3f3667865f60789f37470fb9e222eae362661f",
+    "object_sha256": "c95930c07c75341aa971428cb75846b3ab5c4c442bff44711628abe445b95eaf",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FamilyRepresentatives.olean",
+      "FamilyRepresentatives.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "StrictnessCore",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 3.261459,
+    "aggregate_cpu_seconds": 7.200974,
+    "wall_seconds": 3.264587,
+    "peak_sampled_rss_bytes": 1895284736,
+    "source_sha256": "9e66be3720f151d71bf7fcc922e8148b4cb1f76d0d3bbbe352cd7233d55d16cf",
+    "object_sha256": "3d6a3e7702a233a239a1e6880d1b9eb39bd73adcea0bae3eaeb14f8120027c6c",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/StrictnessCore.olean",
+      "StrictnessCore.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "CastImageBridge",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.455555,
+    "aggregate_cpu_seconds": 8.656529,
+    "wall_seconds": 1.476425,
+    "peak_sampled_rss_bytes": 1887174656,
+    "source_sha256": "81c1ebd6b8f045bf17f854cbd236fb2409e9077ecd7551b0c419362fe2ea71ff",
+    "object_sha256": "c76be7c67d7e02aaedf631d956e427e6e5bbc4e7e4bd5fd391c45b312283f2f4",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/CastImageBridge.olean",
+      "CastImageBridge.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "FourFamilyCards",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 2.652778,
+    "aggregate_cpu_seconds": 11.309307,
+    "wall_seconds": 2.666761,
+    "peak_sampled_rss_bytes": 1904676864,
+    "source_sha256": "1ff6034ffed23a0ede5bc84698b39c497071feb856d1b9f57dd757fab701772e",
+    "object_sha256": "9ec8ccaf2c2c6b16838cdc2a2351937253118f65b60091cac82cfa31c6107293",
+    "log_sha256": "652f9213fff07fe79f36de5b6961f00d4dcc047bba721218990f109caae10e32",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FourFamilyCards.olean",
+      "FourFamilyCards.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "ThreeFamilyCards",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 2.23924,
+    "aggregate_cpu_seconds": 13.548547,
+    "wall_seconds": 2.258613,
+    "peak_sampled_rss_bytes": 1902776320,
+    "source_sha256": "00e7394d8206771d85abb57c0a1ca277ccdbd2314a5cb973a5939046b49d6377",
+    "object_sha256": "05e4a3f37d28e3079697f1f19acf07ed1a0148e77d2903ba068d8d5ef4d59fd4",
+    "log_sha256": "476c820346199652e74423a4dd71b04a8f499a76775a9ab99519bb3980b94a56",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ThreeFamilyCards.olean",
+      "ThreeFamilyCards.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "CommonRepresentatives",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.534576,
+    "aggregate_cpu_seconds": 15.083123,
+    "wall_seconds": 1.545702,
+    "peak_sampled_rss_bytes": 1562349568,
+    "source_sha256": "0bcb52065f7fb5a1dc712901df4e275e9ac5138c4ab2ef59e233fa2cacf0bd12",
+    "object_sha256": "0d42cf6481e0acddd10a15a3d96ee65d3e56d1e20045dd7a4286e135dbb7ddc7",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/CommonRepresentatives.olean",
+      "CommonRepresentatives.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "FourCommonCard",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.814337,
+    "aggregate_cpu_seconds": 16.89746,
+    "wall_seconds": 1.825968,
+    "peak_sampled_rss_bytes": 1890459648,
+    "source_sha256": "20ec64f0848284378413982d0084216449deb9dbcc0d458cb488ce755ee817b1",
+    "object_sha256": "ad3511c5cc8016bb7ff6e27853c4004965a4c416bd60c7e9db69243be04d1383",
+    "log_sha256": "6f263a963d5a3adac111270727705d65af8611a97d079e803c4c5f9746d70f3e",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FourCommonCard.olean",
+      "FourCommonCard.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "FourCommonEndpoints",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 2.847278,
+    "aggregate_cpu_seconds": 19.744738,
+    "wall_seconds": 2.863653,
+    "peak_sampled_rss_bytes": 1889529856,
+    "source_sha256": "d4b8e2597562e8988b9f2cccab100e94640dd0a637e3fab4ad3b5780894ab416",
+    "object_sha256": "0e4a3c24b0619f6901cda0a08f0dca16523157b25543b71e926784381cc10d23",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FourCommonEndpoints.olean",
+      "FourCommonEndpoints.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "FourCommonShape",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 3.191811,
+    "aggregate_cpu_seconds": 22.936549,
+    "wall_seconds": 3.208111,
+    "peak_sampled_rss_bytes": 1891295232,
+    "source_sha256": "2d849af4317c7f004c11a7f6c1eb4e08094b5ec27b0c095dc1649f3bdb06b24d",
+    "object_sha256": "90c021287aa493dd6a80a4b1466ef45ad47cfdaedb8edac6ee4ff66f7455c293",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FourCommonShape.olean",
+      "FourCommonShape.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "ComponentConstruction",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 3.183022,
+    "aggregate_cpu_seconds": 26.119571,
+    "wall_seconds": 3.197899,
+    "peak_sampled_rss_bytes": 1899765760,
+    "source_sha256": "9b3d0330208c7d1f553bc0c982c69ff2b1b805f317972dc42a1d5244c89d3fee",
+    "object_sha256": "bd95b7759e14cb018fe8c680e560244209a44144ca2f2175bcb4eede227c788f",
+    "log_sha256": "114c316d880db49b2243a64db1b9d3da02ef41343e80ba8cdb35cc3c99efd10a",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ComponentConstruction.olean",
+      "ComponentConstruction.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "FourFamilyHomometry",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 10.831917,
+    "aggregate_cpu_seconds": 36.951488,
+    "wall_seconds": 10.871619,
+    "peak_sampled_rss_bytes": 1915973632,
+    "source_sha256": "7389ada05fb10ccf959d99d79c024e252dce2ccca2efe6e7e02972b90e633b3b",
+    "object_sha256": "4d53eecf85d6bfa9e37d61add8a55f7616511647ffca478f1db8eb801fe9e962",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FourFamilyHomometry.olean",
+      "FourFamilyHomometry.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "FourMapExclusions",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 2.417653,
+    "aggregate_cpu_seconds": 39.369141,
+    "wall_seconds": 2.418015,
+    "peak_sampled_rss_bytes": 1591214080,
+    "source_sha256": "c7e35265ab45084d3582bb10f8465774e8e3a54fad9c6d01d3bc55e1c701078f",
+    "object_sha256": "d5ae8ba5a1c4ae9ace491f0f38bf8e9d371512e7c0af0c10c188298998565c46",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FourMapExclusions.olean",
+      "FourMapExclusions.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "FourFamilyStrictness",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 3.506975,
+    "aggregate_cpu_seconds": 42.876116,
+    "wall_seconds": 3.52685,
+    "peak_sampled_rss_bytes": 1902399488,
+    "source_sha256": "d7b2dd10d5f9b39d9b11f70ce16e954c8f0526817e773d1de5a8131178431b0c",
+    "object_sha256": "3bda63d697b0edb2455cc63e136e17b1d8380a6a8d78a20226f348f1ec95c4eb",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FourFamilyStrictness.olean",
+      "FourFamilyStrictness.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "EvenOrderRefinement",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 2.211301,
+    "aggregate_cpu_seconds": 45.087417,
+    "wall_seconds": 2.213702,
+    "peak_sampled_rss_bytes": 1906253824,
+    "source_sha256": "d17e2108ce2e140cdf20740da47dbf4308bc5938c0d11814d88c7b16cf878def",
+    "object_sha256": "48d48a87f3c414c937f37433123212e002198f3781243621f508957e74101c2c",
+    "log_sha256": "b59e19d8029dab606943011716d6734de35b349a4149670f733b243731edc496",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/EvenOrderRefinement.olean",
+      "EvenOrderRefinement.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "SixExchangeDefinition",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.334729,
+    "aggregate_cpu_seconds": 46.422146,
+    "wall_seconds": 1.340888,
+    "peak_sampled_rss_bytes": 1890181120,
+    "source_sha256": "79047d176d6510fcea723d6abbdcf0c372ca16e9eb3fd2d9a4b7ebf9180c7fcc",
+    "object_sha256": "55bc98cd87315a2bdd2fe32612152180ce02b15c3740dad24a08a0fecbf431b2",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/SixExchangeDefinition.olean",
+      "SixExchangeDefinition.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "FourFamilyExistence",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.30023,
+    "aggregate_cpu_seconds": 47.722376,
+    "wall_seconds": 1.317168,
+    "peak_sampled_rss_bytes": 1889259520,
+    "source_sha256": "f2497f7114bee414fc524f8382b6c8f742d3880a5798d06050da53e27c6284ae",
+    "object_sha256": "940934341a68c34f3654e8a1df8b4450df20baddbb0c093b0478977c78e1b4b4",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FourFamilyExistence.olean",
+      "FourFamilyExistence.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "ThreeCommonCard",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.445926,
+    "aggregate_cpu_seconds": 49.168302,
+    "wall_seconds": 1.458079,
+    "peak_sampled_rss_bytes": 1889988608,
+    "source_sha256": "36c8ad1da171e3ab23948aa0925ea51cdbd1e1ada4d8b666f9899961c7d9959c",
+    "object_sha256": "dc62a103fc0b7a0d9d4ae0ef7b9ab08587861f4c38e7f24bde7856e7a673c591",
+    "log_sha256": "107fa2db23f4ea7d430a58b8d8233896c8d62c43ff9de0549a13f65f0c897acc",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ThreeCommonCard.olean",
+      "ThreeCommonCard.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "ThreeCommonEndpoints",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.562061,
+    "aggregate_cpu_seconds": 50.730363,
+    "wall_seconds": 1.568921,
+    "peak_sampled_rss_bytes": 1896992768,
+    "source_sha256": "e0236891375b00b56db43f8e06d6bea2ffe66e967a0f387d447405854159988e",
+    "object_sha256": "b3d86351b17d4e134763474f07208e77529339133e0c505f2c1e0fa764ccf0b1",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ThreeCommonEndpoints.olean",
+      "ThreeCommonEndpoints.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "ThreeCommonShape",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.831082,
+    "aggregate_cpu_seconds": 52.561445,
+    "wall_seconds": 1.845579,
+    "peak_sampled_rss_bytes": 1898647552,
+    "source_sha256": "3f589a3e3b7f98f4c352392766b59bf1d3c2292482992a69f09a7ae453b7b7a0",
+    "object_sha256": "1821c10aeebef7480f078c353f0845e0d40f5ff50e5ee476c5e1efcdb9608dbd",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ThreeCommonShape.olean",
+      "ThreeCommonShape.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "ThreeFamilyHomometry",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 11.051958,
+    "aggregate_cpu_seconds": 63.613403,
+    "wall_seconds": 11.073431,
+    "peak_sampled_rss_bytes": 1915150336,
+    "source_sha256": "f6092fcdcc917881f2f1820e6adbdb526671beb73197f6da59b5457518dd3d8c",
+    "object_sha256": "ddf9c753499bc1c8cdb99f2de7b3e32bd486eae70696513c869cb5647c6858df",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ThreeFamilyHomometry.olean",
+      "ThreeFamilyHomometry.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "ThreeMapExclusions",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 2.42507,
+    "aggregate_cpu_seconds": 66.038473,
+    "wall_seconds": 2.437362,
+    "peak_sampled_rss_bytes": 1589604352,
+    "source_sha256": "dd86287b5025e2861514be9f8c4dc55ab7a20d24415be2b03ed59f362d80e8c2",
+    "object_sha256": "643009ab04dffc2533476320ede2d5b99e46384e079280571229d8fae34bc9b5",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ThreeMapExclusions.olean",
+      "ThreeMapExclusions.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "ThreeFamilyStrictness",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 2.986559,
+    "aggregate_cpu_seconds": 69.025032,
+    "wall_seconds": 3.008401,
+    "peak_sampled_rss_bytes": 1896443904,
+    "source_sha256": "a053aa88fff007b424c6b7b5898857d70cb39d30c3bcc5379cf42c1ac540cc6c",
+    "object_sha256": "9a80d35b760d2be520588785d9f8628dd97fab28e3f11ed7504d1fd1f43f0ffb",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ThreeFamilyStrictness.olean",
+      "ThreeFamilyStrictness.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "ThreeFamilyExistence",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.469256,
+    "aggregate_cpu_seconds": 70.494288,
+    "wall_seconds": 1.477548,
+    "peak_sampled_rss_bytes": 1886842880,
+    "source_sha256": "3b8df4cc7c9206f30f3c90af11df3796b8029db307d31cd12d7c6fd47a418af9",
+    "object_sha256": "6b9d8ac4dc9138c45e5a950bde4611f5e9fd608f3b328d0f9a2561f5810d53a9",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ThreeFamilyExistence.olean",
+      "ThreeFamilyExistence.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "ParametricFamilies",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.27621,
+    "aggregate_cpu_seconds": 71.770498,
+    "wall_seconds": 1.298214,
+    "peak_sampled_rss_bytes": 1883758592,
+    "source_sha256": "7acc5e5b53eafed050b06d8a86590b14d2722bbbaaea18b747145d8ecd2dc8d7",
+    "object_sha256": "b7344ec03921340e526558490688610f02767154ae24600471cfac85c6089874",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ParametricFamilies.olean",
+      "ParametricFamilies.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "AmbientBound",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.614627,
+    "aggregate_cpu_seconds": 73.385125,
+    "wall_seconds": 1.630433,
+    "peak_sampled_rss_bytes": 1894256640,
+    "source_sha256": "56267111692cf2aaa41b49899276c3d40399d51bb0bb43f45477d26f7b245032",
+    "object_sha256": "ac0eae3d0de074ef77dc7838aef20ca1aef95890bb99f1c559e0c81f14463e85",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/AmbientBound.olean",
+      "AmbientBound.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "SmallModuli",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.754886,
+    "aggregate_cpu_seconds": 75.140011,
+    "wall_seconds": 1.759003,
+    "peak_sampled_rss_bytes": 1891938304,
+    "source_sha256": "ee6446204835d5f56aed0948107ee2a852e54361b367e4ffa6ad25fee34bbd02",
+    "object_sha256": "007792da068693d4b9878c4a4208b42acb9959a750650214f573d97a8fc90e55",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/SmallModuli.olean",
+      "SmallModuli.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "SixNoteExistence",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.504857,
+    "aggregate_cpu_seconds": 76.644868,
+    "wall_seconds": 1.512677,
+    "peak_sampled_rss_bytes": 1892831232,
+    "source_sha256": "d34c049242e186bbf98e5bdade2bd469e21e5a5d179d495a8ecebf98828c2c68",
+    "object_sha256": "a93e1dd69bb868cd42f8f6043f65c55ffd59886aa8d88ae86106caf31be23f22",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/SixNoteExistence.olean",
+      "SixNoteExistence.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "TranslationBridge",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.751059,
+    "aggregate_cpu_seconds": 78.395927,
+    "wall_seconds": 1.763729,
+    "peak_sampled_rss_bytes": 1889976320,
+    "source_sha256": "94fb247d0b62c842e9fa7feef5b23b3a41ad0de869b6116e0d5ef7556f57de36",
+    "object_sha256": "69c13de4bc959e2c5249fb3be4057ddd085eced5dbc82155113607e28ec26346",
+    "log_sha256": "263cb31b6ca36c45de785fedd8f6ff2efc665ee92a6eec1d5f554f165dbdfa23",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/TranslationBridge.olean",
+      "TranslationBridge.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "Normalization",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.655216,
+    "aggregate_cpu_seconds": 80.051143,
+    "wall_seconds": 1.659582,
+    "peak_sampled_rss_bytes": 1893163008,
+    "source_sha256": "78e87c17f191f6500bc5f2b6bbd41e30bfca0cb644aea6443d8d48a3f45cce93",
+    "object_sha256": "ecaa0835216cc3bce46babe5d5b5bfe5c6d499da602d8f9693baf0b4ca83b18e",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/Normalization.olean",
+      "Normalization.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "FullSixNoteExistence",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.383921,
+    "aggregate_cpu_seconds": 81.435064,
+    "wall_seconds": 1.408663,
+    "peak_sampled_rss_bytes": 1892671488,
+    "source_sha256": "fe4da08a9e86550f233b2df20670271071e0f51e972cb2f7e50643752e8cd213",
+    "object_sha256": "7258680f955c974e86c9d79d36485bcb615ea4209ed3ca73197ecd25c2a23f27",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_audits": {},
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FullSixNoteExistence.olean",
+      "FullSixNoteExistence.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "FullAudit",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.488703,
+    "aggregate_cpu_seconds": 82.923767,
+    "wall_seconds": 1.491833,
+    "peak_sampled_rss_bytes": 1885720576,
+    "source_sha256": "8b9066fef916786dab8e327bb6689e484e7af5f8998402a3bf8dd3dd9221a2e7",
+    "object_sha256": "f7fdf9b21b67bf792980ebd920aa62141eb14cb7a1373d6801d59db0218d9d15",
+    "log_sha256": "7ad81b6fd2c75f1e6e7be2c0f0aebf6d4fbe235e0cd550782f3f27ccf9a18164",
+    "axiom_audits": {
+      "OnePitchShift.strict_exchange_ambient_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OnePitchShift.twelve_le_modulus_of_six_exchange": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OnePitchShift.six_exchange_sets_iff_normalized": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OnePitchShift.six_note_one_exchange_existence_iff": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/FullAudit.olean",
+      "FullAudit.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "ParametricAudit",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.578531,
+    "aggregate_cpu_seconds": 84.502298,
+    "wall_seconds": 1.57908,
+    "peak_sampled_rss_bytes": 1889705984,
+    "source_sha256": "a281c5c69aa80ca7b7edf18a8ace6d5eb0e26f724bc8a8d7a3ba0112b4949ca1",
+    "object_sha256": "c72f146f0b177fb52605723c823b4190cd2e5c18dc12456d9c199260b960a12c",
+    "log_sha256": "5903f5d12a0552b09d92b5071c5898d5475b531bad6f6ee8ede3fa1f1c4db289",
+    "axiom_audits": {
+      "OnePitchShift.homometric_of_periodic_reflected_components": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OnePitchShift.not_dihedral_of_nat_witnesses": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OnePitchShift.four_family_strict": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OnePitchShift.three_family_strict": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OnePitchShift.four_family_homometric": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OnePitchShift.three_family_homometric": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OnePitchShift.four_family_six_exchange": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OnePitchShift.three_family_six_exchange": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ParametricAudit.olean",
+      "ParametricAudit.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  },
+  {
+    "module": "IndependentExactStatement",
+    "exit_code": 0,
+    "stop_reason": null,
+    "cpu_seconds": 1.558425,
+    "aggregate_cpu_seconds": 86.060723,
+    "wall_seconds": 1.572455,
+    "peak_sampled_rss_bytes": 1900658688,
+    "source_sha256": "88caf5fe57131d077230774489c2da7b4382f52746acf5c41af759ca666bfa7c",
+    "object_sha256": "b00a52dcba534905e6b04be0bf1acd3bc74af3a84d8ebd2cd8b67c1fc519f146",
+    "log_sha256": "1059e0c79b462e91023e367366ac1d4f4901d6127035243c68f7ae7a302910ab",
+    "axiom_audits": {
+      "IndependentHomometryAudit.positive_modulus_exact_statement": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "forbidden_axioms": {},
+    "sorry_warning": false,
+    "command": [
+      "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+      "-j1",
+      "-M1900",
+      "-o",
+      "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/IndependentExactStatement.olean",
+      "IndependentExactStatement.lean"
+    ],
+    "limits": {
+      "cpu_hard_seconds": 20,
+      "cpu_watchdog_seconds": 19.5,
+      "aggregate_cpu_seconds": 180,
+      "wall_seconds": 35,
+      "rss_bytes": 2147483648,
+      "output_bytes": 67108864,
+      "disk_floor_bytes": 4294967296
+    }
+  }
+]

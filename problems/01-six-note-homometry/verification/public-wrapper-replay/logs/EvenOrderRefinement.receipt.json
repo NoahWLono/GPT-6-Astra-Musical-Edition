@@ -1,0 +1,32 @@
+{
+  "module": "EvenOrderRefinement",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.211301,
+  "aggregate_cpu_seconds": 45.087417,
+  "wall_seconds": 2.213702,
+  "peak_sampled_rss_bytes": 1906253824,
+  "source_sha256": "d17e2108ce2e140cdf20740da47dbf4308bc5938c0d11814d88c7b16cf878def",
+  "object_sha256": "48d48a87f3c414c937f37433123212e002198f3781243621f508957e74101c2c",
+  "log_sha256": "b59e19d8029dab606943011716d6734de35b349a4149670f733b243731edc496",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/EvenOrderRefinement.olean",
+    "EvenOrderRefinement.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

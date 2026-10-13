@@ -1,0 +1,60 @@
+structure Omnibus.Chord : Type
+number of parameters: 0
+fields:
+  Omnibus.Chord.bass : ℕ
+  Omnibus.Chord.tenor : ℕ
+  Omnibus.Chord.alto : ℕ
+  Omnibus.Chord.soprano : ℕ
+constructor:
+  Omnibus.Chord.mk (bass tenor alto soprano : ℕ) : Chord
+def Omnibus.stacking : Chord → Bool :=
+fun c =>
+  (have d := interval c.bass c.tenor;
+    have e := interval c.tenor c.alto;
+    have f := interval c.alto c.soprano;
+    have triad := d == 0 && third e && third f || e == 0 && third d && third f || f == 0 && third d && third e;
+    have seventh := allDistinct c && third d && third e && third f;
+    pure (triad || seventh)).run
+def Omnibus.chord : Chord → Bool :=
+fun c => bounded c && (reorderings c).any stacking
+def Omnibus.step : Fin 3 → Chord → Chord :=
+fun v c =>
+  { bass := (c.bass + 11) % 12, tenor := (c.tenor + if (↑v == 0) = true then 1 else 0) % 12,
+    alto := (c.alto + if (↑v == 1) = true then 1 else 0) % 12,
+    soprano := (c.soprano + if (↑v == 2) = true then 1 else 0) % 12 }
+def Omnibus.OmnibusStep : Chord → Chord → Prop :=
+fun c d => chord c = true ∧ chord d = true ∧ ∃ v, step v c = d
+def Omnibus.sonority : Chord → Shape :=
+fun c => sort3 ((c.tenor + 12 - c.bass) % 12) ((c.alto + 12 - c.bass) % 12) ((c.soprano + 12 - c.bass) % 12)
+def Omnibus.ActualImage : Chord → Prop :=
+fun c => ∃ d, chord d = true ∧ ∃ v, step v d = c
+Omnibus.nodes_exact : nodes = checkedNodeList
+Omnibus.local_quotient_lift (c : Chord) (hc : chord c = true) (q : Shape) :
+  q ∈ successors (sonority c) ↔ ∃ d, OmnibusStep c d ∧ sonority d = q
+Omnibus.universal_eight_type_bound (c : ℕ → Chord) (n : ℕ) (hc₀ : chord (c 0) = true)
+  (hc : ∀ k < n, OmnibusStep (c k) (c (k + 1))) :
+  (Finset.image (fun k => sonority (c k)) (Finset.range (n + 1))).card ≤ 8
+Omnibus.universal_infinite_seven_type_bound (c : ℕ → Chord) (hc : ∀ (k : ℕ), OmnibusStep (c k) (c (k + 1))) (N : ℕ) :
+  (Finset.image (fun k => sonority (c k)) (Finset.range N)).card ≤ 7
+Omnibus.eight_type_bound_is_attained :
+  ∃ c,
+    chord (c 0) = true ∧
+      (∀ k < 7, OmnibusStep (c k) (c (k + 1))) ∧ (Finset.image (fun n => sonority (c n)) (Finset.range 8)).card = 8
+Omnibus.infinite_seven_type_bound_is_sharp :
+  ∃ c,
+    (∀ (k : ℕ), OmnibusStep (c k) (c (k + 1))) ∧
+      (∀ (N : ℕ), (Finset.image (fun k => sonority (c k)) (Finset.range N)).card ≤ 7) ∧
+        (Finset.image (fun k => sonority (c k)) (Finset.range 7)).card = 7
+Omnibus.global_image_count_exact : Nat.card { c // ActualImage c } = 6840
+Omnibus.global_approachable_count_exact : Nat.card { c // chord c = true ∧ ActualImage c } = 2232
+'Omnibus.nodes_exact' depends on axioms: [propext]
+'Omnibus.local_quotient_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.universal_eight_type_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.universal_infinite_seven_type_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.eight_type_bound_is_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.infinite_seven_type_bound_is_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.global_image_count_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.global_approachable_count_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.independent_fifty_five_types' depends on axioms: [propext]
+'Omnibus.independent_finite_start_unapproachable' depends on axioms: [propext]
+'Omnibus.independent_infinite_start_unapproachable' depends on axioms: [propext]

@@ -1,0 +1,37 @@
+{
+  "module": "GoldenNonpositiveLine",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.574882,
+  "aggregate_cpu_seconds": 57.26753,
+  "wall_seconds": 2.578895,
+  "peak_sampled_rss_bytes": 1836863488,
+  "source_sha256": "1e180ec3d390bd6555cf9521e568dc12c7e143d770a94daf1102948675e7fe9d",
+  "object_sha256": "27f38375c9f4f6b048e1c91c7c94e1a3009fb692d90287482024969e9567322a",
+  "log_sha256": "b77075c5c811cbab91e9818ca3e4b4f4224d736e66e96715425b19a72d7f5b22",
+  "axiom_audits": {
+    "AlgebraicTunings.golden_nonpositive_line_span": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/03-algebraic-tunings/public-wrapper-replay/objects/GoldenNonpositiveLine.olean",
+    "GoldenNonpositiveLine.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

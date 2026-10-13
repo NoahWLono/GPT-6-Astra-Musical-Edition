@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "exit_code": 0,
+  "actual_cpu_seconds": 0.23382999999999998,
+  "wall_seconds": 0.2691207250027219,
+  "peak_child_rss_bytes": 13893632,
+  "same_result_as_independent_original": true,
+  "portable_adapter_sha256": "188589368d615066d401152721262176b24968a393a32cd8db2f86117aa8265e",
+  "scope": "Independent Python regression, separate from Lean compiler replay budget."
+}

@@ -1,0 +1,77 @@
+{
+  "lean_toolchain": "leanprover/lean4:v4.32.2",
+  "lean_version": "Lean (version 4.32.2, x86_64-unknown-linux-gnu, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)",
+  "lean_linux_x86_64_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_repository": "https://github.com/leanprover-community/mathlib4.git",
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "mathlib_lake_manifest_sha256": "015c7e00ead0f05f2a72b32d9bdef782d4689d05a6297f0ceb0ab5d196c164bd",
+  "lean_toolchain_sha256": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+  "dependency_lock": "mathlib-lake-manifest.json",
+  "replay_order": [
+    "GoldenNormCore",
+    "GoldenIntervals",
+    "GoldenNonzero",
+    "GoldenAPInterface",
+    "GoldenUnitNormalization",
+    "GoldenStepMinimum",
+    "GoldenCounting",
+    "GoldenAttainment",
+    "GoldenLowerEstimate",
+    "GoldenCountMonotonic",
+    "GoldenRigidity",
+    "GoldenSplitBound",
+    "GoldenNonpositiveLine",
+    "GoldenThreshold",
+    "GoldenExactGeneric",
+    "GoldenThresholdIndex",
+    "GoldenRealBound",
+    "GoldenExact",
+    "IndependentGoldenFixture",
+    "IndependentGoldenNonconstantFixture"
+  ],
+  "source_sha256": {
+    "GoldenNormCore.lean": "ccb63ed3ea50f8016c949f4935368f983fe58dca400030afcca394060dbdaf08",
+    "GoldenIntervals.lean": "b79fac397c95b026bae499f416773bf09117a8605ed6bd16d22ab3153eb26edf",
+    "GoldenNonzero.lean": "d249b5595c61809158f285fef1b2417e325bb88e3078e0c09dfac25d65cb0a90",
+    "GoldenAPInterface.lean": "032dcb5770e29b94164322a0193d6ee8c6780a71aafb1a74698a0457c635d559",
+    "GoldenUnitNormalization.lean": "9f21031e26cd78b51605f042b4ef38319700c6d4338cacaf3011c7a6c6797b32",
+    "GoldenStepMinimum.lean": "2fc668e3c699d32b79f4d5c039aaaa45ec63a8ca6b68fc46c64496e3ac02d619",
+    "GoldenCounting.lean": "18df1a23ff4c79a69f633bf6f7927a49596c13b61a9d3c3bbbd031e49a85db92",
+    "GoldenAttainment.lean": "c4d79c3ab2efc120b5ddf60b21db0fb2b4a3db85aedae8bcae29284f2aa6274b",
+    "GoldenLowerEstimate.lean": "8af4021423d611de8f77f45e737fbf14e730bd03a87a46cf5827ec93be957e0c",
+    "GoldenCountMonotonic.lean": "27ea57e7e36052edd8e48f7d0e1958f909c6ec2352efef9d011611538256949f",
+    "GoldenRigidity.lean": "66a7f29c110d5f3b28c452bad99a630665771349683215e816de69e1adf7a998",
+    "GoldenSplitBound.lean": "0a7cf44daea2b79eb02f11da8fee0fe5c325450610963e152c4278821031e56f",
+    "GoldenNonpositiveLine.lean": "1e180ec3d390bd6555cf9521e568dc12c7e143d770a94daf1102948675e7fe9d",
+    "GoldenThreshold.lean": "4aefea532ff93eb298172735d76bda1a6478dd90afa33480c36cba4ea8248729",
+    "GoldenExactGeneric.lean": "8a9997a3baedf2f511857f8a160b5c3e7571eecf0ceec4bc92f39320b9ef871e",
+    "GoldenThresholdIndex.lean": "9eb719e12a083c597051c444e80730092fb0686d7a12de3d12cf4d44c9e30fbd",
+    "GoldenRealBound.lean": "781bfd67601be5f014329fae1b50d0b2e4f001fc54df708dcd3ff0c21953cd8c",
+    "GoldenExact.lean": "88faed893e46478058d85804842ba9f0cf26bfc701e4ace0abf97c1b92aef6cd",
+    "IndependentGoldenFixture.lean": "e6707c00a2a88e5e39c10e1f773ad6f91db17bceae54e62973ba25df83f55c29",
+    "IndependentGoldenNonconstantFixture.lean": "3571dc9ae1c4153b40d2897324ea465a665a6d95c9f025e124cf766f85a42c4f"
+  },
+  "expected_audits": {
+    "AlgebraicTunings.golden_exact_maximum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenMaximumLength_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IndependentGoldenAudit.exact_statement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IndependentGoldenAudit.nonconstant_attainment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "trust_boundary": "Fresh project objects; existing pinned Lean, Mathlib, and package objects are trusted. Mathlib is not rebuilt by this wrapper."
+}

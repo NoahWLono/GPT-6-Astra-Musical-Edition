@@ -1,0 +1,10 @@
+goldenLineCount_mono : ∀ (phi : ℝ),
+  1 ≤ phi →
+    ∀ (m M B : ℤ) (r R : ℝ),
+      0 ≤ m →
+        m ≤ M →
+          0 ≤ r →
+            0 ≤ R →
+              r ^ 2 = 5 * ↑m ^ 2 + 4 * ↑B →
+                R ^ 2 = 5 * ↑M ^ 2 + 4 * ↑B → goldenLineCount phi m r ≤ goldenLineCount phi M R
+'AlgebraicTunings.goldenLineCount_mono' depends on axioms: [propext, Classical.choice, Quot.sound]

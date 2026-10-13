@@ -1,0 +1,32 @@
+{
+  "module": "ExchangeCriterion",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.791911,
+  "aggregate_cpu_seconds": 2.791911,
+  "wall_seconds": 2.806311,
+  "peak_sampled_rss_bytes": 1908011008,
+  "source_sha256": "f6e39b2c707fd0cb8cd7e649885bcc84386f78b2079f61dbc4ac35612ef264f3",
+  "object_sha256": "b859e694c7ca527a39831bd1756f5bf6ddfe22cae3ecd49a618d6d9dfe0881da",
+  "log_sha256": "2504229099320ce668b1ccb4f2945a24f4a148c5733bae5c8ffa2dc178396a88",
+  "axiom_audits": {},
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-M1900",
+    "-o",
+    "/workspace/shared/music-research/01-six-note-homometry/public-wrapper-replay/objects/ExchangeCriterion.olean",
+    "ExchangeCriterion.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

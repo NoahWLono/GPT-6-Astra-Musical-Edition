@@ -1,0 +1,3 @@
+'Omnibus.source_count_slice_3' does not depend on any axioms
+'Omnibus.image_count_slice_3' depends on axioms: [propext]
+'Omnibus.approachable_count_slice_3' depends on axioms: [propext]

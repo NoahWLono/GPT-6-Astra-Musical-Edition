@@ -1,0 +1,15 @@
+{
+  "module": "ClosureSlice4",
+  "started_utc": "2026-10-13T19:29:59.588945+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 0.708,
+  "cpu_seconds": 0.699,
+  "max_rss_kib": 762176,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "6c26e79a1e3a0dd26092abcc4db4beca0d15df98998376ec34a5bdb6c504c65e",
+  "olean_sha256": "59745b5900d9fe134f0572dbd58b333677358457aa1afa928d366078f54f929a"
+}

@@ -1,0 +1,4 @@
+'Omnibus.sort3_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.chord_sorted_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Omnibus.normalizeBass_eq_translate' depends on axioms: [propext, Quot.sound]
+'Omnibus.canonical_chord' depends on axioms: [propext, Classical.choice, Quot.sound]

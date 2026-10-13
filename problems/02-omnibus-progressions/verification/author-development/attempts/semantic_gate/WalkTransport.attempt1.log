@@ -1,0 +1,17 @@
+/workspace/shared/music-research/02-omnibus-progressions/WalkTransport.lean:22:43: error: Application type mismatch: The argument
+  R
+has type
+  α → α → Prop
+of sort `Type` but is expected to have type
+  LocalLift R S π
+of sort `Prop` in the application
+  lifted R
+/workspace/shared/music-research/02-omnibus-progressions/WalkTransport.lean:32:4: error: Type mismatch
+  (Classical.choose_spec
+      (hl (lifted R S π hl q hq a₀ h₀ n).val (q (n + 1))
+        (Eq.mpr (id (congrFun' (congrArg S (lifted R S π hl q hq a₀ h₀ n).property) (q (n + 1)))) (hq n)))).left
+has type
+  R (lifted R S π hl q hq a₀ h₀ n).val (Classical.choose ⋯)
+but is expected to have type
+  R ((fun n => (lifted R S π hl q hq a₀ h₀ n).val) n) ((fun n => (lifted R S π hl q hq a₀ h₀ n).val) (n + 1))
+'WalkTransport.infinite_walk_lift' depends on axioms: [sorryAx, Classical.choice]

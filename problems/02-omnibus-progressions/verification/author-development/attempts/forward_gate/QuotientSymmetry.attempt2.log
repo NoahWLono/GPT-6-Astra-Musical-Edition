@@ -1,0 +1,277 @@
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 0
+where
+ a := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≤ -1
+where
+ a := ↑x
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≤ -1
+where
+ a := ↑x
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ -1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≤ -1
+where
+ a := ↑y
+ b := ↑x
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑y
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ -1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≥ 1
+where
+ a := ↑y
+ b := ↑x
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑x
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≥ 1
+where
+ a := ↑y
+ b := ↑x
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≤ -1
+where
+ a := ↑y
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ -1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≤ -1
+where
+ a := ↑x
+ b := ↑y
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑x
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ -1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≥ 1
+where
+ a := ↑x
+ b := ↑y
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≥ 1
+where
+ a := ↑x
+ b := ↑y
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:11: warning: This simp argument is unused:
+  hzy
+
+Hint: Omit it from the simp argument list.
+  simp only [sort3, Shape.mk.injEq, Nat.min_def, Nat.max_def, hxy, hyz, hxz,
+  ̵  ̵ ̵ ̵ ̵ ̵hyx, hzy̵,̵ ̵h̵z̵x, if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲if_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:14:16: warning: This simp argument is unused:
+  hzx
+
+Hint: Omit it from the simp argument list.
+  simp only [sort3, Shape.mk.injEq, Nat.min_def, Nat.max_def, hxy, hyz, hxz, hyx, hzy, h̵z̵x̵,̵ ̵if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲if_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≤ -1
+where
+ a := ↑x
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≤ -1
+where
+ a := ↑x
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ -1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≤ -1
+where
+ a := ↑y
+ b := ↑x
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑y
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ -1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≥ 1
+where
+ a := ↑y
+ b := ↑x
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑x
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≥ 1
+where
+ a := ↑y
+ b := ↑x
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≤ -1
+where
+ a := ↑y
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ -1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≤ -1
+where
+ a := ↑x
+ b := ↑y
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑x
+ b := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ -1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≥ 1
+where
+ a := ↑x
+ b := ↑y
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≥ 1
+where
+ a := ↑x
+ b := ↑y
+ c := ↑z
+/workspace/shared/music-research/02-omnibus-progressions/QuotientSymmetry.lean:20:11: warning: This simp argument is unused:
+  hzy
+
+Hint: Omit it from the simp argument list.
+  simp only [sort3, Shape.mk.injEq, Nat.min_def, Nat.max_def, hxy, hyz, hxz,
+  ̵  ̵ ̵ ̵ ̵ ̵hyx, hzy̵,̵ ̵h̵z̵x, if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲if_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Omnibus.sort3_swap' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.sort3_cycle' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Omnibus.sonority_swap' depends on axioms: [propext, sorryAx, Quot.sound]
+'Omnibus.sonority_cycle' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Omnibus.chord_swap' depends on axioms: [propext, Quot.sound]
+'Omnibus.chord_cycle' depends on axioms: [propext, Quot.sound]

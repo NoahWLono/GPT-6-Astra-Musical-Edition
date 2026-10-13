@@ -1,0 +1,9 @@
+__pycache__/
+*.olean
+*.ilean
+*.c
+*.o
+paper/*.aux
+paper/*.log
+paper/*.out
+.rebuild*/

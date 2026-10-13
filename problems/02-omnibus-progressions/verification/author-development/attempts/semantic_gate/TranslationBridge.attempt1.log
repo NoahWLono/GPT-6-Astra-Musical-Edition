@@ -1,0 +1,28 @@
+/workspace/shared/music-research/02-omnibus-progressions/TranslationBridge.lean:8:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  ((c.bass < 12 ∧ c.tenor < 12) ∧ c.alto < 12) ∧ c.soprano < 12
+but is expected to have type
+  c.bass < 12 ∧ c.tenor < 12 ∧ c.alto < 12 ∧ c.soprano < 12
+/workspace/shared/music-research/02-omnibus-progressions/TranslationBridge.lean:38:4: error: Tactic `subst` failed: did not find equation for eliminating 'd'
+
+case inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr.inr
+c d : Chord
+hc : bounded c = true
+hb : c.bass < 12
+ht : c.tenor < 12
+ha : c.alto < 12
+hs : c.soprano < 12
+h : d = { bass := c.soprano, tenor := c.alto, alto := c.tenor, soprano := c.bass } ∨ d ∈ []
+⊢ bounded d = true
+/workspace/shared/music-research/02-omnibus-progressions/TranslationBridge.lean:32:8: error: (kernel) declaration has metavariables 'Omnibus.reordering_bounded'
+/workspace/shared/music-research/02-omnibus-progressions/TranslationBridge.lean:35:41: warning: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  simp only [reorderings, List.mem_cons,̵ ̵L̵i̵s̵t̵.̵m̵e̵m̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵] at hd
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Omnibus.chord_translation' depends on axioms: [propext, sorryAx, Classical.choice, reordering_bounded, Quot.sound]
+'Omnibus.step_translation' depends on axioms: [propext, Quot.sound]
+'Omnibus.sonority_translation' depends on axioms: [propext, sorryAx, Quot.sound]

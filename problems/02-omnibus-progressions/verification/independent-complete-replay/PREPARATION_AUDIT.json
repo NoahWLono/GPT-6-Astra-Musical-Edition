@@ -1,0 +1,689 @@
+{
+  "targets": [
+    "SharpBounds",
+    "InfiniteRangeBound",
+    "ExactImageCounts"
+  ],
+  "order": [
+    "Pilot",
+    "SliceDefinitions",
+    "NodeSlice0",
+    "NodeSlice1",
+    "NodeSlice2",
+    "NodeSlice3",
+    "NodeSlice4",
+    "NodeSlice5",
+    "NodeSlice6",
+    "NodeSlice7",
+    "NodeSlice8",
+    "NodeSlice9",
+    "NodeSlice10",
+    "NodeSlice11",
+    "SemanticDraft",
+    "TranslationBridge",
+    "CanonicalBridge",
+    "NodeJoin",
+    "QuotientSymmetry",
+    "ReachableTranslation",
+    "ReachablePermutations",
+    "ReachableCanonical",
+    "LocalQuotientLift",
+    "ClosureDefinitions",
+    "EdgeSlice0",
+    "EdgeSlice1",
+    "EdgeSlice2",
+    "EdgeSlice3",
+    "EdgeSlice4",
+    "EdgeSlice5",
+    "EdgeSlice6",
+    "ClosureSlice0",
+    "ClosureSlice1",
+    "ClosureSlice2",
+    "ClosureSlice3",
+    "ClosureSlice4",
+    "ClosureSlice5",
+    "ClosureSlice6",
+    "ClosureCertificates",
+    "ClosedWalkBounds",
+    "UniversalBounds",
+    "PeriodicWitness",
+    "SharpBounds",
+    "InfiniteRangeBound",
+    "CountTranslation",
+    "ImageCountDefinitions",
+    "ImageEnumerationSemantics",
+    "BassPackedEquiv",
+    "DisjointSliceCardinality",
+    "ImageSliceSemantics",
+    "BassPredicateEquiv",
+    "BassNatCardinality",
+    "ActualChordCardinality",
+    "ImageCountSlice0",
+    "ImageCountSlice1",
+    "ImageCountSlice2",
+    "ImageCountSlice3",
+    "ImageCellDefinitions",
+    "ImageCellPartition",
+    "ImageCellBlock4_0",
+    "ImageRawCertificate",
+    "ImageCellBlock4_1",
+    "ImageCellBlock4_2",
+    "ImageCellBlock4_3",
+    "ImageCountSlice4",
+    "ImageCellBlock5_0",
+    "ImageCellBlock5_1",
+    "ImageCellBlock5_2",
+    "ImageCellBlock5_3",
+    "ImageCountSlice5",
+    "ImageCellBlock6_0",
+    "ImageCellBlock6_1",
+    "ImageCellBlock6_2",
+    "ImageCellBlock6_3",
+    "ImageCountSlice6",
+    "ImageCellBlock7_0",
+    "ImageCellBlock7_1",
+    "ImageCellBlock7_2",
+    "ImageCellBlock7_3",
+    "ImageCountSlice7",
+    "ImageCellBlock8_0",
+    "ImageCellBlock8_1",
+    "ImageCellBlock8_2",
+    "ImageCellBlock8_3",
+    "ImageCountSlice8",
+    "ImageCellBlock9_0",
+    "ImageCellBlock9_1",
+    "ImageCellBlock9_2",
+    "ImageCellBlock9_3",
+    "ImageCountSlice9",
+    "ImageCellBlock10_0",
+    "ImageCellBlock10_1",
+    "ImageCellBlock10_2",
+    "ImageCellBlock10_3",
+    "ImageCountSlice10",
+    "ImageCellBlock11_0",
+    "ImageCellBlock11_1",
+    "ImageCellBlock11_2",
+    "ImageCellBlock11_3",
+    "ImageCountSlice11",
+    "ExactImageCounts"
+  ],
+  "external_imports": [
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+    "Mathlib.Data.Finset.Card",
+    "Mathlib.Data.Finset.Range",
+    "Mathlib.Data.List.Dedup",
+    "Mathlib.Logic.Equiv.Defs",
+    "Mathlib.SetTheory.Cardinal.Finite",
+    "Std"
+  ],
+  "local_imports": {
+    "SharpBounds": [
+      "UniversalBounds",
+      "PeriodicWitness"
+    ],
+    "UniversalBounds": [
+      "NodeJoin",
+      "LocalQuotientLift",
+      "ClosureCertificates",
+      "ClosedWalkBounds"
+    ],
+    "NodeJoin": [
+      "SliceDefinitions",
+      "NodeSlice0",
+      "NodeSlice1",
+      "NodeSlice2",
+      "NodeSlice3",
+      "NodeSlice4",
+      "NodeSlice5",
+      "NodeSlice6",
+      "NodeSlice7",
+      "NodeSlice8",
+      "NodeSlice9",
+      "NodeSlice10",
+      "NodeSlice11",
+      "CanonicalBridge"
+    ],
+    "SliceDefinitions": [
+      "Pilot"
+    ],
+    "Pilot": [
+      "Std"
+    ],
+    "NodeSlice0": [
+      "SliceDefinitions"
+    ],
+    "NodeSlice1": [
+      "SliceDefinitions"
+    ],
+    "NodeSlice2": [
+      "SliceDefinitions"
+    ],
+    "NodeSlice3": [
+      "SliceDefinitions"
+    ],
+    "NodeSlice4": [
+      "SliceDefinitions"
+    ],
+    "NodeSlice5": [
+      "SliceDefinitions"
+    ],
+    "NodeSlice6": [
+      "SliceDefinitions"
+    ],
+    "NodeSlice7": [
+      "SliceDefinitions"
+    ],
+    "NodeSlice8": [
+      "SliceDefinitions"
+    ],
+    "NodeSlice9": [
+      "SliceDefinitions"
+    ],
+    "NodeSlice10": [
+      "SliceDefinitions"
+    ],
+    "NodeSlice11": [
+      "SliceDefinitions"
+    ],
+    "CanonicalBridge": [
+      "TranslationBridge"
+    ],
+    "TranslationBridge": [
+      "SemanticDraft"
+    ],
+    "SemanticDraft": [
+      "Pilot"
+    ],
+    "LocalQuotientLift": [
+      "ReachableCanonical"
+    ],
+    "ReachableCanonical": [
+      "ReachablePermutations"
+    ],
+    "ReachablePermutations": [
+      "ReachableTranslation"
+    ],
+    "ReachableTranslation": [
+      "QuotientSymmetry"
+    ],
+    "QuotientSymmetry": [
+      "CanonicalBridge"
+    ],
+    "ClosureCertificates": [
+      "ClosureSlice0",
+      "ClosureSlice1",
+      "ClosureSlice2",
+      "ClosureSlice3",
+      "ClosureSlice4",
+      "ClosureSlice5",
+      "ClosureSlice6"
+    ],
+    "ClosureSlice0": [
+      "ClosureDefinitions",
+      "EdgeSlice0",
+      "EdgeSlice1",
+      "EdgeSlice2",
+      "EdgeSlice3",
+      "EdgeSlice4",
+      "EdgeSlice5",
+      "EdgeSlice6"
+    ],
+    "ClosureDefinitions": [
+      "Pilot"
+    ],
+    "EdgeSlice0": [
+      "Pilot"
+    ],
+    "EdgeSlice1": [
+      "Pilot"
+    ],
+    "EdgeSlice2": [
+      "Pilot"
+    ],
+    "EdgeSlice3": [
+      "Pilot"
+    ],
+    "EdgeSlice4": [
+      "Pilot"
+    ],
+    "EdgeSlice5": [
+      "Pilot"
+    ],
+    "EdgeSlice6": [
+      "Pilot"
+    ],
+    "ClosureSlice1": [
+      "ClosureDefinitions",
+      "EdgeSlice0",
+      "EdgeSlice1",
+      "EdgeSlice2",
+      "EdgeSlice3",
+      "EdgeSlice4",
+      "EdgeSlice5",
+      "EdgeSlice6"
+    ],
+    "ClosureSlice2": [
+      "ClosureDefinitions",
+      "EdgeSlice0",
+      "EdgeSlice1",
+      "EdgeSlice2",
+      "EdgeSlice3",
+      "EdgeSlice4",
+      "EdgeSlice5",
+      "EdgeSlice6"
+    ],
+    "ClosureSlice3": [
+      "ClosureDefinitions",
+      "EdgeSlice0",
+      "EdgeSlice1",
+      "EdgeSlice2",
+      "EdgeSlice3",
+      "EdgeSlice4",
+      "EdgeSlice5",
+      "EdgeSlice6"
+    ],
+    "ClosureSlice4": [
+      "ClosureDefinitions",
+      "EdgeSlice0",
+      "EdgeSlice1",
+      "EdgeSlice2",
+      "EdgeSlice3",
+      "EdgeSlice4",
+      "EdgeSlice5",
+      "EdgeSlice6"
+    ],
+    "ClosureSlice5": [
+      "ClosureDefinitions",
+      "EdgeSlice0",
+      "EdgeSlice1",
+      "EdgeSlice2",
+      "EdgeSlice3",
+      "EdgeSlice4",
+      "EdgeSlice5",
+      "EdgeSlice6"
+    ],
+    "ClosureSlice6": [
+      "ClosureDefinitions",
+      "EdgeSlice0",
+      "EdgeSlice1",
+      "EdgeSlice2",
+      "EdgeSlice3",
+      "EdgeSlice4",
+      "EdgeSlice5",
+      "EdgeSlice6"
+    ],
+    "ClosedWalkBounds": [
+      "Mathlib.Data.Finset.Card",
+      "Mathlib.Data.Finset.Range"
+    ],
+    "PeriodicWitness": [
+      "Pilot"
+    ],
+    "InfiniteRangeBound": [
+      "SharpBounds"
+    ],
+    "ExactImageCounts": [
+      "ImageSliceSemantics",
+      "ActualChordCardinality",
+      "ImageCountSlice0",
+      "ImageCountSlice1",
+      "ImageCountSlice2",
+      "ImageCountSlice3",
+      "ImageCountSlice4",
+      "ImageCountSlice5",
+      "ImageCountSlice6",
+      "ImageCountSlice7",
+      "ImageCountSlice8",
+      "ImageCountSlice9",
+      "ImageCountSlice10",
+      "ImageCountSlice11"
+    ],
+    "ImageSliceSemantics": [
+      "ImageEnumerationSemantics",
+      "DisjointSliceCardinality"
+    ],
+    "ImageEnumerationSemantics": [
+      "ImageCountDefinitions"
+    ],
+    "ImageCountDefinitions": [
+      "NodeJoin",
+      "CountTranslation",
+      "Mathlib.Data.List.Dedup"
+    ],
+    "CountTranslation": [
+      "LocalQuotientLift"
+    ],
+    "DisjointSliceCardinality": [
+      "BassPackedEquiv",
+      "Mathlib.SetTheory.Cardinal.Finite",
+      "Mathlib.Data.List.Dedup"
+    ],
+    "BassPackedEquiv": [
+      "CountTranslation",
+      "Mathlib.Logic.Equiv.Defs"
+    ],
+    "ActualChordCardinality": [
+      "BassNatCardinality"
+    ],
+    "BassNatCardinality": [
+      "BassPredicateEquiv",
+      "Mathlib.SetTheory.Cardinal.Finite"
+    ],
+    "BassPredicateEquiv": [
+      "BassPackedEquiv"
+    ],
+    "ImageCountSlice0": [
+      "ImageCountDefinitions"
+    ],
+    "ImageCountSlice1": [
+      "ImageCountDefinitions"
+    ],
+    "ImageCountSlice2": [
+      "ImageCountDefinitions"
+    ],
+    "ImageCountSlice3": [
+      "ImageCountDefinitions"
+    ],
+    "ImageCountSlice4": [
+      "ImageCellPartition",
+      "ImageCellBlock4_0",
+      "ImageCellBlock4_1",
+      "ImageCellBlock4_2",
+      "ImageCellBlock4_3"
+    ],
+    "ImageCellPartition": [
+      "ImageCellDefinitions",
+      "ImageSliceSemantics",
+      "Mathlib.Algebra.BigOperators.Group.Finset.Basic"
+    ],
+    "ImageCellDefinitions": [
+      "ImageCountDefinitions"
+    ],
+    "ImageCellBlock4_0": [
+      "ImageCellDefinitions"
+    ],
+    "ImageCellBlock4_1": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageRawCertificate": [
+      "ImageCountDefinitions"
+    ],
+    "ImageCellBlock4_2": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock4_3": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCountSlice5": [
+      "ImageCellPartition",
+      "ImageCellBlock5_0",
+      "ImageCellBlock5_1",
+      "ImageCellBlock5_2",
+      "ImageCellBlock5_3"
+    ],
+    "ImageCellBlock5_0": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock5_1": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock5_2": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock5_3": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCountSlice6": [
+      "ImageCellPartition",
+      "ImageCellBlock6_0",
+      "ImageCellBlock6_1",
+      "ImageCellBlock6_2",
+      "ImageCellBlock6_3"
+    ],
+    "ImageCellBlock6_0": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock6_1": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock6_2": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock6_3": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCountSlice7": [
+      "ImageCellPartition",
+      "ImageCellBlock7_0",
+      "ImageCellBlock7_1",
+      "ImageCellBlock7_2",
+      "ImageCellBlock7_3"
+    ],
+    "ImageCellBlock7_0": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock7_1": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock7_2": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock7_3": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCountSlice8": [
+      "ImageCellPartition",
+      "ImageCellBlock8_0",
+      "ImageCellBlock8_1",
+      "ImageCellBlock8_2",
+      "ImageCellBlock8_3"
+    ],
+    "ImageCellBlock8_0": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock8_1": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock8_2": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock8_3": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCountSlice9": [
+      "ImageCellPartition",
+      "ImageCellBlock9_0",
+      "ImageCellBlock9_1",
+      "ImageCellBlock9_2",
+      "ImageCellBlock9_3"
+    ],
+    "ImageCellBlock9_0": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock9_1": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock9_2": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock9_3": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCountSlice10": [
+      "ImageCellPartition",
+      "ImageCellBlock10_0",
+      "ImageCellBlock10_1",
+      "ImageCellBlock10_2",
+      "ImageCellBlock10_3"
+    ],
+    "ImageCellBlock10_0": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock10_1": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock10_2": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock10_3": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCountSlice11": [
+      "ImageCellPartition",
+      "ImageCellBlock11_0",
+      "ImageCellBlock11_1",
+      "ImageCellBlock11_2",
+      "ImageCellBlock11_3"
+    ],
+    "ImageCellBlock11_0": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock11_1": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock11_2": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ],
+    "ImageCellBlock11_3": [
+      "ImageCellDefinitions",
+      "ImageRawCertificate"
+    ]
+  },
+  "source_sha256": {
+    "Pilot": "53956d62233c561fcec02e50fdb563b7dab95501b48b5f2302a9675e865d348b",
+    "SliceDefinitions": "a51daded2efe6e06c91177bff8b55463346f7d1d6a0cd3f3e3057d1aa658d5f1",
+    "NodeSlice0": "6ae602de826af4817061f2f4601d5fd84392c4c1e54da5ea7f056f9727fe4029",
+    "NodeSlice1": "967b1e77a1555aeb0c49fd7482fa0adcfb74e0c001d42ce07435a046590ab7bc",
+    "NodeSlice2": "045a67b70c34c291ccbe2c3d44b27dc8b91e0e20296ea8056593a8e7af85e1fe",
+    "NodeSlice3": "0d7a9d8172ca253bd25122c15bb9dcb21af08661bbed30ced4a9655924fb8172",
+    "NodeSlice4": "c00a6ecdc39acb7fefd82b46dd56186181da364a10d6366e263c08cb3806d08b",
+    "NodeSlice5": "86bfeeae8df5f2bc43f340f7c93ae508227acc039dc6c3f588c7df81cb7ba4aa",
+    "NodeSlice6": "a598482a160df01327b16d676cc797974555db4a81c6d300d2104b10b321a1b9",
+    "NodeSlice7": "e0d3d7a563e0c387d8274538855e6a3431d0aa872ddb39d93bfa03a2fb617a38",
+    "NodeSlice8": "c76dab2a1881e7a1ff0b05ab887a1681c5b56c7734553e4cf5999b0f58d54a35",
+    "NodeSlice9": "a1a77659c3d5e18223cb5e8a931ea7a7d5f6cfa915eb3c7dca218d677c2d68e3",
+    "NodeSlice10": "e850c0071b5af4ef72d8eff15bc1110eac64de508b972c01aa168bebd1c177a5",
+    "NodeSlice11": "939fa89cfc62d3da77f745ed25e16b47b22108b9bb7cc784004f7f2ea2b4496c",
+    "SemanticDraft": "7e51ee40efc4f4ec58f6f4b3cda4d13d47d666324f42cb6a363343854bbfebdf",
+    "TranslationBridge": "4725c7f7e916aeec057733fa14238aafa7276872dfffacb31e6590610794b4a9",
+    "CanonicalBridge": "af70cc3769299a150c02307d0f60ee4892988863135ff60ea0fa40340d0552df",
+    "NodeJoin": "77b2eeba996fd8b2a45d4d39b696e9344ab7d22a4439e26472402b3cdede1d47",
+    "QuotientSymmetry": "891cf1445808e125ee6cf59d10c108163f5551c3e7e3c9479a66789dc12ae3cc",
+    "ReachableTranslation": "dda082f09792419d747f765c1ea8aeca299ec2ddfcbff5e145818e9b1709a87c",
+    "ReachablePermutations": "3867d9b44c47b215ee5ccdddfca6cdb944d93735ff497e49b5c16c59de2a37ac",
+    "ReachableCanonical": "364666b06460b3ddb740e9f80fbd9a6d75f2e1d1dbf0a8d761ea9313f305b4cb",
+    "LocalQuotientLift": "a365d172f2936e3477662abc7401f93060d44379349bcf48579b08e4c7256419",
+    "ClosureDefinitions": "28eb04dec19b7140a7cfd46b8102ce629d3dc536e4733e816be97240a35bce24",
+    "EdgeSlice0": "1fed5caf75d7b192f9b6344069a7be245187c63073d6470e67dc6a048854d594",
+    "EdgeSlice1": "dda7cafab5dea450e103018ebdc145c744209539807ce7cc559645d3ce62606e",
+    "EdgeSlice2": "69f10fe82e9a4f98fc1ff7b6b88663f5e3544054d302332d44c88004ae3e9bd2",
+    "EdgeSlice3": "66fa2e54a4c138fe7cb28dd5c704a0910883e2a9efcec9d47f61229c0356ed81",
+    "EdgeSlice4": "3c9475eca04b4873fe7c79b9f88a664aa8f446a5eec69ac4c322e503e85ec28a",
+    "EdgeSlice5": "0f5464533820130a22cb2f3081633e91d646933b940b19bd0b03de8c5343fee5",
+    "EdgeSlice6": "3b84996dca82a382a88a48a29b284917ca56c22dae2b7e9bb050deedb8b2e47d",
+    "ClosureSlice0": "aff6e9dda46b4ddb7a7c9100f0fc5a1817683d3a5ad952a76a6050c9df089ae3",
+    "ClosureSlice1": "3beb202a40cfa03b3063fb01bdbc415dfc122a3d6fc096b1d499f50e2ed5fd6f",
+    "ClosureSlice2": "cda6ff471f615ddde6702bdb8bae2af5fd2e4423aba797903fffaa84c09141c4",
+    "ClosureSlice3": "4348c80b8b3a5770ef9c0606d7559fe40c2e0e3168a70ab4caf4b67cda9d7cb0",
+    "ClosureSlice4": "6c26e79a1e3a0dd26092abcc4db4beca0d15df98998376ec34a5bdb6c504c65e",
+    "ClosureSlice5": "c6bc04da0772c6aac2dc5b708a85225f0c62e5fd51d1fa78b9ebd88fd8b9055e",
+    "ClosureSlice6": "de9fc40d8170659dbb718c01f5d57e03c127d4932b25c536c7d89636ae7737f1",
+    "ClosureCertificates": "f257935b87c9f119f085a5ba5836ddfc60173b20d88d1ec599e01105383ce49b",
+    "ClosedWalkBounds": "ad494124a0335d154b5ff02fce6695f0e35f600c22d944bb0b732812d6a0ba0a",
+    "UniversalBounds": "2899de47f1705bfa530ade569a034e89c887e28548606366edbfe5f81ba5b402",
+    "PeriodicWitness": "520dde23558e537c5321165fbc16bb95862ef7973f3141f87ac04aab6e984063",
+    "SharpBounds": "c23b61024fce0cf47577017cf9e07df7fb3ec0588dfd988416e0831ecff7ea57",
+    "InfiniteRangeBound": "bd457a7a10f33305d74752b8a2c79d069e5d7506e9b210d8b1cc57021993dc58",
+    "CountTranslation": "1498f6b8252945e993f3c13c14b9c36f0f85fb03e0f182852b34eb61524f5550",
+    "ImageCountDefinitions": "7bd7a1db6dde91bbcc5511190a9a1fd83b1fd27c05ce770f8e4e449a52ce847e",
+    "ImageEnumerationSemantics": "8dd39c69d127ec8542ce6dc83b5bc74b722e09628abc4b487d9c09b7f122ab00",
+    "BassPackedEquiv": "993b0e9ca8b117ceeedf34b27f099594c59c23f64986ca9b3d238239516ca0b2",
+    "DisjointSliceCardinality": "8c67e7fa9e6fd348ffd9e6b27673455b5aee28a48ed205926ef5ae6f042a0b76",
+    "ImageSliceSemantics": "8247978a8665c20a96cd505bffa81ae4397aacd516384db7764bb01726e1fc38",
+    "BassPredicateEquiv": "b30d2d7663914e52acbcb4f93fa6f69902c7a5982949d6cf33527e60a8710012",
+    "BassNatCardinality": "89c99807af2ea7ed566615d639091b8ab650bb71a909ef9f2aaada86ba0a5744",
+    "ActualChordCardinality": "b714b5c590aa7ff8b9de0286c616093e3393e281e1ea28d4df50af426ffefde0",
+    "ImageCountSlice0": "0ab78e4028e79fda0178007632d5123cac869d55c2bf006937da83b8ea99700a",
+    "ImageCountSlice1": "48186792d1776d84e40cf42691f720e562a597ce9dba18b5906301e2f8457d92",
+    "ImageCountSlice2": "97d682ff61ee76c21e79bf0e92363b79b9c8d43f3930ac2a16954d20a204be6e",
+    "ImageCountSlice3": "1f513327b0032bd4bab0f8ec607c9a1c92cb7583a7979a4f23f53c408ec47fc5",
+    "ImageCellDefinitions": "afdaab6cb70aba2fff3994856034096245682db1d5d7c3a7f5653b951f523179",
+    "ImageCellPartition": "60fa3a3ef95e372e50e7ec7b5edc6d8969459fdaa693f398cd6a53fdf1059c0a",
+    "ImageCellBlock4_0": "6f06600b4a330f7742a10bf6e673d1eb21f958a52542a371fbeb84713021aa22",
+    "ImageRawCertificate": "98b0bdab810f69a9688293a54b49f82c0ec54a98734d39084bf46bb1c0f61303",
+    "ImageCellBlock4_1": "623f3abe39a3e63b9f522c248f19fac894ffa517d008fd9b8e9ea314776be4ef",
+    "ImageCellBlock4_2": "a32f54a3cdc7f922b00f8b0ad897e953866910d1cffad70da64c701deaecaee1",
+    "ImageCellBlock4_3": "e3169f7b70f363287f6cbb16f4705249a80541a779be74ca4e609ebf95f86596",
+    "ImageCountSlice4": "b29aa05b9f79b80a84e0542353d0135af71c7abeea33e4972ba9dda5778d8240",
+    "ImageCellBlock5_0": "f71de52875f4e4834f2e77089dfe83708a6c8d4d34f0a8279a026b3ece83efc8",
+    "ImageCellBlock5_1": "3254beea09cb8e749319ec087a19e9273be88bd4699f5ed1bee7aa14997083f5",
+    "ImageCellBlock5_2": "65c6cb793da3b836814cd1a23c86d62faba7ce116902172d006acfc545bba14b",
+    "ImageCellBlock5_3": "5764dada65cb61e70fcc8f74ef9b36d53a2039d1db333d0266c85c1e9f125df7",
+    "ImageCountSlice5": "1d8d09bc287eb04002fe0a0a820a80adfc7195d9c6bc84d1dd2e3a9760f31221",
+    "ImageCellBlock6_0": "0696ccfc173b9c5afa04a985ad43f8a74f52e0b0657d0f4940fc34a464dc61b5",
+    "ImageCellBlock6_1": "c439cb2bfcbb655b3ba7fc5f587063609ee61ebe76146c44e767feffabac1a01",
+    "ImageCellBlock6_2": "e735f6602b2b65a43932fd3e76c504c7ad459562c04746dbe339b4a24f18ce3a",
+    "ImageCellBlock6_3": "26e42c30a5ca01ad823915b8974d659e7aa3951b2f81146c703df16156907c05",
+    "ImageCountSlice6": "540ba2fca9e32c8d8eef28d7f7aa9fc283e9315fd04adb3522052fb7586dd4d8",
+    "ImageCellBlock7_0": "bf56ca0bda43c909ee65e6e1587c7d31af7d53915815fb43b5aa729b11eb8088",
+    "ImageCellBlock7_1": "a5f605bd27b8cbe3c1442b32da14b514518393319199d6db6111a52db9b5bf69",
+    "ImageCellBlock7_2": "2ac3fdb2a83945b00bfa79a604c7995ff749a10e33c1c38641decb816f3967f9",
+    "ImageCellBlock7_3": "c443ede24f9798e44b653cff7e6a6223eef50afd4f49b7ac84a7a1345d3ebd71",
+    "ImageCountSlice7": "00283f906575ec99a164551f33bfc1b05b7c1298abf62b63552b9402f012df37",
+    "ImageCellBlock8_0": "54f73b4d4df5906cb43f250594d8ee2725970f78772bd6f3046925db47870ebe",
+    "ImageCellBlock8_1": "fbb1756db3abb4e66b4412a68161c1892d56e4174efe448971c5f580fbde026d",
+    "ImageCellBlock8_2": "6732e4c5513d5df229d89934d49964ef1c9449b712544bbba9a25db2430b57a5",
+    "ImageCellBlock8_3": "7ae284eb895d90b49f46fefe839c02937ab32969427147614189e414dd43d3e8",
+    "ImageCountSlice8": "a2c4470429b2efec0fc28db98487597cdca2642a7f1f9a4257e1236cde31f4cf",
+    "ImageCellBlock9_0": "523abec748d4cce41b61908dc75ec4b30c2de954a8653bfdd467bb1115419d5d",
+    "ImageCellBlock9_1": "3e0942c6469926009dd3cf1479a48e2b72fc4fb104accd5f100b4c85451a5cb9",
+    "ImageCellBlock9_2": "fd005e1c196f73d5392ef1134747e76b3aad9f122d229cb42825ae54f011a01c",
+    "ImageCellBlock9_3": "844a6986281d1cf98bb82ea149a843d4b4d893311b72edfc42170f72e9e016d3",
+    "ImageCountSlice9": "2f04fbd553ef53cb1d333a87efbebaf30f1db7da6d5cb7074ca3c9c085100e73",
+    "ImageCellBlock10_0": "f5472cdb9828ddfca74080d6df88786a00424de7bae834db6a93beef28aa5ca1",
+    "ImageCellBlock10_1": "02d99abf743ec4fe11522bb8d3a6db159c6129b014b36f0233aaaa159663d186",
+    "ImageCellBlock10_2": "e3ecb027fa55e3a09ed7723a2f2d36c5c7237732bbdd26f77007e652f9aecacc",
+    "ImageCellBlock10_3": "b72e0cc9ce0b22090c02297eaacdbf9ed9383a7452fdc0544e2c58645f0af0c5",
+    "ImageCountSlice10": "0f1ccff76b56dae58595fa45f8379288f08117461415d000ee46ce73b97510f6",
+    "ImageCellBlock11_0": "447ec59bdb3b16838ec8e00b139c4e53c48d005b433255a6f99c47fc83d65ab4",
+    "ImageCellBlock11_1": "8c1354a556daa1e4033c381c7990c680aebefc21777b61d5f30033d0092f0a1c",
+    "ImageCellBlock11_2": "ac28f39e3013ceb83254f40a30bcefecec2bf2be4ce0b5018c62e6c3c16853c3",
+    "ImageCellBlock11_3": "bc409a513392ad16ccd0179c22206bb3999c07ef51010012caad67a8f17b8dcf",
+    "ImageCountSlice11": "c18f2eb82dc159b5483e22dad8128b72a5ba087d6ca4a95edcdb014bf5c511bf",
+    "ExactImageCounts": "1c40cd5087dff803a45e9c30faa2e2d723cdab48d8228bff20a7ca815ff895e9"
+  },
+  "author_manifest_sha256": "bab322d0d555a744ed13c924f075e48686ebffc6692ffaf55d90d84ea8ab2e23",
+  "banned_active_tokens": {},
+  "external_project_object_collisions": [],
+  "no_project_objects_copied": true
+}

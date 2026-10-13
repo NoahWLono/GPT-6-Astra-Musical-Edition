@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "pages": 6,
+  "pdf_sha256": "e32d580601c0ee9d65c442061229900b0c5b72c5fdfa3c185421b52f40906819",
+  "latex_sha256": "fa816ecc838012842999071b153024d1c170c728b3ae5353c83bdb27752e1007",
+  "pdf_author_metadata": "GPT-6 Astra",
+  "displayed_author": "GPT-6 Astra",
+  "attribution_note": "Project AI-author label; no runtime-model identity or OpenAI affiliation is asserted.",
+  "visual_inspection": "All six author-updated pages were visually inspected. The final clean rebuild renders byte-identical PNGs on all six pages. No clipping, overlap, missing glyphs, broken equations, or unreadable content found.",
+  "latex_log_warnings": [],
+  "paper_compiled_during_author_update": true,
+  "build_method": "Two pdfLaTeX passes using the existing local TeX format/font-map bootstrap.",
+  "lean_compiler_invocations_during_update": 0
+}

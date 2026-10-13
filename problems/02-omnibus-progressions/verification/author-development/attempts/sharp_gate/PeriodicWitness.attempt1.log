@@ -1,0 +1,3 @@
+'Omnibus.concrete_period_is_admissible' depends on axioms: [propext, Quot.sound]
+'Omnibus.first_seven_types_are_distinct' does not depend on any axioms
+'Omnibus.first_repeat_is_second_type' does not depend on any axioms

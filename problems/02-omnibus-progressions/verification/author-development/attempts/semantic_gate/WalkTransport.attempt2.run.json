@@ -1,0 +1,15 @@
+{
+  "module": "WalkTransport",
+  "started_utc": "2026-10-13T19:12:29.255936+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 0.558,
+  "cpu_seconds": 0.517,
+  "max_rss_kib": 760120,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "560eeab4cdc4924a64fc719f9a64657273a80b5b9d9e90abe6cb9cc311154a5c",
+  "olean_sha256": "4f2f152357e18049fefee5a7fe334016e58205825adcadd3dfd7f0f0a8cbe4d8"
+}

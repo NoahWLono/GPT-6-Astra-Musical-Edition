@@ -1,0 +1,62 @@
+{
+  "checked_B": "64..2048",
+  "scope": "all integer m for normalized unit-step progressions, with analytic tail bounds",
+  "samples": [
+    {
+      "B": 64,
+      "M": 7,
+      "length": 19,
+      "maximizing_m": [
+        7
+      ]
+    },
+    {
+      "B": 65,
+      "M": 7,
+      "length": 19,
+      "maximizing_m": [
+        7
+      ]
+    },
+    {
+      "B": 79,
+      "M": 7,
+      "length": 20,
+      "maximizing_m": [
+        7
+      ]
+    },
+    {
+      "B": 80,
+      "M": 8,
+      "length": 21,
+      "maximizing_m": [
+        8
+      ]
+    },
+    {
+      "B": 100,
+      "M": 8,
+      "length": 22,
+      "maximizing_m": [
+        8
+      ]
+    },
+    {
+      "B": 1000,
+      "M": 28,
+      "length": 76,
+      "maximizing_m": [
+        28
+      ]
+    },
+    {
+      "B": 2048,
+      "M": 40,
+      "length": 108,
+      "maximizing_m": [
+        40
+      ]
+    }
+  ]
+}

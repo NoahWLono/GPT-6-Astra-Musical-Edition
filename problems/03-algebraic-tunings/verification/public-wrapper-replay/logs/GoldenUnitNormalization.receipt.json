@@ -1,0 +1,71 @@
+{
+  "module": "GoldenUnitNormalization",
+  "exit_code": 0,
+  "stop_reason": null,
+  "cpu_seconds": 2.833017,
+  "aggregate_cpu_seconds": 23.089323,
+  "wall_seconds": 2.846487,
+  "peak_sampled_rss_bytes": 1846321152,
+  "source_sha256": "9f21031e26cd78b51605f042b4ef38319700c6d4338cacaf3011c7a6c6797b32",
+  "object_sha256": "62f311c5dded61cc3d86d8e318a94d725a4d6b31d6cb44b5db99fb31c49ec6da",
+  "log_sha256": "ce0996b077835734482b5c47a4273ac5a0f00a4e5bca06d4550febf97ac1706b",
+  "axiom_audits": {
+    "AlgebraicTunings.goldenUnit_mul_coords": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenUnit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenUnit_abs_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenUnit_progression_abs_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenUnit_progression_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.goldenUnit_pos_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.GoldenAP.unitNormalize": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AlgebraicTunings.GoldenAP.unitNormalize_note_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden_axioms": {},
+  "sorry_warning": false,
+  "command": [
+    "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+    "-j1",
+    "-o",
+    "/workspace/shared/music-research/03-algebraic-tunings/public-wrapper-replay/objects/GoldenUnitNormalization.olean",
+    "GoldenUnitNormalization.lean"
+  ],
+  "limits": {
+    "cpu_hard_seconds": 20,
+    "cpu_watchdog_seconds": 19.5,
+    "aggregate_cpu_seconds": 180,
+    "wall_seconds": 35,
+    "rss_bytes": 2147483648,
+    "output_bytes": 67108864,
+    "disk_floor_bytes": 4294967296
+  }
+}

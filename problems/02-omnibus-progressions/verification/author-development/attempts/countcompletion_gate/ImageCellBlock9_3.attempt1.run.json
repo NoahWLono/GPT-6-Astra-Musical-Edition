@@ -1,0 +1,15 @@
+{
+  "module": "ImageCellBlock9_3",
+  "started_utc": "2026-10-13T20:16:34.460656+00:00",
+  "cpu_watchdog_budget": 19.5,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "rss_limit_exceeded": false,
+  "cpu_watchdog": false,
+  "wall_seconds": 4.209,
+  "cpu_seconds": 4.207,
+  "max_rss_kib": 1591104,
+  "lean_binary": "/workspace/scratch/caabcb85bd83/toolchains/lean-4.32.2-linux/bin/lean",
+  "source_sha256": "844a6986281d1cf98bb82ea149a843d4b4d893311b72edfc42170f72e9e016d3",
+  "olean_sha256": "93d39e5ad6a4a98745df339ece8ff7f5f9f429d3ab43aa2df7fa396a364dd08e"
+}

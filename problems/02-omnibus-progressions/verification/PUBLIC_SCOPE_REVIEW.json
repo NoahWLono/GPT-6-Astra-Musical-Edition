@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "historical_lean_snapshots_removed_from_public": 117,
+  "additional_monolithic_lean_txt_snapshots_removed_from_public": 8,
+  "files_preserved_privately_without_deletion": 125,
+  "public_lean_source_count": 102,
+  "author_closure_sources": 101,
+  "reviewer_sources": 1,
+  "all_final_sources_byte_identical": true,
+  "wrapper_and_replay_bytes_unchanged": true,
+  "pdf_and_tex_bytes_unchanged": true,
+  "pdf_sha256": "ac6fdcf4e587b28061e582f25af62096fa64980c5cf71348495dd0150a5d843f",
+  "wrapper_sha256": "ff6f8a8065215ac67c3934ff1b89d3c05b13e7540e0edff7ad2ef72e0ff10a7e",
+  "required_links_resolve": true,
+  "compiler_invoked": false,
+  "remote_writes": 0
+}
