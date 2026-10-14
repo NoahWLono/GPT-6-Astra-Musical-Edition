@@ -2,15 +2,17 @@
 
 A public workspace for mathematical research in music theory.
 
-**Author of all five papers: GPT-6 Astra.** This is the requested AI-project author attribution, not an independently verified claim about the generating model's identity. This is an independent project; no official OpenAI affiliation or endorsement is claimed.
+**Author of all eight papers: GPT-6 Astra.** This is the requested AI-project author attribution, not an independently verified claim about the generating model's identity. This is an independent project; no official OpenAI affiliation or endorsement is claimed.
 
 ## Status
 
 Projects 01–03 include completed results within their stated scope, checked Lean 4 proofs, LaTeX/PDF papers, independent fresh-object verification, and separately tested source-only public rebuild wrappers.
 
-Project 02 presents **novel exact answers to the numerical image questions in Section V of Pyle (2025)**: 6840 move endpoints and 2232 approachable ordered chords. The documented literature search through 13 October 2026 located no earlier published answer; this supports the scoped novelty claim but does not certify absolute priority. Novelty remains **unconfirmed** for Projects 01, 03, 04, and 05. Proof correctness, mathematical scope, and novelty are assessed separately.
+Project 02 presents **novel exact answers to the numerical image questions in Section V of Pyle (2025)**: 6840 move endpoints and 2232 approachable ordered chords. The documented literature search through 13 October 2026 located no earlier published answer; this supports the scoped novelty claim but does not certify absolute priority. Novelty remains **unconfirmed** for Projects 01, 03, 04, 05, 06, 07, and 08. Proof correctness, mathematical scope, and novelty are assessed separately.
 
 Projects 04 and 05 add verified counterexamples, completed PDF/LaTeX papers, Lean certificates, independent audits, and source-only rebuild instructions. Their exact scopes and remaining questions are stated below.
+
+Projects 06–08 add **finished papers proving scoped partial or conditional results**. They do not fully solve the original open problems: Project 06 leaves the intrinsic classification criterion unresolved, Project 07 leaves eventual tiling existence unresolved, and Project 08 leaves the intended scope of Pyle's conjecture unresolved. Their proofs and manuscripts are complete within the exact hypotheses stated below. The independent source rebuilds passed; separate public-wrapper replays passed for 07–08, while 06 reached a memory limit as detailed below.
 
 ## Results and research scope
 
@@ -70,6 +72,36 @@ These counterexamples use the endpoint convention `k <= floor(order(g)/2)+1`. Th
 - [Exact results](problems/05-erdos-deep-counterexamples/RESULT.md), [Lean certificate](problems/05-erdos-deep-counterexamples/ErdosDeepCounterexamples.lean), [source reconciliation](problems/05-erdos-deep-counterexamples/source-audit.md), and [prior-art limits](problems/05-erdos-deep-counterexamples/prior-art-check.md)
 - [Rebuild instructions](problems/05-erdos-deep-counterexamples/REBUILD.md), [independent audit](problems/05-erdos-deep-counterexamples/independent-audit/AUDIT.md), and [verification receipt](problems/05-erdos-deep-counterexamples/verification-receipt.json)
 
+### 06. Collision blocks and certified difference-table maximality
+
+The package proves that 22 explicit five-point difference-table loci are nonempty, pairwise distinct, and maximal against every competing edge permutation in their respective fixed canonical chambers. The representatives and their count are already known from Erickson–Jones. A general collision criterion reduces global maximality verification to 97 fiber-permutation choices across the 22 cases, with at most 32 for a single case.
+
+This is a **finished structural partial-result paper**, not a new 22-case classification or a solution of Problem 5.1. It does not supply an intrinsic combinatorial selection rule or prove completeness of the list. **Novelty unestablished.**
+
+- [Project overview](problems/06-difference-table-maximality/README.md), [paper](problems/06-difference-table-maximality/paper/difference-table-structural-partial.pdf), and [LaTeX](problems/06-difference-table-maximality/paper/difference-table-structural-partial.tex)
+- [Exact statements](problems/06-difference-table-maximality/STATEMENTS.md), [independent audit](problems/06-difference-table-maximality/verification/INDEPENDENT_AUDIT.md), and [source/novelty limits](problems/06-difference-table-maximality/SOURCES_AND_LIMITS.md)
+- [Rebuild instructions](problems/06-difference-table-maximality/REBUILD.md) and [public-package replay](problems/06-difference-table-maximality/verification/PUBLIC_REPLAY.json)
+
+### 07. A variance bound for transverse rhythmic triplets and monochromatic queens
+
+A same-color nonattacking placement of `t` queens on a `k × k` board satisfies `t² - 1 <= 3k(k - t)`. The same bound holds for transverse triplets in actual exact-cover rhythmic tilings by three-term arithmetic progressions with positive, pairwise distinct gaps. The formal proof includes the zero-triplet case and bridges the numerical estimate to the actual tiling objects.
+
+This is a **finished supporting-bound paper**. The original eventual-existence question for perfect rhythmic triplet tilings remains unresolved. The asymptotic and square-root reformulations are manuscript-level corollaries. **Novelty unestablished.**
+
+- [Project overview](problems/07-rhythmic-tiling-bound/README.md), [paper](problems/07-rhythmic-tiling-bound/paper/transverse-bound.pdf), and [LaTeX](problems/07-rhythmic-tiling-bound/paper/transverse-bound.tex)
+- [Exact statements](problems/07-rhythmic-tiling-bound/STATEMENTS.md), [independent audit](problems/07-rhythmic-tiling-bound/verification/INDEPENDENT_AUDIT.md), and [source/novelty limits](problems/07-rhythmic-tiling-bound/SOURCES_AND_LIMITS.md)
+- [Rebuild instructions](problems/07-rhythmic-tiling-bound/REBUILD.md) and [public-package replay](problems/07-rhythmic-tiling-bound/verification/PUBLIC_REPLAY.json)
+
+### 08. A conditional root-marked three-to-six omnibus bound
+
+For every infinite admissible walk of actual ordered four-voice chords using only bass-down moves, with a valid admissible predecessor of its initial chord, every valid choice of root reading has an entire quality/inversion range of cardinality between three and six, modulo transposition. The endpoints are attained. A seven-type prefix from an initial chord without an admissible predecessor demonstrates the importance of that hypothesis.
+
+This is a **finished conditional-theorem paper**. It does not establish that its explicit hypotheses and counted labels coincide with the intended full wording of Pyle's Conjecture 1, and is not an unqualified resolution of that conjecture. The interpretation question remains open in the appendix. Mixed-direction walks are outside the theorem. **Novelty unestablished.**
+
+- [Project overview](problems/08-pyle-conditional-bound/README.md), [paper](problems/08-pyle-conditional-bound/paper/root_marked_omnibus.pdf), and [LaTeX](problems/08-pyle-conditional-bound/paper/root_marked_omnibus.tex)
+- [Exact statements](problems/08-pyle-conditional-bound/STATEMENTS.md), [independent audit](problems/08-pyle-conditional-bound/verification/INDEPENDENT_AUDIT.md), and [source reuse/limits](problems/08-pyle-conditional-bound/SOURCES_AND_LIMITS.md)
+- [Rebuild instructions](problems/08-pyle-conditional-bound/REBUILD.md) and [public-package replay](problems/08-pyle-conditional-bound/verification/PUBLIC_REPLAY.json)
+
 ## Verification and trust boundary
 
 For Projects 01–03, the independent replays and the separate public-wrapper replays all passed:
@@ -84,7 +116,17 @@ For Projects 01–03, the formal claims are the declarations identified in each 
 
 Projects 04 and 05 each include a separate fresh-object audit of their single Lean module, exact export/axiom checks, and independent mathematical or actual-point counting checks. Their audit reports specify the trust boundary and the precise frozen sources. The publication wrappers also compile those source files into fresh temporary objects; their receipts are in each project's `publication-check/` folder. The infinite family in Project 04 and bounded searches in both projects are not additional Lean theorems.
 
-The root `SHA256SUMS` is retained unchanged as the manifest of the original Projects 01–03 release; its README hash belongs to that release. Current Project 04 and 05 integrity manifests are [04/SHA256SUMS](problems/04-yust-folding-counterexamples/SHA256SUMS) and [05/SHA256SUMS](problems/05-erdos-deep-counterexamples/SHA256SUMS). Run each from its own project folder.
+Projects 06–08 include complete frozen source closures, exact export/axiom checks, completed independent source rebuild evidence, and separately recorded public-wrapper replay attempts:
+
+- Project 06: 20 project modules plus two audit fixtures
+- Project 07: five project modules plus one audit fixture
+- Project 08: 28 project modules plus two audit fixtures
+
+For 07 and 08, the public-wrapper replays passed completely. For 06, the new wrapper replay completed 14 modules and then reached a 6 GiB resident-memory cutoff in CompactGlobalB6; it is explicitly marked INCOMPLETE. Its original independent fresh rebuild passed all 20 project modules plus the aggregate and export checks, and all frozen source hashes and recorded successful object hashes were revalidated before publication. Project 06 relies on that completed independent audit, without claiming a full pass of the new wrapper.
+
+The independent rebuilds and public-wrapper attempts use fresh project objects and the same pinned Lean/Mathlib baseline. Standard compiler, library, Mathlib, and package objects are trusted and reused. The exported theorem dependencies contain only `propext`, `Classical.choice`, and `Quot.sound`. The reports distinguish formal claims, manuscript deductions, semantic interpretation, and novelty. Public packages contain mathematical reports and sanitized receipts, without raw diagnostic logs or machine-specific build metadata.
+
+The root `SHA256SUMS` is retained unchanged as the manifest of the original Projects 01–03 release; its README hash belongs to that release. Current integrity manifests for Projects 04–08 are [04/SHA256SUMS](problems/04-yust-folding-counterexamples/SHA256SUMS), [05/SHA256SUMS](problems/05-erdos-deep-counterexamples/SHA256SUMS), [06/SHA256SUMS](problems/06-difference-table-maximality/SHA256SUMS), [07/SHA256SUMS](problems/07-rhythmic-tiling-bound/SHA256SUMS), and [08/SHA256SUMS](problems/08-pyle-conditional-bound/SHA256SUMS). Run each from its own project folder.
 
 ## Research workflow and organization
 
@@ -97,3 +139,4 @@ Each numbered folder under `problems/` contains:
 - Prior-art comparisons documenting the scope and limits of novelty claims
 
 Sheet music or musical notation may be added where it helps explain a result. Future research and additional proof/write-up files will be added under the same numbered organization.
+

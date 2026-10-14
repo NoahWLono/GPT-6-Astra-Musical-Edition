@@ -1,0 +1,56 @@
+import AuditAggregate
+#print DifferenceTableResearch.TableHolds
+#print DifferenceTableResearch.canonicalConstraints
+#print DifferenceTableResearch.originalConstraints
+#check DifferenceTableResearch.matching_domination_iff
+#print axioms DifferenceTableResearch.matching_domination_iff
+#check DifferenceTableResearch.table_domination_iff
+#print axioms DifferenceTableResearch.table_domination_iff
+#check DifferenceTableResearch.table_maximality_from_fibers
+#print axioms DifferenceTableResearch.table_maximality_from_fibers
+#check DifferenceTableResearch.MaximalA1.globally_maximal
+#print axioms DifferenceTableResearch.MaximalA1.globally_maximal
+#check DifferenceTableResearch.MaximalA2.globally_maximal
+#print axioms DifferenceTableResearch.MaximalA2.globally_maximal
+#check DifferenceTableResearch.MaximalD1.globally_maximal
+#print axioms DifferenceTableResearch.MaximalD1.globally_maximal
+#check DifferenceTableResearch.MaximalD2.globally_maximal
+#print axioms DifferenceTableResearch.MaximalD2.globally_maximal
+#check DifferenceTableResearch.MaximalD3.globally_maximal
+#print axioms DifferenceTableResearch.MaximalD3.globally_maximal
+#check DifferenceTableResearch.MaximalF1.globally_maximal
+#print axioms DifferenceTableResearch.MaximalF1.globally_maximal
+#check DifferenceTableResearch.MaximalF2.globally_maximal
+#print axioms DifferenceTableResearch.MaximalF2.globally_maximal
+#check DifferenceTableResearch.CompactMaximalG1.globally_maximal
+#print axioms DifferenceTableResearch.CompactMaximalG1.globally_maximal
+#check DifferenceTableResearch.CompactMaximalG2.globally_maximal
+#print axioms DifferenceTableResearch.CompactMaximalG2.globally_maximal
+#check DifferenceTableResearch.CompactMaximalB1.globally_maximal
+#print axioms DifferenceTableResearch.CompactMaximalB1.globally_maximal
+#check DifferenceTableResearch.MaximalA3.globally_maximal
+#print axioms DifferenceTableResearch.MaximalA3.globally_maximal
+#check DifferenceTableResearch.CompactMaximalB2.globally_maximal
+#print axioms DifferenceTableResearch.CompactMaximalB2.globally_maximal
+#check DifferenceTableResearch.CompactMaximalB3.globally_maximal
+#print axioms DifferenceTableResearch.CompactMaximalB3.globally_maximal
+#check DifferenceTableResearch.CompactMaximalB6.globally_maximal
+#print axioms DifferenceTableResearch.CompactMaximalB6.globally_maximal
+#check DifferenceTableResearch.MaximalF3.globally_maximal
+#print axioms DifferenceTableResearch.MaximalF3.globally_maximal
+#check DifferenceTableResearch.CompactMaximalC.globally_maximal
+#print axioms DifferenceTableResearch.CompactMaximalC.globally_maximal
+#check DifferenceTableResearch.MaximalD4.globally_maximal
+#print axioms DifferenceTableResearch.MaximalD4.globally_maximal
+#check DifferenceTableResearch.CompactMaximalG3.globally_maximal
+#print axioms DifferenceTableResearch.CompactMaximalG3.globally_maximal
+#check DifferenceTableResearch.CompactMaximalG4.globally_maximal
+#print axioms DifferenceTableResearch.CompactMaximalG4.globally_maximal
+#check DifferenceTableResearch.CompactMaximalB4.globally_maximal
+#print axioms DifferenceTableResearch.CompactMaximalB4.globally_maximal
+#check DifferenceTableResearch.CompactMaximalB5.globally_maximal
+#print axioms DifferenceTableResearch.CompactMaximalB5.globally_maximal
+#check DifferenceTableResearch.MaximalF4.globally_maximal
+#print axioms DifferenceTableResearch.MaximalF4.globally_maximal
+#check DifferenceTableResearch.DistinctMaximal22.pairwise_distinct
+#print axioms DifferenceTableResearch.DistinctMaximal22.pairwise_distinct

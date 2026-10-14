@@ -1,0 +1,9 @@
+import Main
+#check Rhythmic.partial_transverse_bound
+#print axioms Rhythmic.partial_transverse_bound
+#check Rhythmic.partial_transverse_bound_shifted
+#print axioms Rhythmic.partial_transverse_bound_shifted
+#check Rhythmic.PerfectTripletTiling.transverse_bound
+#print axioms Rhythmic.PerfectTripletTiling.transverse_bound
+#check Rhythmic.monochromatic_queens_bound
+#print axioms Rhythmic.monochromatic_queens_bound

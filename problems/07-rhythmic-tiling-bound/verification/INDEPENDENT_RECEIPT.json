@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "date": "2026-10-14",
+  "lean_version": "4.32.2",
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "project_objects_reused": false,
+  "trusted_dependencies": "Pinned compiler, standard-library and cached Mathlib/package objects; not rebuilt from source",
+  "axioms_union": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "modules": [
+    {
+      "module": "SpacedVariance",
+      "source_sha256": "0eee0d1f80cacceccaecc05ffd02b7d0c2ac82a7ba423c804192f8878955cb3d",
+      "exit_code": 0
+    },
+    {
+      "module": "IntegerSquares",
+      "source_sha256": "f35b3745437b19eddefcae1ec3136926366b329533525709c4b2a9ceef649ae5",
+      "exit_code": 0
+    },
+    {
+      "module": "TilingBridge",
+      "source_sha256": "9f9e5d07ad696f926a7b2b68daff96971f11d5087b3311bb84f4d1d320a39f18",
+      "exit_code": 0
+    },
+    {
+      "module": "QueensBridge",
+      "source_sha256": "4625663090d78f6b09367e523df0f8f2b7ac69e5bf910183a1d88954b407bf36",
+      "exit_code": 0
+    },
+    {
+      "module": "Main",
+      "source_sha256": "3de1f8ab629e445e1156bf82c2ef6c0ac925f6c5709060f6166ecf8e349d9f09",
+      "exit_code": 0
+    }
+  ],
+  "export_audit": "passed"
+}

@@ -1,0 +1,268 @@
+\documentclass[11pt]{article}
+\pdfmapfile{=lm.map}
+\pdfmapfile{+cm.map}
+\pdfmapfile{+symbols.map}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array,geometry,microtype,xcolor,hyperref}
+\geometry{margin=1in}
+\hypersetup{pdftitle={A Root-Marked Three-to-Six Theorem for Approachable Infinite Omnibus Walks},pdfauthor={GPT-6 Astra},colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!45!black,citecolor=blue!45!black}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Q}{\mathcal Q}
+\newcommand{\Sh}{\mathcal S}
+\newcommand{\ty}{\operatorname{type}}
+\title{A Root-Marked Three-to-Six Theorem\\for Approachable Infinite Omnibus Walks}
+\author{GPT-6 Astra\\\small Project AI author label}
+\date{14 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give a Lean 4 proof of a precisely delimited version of a three-to-six
+sonority bound inspired by Pyle's Conjecture 1. The objects are actual ordered
+four-voice pitch-class chords, with bass-down semitonal contrary-motion moves.
+The initial chord must have a valid predecessor, and the walk must continue
+indefinitely. A sonority is chord quality together with inversion under a
+chosen root interpretation, modulo transposition; symmetric roots remain
+available for independent reinterpretation. The entire infinite range contains
+between three and six such sonorities. The proof includes a symbolic bridge
+from actual chords to a finite graph and kernel-checked finite certificates.
+This is a conditional theorem with explicit semantics, not an unconditional
+resolution of the original wording. Established mathematical novelty is not
+claimed.
+\end{abstract}
+
+\section{Scope and relation to the source}
+Pyle \cite{Pyle} defines four-voice triads, seventh chords and three descending-bass
+omnibus moves, and proposes a bound of three to six distinct sonorities before
+an extension. The discussion allows root reinterpretations and delayed
+extensions, but does not give a precise mathematical definition of the full
+path class or of the extension event. We therefore isolate a theorem whose
+hypotheses and counted objects are explicit. The interpretive question retained
+for later correspondence appears in Appendix~\ref{app:question}.
+
+The present result counts \emph{quality and inversion}, not absolute pitch-class
+roots, literal voicings, chord occurrences, or the length of a repeated block.
+It is restricted to Definition 6's fixed bass-down direction. Mixing descending
+and mirror moves permits immediate backtracking and invalidates the lower
+bound. No mixed-direction result is asserted.
+
+\section{Actual chords and root-marked readings}
+Let a chord be an ordered tuple
+$c=(b,t,a,s)\in(\Z/12\Z)^4$, with coordinates corresponding to bass, tenor,
+alto and soprano. Let $\Q$ consist of those tuples for which some reordering has
+one zero successive interval and two intervals in $\{3,4\}$, or has four
+distinct entries and three successive intervals in $\{3,4\}$. This is the
+literal triad/seventh recognition predicate used in the formalization.
+
+For $v\in\{T,A,S\}$, define $f_v$ by decreasing the bass by one, increasing
+upper voice $v$ by one, and fixing the other two voices, all modulo twelve.
+An admissible step $c\longrightarrow d$ means $c,d\in\Q$ and $d=f_v(c)$ for
+some $v$. A chord is \emph{approachable} if it has an admissible predecessor.
+
+For each quality $q$, let $D_q$ be its ordered third-stack template:
+\[
+\begin{array}{c|cccccc}
+q&M&m&\mathrm{dim}&+&M7&7\\\hline
+D_q&(047)&(037)&(036)&(048)&(047\,11)&(047\,10)
+\end{array}
+\]
+\[
+\begin{array}{c|ccccc}
+q&mM7&m7&\varnothing7&\circ7&+M7\\\hline
+D_q&(037\,11)&(037\,10)&(036\,10)&(0369)&(048\,11)
+\end{array}
+\]
+The compact notation lists pitch-class offsets; for example $(047\,11)$
+means $(0,4,7,11)$.
+
+\begin{definition}
+A \emph{root-marked harmonic type} is $(q,i)$ with $0\leq i<|D_q|$.
+It reads chord $c$ if
+\[
+\{0,t-b,a-b,s-b\}
+ =\{d-D_q[i]:d\in D_q\}\quad\text{in }\Z/12\Z.
+\]
+Thus the chosen root is $b-D_q[i]$, while only $(q,i)$ is counted.
+\end{definition}
+
+This definition ignores upper-voice order and doubled-note choice. It does
+not identify the three inversion readings of an augmented triad or the four
+inversion readings of a fully diminished seventh. Each occurrence can choose
+any valid reading, independently of preceding occurrences. The underlying
+chord still has to satisfy the literal four-voice predicate, so set equality
+does not admit extra chord types or invalid multiplicities.
+
+\section{The conditional theorem}
+\begin{theorem}[Entire-range three-to-six bound]\label{thm:main}
+Let $c:\N\to\Q$ be an infinite admissible bass-down walk. Suppose that
+$c(0)$ is approachable. For each $n$, choose any root-marked harmonic type
+$h(n)$ reading $c(n)$. Then
+\[
+3\ \leq\bigl|\{h(n):n\in\N\}\bigr|\ \leq 6.
+\]
+In fact, $h(0),h(1),h(2)$ are pairwise distinct.
+\end{theorem}
+
+This bounds the complete range, including types introduced after any selected
+extension boundary. It consequently bounds every prefix from above; the
+three-type lower bound applies once three consecutive positions are counted.
+No particular musical definition of an extension is used in its proof.
+
+\subsection{Reduction to intrinsic finite states}
+Normalize a chord by subtracting its bass and sorting the three upper
+coordinates. Write
+\[
+\sigma(c)=\operatorname{sort}(t-b,a-b,s-b).
+\]
+The intrinsic state set is
+$\Sh=\{(x,y,z):0\leq x\leq y\leq z<12,
+(0,x,y,z)\in\Q\}$. It has 55 elements. Successors are computed by applying
+all three literal moves to $(0,x,y,z)$, retaining admissible results, and
+normalizing again.
+
+The reused symbolic bridge proves, for every actual valid chord $c$,
+\[
+q\in\operatorname{succ}(\sigma(c))
+\quad\Longleftrightarrow\quad
+\exists d\ (c\longrightarrow d\ \land\ \sigma(d)=q).
+\]
+Translation invariance and upper-voice permutations establish this equality;
+it is not assumed from a graph drawing. Node completeness is separately
+checked in twelve finite slices. The direct unsorted voice-relative reading
+predicate is proved equivalent to the sorted-state predicate.
+
+\subsection{Certificates and proof}
+Let $K$ be the union of the following four state lists:
+\[
+\begin{aligned}
+C_1={}&\{(0,4,7),(1,5,9),(2,5,8),(3,6,10),(3,7,9),(4,8,11)\},\\
+C_2={}&\{(0,4,8),(2,5,9),(3,7,10)\},\\
+C_3={}&\{(0,5,8),(1,4,8),(2,6,9),(3,5,9),(3,7,11),(4,7,10)\},\\
+C_4={}&\{(1,5,8),(3,6,9),(4,7,11)\}.
+\end{aligned}
+\]
+These lists are certificate witnesses, not alternative definitions of
+admissible chords or moves. Three finite propositions are evaluated by Lean's
+kernel from the intrinsic definitions:
+\begin{enumerate}
+\item If $p\in\Sh$ and $p\to q\to r\to s$, then $q\in K$.
+\item For each $C_j$, a successor of a state in $C_j$ that belongs to $K$
+also belongs to $C_j$. The union of all valid marked readings of states in
+$C_j$ has at most six elements.
+\item For $p\to q\to r$ with $p,q,r\in K$, every choice of marked readings
+at the three positions gives three pairwise distinct types.
+\end{enumerate}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Project the actual walk to $\sigma(c(n))$. At its first position, use the
+assumed predecessor and the next two moves in certificate 1. At any later
+position, use the preceding position and the next two moves. Hence every
+projected state belongs to $K$.
+
+Choose a component list $C_j$ containing the initial state. Certificate 2
+and induction keep the entire projected walk in that same list. Every marked
+reading then lies in its computed union of at most six types. Certificate 3
+applied to the first two edges gives three distinct types. The direct-reading
+bridge transfers both conclusions to the original ordered chord walk.
+\end{proof}
+
+The component capacities, with all symmetric-root choices included, are:
+\begin{center}\small
+\begin{tabular}{@{}clc@{}}\toprule
+List&Marked quality/inversion inventory&Capacity\\\midrule
+$C_1$&$M_0,\ (+M7)_0,(+M7)_3,\ (\varnothing7)_0,(\varnothing7)_1,(\varnothing7)_3$&6\\
+$C_2$&$+_0,+_1,+_2,\ (m7)_0,(m7)_3$&5\\
+$C_3$&$7_0,7_2,7_3,\ m_2,\ (mM7)_0,(mM7)_3$&6\\
+$C_4$&$(\circ7)_0,(\circ7)_1,(\circ7)_2,(\circ7)_3,\ (M7)_0,(M7)_3$&6\\\bottomrule
+\end{tabular}
+\end{center}
+Subscripts are inversion indices, with zero denoting root position.
+
+\section{Why the hypotheses are material}
+Consider the actual ordered chords
+\[
+\begin{aligned}
+&(0,0,3,6),\ (11,0,3,7),\ (10,1,3,7),\ (9,1,4,7),\\
+&(8,1,4,8),\ (7,1,4,9),\ (6,1,5,9).
+\end{aligned}
+\]
+Their moves are $S,T,A,S,S,A$. Their quality/inversion types are, in order,
+\[
+\mathrm{dim}_0,\ (mM7)_3,\ 7_2,\ 7_0,\ m_2,\ 7_3,\ (mM7)_0.
+\]
+All seven are distinct and have unambiguous roots. The final state admits an
+infinite admissible continuation; the first chord has no admissible
+predecessor. Thus simply discarding the initial-approachability hypothesis
+would make the upper bound false even for uniquely rooted chords.
+
+The optional formal witness supplement verifies a 36-chord actual periodic
+walk attaining six types, and another attaining exactly three. It also
+verifies the seven-type example above with an infinite continuation and
+proves that its initial chord has no valid predecessor. Thus both endpoints
+of the conditional bound are attainable.
+
+A finite approachable walk can instead leave its recurrent family and end at
+an additional type. Therefore approachability alone is insufficient if
+indefinite continuation is dropped. These observations explain why our
+hypotheses are stated visibly rather than inferred from the word
+``progression.'' They are not by themselves counterexamples to a uniquely
+specified interpretation of Pyle's conjecture.
+
+\section{Formal implementation and verification boundary}
+The core proof uses Lean 4.32.2 and its standard library. It freshly reuses
+23 source modules from the earlier public project \cite{Prior}, ending in
+\texttt{NodeJoin} and \texttt{LocalQuotientLift}; no earlier compiled project
+objects are needed. The new modules provide the main result and concrete witnesses:
+\begin{itemize}
+\item \texttt{RootMarkedBounds}: template readings, finite certificates,
+and the witness-plus-list-cover theorem \texttt{three\_to\_six}.
+\item \texttt{RawReading}: direct actual-voice reading equivalence.\\
+The export is \texttt{raw\_three\_to\_six}.
+\item \texttt{Witnesses}: literal periodic chord arrays, universal periodic
+path proofs, endpoint attainment, and the unapproachable seven-type example.
+\item \texttt{Cardinality}: a Mathlib wrapper producing a finite set equal
+to the whole infinite range, with cardinality between three and six.
+\end{itemize}
+The core conclusion gives three distinct attained types and a list of length
+at most six covering every index; this is already the desired cardinality
+bound. The wrapper merely expresses it with \texttt{Finset.card}.
+
+The printed axioms of the three main bound exports are precisely
+\begin{center}\texttt{propext}, \texttt{Classical.choice}, \texttt{Quot.sound}.\end{center}
+There are no proof placeholders, custom axioms, or native-evaluation axioms
+in these exports. Finite checks use \texttt{decide}. The supplied rebuild
+script separates the standard-library proof from the optional Mathlib
+cardinality presentation. Build success establishes the exact formal
+statement above; it does not establish a priority claim or identify an
+unstated musical definition with a formal predicate.
+
+\appendix
+\section{Question reserved for later correspondence}\label{app:question}
+Does the seven-sonority admissible prefix in Section 4 count as a generalized
+omnibus progression before its first extension? If not, which chord or
+transition excludes it, or constitutes the extension?
+
+The point is to determine whether the author's intended class excludes the
+unapproachable initial chord, imposes recurrence or another condition, or
+uses a different extension boundary. The theorem in this note remains valid
+regardless of the answer, while its precise relationship to the original
+conjecture depends on that clarification. No email or publication is part of
+this deliverable.
+
+\begin{thebibliography}{9}
+\bibitem{Pyle} Hayden Pyle. Generalized Omnibus Progressions: A Mathematical
+Formalization of Harmonic Progressions Exhibiting Semitonal Contrary Motion
+and Tertian Sonorities. \emph{Journal MusMat} IX (2025), 27--41.
+DOI: 10.46926/musmat.2025v9.27-41.
+\url{https://musmat.org/journal/v9/02-Pyle.pdf}.
+\bibitem{Prior} GPT-6 Astra Musical Edition project. Omnibus formalization,
+public snapshot 80a1a270d9355783c6c856bc463ebc936c5ae5c5.
+\url{https://github.com/NoahWLono/GPT-6-Astra-Musical-Edition}.
+The reused modules provide the literal chord/move model and symbolic quotient
+bridge. Their earlier graph and image-count results are not presented here as
+new discoveries.
+\end{thebibliography}
+\end{document}

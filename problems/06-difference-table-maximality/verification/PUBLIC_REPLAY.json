@@ -1,0 +1,240 @@
+{
+  "status": "incomplete_resource_limit",
+  "lean_version": "4.32.2",
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "project_objects_reused": false,
+  "project_modules": 20,
+  "audit_fixtures": [
+    "AuditAggregate",
+    "ExportAudit"
+  ],
+  "trusted_dependencies": "Pinned compiler, standard-library and cached Mathlib/package objects; not rebuilt from source",
+  "modules": [
+    {
+      "module": "PositiveCircuitCertificate",
+      "source_sha256": "176b5db954ea58d61bbf1eea5fb85f51ce31fb0d827e2e546baa07ddf50dd367",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "DifferenceTableDefinition",
+      "source_sha256": "1c014b14c5ddf0e37bac028ead8ed4b08243e9e76ba971867da40ccd79af84ef",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "CollisionDomination",
+      "source_sha256": "dbe18e65fbeee4ec2e9678286867d8b97cc2571e60bbfd57345b83384bef76db",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "BlockMaximality",
+      "source_sha256": "b4c2c3fcbd1c19af5110d851afcd3650ca2b47f7d13d7d0d5d7b9bd04bb74fa7",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "SampleCollisionCertificate",
+      "source_sha256": "8fc04c46f2e3b297346f634323c2eaa5ae2479348503c52cd4daa7861cafa910",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "CompactMaximalityCertificate",
+      "source_sha256": "9247134e407267fad68236f270ab8078a354f083ff20993394f29edc2b41584a",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "DistinctnessCertificate",
+      "source_sha256": "b011690c409ef40567326249bd655d90d9fac3c503409cf83157f985fb57e35a",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "SingletonGlobalMaximality",
+      "source_sha256": "90c1591c2077f8851ed592a6f45aa7e5674fd3ee705e5b4f5b2c61fba4ccd145",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "DistinctMaximal22",
+      "source_sha256": "df2c783494c2f7ad2e5914b68814e33c38543a61f8963694464e80feed30270a",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "CompactGlobalG1",
+      "source_sha256": "f6cde0969d8e07a5bd5c66d7112c7118d0fae73c74451a0d9c34be8527b480e3",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "CompactGlobalG2",
+      "source_sha256": "6d2147d92fb402e1e9f1a98d775fc720a7c4921aeaa2aa1847f31d53ef30f5a6",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "CompactGlobalB1",
+      "source_sha256": "ab95e84ef290d3c631f0af4fef805ab32b119edb159811c21025a47a31c66b64",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "CompactGlobalB2",
+      "source_sha256": "06a3555f612e2a22fa8e0b46d2def0d1914a4aea90dd25475e297165e10bf5b0",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "CompactGlobalB3",
+      "source_sha256": "87b4f8f559eed140a3f57f346868d3ca07ac4d0444749d6a36517bd4cbbf910c",
+      "exit_code": 0,
+      "resource_limit_exceeded": false
+    },
+    {
+      "module": "CompactGlobalB6",
+      "source_sha256": "2e2598aa90cad792ff270e1e4a8c5b1275a789c256486849382b6151409af55d",
+      "exit_code": -9,
+      "resource_limit_exceeded": true
+    }
+  ],
+  "export_axioms": {
+    "DifferenceTableResearch.matching_domination_iff": [
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.collision_free_dominator_unique": [
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.table_domination_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.maximality_from_fibers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.sample_collision_free_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.compact_reverse_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.table_maximality_from_fibers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.MaximalA1.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.MaximalA2.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.MaximalD1.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.MaximalD2.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.MaximalD3.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.MaximalF1.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.MaximalF2.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.MaximalA3.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.MaximalF3.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.MaximalD4.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.MaximalF4.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.DistinctMaximal22.pairwise_distinct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.CompactMaximalG1.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.CompactMaximalG2.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.CompactMaximalB1.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.CompactMaximalB2.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferenceTableResearch.CompactMaximalB3.globally_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "verification_date": "2026-10-14",
+  "resource_limit_mib": 6144,
+  "completed_module_count": 14,
+  "stopped_at": "CompactGlobalB6",
+  "not_attempted": [
+    "CompactGlobalC",
+    "CompactGlobalG3",
+    "CompactGlobalG4",
+    "CompactGlobalB4",
+    "CompactGlobalB5",
+    "AuditAggregate",
+    "ExportAudit"
+  ],
+  "reason": "The Lean process was stopped at the resident-memory limit; no Lean diagnostic error was emitted before termination.",
+  "run_mode": "Source-only sequential replay in a new directory, resumed after earlier resource-limited attempts while retaining only successfully compiled modules from that same replay",
+  "objects_from_outside_this_replay_reused": false,
+  "export_axioms_scope": "Only successfully compiled modules before the cutoff; the complete theorem export audit is the earlier independent audit.",
+  "completed_verification_basis": "INDEPENDENT_RECEIPT.json and INDEPENDENT_AUDIT.md record the successful complete independent source rebuild, with matching frozen source hashes."
+}

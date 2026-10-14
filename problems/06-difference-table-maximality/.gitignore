@@ -1,0 +1,9 @@
+*.olean
+*.ilean
+*.log
+*.aux
+*.out
+*.pyc
+__pycache__/
+.lake/
+rebuild-output/

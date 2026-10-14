@@ -1,0 +1,364 @@
+{
+  "status": "passed",
+  "lean_version": "4.32.2",
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "project_objects_reused": false,
+  "project_modules": 28,
+  "audit_fixtures": [
+    "ExportAudit",
+    "WitnessExportAudit"
+  ],
+  "trusted_dependencies": "Pinned compiler, standard-library and cached Mathlib/package objects; not rebuilt from source",
+  "modules": [
+    {
+      "module": "Pilot",
+      "source_sha256": "53956d62233c561fcec02e50fdb563b7dab95501b48b5f2302a9675e865d348b",
+      "exit_code": 0
+    },
+    {
+      "module": "SliceDefinitions",
+      "source_sha256": "a51daded2efe6e06c91177bff8b55463346f7d1d6a0cd3f3e3057d1aa658d5f1",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice0",
+      "source_sha256": "6ae602de826af4817061f2f4601d5fd84392c4c1e54da5ea7f056f9727fe4029",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice1",
+      "source_sha256": "967b1e77a1555aeb0c49fd7482fa0adcfb74e0c001d42ce07435a046590ab7bc",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice2",
+      "source_sha256": "045a67b70c34c291ccbe2c3d44b27dc8b91e0e20296ea8056593a8e7af85e1fe",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice3",
+      "source_sha256": "0d7a9d8172ca253bd25122c15bb9dcb21af08661bbed30ced4a9655924fb8172",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice4",
+      "source_sha256": "c00a6ecdc39acb7fefd82b46dd56186181da364a10d6366e263c08cb3806d08b",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice5",
+      "source_sha256": "86bfeeae8df5f2bc43f340f7c93ae508227acc039dc6c3f588c7df81cb7ba4aa",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice6",
+      "source_sha256": "a598482a160df01327b16d676cc797974555db4a81c6d300d2104b10b321a1b9",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice7",
+      "source_sha256": "e0d3d7a563e0c387d8274538855e6a3431d0aa872ddb39d93bfa03a2fb617a38",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice8",
+      "source_sha256": "c76dab2a1881e7a1ff0b05ab887a1681c5b56c7734553e4cf5999b0f58d54a35",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice9",
+      "source_sha256": "a1a77659c3d5e18223cb5e8a931ea7a7d5f6cfa915eb3c7dca218d677c2d68e3",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice10",
+      "source_sha256": "e850c0071b5af4ef72d8eff15bc1110eac64de508b972c01aa168bebd1c177a5",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeSlice11",
+      "source_sha256": "939fa89cfc62d3da77f745ed25e16b47b22108b9bb7cc784004f7f2ea2b4496c",
+      "exit_code": 0
+    },
+    {
+      "module": "SemanticDraft",
+      "source_sha256": "7e51ee40efc4f4ec58f6f4b3cda4d13d47d666324f42cb6a363343854bbfebdf",
+      "exit_code": 0
+    },
+    {
+      "module": "TranslationBridge",
+      "source_sha256": "4725c7f7e916aeec057733fa14238aafa7276872dfffacb31e6590610794b4a9",
+      "exit_code": 0
+    },
+    {
+      "module": "CanonicalBridge",
+      "source_sha256": "af70cc3769299a150c02307d0f60ee4892988863135ff60ea0fa40340d0552df",
+      "exit_code": 0
+    },
+    {
+      "module": "NodeJoin",
+      "source_sha256": "77b2eeba996fd8b2a45d4d39b696e9344ab7d22a4439e26472402b3cdede1d47",
+      "exit_code": 0
+    },
+    {
+      "module": "QuotientSymmetry",
+      "source_sha256": "891cf1445808e125ee6cf59d10c108163f5551c3e7e3c9479a66789dc12ae3cc",
+      "exit_code": 0
+    },
+    {
+      "module": "ReachableTranslation",
+      "source_sha256": "dda082f09792419d747f765c1ea8aeca299ec2ddfcbff5e145818e9b1709a87c",
+      "exit_code": 0
+    },
+    {
+      "module": "ReachablePermutations",
+      "source_sha256": "3867d9b44c47b215ee5ccdddfca6cdb944d93735ff497e49b5c16c59de2a37ac",
+      "exit_code": 0
+    },
+    {
+      "module": "ReachableCanonical",
+      "source_sha256": "364666b06460b3ddb740e9f80fbd9a6d75f2e1d1dbf0a8d761ea9313f305b4cb",
+      "exit_code": 0
+    },
+    {
+      "module": "LocalQuotientLift",
+      "source_sha256": "a365d172f2936e3477662abc7401f93060d44379349bcf48579b08e4c7256419",
+      "exit_code": 0
+    },
+    {
+      "module": "RootMarkedBounds",
+      "source_sha256": "2507953344f1be3318c86315e6f06ede780ea97fef58629c07fafcfa2d435dea",
+      "exit_code": 0
+    },
+    {
+      "module": "RawReading",
+      "source_sha256": "7ff4aa91340b8d39ffb16dfaff3111970d3dbf54f8a94b162d5ba1a449ab10b5",
+      "exit_code": 0
+    },
+    {
+      "module": "PeriodicWitness",
+      "source_sha256": "520dde23558e537c5321165fbc16bb95862ef7973f3141f87ac04aab6e984063",
+      "exit_code": 0
+    },
+    {
+      "module": "Witnesses",
+      "source_sha256": "44a25996e98a7c17ed40a1cc98dd35d2b71e12e6c4900d65c88e49b43404748b",
+      "exit_code": 0
+    },
+    {
+      "module": "Cardinality",
+      "source_sha256": "d4eb0b804b3e8cfb62e5f69a7bcac6c7a797747c4d7e1a2a108d62bed1b70bf7",
+      "exit_code": 0
+    },
+    {
+      "module": "ExportAudit",
+      "source_sha256": "cbaac59510116dca2fc0733ec04b041a807e7123e22a035e1098818e17089a81",
+      "exit_code": 0
+    },
+    {
+      "module": "WitnessExportAudit",
+      "source_sha256": "1651d70e0940061849bba66890b58724c912c6df5e176b96cf9a2bbc7332ad91",
+      "exit_code": 0
+    }
+  ],
+  "export_axioms": {
+    "Omnibus.witness_moves": [
+      "propext"
+    ],
+    "Omnibus.interval_translation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.modular_translation_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_swap_tenor_alto": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_cycle_upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_translation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.step_translation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sonority_translation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sort3_cases": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_sorted_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.normalizeBass_eq_translate": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.canonical_chord": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.nodes_exact": [
+      "propext"
+    ],
+    "Omnibus.chord_type_in_nodes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.sort3_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sort3_cycle": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sonority_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.sonority_cycle": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_cycle": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_translation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_cases": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_cycle": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_sorted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.reachable_canonical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.successor_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.chord_is_bounded": [
+      "propext"
+    ],
+    "Omnibus.local_quotient_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.three_to_six": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.raw_three_to_six": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.concrete_period_is_admissible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.six_steps": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.three_steps": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.six_attained": [
+      "propext"
+    ],
+    "Omnibus.RootMarked.seven_steps": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.seven_not_approachable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.full_range_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.six_approachable": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.six_readings": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.three_approachable": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.three_readings": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.three_range": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.seven_readings": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Omnibus.RootMarked.seven_attained": [
+      "propext"
+    ]
+  },
+  "axioms_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "verification_date": "2026-10-14",
+  "run_mode": "Complete source-only sequential replay in a new output directory"
+}

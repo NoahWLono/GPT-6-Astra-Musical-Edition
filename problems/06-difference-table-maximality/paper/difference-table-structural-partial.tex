@@ -1,0 +1,169 @@
+\documentclass[11pt]{article}
+\pdfmapfile{=lm.map}
+\pdfmapfile{+cm.map}
+\pdfmapfile{+symbols.map}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\usepackage{microtype}
+\hypersetup{pdftitle={Collision Blocks and Certified Maximality for Five-Point Difference Tables},pdfauthor={GPT-6 Astra (AI project label)}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Sset}{S}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\title{Collision Blocks and Certified Maximality\\for Five-Point Difference Tables}
+\author{GPT-6 Astra\\\small AI project label; AI-generated research report}
+\date{14 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give a collision-based criterion for containment of matching loci and use it to certify the global maximality of 22 explicit five-point difference-table loci. The representatives and the count 22 come from Erickson--Jones, not from a new classification. Possible dominators reduce to permutations inside distance-collision blocks, with at most 32 choices for any displayed representative. Rational samples, row-combination identities, and eight boundary-forcing opposed-pair certificates yield Lean proofs. An independent source rebuild checks nonemptiness, bijectivity, pairwise distinction, and maximality for the same indexed maps. This is a structural partial result: it does not give an a priori combinatorial rule excluding further maximal loci, and does not solve Problem 5.1. Literature-wide novelty of the general containment observation has not been established.
+\end{abstract}
+
+\section{Scope and relation to the published problem}
+Erickson--Jones classify homometric five-point subsets of the circle group and cyclic groups \cite{EJ}. Their Problem 5.1 asks for a combinatorial characterization of the 22 difference tables in their minimal collection, intended to avoid Algorithm 3.1. They suggest, in particular, a condition on two permutations equivalent to containment of their solution sets.
+
+The present contribution is a small verification mechanism for supplied candidates. It proves that each of the 22 representatives is maximal against \emph{every} competing edge permutation in its fixed chamber. The proof is not restricted to a preselected competitor list. It also proves that these 22 loci are nonempty and pairwise distinct. It does \emph{not} prove that the list exhausts all maximal loci. Although the published classification already supplies that completeness result, it is not imported as a logical assumption into this proof package.
+
+The published number 22 and the families are acknowledged prior results. The collision criterion below is elementary and general; no claim of literature-wide originality is made. The formal certificates provide a different, compact verification of maximality, rather than a new enumeration of homometric classes.
+
+\section{Matching loci and collision blocks}
+Let $E$ be a set of labels, $X$ a space of possible configurations, and $V$ a set of values. Fix a common chamber $C\subseteq X$ and functions $s,t:E\times X\to V$. For a permutation $\pi:E\to E$, define
+\[
+ S_\pi=\{x\in C: t(e,x)=s(\pi(e),x)\text{ for every }e\in E\}.
+\]
+Define the forced-collision relation of $S_\pi$ by
+\[
+ a\sim_\pi b\quad\Longleftrightarrow\quad
+ s(a,x)=s(b,x)\quad\text{for every }x\in S_\pi.
+\]
+It is an equivalence relation. Its blocks are equality classes of functions restricted to the locus, not merely repeated values at a particular point.
+
+\begin{theorem}[Collision criterion]
+For any permutations $\pi,\sigma$,
+\[
+ S_\pi\subseteq S_\sigma
+ \quad\Longleftrightarrow\quad
+ a\sim_\pi \sigma(\pi^{-1}(a))\quad\text{for every }a\in E.
+\]
+No convexity, rank, or nonemptiness assumption is needed.
+\end{theorem}
+\begin{proof}
+If $x\in S_\pi\subseteq S_\sigma$, the two matching equations at $e=\pi^{-1}(a)$ give
+$s(a,x)=t(e,x)=s(\sigma(e),x)$. Conversely, the asserted forced equalities convert each $\pi$-matching equation into the corresponding $\sigma$-matching equation. The chamber is unchanged.
+\end{proof}
+
+For finite $E$, let $G_\pi$ be the product of the symmetric groups on the collision blocks. The possible dominating permutations are exactly $G_\pi\pi$, with composition interpreted as $g\circ\pi$. Thus a nonempty locus with no forced collisions between distinct labels has no distinct dominating permutation.
+
+\subsection{A certificate using feasible samples}
+Choose finitely many feasible points $W\subseteq S_\pi$. Partition $E$ according to the sample signatures
+\[
+ a\longmapsto (s(a,w))_{w\in W}.
+\]
+These sample blocks can be larger than the true forced-collision blocks. That causes no soundness problem: every true dominator still permutes within the sample blocks.
+
+\begin{theorem}[Finite block certificate for maximality]
+Let $G_W$ be the product of symmetric groups on the sample blocks. If
+\[
+ S_{g\circ\pi}\subseteq S_\pi\qquad\text{for every }g\in G_W,
+\]
+then $S_\pi$ is maximal among all matching loci in $C$.
+\end{theorem}
+\begin{proof}
+Suppose $S_\pi\subseteq S_\sigma$. The collision criterion implies that $g=\sigma\circ\pi^{-1}$ preserves every sample signature. Hence $g\in G_W$, and the assumed reverse inclusion gives $S_\sigma\subseteq S_\pi$.
+\end{proof}
+
+This is the finite reduction used by the certificates. It does not require a proof that the samples span the locus. For the eleven collision-free representatives, the samples separate all ten labels, so the only possible dominator is the representative itself.
+
+\section{The five-point semantics}
+Take $E=\{ij:0\leq i<j\leq4\}$ in the order
+\[
+ 01,02,03,04,12,13,14,23,24,34.
+\]
+Write $x_0=y_0=0$, and use homogeneous coordinates
+$z=(z_0,x_1,\ldots,x_4,y_1,\ldots,y_4)$ with $z_0=1$.
+For long count $p$, the long edges are empty when $p=0$, $\{04\}$ when $p=1$, and $\{03,04\}$ when $p=2$. The folded source distance is
+\[
+ \ell_p(ij;x)=
+ \begin{cases}
+ x_j-x_i,&ij\text{ is not long},\\
+ 1-x_j+x_i,&ij\text{ is long}.
+ \end{cases}
+\]
+The ten matching equations are $\ell_q(e;y)=\ell_p(\pi(e);x)$.
+Only $(p,q)=(0,1),(0,2),(1,1),(1,2),(2,2)$ are used.
+
+The formal predicate \texttt{TableHolds} adds the canonical constraints for both vectors: strict increasing order between 0 and 1, the long-count half-distance bounds, the reflection tie-break, and, for $p=q$, the strict lexicographic ordering of $y-x$. Weak lexicographic conditions permit equality of every entry; strict ones do not. These conventions retain boundary cases.
+
+An independent mathematical comparison with Definition 2.8 of \cite{EJ} found no mismatch. The matching equations encode the table's bar conventions and additive relations. The extra upper-bound and target-order constraints in the joint-coordinate presentation are redundant under the original matching and canonical conditions. For unequal long counts, the source and target canonical chambers already force $x\ne y$. However, this comparison is a mathematical audit, not a separately formalized Lean equivalence between the paper's presentation and \texttt{TableHolds}. The exported theorems are literally about the latter predicate.
+
+\section{Reverse-inclusion certificates and the boundary issue}
+For each sample-block permutation, the verifier checks reverse inclusion using rational identities. A matching-row combination vanishes at every point satisfying the matching equations. In addition, if $f,g$ are nonnegative chamber forms, $c>0$, and
+\[
+ f+c g\in\operatorname{rowspan}_{\Q}(M_\sigma),
+\]
+then every feasible point satisfies $f=g=0$. These two equations may be added before checking that the representative's matching rows vanish. All identities, positivity tests, and sample-feasibility checks are reduced in the Lean kernel.
+
+Boundary forcing cannot simply be omitted. For example, for $(p,q)=(1,1)$, the permutation with zero-based edge-index list
+\[
+ [8,3,6,4,0,7,2,9,5,1]
+\]
+has raw matching line
+\begin{align*}
+ x&=(3/5-t,\ 4/5-t,\ 1-t,\ 3/5),\\
+ y&=(t-1/5,\ 2/5,\ t,\ 4/5).
+\end{align*}
+The canonical inequalities $x_3\leq1/2$ and $y_3\leq1/2$ force $t=1/2$. Thus the feasible locus is the B6 point, even though the raw matching locus is a line. The compact B6 proof includes eight such cases requiring a nonzero opposed-pair certificate. Every other compact reverse-inclusion case uses matching-row combinations alone.
+
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+Representatives & Number & Choices each & Total choices\\
+\midrule
+A1--A3, D1--D4, F1--F4 & 11 & 1 & 11\\
+G1--G4 & 4 & 2 & 8\\
+B1--B5 & 5 & 8 & 40\\
+B6 & 1 & 32 & 32\\
+C & 1 & 6 & 6\\
+\midrule
+Total & 22 & & 97\\
+\bottomrule
+\end{tabular}
+\end{center}
+The largest block partition has five pairs, hence $2^5=32$ choices. The table counts the finite block-permutation checks; it is not a new classification count.
+
+\section{Formal result and independent rebuild}
+\begin{theorem}[Verified finite result]
+For the exact 22 indexed maps in \texttt{DistinctMaximal22}, each map is a bijection, each \texttt{TableHolds} locus is nonempty, and any two different indexed loci are distinct. For each representative $\pi$ in its chamber and every edge permutation $\sigma$,
+\[
+ S_\pi\subseteq S_\sigma\quad\Longrightarrow\quad S_\sigma\subseteq S_\pi.
+\]
+For A1--A3, D1--D4, and F1--F4, the stronger conclusion $\sigma=\pi$ holds.
+\end{theorem}
+
+The archived audit rebuilt 20 frozen source files with Lean 4.32.2 and mathlib revision
+\begin{center}\small\texttt{905b95818eb32af7874a58b427f50c1711a5e96c}.\end{center}
+No project object files were reused. Two audit-only modules, \texttt{AuditAggregate} and \texttt{ExportAudit}, link the exact indexed maps to all maximality exports and verify nonemptiness and bijectivity. The package therefore has 22 audited Lean source files. Upstream compiler and mathlib binaries were reused, rather than independently bootstrapped.
+
+The axiom exports contain only the standard \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}. No custom axiom, unfinished proof, or native-decision axiom is used. The numerical proofs use \texttt{decide +kernel}; Python's production of rational data is not trusted by the theorem checker.
+
+The archive contains source hashes, build order, isolated-rebuild receipts, theorem-signature and axiom logs, and a replay script. Separately, 297 supplied affine-hull certificates were checked successfully. Those checks are not imported by the compact maximality package and are not evidence that all possible tables have been covered.
+
+\section{Remaining barrier and stopping point}
+The collision criterion is exact, but its forced-collision relation quantifies over a real solution locus. Feasible samples and row certificates make verification small \emph{after} candidate representatives have been supplied. They do not, by themselves, produce an a priori invariant selecting all maximal tables from their permutations.
+
+A possible next route augments the signed matching relations with oriented canonical gap and half-distance forms, repeatedly forcing zero forms and opposed pairs. To establish completeness, one must show that no residual obstruction requires a positive circuit of three or more forms. Existing reductions organize the unresolved cases into label-preserving star and five $2$-versus-$3$ cut types, but no proof of that universal assertion is presently supplied. Cancellation or relabeling that enlarges the original canonical-label locus is not a valid shortcut.
+
+Accordingly, this report asserts neither absence of a twenty-third maximal locus, nor coverage of every feasible table by the displayed 22, nor a complete combinatorial characterization. It stops at the audited structural partial result. No public publication, repository push, or email submission is part of this deliverable.
+
+\begin{thebibliography}{9}
+\bibitem{EJ} W. Q. Erickson and N. B. Jones,
+\emph{Homometric subsets of $\mathbb Z_n$ with cardinality 5: classification and enumeration},
+arXiv:2412.08997v4, 27 August 2026.
+\url{https://arxiv.org/html/2412.08997v4}.
+See Definition 2.8, Algorithm 3.1, Appendix B, and Problem 5.1.
+\end{thebibliography}
+\end{document}
