@@ -2,13 +2,15 @@
 
 A public workspace for mathematical research in music theory.
 
-**Author of all three papers: GPT-6 Astra.** This is the requested AI-project author attribution, not an independently verified claim about the generating model's identity. This is an independent project; no official OpenAI affiliation or endorsement is claimed.
+**Author of all five papers: GPT-6 Astra.** This is the requested AI-project author attribution, not an independently verified claim about the generating model's identity. This is an independent project; no official OpenAI affiliation or endorsement is claimed.
 
 ## Status
 
-All three projects now include completed results within their stated scope, checked Lean 4 proofs, LaTeX/PDF papers, independent fresh-object verification, and separately tested source-only public rebuild wrappers.
+Projects 01–03 include completed results within their stated scope, checked Lean 4 proofs, LaTeX/PDF papers, independent fresh-object verification, and separately tested source-only public rebuild wrappers.
 
-Project 02 presents **novel exact answers to the numerical image questions in Section V of Pyle (2025)**: 6840 move endpoints and 2232 approachable ordered chords. The documented literature search through 13 October 2026 located no earlier published answer; this supports the scoped novelty claim but does not certify absolute priority. Novelty remains **unconfirmed** for Projects 01 and 03. Proof correctness, mathematical scope, and novelty are assessed separately.
+Project 02 presents **novel exact answers to the numerical image questions in Section V of Pyle (2025)**: 6840 move endpoints and 2232 approachable ordered chords. The documented literature search through 13 October 2026 located no earlier published answer; this supports the scoped novelty claim but does not certify absolute priority. Novelty remains **unconfirmed** for Projects 01, 03, 04, and 05. Proof correctness, mathematical scope, and novelty are assessed separately.
+
+Projects 04 and 05 add verified counterexamples, completed PDF/LaTeX papers, Lean certificates, independent audits, and source-only rebuild instructions. Their exact scopes and remaining questions are stated below.
 
 ## Results and research scope
 
@@ -48,9 +50,29 @@ The theorem proves attainment, the universal upper bound, and **unit-norm step r
 - [Exact statements](problems/03-algebraic-tunings/STATEMENT_INVENTORY.md)
 - [Rebuild instructions](problems/03-algebraic-tunings/REBUILD.md), [independent verification](problems/03-algebraic-tunings/verification/independent-replay/INDEPENDENT_AUDIT.md), and [public-wrapper result](problems/03-algebraic-tunings/verification/public-wrapper-replay/RESULT.json)
 
+### 04. Counterexamples to Yust's two folding conjectures
+
+Both arbitrary-cardinality folding characterizations in Yust's 2022 paper fail under the paper's stated definitions. The pitch-space example is the seven-note pair `{0,1,2,3,6,7,9}` and `{0,1,2,3,6,8,9}`. The pitch-class example in `Z/12Z` is `{0,1,3,4,6}` and `{0,1,3,4,7}`. Each pair has two distinct shared codimension-one T/I subset types and all but one interval occurrence in common, yet no permitted single folding (or T-shift in the pitch-class case) relates the whole-set types.
+
+The Lean certificate checks both concrete counterexamples, including arbitrary source and target transposition/inversion representatives. An infinite seven-note family is proved in the manuscript, **not Lean-formalized**. The work does not contradict the proved tetrachordal proposition, classify all exceptions, or address connectivity by sequences of operations. **Novelty unconfirmed.**
+
+- [Project overview](problems/04-yust-folding-counterexamples/README.md), [paper](problems/04-yust-folding-counterexamples/output/pdf/yust_folding_counterexamples.pdf), and [LaTeX](problems/04-yust-folding-counterexamples/paper/yust_folding_counterexamples.tex)
+- [Mathematical account and prior-art limits](problems/04-yust-folding-counterexamples/RESEARCH_NOTE.md), [Lean certificate](problems/04-yust-folding-counterexamples/formal/Counterexamples.lean), and [independent audit](problems/04-yust-folding-counterexamples/audit/SEMANTIC_AUDIT.md)
+- [Rebuild instructions](problems/04-yust-folding-counterexamples/REBUILD.md) and [audit receipt](problems/04-yust-folding-counterexamples/audit/receipt.json)
+
+### 05. Endpoint counterexamples to the printed Erdős-deep triple classification
+
+Primitive families in `Z/34Z` with generators `(1,6,12)` and lengths `(10,9,5)`, and in `Z/48Z` with generators `(1,6,18)` and lengths `(20,5,5)`, are Erdős-deep although their length triples are absent from the printed fifteen-triple list in Dukes–Gaede's 2023 Conjecture 1. Every constituent separately is Erdős-deep; the families have positive distance multiplicities exactly `1,…,13` and `1,…,20`, respectively.
+
+These counterexamples use the endpoint convention `k <= floor(order(g)/2)+1`. They **do not refute the stricter variant** requiring `k <= floor(order(g)/2)` for every constituent. The thesis's printed p. 43 pseudocode explicitly bounds only the largest constituent length; both examples satisfy that bound, so no cause of the historical search omission is claimed. The paper does not prove a repaired classification. **Novelty unconfirmed.**
+
+- [Project overview](problems/05-erdos-deep-counterexamples/README.md), [paper](problems/05-erdos-deep-counterexamples/paper/erdos_deep_counterexamples.pdf), and [LaTeX](problems/05-erdos-deep-counterexamples/paper/erdos_deep_counterexamples.tex)
+- [Exact results](problems/05-erdos-deep-counterexamples/RESULT.md), [Lean certificate](problems/05-erdos-deep-counterexamples/ErdosDeepCounterexamples.lean), [source reconciliation](problems/05-erdos-deep-counterexamples/source-audit.md), and [prior-art limits](problems/05-erdos-deep-counterexamples/prior-art-check.md)
+- [Rebuild instructions](problems/05-erdos-deep-counterexamples/REBUILD.md), [independent audit](problems/05-erdos-deep-counterexamples/independent-audit/AUDIT.md), and [verification receipt](problems/05-erdos-deep-counterexamples/verification-receipt.json)
+
 ## Verification and trust boundary
 
-The independent replays and the separate public-wrapper replays all passed:
+For Projects 01–03, the independent replays and the separate public-wrapper replays all passed:
 
 - Project 01: 33 project modules and one independent exact-statement fixture
 - Project 02: 101 project modules and one independent reviewer module
@@ -58,7 +80,11 @@ The independent replays and the separate public-wrapper replays all passed:
 
 Each replay compiled the complete frozen project source closure into fresh project objects, with zero project-object reuse. The pinned Lean compiler, standard-library, Mathlib, and package objects remain trusted dependencies; they were not themselves rebuilt from source. The common baseline is Lean `4.32.2` and Mathlib commit `905b95818eb32af7874a58b427f50c1711a5e96c`.
 
-The formal claims are the declarations identified in each statement inventory. Computational checks and manuscript-only deductions are identified separately. Historical development comments and incomplete attempts are retained as provenance where applicable; the final verification records establish the completed replay status. See each project's independent report and public-wrapper result above for the distinct runs and their limits.
+For Projects 01–03, the formal claims are the declarations identified in each statement inventory. Computational checks and manuscript-only deductions are identified separately. Historical development comments and incomplete attempts are retained as provenance where applicable; the final verification records establish the completed replay status. See each project's independent report and public-wrapper result above for the distinct runs and their limits.
+
+Projects 04 and 05 each include a separate fresh-object audit of their single Lean module, exact export/axiom checks, and independent mathematical or actual-point counting checks. Their audit reports specify the trust boundary and the precise frozen sources. The publication wrappers also compile those source files into fresh temporary objects; their receipts are in each project's `publication-check/` folder. The infinite family in Project 04 and bounded searches in both projects are not additional Lean theorems.
+
+The root `SHA256SUMS` is retained unchanged as the manifest of the original Projects 01–03 release; its README hash belongs to that release. Current Project 04 and 05 integrity manifests are [04/SHA256SUMS](problems/04-yust-folding-counterexamples/SHA256SUMS) and [05/SHA256SUMS](problems/05-erdos-deep-counterexamples/SHA256SUMS). Run each from its own project folder.
 
 ## Research workflow and organization
 

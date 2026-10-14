@@ -1,0 +1,369 @@
+\documentclass[10pt]{article}
+\pdfmapfile{=lm.map}
+\pdfmapfile{+cm.map}
+\pdfmapfile{+symbols.map}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array,geometry,microtype,xcolor,hyperref}
+\geometry{margin=1in}
+\hypersetup{pdftitle={Counterexamples to Yust's Pitch-Space and Pitch-Class Folding Conjectures},pdfauthor={GPT-6 Astra},colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!45!black,citecolor=blue!45!black}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\ti}{\sim_{\mathrm{TI}}}
+\newcommand{\multdiff}{\mathbin{\backslash_{\!m}}}
+\newcommand{\card}[1]{\lvert #1\rvert}
+\title{Counterexamples to Yust's Pitch-Space\\and Pitch-Class Folding Conjectures}
+\author{GPT-6 Astra\\\small Project AI author label}
+\date{14 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give explicit counterexamples to both arbitrary-cardinality folding
+characterizations proposed by Yust in 2022. A seven-note integer pitch pair
+shares two different six-note types and twenty of twenty-one interval
+occurrences, but its first set has no inversion-symmetric five-note core and
+admits no folding. A five-note pair in twelve-tone pitch-class space shares
+two different four-note types and nine of ten interval-class occurrences,
+but admits neither folding nor T-shift. Both concrete counterexamples have
+kernel-checked Lean~4 certificates, including arbitrary source
+transposition/inversion representatives and the integer-multiple form of
+T-shift. We also prove an infinite pitch-space family in ordinary mathematics.
+The formal certificates and their correspondence with the source statements
+passed independent review and an isolated rebuild. Established novelty or
+publication priority is not claimed.
+\end{abstract}
+
+\section{Statements and conventions}
+Yust's Conjecture~1 characterizes folding of equal-cardinality pitch sets by
+two shared codimension-one subset types and all but one pairwise interval
+occurrence. Conjecture~2 proposes the analogous pitch-class characterization,
+allowing either folding or T-shift \cite[p.~8]{Yust}. The preceding discussion
+and Proposition~4 supply the relevant conventions: subset types are taken up
+to transposition and inversion, interval content retains multiplicity, and an
+$n$-note folding requires an inversion-symmetric $(n-2)$-note core
+\cite[pp.~4--7]{Yust}.
+
+We work in $G=\Z$ or $G=\Z/12\Z$ and write
+\[
+ T_s(x)=s+x,\qquad I_s(x)=s-x.
+\]
+For finite subsets $S,T\subset G$, write $S\ti T$ when $T=T_s(S)$ or
+$T=I_s(S)$ for some $s$. In integer pitch space, let
+\[
+ \Delta(S)=\mathop{\biguplus}_{\substack{u,v\in S\\u<v}}\{v-u\}
+\]
+be the multiset of unordered pairwise intervals. In $\Z/12\Z$, use instead
+the smaller modular distance in $\{1,\ldots,6\}$; its multiplicity vector is
+denoted $\nu(S)=(\nu_1(S),\ldots,\nu_6(S))$. Thus the number of shared
+interval occurrences is the cardinality of the multiset intersection, or,
+in the pitch-class case, $\sum_{j=1}^6\min(\nu_j(S),\nu_j(T))$.
+
+\begin{definition}[Operations used in the source]
+Choose distinct $a,b\in S$ and put $C=S\setminus\{a,b\}$.
+A folding with index $s$ requires $I_s(C)=C$ and replaces $S$ by
+\[
+ (S\setminus\{a\})\cup\{s-a\}.
+\]
+A T-shift requires $T_x(C)=C$ and, for some $k\in\Z$, replaces $S$ by
+\[
+ (S\setminus\{a\})\cup\{a+kx\}.
+\]
+The output must retain the original cardinality. When comparing types, source
+and target representatives may be changed by transposition or inversion.
+\end{definition}
+
+Each operation is a \emph{single} folding or shift, not a sequence of such
+operations. Each counterexample below has distinct notes, inequivalent whole
+sets, two \emph{different} shared subset types, and exactly
+$\binom n2-1$ shared interval occurrences. Accordingly, the failures do not
+depend on repeated-note degeneracies, counting one subset type twice, or
+interpreting ``share'' as ``at least'' rather than ``exactly.''
+
+\section{A seven-note pitch counterexample}
+\begin{theorem}\label{thm:pitch}
+The integer pitch sets
+\[
+ A=\{0,1,2,3,6,7,9\},\qquad B=\{0,1,2,3,6,8,9\}
+\]
+share two different six-note types and exactly twenty pairwise interval
+occurrences. They are not equivalent under transposition or inversion, and no
+representative of $A$ admits a folding to any target. Thus the forward
+implication in Yust's Conjecture~1 is false.
+\end{theorem}
+\begin{proof}
+The first common six-set is
+\[
+ A\setminus\{7\}=B\setminus\{8\}=\{0,1,2,3,6,9\}.
+\]
+For the second, inversion $I_9$ gives
+\[
+ I_9(A\setminus\{2\})
+ =I_9(\{0,1,3,6,7,9\})
+ =\{0,2,3,6,8,9\}=B\setminus\{1\}.
+\]
+The two source six-sets are inequivalent: their common endpoints $0,9$
+force any transposition between them to be $T_0$ and any inversion to be
+$I_9$, and neither maps one to the other.
+
+Their interval multiplicities are
+\[
+\begin{array}{c|rrrrrrrrr}
+\text{length}&1&2&3&4&5&6&7&8&9\\\hline
+\Delta(A)&4&3&3&2&2&3&2&1&1\\
+\Delta(B)&4&3&3&1&2&3&2&2&1
+\end{array}
+\]
+so, writing $\multdiff$ for multiset difference,
+\[
+ \Delta(A)\multdiff\Delta(B)=\{4\},\qquad
+ \Delta(B)\multdiff\Delta(A)=\{8\}.
+\]
+The shared multiset has cardinality $20=\binom72-1$. Different interval
+multisets also exclude $A\ti B$.
+
+An odd finite reflection-invariant set contains the reflection center.
+A symmetric five-note subset of $A$ would therefore require a center in $A$
+and two distinct reflected pairs. The available pairs are
+\[
+\begin{array}{c|l}
+\text{center}&\text{reflected pairs in }A\\\hline
+0,9&\text{none}\\
+1&\{0,2\}\\
+2&\{1,3\}\\
+3&\{0,6\}\\
+6&\{3,9\}\\
+7&\text{none}.
+\end{array}
+\]
+No center supports two pairs, so no symmetric five-note core exists.
+Consequently $A$ admits no seven-note folding. Transposition and inversion
+preserve the existence and cardinality of symmetric subsets, so the same
+obstruction holds for every representative of $A$.
+\end{proof}
+
+\section{An infinite pitch-space family}
+\begin{theorem}\label{thm:family}
+For every integer $t\ge6$, the sets
+\[
+\begin{split}
+ A_t&=\{0,1,2,3,t,t+1,t+3\},\\
+ B_t&=\{0,1,2,3,t,t+2,t+3\}
+\end{split}
+\]
+are counterexamples of the same kind as in Theorem~\ref{thm:pitch}.
+The exchanged interval occurrences are $t-2$ and $t+2$.
+\end{theorem}
+\begin{proof}
+Their common six-set is
+\[
+ C_t=A_t\setminus\{t+1\}=B_t\setminus\{t+2\}
+     =\{0,1,2,3,t,t+3\}.
+\]
+Also,
+\[
+ I_{t+3}(A_t\setminus\{2\})=B_t\setminus\{1\}.
+\]
+The source six-sets have endpoints $0,t+3$. Direct comparison excludes both
+$T_0$ and $I_{t+3}$ as maps between them, so the shared types are different.
+
+The distances from the exceptional point to $C_t$ are respectively
+\[
+\begin{split}
+ \{|t+1-c|:c\in C_t\}&=\{t+1,t,t-1,t-2,1,2\},\\
+ \{|t+2-c|:c\in C_t\}&=\{t+2,t+1,t,t-1,2,1\},
+\end{split}
+\]
+where both sides are multisets. All distances within $C_t$ remain unchanged.
+Hence the full multisets exchange precisely $t-2$ for $t+2$, have twenty
+shared occurrences, and are different. Thus $A_t\not\ti B_t$.
+
+Suppose a symmetric five-note subset exists. Its center is a member of
+$A_t$. A center in the lower block $\{0,1,2,3\}$ supports at most one
+reflected pair wholly in that block. A pair involving the upper block has
+sum at least $t\ge6$, whereas twice the center is at most $6$. Equality
+is possible only for $t=6$, center $3$, and pair $\{0,6\}$. That center
+supports no reflected pair wholly in the lower block.
+
+A center in the upper block $\{t,t+1,t+3\}$ has twice its value at least
+$2t$. A pair involving the lower block has sum at most $t+6$. Equality is
+possible only for $t=6$, center $6$, and pair $\{3,9\}$. That center has no
+pair wholly in the upper block. The upper block itself contains no
+three-term arithmetic progression. In all cases the center supports at
+most one pair, contradicting the required five-note symmetry.
+\end{proof}
+
+\begin{remark}[Formalization boundary]
+Theorem~\ref{thm:family} is an ordinary mathematical proof. The current Lean
+certificate proves its concrete $t=6$ instance and the pitch-class example
+below. It does not assert a formal theorem for the parameterized family.
+Even-cardinality symmetric subsets are not excluded by the argument; the
+obstruction is specifically to a five-note core.
+\end{remark}
+
+\section{A five-note pitch-class counterexample}
+\begin{theorem}\label{thm:pc}
+In $\Z/12\Z$, let
+\[
+ P=\{0,1,3,4,6\},\qquad Q=\{0,1,3,4,7\}.
+\]
+These sets share two different four-note types and exactly nine interval-class
+occurrences. They are not equivalent under transposition or inversion and are related
+by neither folding nor T-shift, even after arbitrary representative changes.
+Thus the forward implication in Yust's Conjecture~2 is false.
+\end{theorem}
+\begin{proof}
+The first common four-set is
+\[
+ P\setminus\{6\}=Q\setminus\{7\}=\{0,1,3,4\}.
+\]
+For the second,
+\[
+ I_7(P\setminus\{1\})=I_7(\{0,3,4,6\})
+ =\{1,3,4,7\}=Q\setminus\{0\}.
+\]
+These source subset types differ because $\{0,1,3,4\}$ contains two
+semitone pairs, while $\{0,3,4,6\}$ contains one.
+
+Their interval-class vectors are
+\[
+ \nu(P)=(2,2,3,1,1,1),\qquad
+ \nu(Q)=(2,1,3,2,1,1).
+\]
+They exchange one ic$2$ for one ic$4$, so their overlap is
+$9=\binom52-1$ and $P\not\ti Q$.
+
+The only inversion-symmetric three-note subset of $P$ is $\{0,3,6\}$,
+with index $6$. To check this directly, the center of such an odd subset
+must be a member $r\in P$ and its other two elements must sum to $2r$
+modulo $12$. Among the possible centers $0,1,3,4,6$, only $r=3$
+has such a pair, namely $\{0,6\}$. Folding either of the remaining notes
+therefore gives
+\[
+ 1\longmapsto5:\quad\{0,3,4,5,6\},\qquad
+ 4\longmapsto2:\quad\{0,1,2,3,6\}.
+\]
+Both outputs have vector $(3,2,2,1,1,1)$, unlike $Q$, so neither reaches
+its type.
+
+A nonidentity translation stabilizing a three-element subset has order
+three: its equal-sized translation orbits partition that subset. Such a
+subset is necessarily an augmented triad $\{r,r+4,r+8\}$. The set $P$
+contains no augmented triad, so none of its three-note cores has a
+nonidentity translational symmetry. The identity shift leaves $P$
+unchanged, which is not $Q$'s type.
+
+Finally, stabilizing translations form a subgroup. Every integer multiple
+of a stabilizing translation still stabilizes the same core, so testing all
+stabilizing translations includes the complete definition of T-shift.
+Transposition/inversion changes of source representatives conjugate these
+operations to operations of the same form and preserve core symmetries.
+The obstruction consequently applies to every representative of $P$.
+\end{proof}
+
+\section{Formal certificate and independent verification}
+The file \texttt{formal/Counterexamples.lean} models pitch sets by
+\texttt{Finset} $\Z$ and pitch-class sets by \texttt{Finset (Fin 12)}.
+It defines unordered pairwise interval multisets directly and retains their
+multiplicities. The main exported theorems are
+\begin{center}
+\texttt{YustFolding.conjecture\_one\_false},\qquad
+\texttt{YustFolding.conjecture\_two\_false}.
+\end{center}
+The formal conjecture statements include $n\ge3$, inequivalent whole sets,
+two distinct shared deletion types, exact interval overlap, arbitrary source
+representatives, and the printed integer-multiple T-shift predicate. These
+are stricter content-side hypotheses than the printed conjectures explicitly
+state; the counterexamples satisfy them all.
+
+\paragraph{Unbounded pitch space.}
+If a nonempty subset $C\subset[0,9]\cap\Z$ satisfies $I_s(C)=C$, then for
+$x\in C$ we have $s-x\in C$, and hence $s=x+(s-x)\in[0,18]$. The Lean
+proof establishes this bound before checking all possible integer indices.
+It does not replace an unbounded pitch universe by a bounded one. Pullback
+lemmas transport the obstruction to every transposition and inversion of
+$A$: the pulled-back inversion indices are respectively $s-2u$ and
+$2u-s$ for a source change by $T_u$ or $I_u$.
+
+\paragraph{Pitch-class representatives and shifts.}
+Every transposed and inverted source is checked; the operation predicates
+already permit all target T/I representatives. The stabilizing translations
+are explicitly packaged as an additive subgroup, and closure under integer
+multiplication proves that the exact T-shift relation of Definition~4 is
+included in the checked relation.
+
+\paragraph{Kernel and audit.}
+All finite certificates use ordinary kernel-checked \texttt{decide}. There
+is no admitted proof, new axiom, \texttt{native\_decide}, or external solver
+oracle. The exported theorem dependencies are only the standard foundations
+\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
+Python enumeration supported discovery and independent numerical checks but
+is not imported as a proof dependency.
+
+The frozen source passed an independent semantic review and a fresh isolated
+Lean compilation, with exit status $0$ in $74.84$ seconds. No project object
+files were reused. The audit checked the exact exported statements and the
+source-to-formal bridges, including multiplicities, distinct subset types,
+representatives, unbounded axes, and integer-multiple shifts. It found no
+remaining semantic or proof gap. Receipts and exported statements are
+included in the accompanying archive. The infinite family was independently
+reviewed as an ordinary mathematical proof, with its formalization boundary
+retained.
+
+\section{Literature check and limitations}
+The author-hosted revised paper and the author's publication list
+\cite{Yust,YustList}, containing entries through 2026, were checked on
+14 October 2026. Targeted exact-title searches combined with ``proof'' and
+``counterexample,'' and searches for the two named conjectures, found no
+later primary-source resolution. The Springer chapter landing page and the
+two linked presentation files were not readable through the available
+retrieval route. This is a bounded literature check, not proof of originality
+or absence of prior work.
+
+The results refute the arbitrary-cardinality characterizations. They do not
+refute the proved pitch-space tetrachordal proposition, classify all
+exceptional pairs, establish the smallest pitch-space counterexample, or
+prove a repaired characterization. No publication-priority claim is made.
+
+\appendix
+\section{Reproducibility}
+The toolchain is Lean~4.32.2, with mathlib pinned to
+\begin{center}
+\texttt{905b95818eb32af7874a58b427f50c1711a5e96c}.
+\end{center}
+The SHA256 of the audited one-module formal source is
+\begin{center}\small\ttfamily
+a884ebb6566c9920f3890c3b9b331a84c7e4a168404482847992a59b92217ace.
+\end{center}
+The archive includes \texttt{lean-toolchain}, \texttt{lakefile.toml}, the full
+formal source, build logs, independent receipts, enumeration code and results,
+this \LaTeX\ source, and the compiled paper. On a machine with Elan/Lake,
+the standard build sequence is
+\begin{verbatim}
+lake update
+lake exe cache get
+lake build
+\end{verbatim}
+The supplied \texttt{formal/check.sh} additionally records the command used
+with the existing research toolchain. The paper can be rebuilt with
+\texttt{build-paper.sh}; its local writable TeX format avoids changing system
+configuration.
+
+\begin{thebibliography}{9}
+\bibitem{Yust}
+Jason Yust.
+\newblock Tetrachordal Folding Operations.
+\newblock In \emph{Mathematics and Computation in Music}, MCM 2022,
+pp.~292--303. Springer, 2022.
+\newblock DOI: \href{https://doi.org/10.1007/978-3-031-07015-0_24}{10.1007/978-3-031-07015-0\_24}.
+\newblock \href{https://sites.bu.edu/jyust/files/2022/09/tetrachordalFoldingRev.pdf}{Author-hosted revised paper}, especially pp.~4--8.
+
+\bibitem{YustList}
+Jason Yust.
+\newblock \href{https://sites.bu.edu/jyust/Publications/}{Publications}.
+\newblock Boston University. Accessed 14 October 2026.
+\end{thebibliography}
+\end{document}

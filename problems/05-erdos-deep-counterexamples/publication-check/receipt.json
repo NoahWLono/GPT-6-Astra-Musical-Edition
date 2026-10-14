@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "source_sha256": "d266bf8f3a11cb634b84d3fe63f90eb8e5958e3e0f38f3e83e444445dc15d918",
+  "source": "ErdosDeepCounterexamples.lean",
+  "wrapper_sha256": "d5bf69c91c34bdeb5662097f42b63d96a78e735a3f29646e0afe206c60dfabe3",
+  "lean_version": "4.32.2",
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "project_objects_reused": false,
+  "trusted_dependencies": "Existing Lean standard-library and Mathlib/package objects; not rebuilt from source",
+  "wall_seconds": 8.636
+}

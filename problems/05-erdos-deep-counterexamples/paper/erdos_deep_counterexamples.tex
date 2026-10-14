@@ -1,0 +1,239 @@
+\documentclass[11pt]{article}
+\pdfmapfile{=lm.map}
+\pdfmapfile{+cm.map}
+\pdfmapfile{+symbols.map}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array,geometry,microtype,xcolor,hyperref}
+\geometry{margin=1in}
+\hypersetup{pdftitle={Two Endpoint Counterexamples to the Printed Erdos-Deep Triple Classification},pdfauthor={GPT-6 Astra},colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!45!black,citecolor=blue!45!black}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\AP}{\operatorname{AP}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\ord}{\operatorname{ord}}
+\title{Two Endpoint Counterexamples to the Printed\\Erd\H{o}s-Deep Triple Classification}
+\author{GPT-6 Astra\\\small Project AI author label}
+\date{14 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give primitive Erd\H{o}s-deep families of three modular arithmetic
+progressions with length triples $(10,9,5)$ and $(20,5,5)$, respectively in
+$\Z_{34}$ and $\Z_{48}$. Each constituent is itself Erd\H{o}s-deep.
+Neither length triple occurs in the list in Dukes--Gaede's 2023 Conjecture~1.
+Both constructions use a constituent of length
+$\lfloor\ord(g)/2\rfloor+1$, permitted by the standing convention in
+Gaede's thesis, Section~2.2. They do not refute the more restrictive variant
+requiring every length to be at most $\lfloor\ord(g)/2\rfloor$.
+Explicit pair counts and Lean~4 kernel-checked certificates establish the
+examples. The source-convention discrepancy and the limits of the conclusion
+are recorded precisely. No absolute priority or complete corrected
+classification is claimed.
+\end{abstract}
+
+\section{Definitions and the endpoint}
+For $n\ge1$, set
+\[
+ \AP_n(g,k)=\{jg\bmod n:0\le j<k\},\qquad
+ \dist_n(x,y)=\min((x-y)\bmod n,(y-x)\bmod n).
+\]
+For a family $\mathcal F=(A_1,A_2,A_3)$, let $m_{\mathcal F}(d)$ count
+unordered pairs at distance $d$, summed over the three constituents.
+No pairs between different constituents are counted. The family is
+\emph{Erd\H{o}s-deep} with parameter $K$ if its positive distance
+multiplicities are precisely $1,\ldots,K-1$, each once. It is
+\emph{primitive} if $\gcd(n,g_1,g_2,g_3)=1$.
+
+Write $q=\ord(g)=n/\gcd(n,g)$. The constituent condition used here, with $k\ge3$, is
+\begin{equation}\label{eq:half}
+ k\le \lfloor q/2\rfloor+1,
+ \quad\text{equivalently}\quad 2(k-1)\le q.
+\end{equation}
+For $1\le j<k$, there are exactly $k-j$ index pairs separated by $j$.
+Under~\eqref{eq:half}, their distance classes $|jg|_n$ are distinct:
+a coincidence would give $j\equiv\pm\ell\pmod q$; for distinct
+$j,\ell\in\{1,\ldots,k-1\}$, neither $j-\ell$ nor $j+\ell$ can be a
+multiple of $q$. The points are distinct as well. Thus the constituent
+has multiplicities $1,\ldots,k-1$, including at the endpoint in~\eqref{eq:half}.
+
+\newpage
+\section{A counterexample in $\Z_{34}$}
+\begin{theorem}\label{thm:34}
+The family
+\[
+ \mathcal F_{34}=\{\AP_{34}(1,10),\AP_{34}(6,9),\AP_{34}(12,5)\}
+\]
+is primitive and Erd\H{o}s-deep with parameter $K=14$.
+All its constituents are individually Erd\H{o}s-deep.
+\end{theorem}
+\begin{proof}
+The actual point sets, written in progression order, are
+\begin{align*}
+ A&=\{0,1,2,3,4,5,6,7,8,9\},\\
+ B&=\{0,6,12,18,24,30,2,8,14\},\\
+ C&=\{0,12,24,2,14\}.
+\end{align*}
+Their generator orders are $34,17,17$. Condition~\eqref{eq:half}
+reads $18\le34$, $16\le17$, and $8\le17$, so each constituent has
+its asserted cardinality and is individually Erd\H{o}s-deep.
+The first generator is $1$, giving primitivity.
+
+For $B$, the distances for index gaps $1,\ldots,8$ and their weights are
+\[
+ (6,12,16,10,4,2,8,14),\qquad (8,7,6,5,4,3,2,1),
+\]
+respectively.
+For $C$, the distances are $(12,10,2,14)$, with weights $(4,3,2,1)$.
+Combining these with the interval $A$ gives every entry below.
+\begin{center}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{rrrrr}
+\toprule
+Distance $d$ & $m_A(d)$ & $m_B(d)$ & $m_C(d)$ & $m_{\mathcal F_{34}}(d)$\\
+\midrule
+1&9&0&0&9\\
+2&8&3&2&13\\
+3&7&0&0&7\\
+4&6&4&0&10\\
+5&5&0&0&5\\
+6&4&8&0&12\\
+7&3&0&0&3\\
+8&2&2&0&4\\
+9&1&0&0&1\\
+10&0&5&3&8\\
+12&0&7&4&11\\
+14&0&1&1&2\\
+16&0&6&0&6\\
+\bottomrule
+\end{tabular}
+\end{center}
+All omitted distances have multiplicity zero. The last column is a
+permutation of $1,\ldots,13$. As a separate total-count check,
+$\binom{10}{2}+\binom92+\binom52=45+36+10=91=\binom{14}{2}$.
+\end{proof}
+
+\newpage
+\section{A counterexample in $\Z_{48}$}
+\begin{theorem}\label{thm:48}
+The family
+\[
+ \mathcal F_{48}=\{\AP_{48}(1,20),\AP_{48}(6,5),\AP_{48}(18,5)\}
+\]
+is primitive and Erd\H{o}s-deep with parameter $K=21$.
+All its constituents are individually Erd\H{o}s-deep.
+\end{theorem}
+\begin{proof}
+The constituents are
+\[
+ A=\{0,1,\ldots,19\},\quad
+ B=\{0,6,12,18,24\},\quad C=\{0,18,36,6,24\}.
+\]
+Their generator orders are $48,8,8$; the three instances
+of~\eqref{eq:half} are $38\le48$, $8\le8$, and $8\le8$.
+They are individually Erd\H{o}s-deep, and the first generator again
+ensures primitivity.
+
+The interval $A$ gives $m_A(d)=20-d$ for $1\le d\le19$, and zero
+otherwise. For $B$, the four index-gap distances are $(6,12,18,24)$;
+for $C$, they are $(18,12,6,24)$. Both have index-gap weights
+$(4,3,2,1)$, so their combined contributions are
+\begin{center}
+\begin{tabular}{rrrrr}
+\toprule
+$d$ & 6&12&18&24\\
+\midrule
+$m_B(d)$&4&3&2&1\\
+$m_C(d)$&2&3&4&1\\
+$m_B(d)+m_C(d)$&6&6&6&2\\
+\bottomrule
+\end{tabular}
+\end{center}
+Consequently the multiplicities at distances $6,12,18$ change from
+$14,8,2$ to $20,14,8$, respectively, and distance $24$ supplies the
+new multiplicity $2$. All other multiplicities of $A$ stay unchanged.
+The result is exactly $1,\ldots,20$, each once. The pair-count check is
+$\binom{20}{2}+2\binom52=190+20=210=\binom{21}{2}$.
+\end{proof}
+
+\section{Consequence and exact source scope}
+The fifteen triples in the printed classification~\cite[Conjecture~1,
+p.~14]{DG} do not include $(10,9,5)$ or $(20,5,5)$. Theorems
+\ref{thm:34} and~\ref{thm:48} therefore refute its necessity claim,
+even after imposing primitivity, minimum constituent length three,
+and individual Erd\H{o}s-deepness.
+
+The endpoint issue must be separated from the exact computations.
+The paper's Theorem~1~\cite[p.~3]{DG} includes the $+1$ endpoint
+in its characterization of individually Erd\H{o}s-deep APs. Gaede's standing convention~\cite[\S2.2, p.~16]{G} allows
+$k_i\le\lfloor\ord(g_i)/2\rfloor+1$. Conjecture~4.5
+\cite[pp.~14,42]{G} also displays the $+1$ bound for the largest
+constituent. An earlier general convention~\cite[Remark~1.10,
+p.~5]{G} instead omits $+1$; applying that stricter convention to
+every constituent excludes both examples. The displayed search
+pseudocode~\cite[p.~43]{G} explicitly bounds only $k_1$ using $g_1$.
+Both examples satisfy that displayed bound. Thus the pseudocode
+\emph{does not establish why the examples were omitted}, and the
+implementation cause remains unknown. The all-constituent
+strict-half-order variant is neither proved nor disproved here.
+
+\newpage
+\section{Formal verification and reproducibility}
+The accompanying \texttt{ErdosDeepCounterexamples.lean} defines
+modular point lists, the cyclic metric, and a structurally recursive
+list of unordered-pair distances. On an input $x::L$, that list
+contains the distances from $x$ to every element of $L$, followed
+by the pair-distance list of $L$. Distinctness of every example's
+point list is separately checked, so positions correspond to
+actual distinct elements.
+
+For each $d=1,\ldots,\lfloor n/2\rfloor$, the development counts
+occurrences of $d$. It removes zero counts and sorts the remaining
+multiplicities by insertion sort. Equality with the list
+$[1,\ldots,K-1]$ is the exact depth predicate. The following are
+kernel-checked:
+\begin{itemize}
+\item primitive gcd, ordering, minimum lengths, and the
+half-order bounds;
+\item distinct point lists and the complete histograms;
+\item individual depth of all six constituents and total depth of
+both families;
+\item exclusion from the fifteen listed triples and the negation
+of an explicitly normalized universal classification statement.
+\end{itemize}
+The checks use Lean~4.32.2, mathlib commit
+\begin{center}\small\texttt{905b95818eb32af7874a58b427f50c1711a5e96c}.\end{center}
+There is no \texttt{sorry}, \texttt{native\_decide}, or added axiom.
+The histogram and individual-depth theorems have no axioms;
+the bundled counterexamples and negated classification use only
+the standard \texttt{propext} and \texttt{Quot.sound} principles.
+The script \texttt{check-lean.sh} rebuilds the certificate, and
+\texttt{lean-build.log} records the axiom audit.
+
+A C++ search through $n\le60$ produced the fifteen listed length
+triples and these two additional triples. A separate Python
+program enumerated unordered pairs of the actual modular points
+and checked all 649 recorded representative hits. This bounded
+search is supplemental evidence, not a classification theorem;
+neither counterexample depends on its exhaustiveness.
+
+\paragraph{Prior-art check.}
+A limited public-web search on 14 October 2026 used the paper's
+exact title, the authors and triple-classification terminology,
+and the two extra length triples in spaced and unspaced forms.
+It located the original article, thesis, and authors' research
+pages, but no relevant earlier report of these examples. That
+search is not exhaustive and does not establish priority. Its
+queries and checked primary URLs are recorded in the package.
+
+\begin{thebibliography}{9}
+\bibitem{DG} P.~J.~Dukes and T.~Gaede,
+\emph{Families of modular arithmetic progressions with an interval
+of distance multiplicities}, Integers \textbf{23} (2023), \#A25.
+\url{https://math.colgate.edu/~integers/x25/x25.pdf}.
+\bibitem{G} T.~Gaede,
+\emph{Erd\H{o}s-Deep Families of Arithmetic Progressions},
+M.Sc. thesis, University of Victoria, 2022.
+\url{https://hdl.handle.net/1828/14160}.
+\end{thebibliography}
+\end{document}

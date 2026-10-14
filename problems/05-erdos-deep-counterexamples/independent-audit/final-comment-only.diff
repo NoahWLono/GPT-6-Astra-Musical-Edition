@@ -1,0 +1,11 @@
+--- audited-frozen.lean
++++ final.lean
+@@ -111,7 +111,7 @@
+     5 = (48 / Nat.gcd 48 6) / 2 + 1 ∧
+     5 = (48 / Nat.gcd 48 18) / 2 + 1 := by decide
+ 
+-/-- A precise, stronger-than-literal version of the proposed necessity statement:
++/-- A precise restricted-domain version of the proposed necessity statement:
+     primitive family; ordered lengths >=3; distinct AP points; every constituent
+     separately Erdős-deep; and the allowed half-order upper bounds. -/
+ def NormalizedClassification : Prop :=

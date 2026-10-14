@@ -1,0 +1,21 @@
+import Counterexamples
+#check YustFolding.conjecture_one_false
+#print axioms YustFolding.conjecture_one_false
+#check YustFolding.conjecture_two_false
+#print axioms YustFolding.conjecture_two_false
+#check YustFolding.conjecture_one_counterexample
+#print axioms YustFolding.conjecture_one_counterexample
+#check YustFolding.conjecture_two_counterexample
+#print axioms YustFolding.conjecture_two_counterexample
+#check YustFolding.pitch_no_symmetric_five_subset
+#print axioms YustFolding.pitch_no_symmetric_five_subset
+#check YustFolding.pitch_no_folding_on_equivalent_source
+#print axioms YustFolding.pitch_no_folding_on_equivalent_source
+#check YustFolding.pc_no_operation_on_equivalent_source
+#print axioms YustFolding.pc_no_operation_on_equivalent_source
+#check YustFolding.printed_shift_is_shift
+#print axioms YustFolding.printed_shift_is_shift
+#check YustFolding.pc_no_printed_shift_on_equivalent_source
+#print axioms YustFolding.pc_no_printed_shift_on_equivalent_source
+#print YustFolding.PitchConjecture
+#print YustFolding.PitchClassConjecture

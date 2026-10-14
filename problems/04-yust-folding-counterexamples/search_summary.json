@@ -1,0 +1,162 @@
+[
+  {
+    "n": 3,
+    "limit": 16,
+    "mod": null,
+    "set_classes": 64,
+    "pairs_with_two_shared_subsets": 56,
+    "matching_pairs": 56,
+    "counterexamples_count": 0,
+    "source": "search_pitch.jsonl"
+  },
+  {
+    "n": 4,
+    "limit": 16,
+    "mod": null,
+    "set_classes": 308,
+    "pairs_with_two_shared_subsets": 707,
+    "matching_pairs": 616,
+    "counterexamples_count": 0,
+    "source": "search_pitch.jsonl"
+  },
+  {
+    "n": 5,
+    "limit": 16,
+    "mod": null,
+    "set_classes": 924,
+    "pairs_with_two_shared_subsets": 654,
+    "matching_pairs": 280,
+    "counterexamples_count": 0,
+    "source": "search_pitch.jsonl"
+  },
+  {
+    "n": 6,
+    "limit": 16,
+    "mod": null,
+    "set_classes": 2240,
+    "pairs_with_two_shared_subsets": 1684,
+    "matching_pairs": 1428,
+    "counterexamples_count": 0,
+    "source": "search_pitch.jsonl"
+  },
+  {
+    "n": 7,
+    "limit": 16,
+    "mod": null,
+    "set_classes": 4032,
+    "pairs_with_two_shared_subsets": 1534,
+    "matching_pairs": 652,
+    "counterexamples_count": 22,
+    "source": "search_pitch.jsonl"
+  },
+  {
+    "n": 8,
+    "limit": 16,
+    "mod": null,
+    "set_classes": 5790,
+    "pairs_with_two_shared_subsets": 2343,
+    "matching_pairs": 1848,
+    "counterexamples_count": 0,
+    "source": "search_pitch.jsonl"
+  },
+  {
+    "n": 3,
+    "limit": 12,
+    "mod": 12,
+    "set_classes": 12,
+    "pairs_with_two_shared_subsets": 10,
+    "matching_pairs": 10,
+    "counterexamples_count": 0,
+    "source": "search_mod12.jsonl"
+  },
+  {
+    "n": 4,
+    "limit": 12,
+    "mod": 12,
+    "set_classes": 29,
+    "pairs_with_two_shared_subsets": 75,
+    "matching_pairs": 57,
+    "counterexamples_count": 3,
+    "source": "search_mod12.jsonl"
+  },
+  {
+    "n": 5,
+    "limit": 12,
+    "mod": 12,
+    "set_classes": 38,
+    "pairs_with_two_shared_subsets": 86,
+    "matching_pairs": 37,
+    "counterexamples_count": 4,
+    "source": "search_mod12.jsonl"
+  },
+  {
+    "n": 6,
+    "limit": 12,
+    "mod": 12,
+    "set_classes": 50,
+    "pairs_with_two_shared_subsets": 135,
+    "matching_pairs": 98,
+    "counterexamples_count": 10,
+    "source": "search_mod12.jsonl"
+  },
+  {
+    "n": 7,
+    "limit": 12,
+    "mod": 12,
+    "set_classes": 38,
+    "pairs_with_two_shared_subsets": 98,
+    "matching_pairs": 43,
+    "counterexamples_count": 13,
+    "source": "search_mod12.jsonl"
+  },
+  {
+    "n": 8,
+    "limit": 12,
+    "mod": 12,
+    "set_classes": 29,
+    "pairs_with_two_shared_subsets": 80,
+    "matching_pairs": 57,
+    "counterexamples_count": 0,
+    "source": "search_mod12.jsonl"
+  },
+  {
+    "n": 9,
+    "limit": 12,
+    "mod": 12,
+    "set_classes": 12,
+    "pairs_with_two_shared_subsets": 40,
+    "matching_pairs": 10,
+    "counterexamples_count": 0,
+    "source": "search_mod12.jsonl"
+  },
+  {
+    "n": 10,
+    "limit": 12,
+    "mod": 12,
+    "set_classes": 6,
+    "pairs_with_two_shared_subsets": 15,
+    "matching_pairs": 15,
+    "counterexamples_count": 0,
+    "source": "search_mod12.jsonl"
+  },
+  {
+    "n": 11,
+    "limit": 12,
+    "mod": 12,
+    "set_classes": 1,
+    "pairs_with_two_shared_subsets": 0,
+    "matching_pairs": 0,
+    "counterexamples_count": 0,
+    "source": "search_mod12.jsonl"
+  },
+  {
+    "n": 12,
+    "limit": 12,
+    "mod": 12,
+    "set_classes": 1,
+    "pairs_with_two_shared_subsets": 0,
+    "matching_pairs": 0,
+    "counterexamples_count": 0,
+    "source": "search_mod12.jsonl"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "pdf_pages": 4,
+  "author": "GPT-6 Astra",
+  "author_label": "Project AI author label",
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "lean_version": "4.32.2",
+  "final_lean_sha256": "d266bf8f3a11cb634b84d3fe63f90eb8e5958e3e0f38f3e83e444445dc15d918",
+  "audited_lean_sha256": "221f61a75a269f2dfe7c6e8a3f8f6977a87a9598b5be90705ff35cef98ea2805",
+  "final_change_from_audited_source": "One explanatory comment only; definitions and proof terms unchanged.",
+  "proof_axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "native_decide_used": false,
+  "sorry_used": false,
+  "independent_audit": "PASS with incorporated source-page and pseudocode-scope corrections",
+  "scope": "Printed fifteen-triple necessity claim refuted; all-constituent strict-half-order variant unresolved; no complete revised classification or absolute priority claim.",
+  "pdf_visual_qa": "All four pages rendered and inspected; no overfull or underfull boxes in final TeX log."
+}

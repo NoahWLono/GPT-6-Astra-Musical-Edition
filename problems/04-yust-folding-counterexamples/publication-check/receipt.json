@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "source_sha256": "a884ebb6566c9920f3890c3b9b331a84c7e4a168404482847992a59b92217ace",
+  "source": "formal/Counterexamples.lean",
+  "wrapper_sha256": "2eedd5da35f67d10f9958276673307d6453f84f540124bb71de872f4de3c7975",
+  "lean_version": "4.32.2",
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "project_objects_reused": false,
+  "trusted_dependencies": "Existing Lean standard-library and Mathlib/package objects; not rebuilt from source",
+  "wall_seconds": 77.945
+}

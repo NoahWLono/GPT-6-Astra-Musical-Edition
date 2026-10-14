@@ -1,0 +1,14 @@
+# Local compilation and rendering output
+.lake/
+*.olean
+*.ilean
+*.o
+*.aux
+*.out
+*.toc
+__pycache__/
+*.pyc
+paper/texenv/
+paper/renders/
+paper/*.log
+paper/yust_folding_counterexamples.pdf
